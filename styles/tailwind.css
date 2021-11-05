@@ -5,7 +5,7 @@ html {
   scroll-behavior: smooth;
 }
 body {
-  @apply font-inter;
+  @apply font-montserrat;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   text-rendering: optimizeLegibility;
@@ -39,7 +39,7 @@ h4 {
   @apply bg-cover bg-center bg-no-repeat;
 }
 .hero__title-gradient {
-  @apply bg-gradient-to-br from-secondary-400 to-secondary-600;
+  @apply bg-gradient-to-br from-primary-400 to-primary-600;
   -webkit-background-clip: text;
   background-clip: text;
   -webkit-text-fill-color: transparent;
@@ -70,7 +70,7 @@ h4 {
 }
 
 .heading-with-leftborder::before {
-  @apply absolute bg-gradient-to-b from-yellow-400 to-primary-500 rounded-r-md h-full top-0 left-0;
+  @apply absolute bg-gradient-to-b from-primary-400 to-primary-600 rounded-r-md h-full top-0 left-0;
   content: "";
   width: 4px;
 }
@@ -86,7 +86,7 @@ h4 {
 }
 
 .heading-with-underscore::before {
-  @apply absolute bg-primary-500 h-1 w-4;
+  @apply absolute bg-primary-600 h-1 w-4;
   content: "";
   top: 18px;
   left: 4px;
