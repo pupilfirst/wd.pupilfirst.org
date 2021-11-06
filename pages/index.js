@@ -534,7 +534,7 @@ export default function Home() {
                         using Ruby on Rails, Javascript and ReScript.
                       </p>
                     }
-                    imgSrc="people/vinil-bhandari.png"
+                    imgSrc="people/mahesh.jpg"
                   />
                   <ImageWithDescription
                     name="Bodhish Thomas"
@@ -546,7 +546,7 @@ export default function Home() {
                         very active in the developer community.
                       </p>
                     }
-                    imgSrc="people/bellam-vamsi.png"
+                    imgSrc="people/bodhish.jpg"
                   />
                   <ImageWithDescription
                     name="Bellam Vamsi Krishna"
