@@ -40,7 +40,7 @@ export default function Home() {
         <link rel="preconnect" href="https://fonts.googleapis.com" />
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
         <link
-          href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700;800&display=swap"
+          href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700;800&family=Source+Code+Pro&display=swap"
           rel="stylesheet"
         />
         <meta
@@ -83,13 +83,13 @@ export default function Home() {
         />
       </Head>
       <main className="bg-gradient-to-br from-gray-800 to-gray-900 mx-auto">
-        <section className="hero__bg-pattern bg-gray-900 pb-48 relative border-b border-gray-800">
+        <section className="hero__bg-pattern bg-gray-900 relative">
           <header className="max-w-7xl 2xl:max-w-8xl mx-auto py-4 px-4 xl:px-0 relative z-10">
             <div className="flex justify-between items-center">
               <a className="block" href="/">
                 <img
-                  className="block w-20 md:w-28"
-                  src="logos/LITE-logo.svg"
+                  className="block w-20 md:w-16"
+                  src="logos/wd-logo.svg"
                   alt="Logo of Leadership in Teaching Excellence (LITE)national programme."
                 />
               </a>
@@ -107,11 +107,12 @@ export default function Home() {
                   All India Council for Technical Education.
                 </p>
               </div>
-              <h1 className="hero__title-gradient text-3xl md:text-5xl lg:text-7xl lg:py-4 font-extrabold lg:leading-tight">
+              <h1 className="text-primary-500 text-3xl md:text-5xl lg:text-7xl py-2 font-extrabold lg:leading-tight">
                 Minor Degree in <br />
                 Advanced Web Development
+                <span className="text-indigo-500">.</span>
               </h1>
-              <p className="max-w-3xl mx-auto pr-4 pt-4 text-sm md:text-base lg:text-lg text-white">
+              <p className="max-w-3xl font-mono mx-auto pr-4 text-base lg:text-lg text-white">
                 The Minor Degree in Advanced Web Development Curriculum is
                 approved by All India Council for Technical Education (AICTE)
                 under the National Educational Alliance for Technology (NEAT)
@@ -142,7 +143,7 @@ export default function Home() {
                 </div>
               </div>
             </div>
-            <div className="col-span-6 px-8 pb-12">
+            <div className="col-span-6 px-8 py-12 lg:pt-0 pb-12">
               <img className="w-full" src="hero/hero-student.svg" alt="" />
             </div>
           </div>
@@ -155,20 +156,22 @@ export default function Home() {
             <div className="absolute inset-0"></div>
           </div>
         </section>
-        <section className="mx-4 xl:mx-0 pb-10 md:pb-16 -mt-48">
+        <section className="px-4 xl:mx-0 pb-10 md:pb-16 bg-gray-900">
           <div className="bg-gradient-to-br from-gray-800 to-gray-900 rounded-3xl border border-gray-700 relative shadow-lg max-w-7xl 2xl:max-w-8xl mx-auto">
             <div className="flex space-y-4 md:space-y-0 flex-col md:flex-row justify-between text-white">
               <div className="md:w-8/12 p-4 lg:p-10">
-                <h2 className="text-xl md:text-3xl">Supported by Freshworks</h2>
-                <p className="mt-4 text-sm md:text-base lg:text-lg">
+                <h2 className="text-xl md:text-3xl text-primary-500">
+                  Supported by Freshworks
+                </h2>
+                <p className="mt-4 font-mono text-sm md:text-base lg:text-lg">
                   India’s leading Software as a Service company
                 </p>
-                <p className="mt-4 text-sm md:text-base lg:text-lg">
+                <p className="mt-4 font-mono text-sm md:text-base lg:text-lg">
                   Pupilfirst along with along with Freshworks (NASDAQ:FRSH),
                   India’s leader in Software as a Service (SaaS) industry,
                   designed the curriculum for a minor degree in web development.
                 </p>
-                <p className="mt-4 text-sm md:text-base lg:text-lg">
+                <p className="mt-4 font-mono text-sm md:text-base lg:text-lg">
                   Freshworks enabled the creation of curriculum from its own
                   internal training programme for computer science students with
                   an intent to create a pathway for students from all
@@ -201,7 +204,7 @@ export default function Home() {
           </div>
         </section>
 
-        <section className="relative border-t border-gray-700">
+        <section className="relative bg-gray-900 border-t border-gray-700">
           <div className="max-w-7xl 2xl:max-w-8xl mx-auto">
             <div className="border-l border-gray-700 mx-4 xl:mx-0">
               <div className="lg:grid lg:grid-cols-12 lg:gap-12 2xl:gap-5 px-0 pb-10 lg:pb-20">
@@ -219,7 +222,7 @@ export default function Home() {
                       <h3 className="heading-with-underscore text-xl lg:text-2xl text-indigo-400 font-semibold">
                         What is this program?
                       </h3>
-                      <p className="ml-8 mt-2 pt-1 text-sm lg:text-lg ">
+                      <p className="ml-8 font-mono tracking-tight mt-2 pt-1 lg:text-lg ">
                         Industry led Minor degree programme in Advanced Web
                         Development that would enable you to become a skilled
                         web developer in the global Software as a Service (SaaS)
@@ -230,7 +233,7 @@ export default function Home() {
                       <h3 className="heading-with-underscore text-xl lg:text-2xl text-indigo-400 font-semibold">
                         Why?
                       </h3>
-                      <p className="ml-8 mt-2 pt-1 text-sm lg:text-lg ">
+                      <p className="ml-8 font-mono tracking-tight mt-2 pt-1 lg:text-lg ">
                         To learn the professional web development knowledge and
                         practical skills used every day in the industry.
                       </p>
@@ -239,13 +242,13 @@ export default function Home() {
                       <h3 className="heading-with-underscore text-xl lg:text-2xl text-indigo-400 font-semibold">
                         Who is this for?
                       </h3>
-                      <p className="ml-8 mt-2 pt-1 text-sm lg:text-lg ">
+                      <p className="ml-8 font-mono tracking-tight mt-2 pt-1 lg:text-lg ">
                         This programme is available for students from Institutes
                         whose faculty coordinator has completed the faculty
                         training. These Institutes are amongst the first batch
                         of{" "}
                         <a
-                          className="font-semibold text-indigo-400 underline hover:bg-indigo-50 transition"
+                          className="font-semibold text-indigo-400 underline hover:bg-indigo-900 hover:bg-opacity-50 transition"
                           href="https://lite.pupilfirst.org/ay-2021-22"
                           target="_blank"
                         >
@@ -254,7 +257,7 @@ export default function Home() {
                         who have qualified for AICTE’s Leadership in Teaching
                         Excellence (LITE) program.
                       </p>
-                      <p className="ml-8 mt-2 pt-1 text-sm lg:text-lg ">
+                      <p className="ml-8 font-mono tracking-tight mt-2 pt-1 lg:text-lg ">
                         Within these 50 institutions , students can apply based
                         on the Minor Degree format implemented in their
                         respective Institute. Check with your LITE faculty
@@ -265,7 +268,7 @@ export default function Home() {
                       <h3 className="heading-with-underscore text-xl lg:text-2xl text-indigo-400 font-semibold">
                         When?
                       </h3>
-                      <p className="ml-8 mt-2 pt-1 text-sm lg:text-lg ">
+                      <p className="ml-8 font-mono tracking-tight mt-2 pt-1 lg:text-lg ">
                         From your next academic semester. Contact the faculty
                         coordinator from your Institute for further details.
                       </p>
@@ -274,7 +277,7 @@ export default function Home() {
                       <h3 className="heading-with-underscore text-xl lg:text-2xl text-indigo-400 font-semibold">
                         Credits?
                       </h3>
-                      <p className="ml-8 mt-2 pt-1 text-sm lg:text-lg ">
+                      <p className="ml-8 font-mono tracking-tight mt-2 pt-1 lg:text-lg ">
                         The minor degree in advanced web development has three
                         courses and a minor project adding upto 20 credits.
                       </p>
@@ -283,7 +286,7 @@ export default function Home() {
                       <h3 className="heading-with-underscore text-xl lg:text-2xl text-indigo-400 font-semibold">
                         Format
                       </h3>
-                      <p className="ml-8 mt-2 pt-1 text-sm lg:text-lg ">
+                      <p className="ml-8 font-mono tracking-tight mt-2 pt-1 lg:text-lg ">
                         Self-paced learning with personalised feedback from
                         industry coaches, LITE Faculty co-ordinators and
                         teaching assistants.
@@ -293,14 +296,14 @@ export default function Home() {
                       <h3 className="heading-with-underscore text-xl lg:text-2xl text-indigo-400 font-semibold">
                         Assignments &amp; assessments
                       </h3>
-                      <p className="ml-8 mt-2 pt-1 text-sm lg:text-lg ">
+                      <p className="ml-8 font-mono tracking-tight mt-2 pt-1 lg:text-lg ">
                         You'll work on lots of assignments in our courses, and
                         it's possible to get a perfect score on each and every
                         assignment. However, it's unlikely that you'll get a
                         perfect score on your first try. We expect you to try to
                         improve because that's how professionals work.{" "}
                       </p>
-                      <p className="ml-8 mt-2 pt-1 text-sm lg:text-lg ">
+                      <p className="ml-8 font-mono tracking-tight mt-2 pt-1 lg:text-lg ">
                         In a professional project, you rarely (if ever) get
                         things right on the first try. Instead, you're expected
                         to listen to user feedback, do some research of your
@@ -316,7 +319,7 @@ export default function Home() {
                       <h3 className="heading-with-underscore text-xl lg:text-2xl text-indigo-400 font-semibold">
                         Degree Certificate
                       </h3>
-                      <p className="ml-8 pt-1 text-sm lg:text-lg ">
+                      <p className="ml-8 font-mono tracking-tight pt-1 lg:text-lg ">
                         Yes. Upon successful completion of the programme, you
                         shall receive a Minor Degree in Advanced Web Development
                         from your university along with the Major Degree you are
@@ -330,7 +333,7 @@ export default function Home() {
                       <h3 className="heading-with-underscore text-xl lg:text-2xl text-indigo-400 font-semibold">
                         Cost?
                       </h3>
-                      <div className="ml-8 pt-1 text-sm lg:text-lg ">
+                      <div className="ml-8 font-mono tracking-tight pt-1 lg:text-lg ">
                         <p>
                           The AICTE (NEAT) approved course fees are mentioned
                           below. You can contact the faculty coordinator of your
@@ -338,64 +341,70 @@ export default function Home() {
                           made.
                         </p>
                       </div>
-                      <div className="flex flex-col mt-4">
-                        <div className="ml-8 shadow overflow-hidden border-b border-gray-700 sm:rounded-lg">
-                          <table className="min-w-full divide-y divide-gray-200">
-                            <thead className="bg-gray-50">
+                      <div className="flex flex-col mt-8">
+                        <div className="ml-8 shadow border-b border-gray-700 sm:rounded-lg">
+                          <table className="table-auto border border-gray-800 rounded-lg shadow-lg">
+                            <thead className="rounded-t-lg bg-gradient-to-r from-gray-700 to-gray-800 border-b border-gray-700">
                               <tr>
                                 <th
                                   scope="col"
-                                  className="px-4 py-3 text-left text-xs font-medium text-gray-500 uppercase tracking-wider"
+                                  className="px-4 py-3 text-left text-xs font-medium text-gray-100 uppercase tracking-wider"
                                 >
                                   S. No
                                 </th>
                                 <th
                                   scope="col"
-                                  className="px-4 py-3 text-left text-xs font-medium text-gray-500 uppercase tracking-wider"
+                                  className="px-4 py-3 text-left text-xs font-medium text-gray-100 uppercase tracking-wider"
                                 >
                                   Course Name
                                 </th>
                                 <th
                                   scope="col"
-                                  className="px-4 py-3 text-left text-xs font-medium text-gray-500 uppercase tracking-wider"
+                                  className="px-4 py-3 text-left text-xs font-medium text-gray-100 uppercase tracking-wider"
                                 >
-                                  AICTE approved course fee per student (in Rs.)
+                                  <span className="hidden lg:block">
+                                    AICTE approved course fee per student (in
+                                    Rs.)
+                                  </span>
+                                  <span className="block lg:hidden">
+                                    course fee per student (in Rs.)
+                                  </span>
                                 </th>
                               </tr>
                             </thead>
-                            <tbody>
-                              <tr className="bg-white">
-                                <td className="px-4 py-4 whitespace-nowrap text-sm font-medium text-gray-900">
+                            <tbody className="bg-gradient-to-r from-gray-800 to-gray-900 text-gray-50">
+                              <tr className="font-mono">
+                                <td className="px-4 py-4 lg:whitespace-nowrap text-sm font-medium">
                                   1
                                 </td>
-                                <td className="px-4 py-4 whitespace-nowrap text-sm text-gray-900">
+                                <td className="px-4 py-4 lg:whitespace-nowrap text-sm">
                                   Web Development 101
                                 </td>
-                                <td className="px-4 py-4 whitespace-nowrap text-sm text-gray-900">
+                                <td className="px-4 py-4 lg:whitespace-nowrap text-sm">
                                   -
                                 </td>
                               </tr>
 
-                              <tr className="bg-gray-50">
-                                <td className="px-4 py-4 whitespace-nowrap text-sm font-medium text-gray-900">
+                              <tr className="font-mono">
+                                <td className="px-4 py-4 lg:whitespace-nowrap text-sm font-medium">
                                   2
                                 </td>
-                                <td className="px-4 py-4 whitespace-nowrap text-sm text-gray-900">
+                                <td className="px-4 py-4 lg:whitespace-nowrap text-sm">
                                   Web Development 201
                                 </td>
-                                <td className="px-4 py-4 whitespace-nowrap text-sm text-gray-900">
+                                <td className="px-4 py-4 lg:whitespace-nowrap text-sm">
                                   10,000
                                 </td>
                               </tr>
 
-                              <tr className="bg-white">
-                                <td className="px-4 py-4 whitespace-nowrap text-sm font-medium text-gray-900">
+                              <tr className="font-mono">
+                                <td className="px-4 py-4 lg:whitespace-nowrap text-sm font-medium">
                                   3
                                 </td>
-                                <td className="px-4 py-4 whitespace-nowrap text-sm text-gray-900">
+                                <td className="px-4 py-4 lg:whitespace-nowrap text-sm">
                                   Web Development 301
                                 </td>
-                                <td className="px-4 py-4 whitespace-nowrap text-sm text-gray-900">
+                                <td className="px-4 py-4 lg:whitespace-nowrap text-sm">
                                   10,000
                                 </td>
                               </tr>
@@ -419,7 +428,7 @@ export default function Home() {
                           How to apply?
                         </h3>
 
-                        <p className="text-base md:text-lg mt-3 space-y-3">
+                        <p className="text-base md:text-lg font-mono tracking-tight mt-3 space-y-3">
                           All students who are studying in 2<sup>nd</sup> year
                           and above and wish to apply for the Minor Degree in
                           Advanced Web Development may give their names directly
@@ -486,7 +495,7 @@ export default function Home() {
                       y="0"
                       width="4"
                       height="4"
-                      className="text-gray-300"
+                      className="text-gray-700"
                       fill="currentColor"
                     />
                   </pattern>
@@ -503,7 +512,7 @@ export default function Home() {
                     name="Hari Gopal"
                     caption={<p>Chief Technology Officer, Pupilfirst</p>}
                     role={
-                      <p className="leading-snug text-white mt-3">
+                      <p className="font-mono tracking-tight leading-snug text-white mt-3">
                         Hari is a full-stack software engineer with 12 years of
                         experience and leads the development of Pupilfirst LMS,
                         one of the largest open-source projects that uses the
@@ -516,7 +525,7 @@ export default function Home() {
                     name="Prashanth Reddy Koteru"
                     caption={<p>Coach-Web Development, Pupilfirst</p>}
                     role={
-                      <p className="leading-snug text-white mt-3">
+                      <p className="font-mono tracking-tight leading-snug text-white mt-3">
                         Prashanth is a full-stack web developer and product
                         engineer with five years of experience and an active
                         evangelist in the indian developer community.
@@ -528,7 +537,7 @@ export default function Home() {
                     name="Mahesh Krishna Kumar"
                     caption={<p>Full-stack developer, Pupilfirst</p>}
                     role={
-                      <p className="leading-snug text-white mt-3">
+                      <p className="font-mono tracking-tight leading-snug text-white mt-3">
                         Mahesh is currently a full-stack developer at Pupilfirst
                         with close to five years experience in product building
                         using Ruby on Rails, Javascript and ReScript.
@@ -540,7 +549,7 @@ export default function Home() {
                     name="Bodhish Thomas"
                     caption={<>Full-stack developer, Pupilfirst</>}
                     role={
-                      <p className="leading-snug text-white mt-3">
+                      <p className="font-mono tracking-tight leading-snug text-white mt-3">
                         Bodhish is a full-stack developer with about four years
                         of experience in product development at Pupilfirst. He's
                         very active in the developer community.
@@ -552,7 +561,7 @@ export default function Home() {
                     name="Bellam Vamsi Krishna"
                     caption={<>Assistant Coach - Web Development, Pupilfirst</>}
                     role={
-                      <p className="leading-snug text-white mt-3">
+                      <p className="font-mono tracking-tight leading-snug text-white mt-3">
                         Vamsi completed the WD 201 course at SASTRA University
                         in 2019, and is currently interning at a prominent
                         software development firm in Chennai. He has also been a
@@ -578,7 +587,7 @@ export default function Home() {
               </div>
               <div className="max-w-5xl mx-auto pl-4 lg:pl-0">
                 <div className="max-w-5xl mt-4">
-                  <p className="text-sm md:text-base text-white lg:text-lg">
+                  <p className="font-mono tracking-tight text-white lg:text-lg">
                     This programme is designed with 3 courses such that selected
                     institutions can offer a 20 credit “Minor Degree in Advanced
                     Web Development” through their trained faculty to students.
@@ -589,7 +598,7 @@ export default function Home() {
                     <p className="text-primary-400 text-xl md:text-2xl font-bold">
                       WD 101
                     </p>
-                    <p className="text-sm text-white leading-snug mt-1">
+                    <p className="font-mono tracking-tight text-white leading-snug mt-1">
                       <span className="font-semibold">Beginner</span> - Getting
                       started with Javascript (WD 101).
                     </p>
@@ -613,7 +622,7 @@ export default function Home() {
                     <p className="text-indigo-400 text-xl md:text-2xl font-bold">
                       WD 201
                     </p>
-                    <p className="text-sm text-white leading-snug mt-1">
+                    <p className="font-mono tracking-tight text-white leading-snug mt-1">
                       <span className="font-semibold">Intermediate</span> -
                       Server-side programming with Ruby on Rails.
                     </p>
@@ -637,7 +646,7 @@ export default function Home() {
                     <p className="text-green-500 text-xl md:text-2xl font-bold">
                       WD 301
                     </p>
-                    <p className="text-sm text-white leading-snug mt-1">
+                    <p className="font-mono tracking-tight text-white leading-snug mt-1">
                       <span className="font-semibold">Advanced</span> - Typed
                       Functional Programming
                     </p>
@@ -647,6 +656,13 @@ export default function Home() {
                   More advanced courses would be added to give a broader choice
                   of specialisations.
                 </p>
+                <div className="pt-8 lg:pt-16">
+                  <img
+                    className="w-full h-full object-contain mix-blend-color-dodge"
+                    src="course-path/course-pathway.png"
+                    alt="Course pathway"
+                  />
+                </div>
               </div>
             </div>
           </div>
@@ -658,20 +674,20 @@ export default function Home() {
                 </h2>
               </div>
               <div className="max-w-5xl mx-auto pl-4 lg:pl-0">
-                <div className="max-w-3xl space-y-6 text-white ">
-                  <p className="mt-4 text-sm lg:text-lg">
+                <div className="max-w-3xl font-mono tracking-tight space-y-6 text-white ">
+                  <p className="mt-4 lg:text-lg">
                     AICTE expert committee has approved the curriculum created
                     jointly by Pupilfirst and Freshworks that enables
                     institutions to offer advanced web development courses using
                     typed functional programming.
                   </p>
-                  <p className="mt-4 text-sm lg:text-lg">
+                  <p className="mt-4 lg:text-lg">
                     Most modern programming languages widely used in the
                     industry are converging towards this paradigm by adopting
                     its features like types, discriminated unions, and immutable
                     programming.
                   </p>
-                  <p className="mt-4 text-sm lg:text-lg">
+                  <p className="mt-4 lg:text-lg">
                     In our knowledge, courses on functional programming are
                     currently taught in India at IIT-Madras, IIT-Bombay,
                     IIT-Kanpur and IIT-Mandi.
@@ -681,28 +697,28 @@ export default function Home() {
             </div>
           </div>
           <div className="max-w-7xl 2xl:max-w-8xl mx-auto">
-            <div className="border-l border-gray-700 mx-4 xl:mx-0 pt-10 lg:pt-16">
+            <div className="border-l border-gray-700 mx-4 xl:mx-0 py-10 lg:py-16">
               <div className="heading-with-leftborder">
-                <h2 className="max-w-7xl mx-auto lg:ml-28 2xl:ml-32 pl-4 2xl:pl-0 font-bold text-2xl text-primary-500 lg:text-6xl leading-tight ml-4 lg:mx-auto">
+                <h2 className="max-w-7xl mx-auto lg:ml-32 2xl:ml-32 2xl:pl-0 font-bold text-2xl text-primary-500 lg:text-6xl leading-tight ml-4 lg:mx-auto">
                   Gain Professional Skills
                 </h2>
               </div>
               <div className="max-w-7xl mx-auto lg:ml-28 2xl:ml-32 pl-4 2xl:pl-0">
                 <div className="max-w-3xl space-y-6 text-white ">
-                  <p className="mt-4 text-sm lg:text-lg">
+                  <p className="mt-4 font-mono tracking-tight lg:text-lg">
                     The courses are arranged to enable you to gain professional
                     skills used everyday in the web development industry.
                   </p>
                 </div>
-                <div className="lg:grid grid-cols-12 gap-x-10 gap-y-64 pt-32 relative">
-                  <div className="col-span-6 text-white pt-24">
+                <div className="lg:grid grid-cols-12 gap-x-10 gap-y-64 lg:pt-32 relative">
+                  <div className="col-span-6 text-white pt-10 lg:pt-24">
                     <p className="text-gray-400 font-semibold">
                       A good web developer is...
                     </p>
-                    <h3 className="text-5xl text-indigo-500 -ml-7">
+                    <h3 className="text-4xl lg:text-5xl text-indigo-500 lg:-ml-7">
                       <span className="text-primary-500">_</span>an artist
                     </h3>
-                    <p className="text-lg mt-4 pr-12 pt-4">
+                    <p className="font-mono tracking-tight lg:text-lg pt-4 lg:pt-8 lg:pr-12">
                       Learn to see the beauty in code, and to write elegant
                       code: Your code doesn't just solve a problem - it's
                       something you create. Just like writing a story, or a
@@ -713,7 +729,7 @@ export default function Home() {
                       while doing it.
                     </p>
                   </div>
-                  <div className="col-span-6">
+                  <div className="col-span-6 pt-12 lg:pt-0">
                     <img
                       className="w-full h-full object-contain"
                       src="professional-skills/artist.svg"
@@ -725,11 +741,11 @@ export default function Home() {
                     <p className="text-gray-400 font-semibold">
                       A good web developer is...
                     </p>
-                    <h3 className="text-5xl text-indigo-500 -ml-7">
+                    <h3 className="text-4xl lg:text-5xl text-indigo-500 lg:-ml-7">
                       <span className="text-primary-500">_</span>a good
                       communicator
                     </h3>
-                    <p className="text-lg mt-4 pr-12 pt-4">
+                    <p className="font-mono tracking-tight lg:text-lg pt-4 lg:pt-8 lg:pr-12">
                       Learn how to ask technical questions, and how to answer
                       them: Coding isn't a solo journey. You're going to get
                       stuck a lot, and the easiest way to get unstuck is to ask
@@ -738,7 +754,7 @@ export default function Home() {
                       can help others out - there's a certain skill to answering
                       questions as well.
                     </p>
-                    <p className="text-lg mt-4 pr-12">
+                    <p className="font-mono tracking-tight lg:text-lg pt-4 lg:pt-8 lg:pr-12">
                       Learn how to talk to your peers fluently through your
                       code: In your career, you're going to work with many
                       others. A good programmer knows how to write code so that
@@ -746,7 +762,7 @@ export default function Home() {
                       work with them.
                     </p>
                   </div>
-                  <div className="col-span-6">
+                  <div className="col-span-6 pt-12 lg:pt-0">
                     <img
                       className="w-full h-full object-contain"
                       src="professional-skills/good-communicator.svg"
@@ -758,10 +774,10 @@ export default function Home() {
                     <p className="text-gray-400 font-semibold">
                       A good web developer is...
                     </p>
-                    <h3 className="text-5xl text-indigo-500 -ml-7">
+                    <h3 className="text-4xl lg:text-5xl text-indigo-500 lg:-ml-7">
                       <span className="text-primary-500">_</span>persistent
                     </h3>
-                    <p className="text-lg mt-4 pr-12 pt-4">
+                    <p className="font-mono tracking-tight lg:text-lg pt-4 lg:pt-8 lg:pr-12">
                       Learn how to interpret error messages: Seeing error
                       messages is a part and parcel of life as a developer. You
                       shouldn't be dismayed when you see an error message though
@@ -771,7 +787,7 @@ export default function Home() {
                       the root of the issue.
                     </p>
                   </div>
-                  <div className="col-span-6">
+                  <div className="col-span-6 pt-12 lg:pt-0">
                     <img
                       className="w-full h-full object-contain"
                       src="professional-skills/persistent.svg"
@@ -783,16 +799,16 @@ export default function Home() {
                     <p className="text-gray-400 font-semibold">
                       A good web developer is...
                     </p>
-                    <h3 className="text-5xl text-indigo-500 -ml-7">
+                    <h3 className="text-4xl lg:text-5xl text-indigo-500 lg:-ml-7">
                       <span className="text-primary-500">_</span>curious
                     </h3>
-                    <p className="text-lg mt-4 pr-12 pt-4">
+                    <p className="font-mono tracking-tight lg:text-lg pt-4 lg:pt-8 lg:pr-12">
                       We can never teach you everything that goes into web
                       development. There's just too much to teach. We can,
                       however, teach you how to continue learning on your own.
                     </p>
                   </div>
-                  <div className="col-span-6">
+                  <div className="col-span-6 pt-12 lg:pt-0">
                     <img
                       className="w-full h-full object-contain"
                       src="professional-skills/curious.svg"
@@ -815,7 +831,7 @@ export default function Home() {
               </div>
               <div className="max-w-5xl mx-auto pl-4 lg:pl-0">
                 <div className="max-w-3xl space-y-6 text-white ">
-                  <p className="mt-4 text-sm lg:text-lg">
+                  <p className="mt-4 font-mono tracking-tight lg:text-lg">
                     If you are among the top performers in this course, you’ll
                     stand a chance to engage future batches as a Teaching
                     Assistant (TA). As a TA, you’ll be working closely with the
@@ -823,8 +839,15 @@ export default function Home() {
                     learning for students in future batches. The National goal
                     of All India Council for Technical Education, under which
                     all the engineering colleges in India are affiliated is to
-                    eventually take this course to 2.4Crore students over many
-                    years.
+                    eventually{" "}
+                    <a
+                      className="font-semibold text-indigo-400 underline hover:bg-indigo-900 hover:bg-opacity-50 transition"
+                      href="https://lite.pupilfirst.org/letter-from-VCM/Letter-from-the-VCM-AICTE.pdf"
+                      target="_blank"
+                    >
+                      take this course to 2.4Crore students
+                    </a>{" "}
+                    over many years.
                   </p>
                 </div>
               </div>
@@ -843,7 +866,7 @@ export default function Home() {
               </div>
               <div className="max-w-5xl mx-auto pl-4 lg:pl-0">
                 <div className="max-w-3xl space-y-6 text-white ">
-                  <p className="mt-4 text-sm lg:text-lg">
+                  <p className="mt-4 font-mono tracking-tight lg:text-lg">
                     Before this minor degree program reached you, it was taught
                     to 24 students selected from 50,482 applications across 2437
                     institutions. With the skills gained, 14 students qualified
@@ -851,12 +874,18 @@ export default function Home() {
                     and their open-source contributions has been recognised by
                     the United Nations as a global Digital Public Good.
                   </p>
-                  <p>
+                  <p className="mt-4 font-mono tracking-tight">
                     The top performers from each institution would have an
                     opportunity to work along with eGovernments Foundation
                     co-founded by Nandan Nilekani and Srikanth Nadhamuni
-                    (Founding CTO of Aadhaar) and get admitted to the Global
-                    Digital Corps programme.
+                    (Founding CTO of Aadhaar) and get admitted to the{" "}
+                    <a
+                      className="font-semibold text-indigo-400 underline hover:bg-indigo-900 hover:bg-opacity-50 transition"
+                      href="https://gdc.network/"
+                      target="_blank"
+                    >
+                      Global Digital Corps programme.
+                    </a>
                   </p>
                 </div>
               </div>
@@ -874,13 +903,13 @@ export default function Home() {
               </div>
               <div className="max-w-5xl mx-auto pl-4 lg:pl-0">
                 <div className="max-w-3xl space-y-6 text-white ">
-                  <p className="mt-4 text-sm lg:text-lg">
+                  <p className="mt-4 font-mono tracking-tight lg:text-lg">
                     Here’s what some of our students had to say
                   </p>
                 </div>
-                <div className="divide-y space-y-24 divide-gray-700 relative">
+                <div className="divide-y space-y-12 lg:space-y-24 divide-gray-700 relative">
                   <div className="lg:grid grid-cols-12 gap-x-10">
-                    <div className="col-span-6 text-white pt-24">
+                    <div className="col-span-6 text-white lg:pt-24">
                       <div className="sticky top-0 pt-16">
                         <p className="text-sm font-semibold uppercase text-gray-500">
                           Question 1
@@ -890,8 +919,8 @@ export default function Home() {
                         </h3>
                       </div>
                     </div>
-                    <div className="col-span-6 pt-24 space-y-12">
-                      <div className="bg-red-200 text-lg font-medium rounded-xl p-12">
+                    <div className="col-span-6 pt-8 lg:pt-24 space-y-8 lg:space-y-12">
+                      <div className="bg-red-200 lg:text-lg font-medium rounded-xl p-8 lg:p-12">
                         <p>
                           The course content was sophisticated for beginners
                           like me, as it broadly covered the absolute basics of
@@ -905,7 +934,7 @@ export default function Home() {
                           </div>
                         </p>
                       </div>
-                      <div className="bg-red-200 text-lg font-medium rounded-xl p-12">
+                      <div className="bg-red-200 lg:text-lg font-medium rounded-xl p-8 lg:p-12">
                         <p>
                           It was very much easy to progress through the course
                           and it was designed in a way that it helps me learn a
@@ -927,7 +956,7 @@ export default function Home() {
                   </div>
 
                   <div className="lg:grid grid-cols-12 gap-x-10">
-                    <div className="col-span-6 text-white pt-24">
+                    <div className="col-span-6 text-white lg:pt-24">
                       <div className="sticky top-0 pt-16">
                         <p className="text-sm font-semibold uppercase text-gray-500">
                           Question 2
@@ -937,8 +966,8 @@ export default function Home() {
                         </h3>
                       </div>
                     </div>
-                    <div className="col-span-6 pt-24 space-y-12">
-                      <div className="bg-green-200 text-lg font-medium rounded-xl p-12">
+                    <div className="col-span-6 pt-8 lg:pt-24 space-y-8 lg:space-y-12">
+                      <div className="bg-green-200 lg:text-lg font-medium rounded-xl p-8 lg:p-12">
                         <p>
                           The feedback from my perspective is the BEST part of
                           the course. I loved all my feedback and it helped
@@ -951,7 +980,7 @@ export default function Home() {
                           </div>
                         </p>
                       </div>
-                      <div className="bg-green-200 text-lg font-medium rounded-xl p-12">
+                      <div className="bg-green-200 lg:text-lg font-medium rounded-xl p-8 lg:p-12">
                         <p>
                           The team is very sincere and I like the ways that they
                           manage time. The course calendar was really helpful as
@@ -969,7 +998,7 @@ export default function Home() {
                   </div>
 
                   <div className="lg:grid grid-cols-12 gap-x-10">
-                    <div className="col-span-6 text-white pt-24">
+                    <div className="col-span-6 text-white lg:pt-24">
                       <div className="sticky top-0 pt-16">
                         <p className="text-sm font-semibold uppercase text-gray-500">
                           Question 3
@@ -979,8 +1008,8 @@ export default function Home() {
                         </h3>
                       </div>
                     </div>
-                    <div className="col-span-6 pt-24 space-y-12">
-                      <div className="bg-indigo-200 text-lg font-medium rounded-xl p-12">
+                    <div className="col-span-6 pt-8 lg:pt-24 space-y-8 lg:space-y-12">
+                      <div className="bg-indigo-200 lg:text-lg font-medium rounded-xl p-8 lg:p-12">
                         <p>
                           The UI is really good and the Pupilfirst LMS is easy
                           to use.
@@ -992,7 +1021,7 @@ export default function Home() {
                           </div>
                         </p>
                       </div>
-                      <div className="bg-indigo-200 text-lg font-medium rounded-xl p-12">
+                      <div className="bg-indigo-200 lg:text-lg font-medium rounded-xl p-8 lg:p-12">
                         <p>
                           The Pupilfirst LMS was very easy to use. I like that
                           it is easy to track all the levels and assignments
@@ -1005,6 +1034,56 @@ export default function Home() {
                             Jan-March 2021)
                           </div>
                         </p>
+                      </div>
+                    </div>
+                  </div>
+
+                  <div className="lg:grid grid-cols-12 gap-x-10">
+                    <div className="col-span-6 text-white lg:pt-24">
+                      <div className="sticky top-0 pt-16">
+                        <h3 className="text-indigo-400">
+                          On improvement at JavaScript :
+                        </h3>
+                      </div>
+                    </div>
+                    <div className="col-span-6 pt-8 lg:pt-24 space-y-8 lg:space-y-12">
+                      <div className="bg-yellow-100 lg:text-lg font-medium rounded-xl p-8 lg:p-12">
+                        <p className="font-bold">LITE Faculty Batch 1</p>
+                        <p className="pt-2">
+                          In this batch, 77% faculty members mentioned that they
+                          got much better at JavaScript as compared to the
+                          beginning of the WD101 course.
+                        </p>
+                        <div className="bg-gray-200 shadow-inner w-full h-12 rounded-lg mt-4">
+                          <div className="flex justify-center items-center shadow-lg text-green-900 text-center font-semibold bg-green-500 h-12 rounded-l-lg w-[77%]">
+                            <p> 77%</p>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+
+                  <div className="lg:grid grid-cols-12 gap-x-10">
+                    <div className="col-span-6 text-white lg:pt-24">
+                      <div className="sticky top-0 pt-16">
+                        <h3 className="text-indigo-400">
+                          On improvement at back-end web development:
+                        </h3>
+                      </div>
+                    </div>
+                    <div className="col-span-6 pt-8 lg:pt-24 space-y-8 lg:space-y-12">
+                      <div className="bg-pink-200 lg:text-lg font-medium rounded-xl p-8 lg:p-12">
+                        <p className="font-bold">WD201 May-July 2021 Batch</p>
+                        <p className="pt-2">
+                          In this batch, 91% students mentioned that they got
+                          much better at back-end web development as compared to
+                          the beginning of the WD201 course.
+                        </p>
+                        <div className="bg-gray-200 shadow-inner w-full h-12 rounded-lg mt-4">
+                          <div className="flex justify-center items-center shadow-lg text-green-900 text-center font-semibold bg-green-500 h-12 rounded-l-lg w-[91%]">
+                            <p>91%</p>
+                          </div>
+                        </div>
                       </div>
                     </div>
                   </div>
@@ -1025,7 +1104,7 @@ export default function Home() {
               </div>
               <div className="max-w-5xl mx-auto pl-4 lg:pl-0">
                 <div className="max-w-3xl space-y-6 text-white ">
-                  <p className="mt-4 text-sm lg:text-lg">
+                  <p className="mt-4 font-mono tracking-tight lg:text-lg">
                     Students who have graduated from the minor degree track
                     shall possess skills that are at the cutting edge of the
                     modern software industry. As Covid 19 accelerated digital
@@ -1033,14 +1112,14 @@ export default function Home() {
                     global employment opportunities or start your own technology
                     startup.
                   </p>
-                  <p>
+                  <p className="mt-4 font-mono tracking-tight">
                     As the world is transitioning into a knowledge economy , the
                     demand for web development engineers who are able to build
                     web applications on the internet is outpacing the supply.
                     The venture capital investments in India is also on the rise
                     enabling new startups to emulate the success of Freshworks.
                   </p>
-                  <p>
+                  <p className="mt-4 font-mono tracking-tight">
                     With the skills gained, the choice is yours to take up a
                     job/ do research/study further/build a startup and lead a
                     fulfilling life.
@@ -1062,7 +1141,7 @@ export default function Home() {
               </div>
               <div className="max-w-5xl mx-auto pl-4 lg:pl-0">
                 <div className="max-w-3xl space-y-6 text-white ">
-                  <p className="mt-4 text-sm lg:text-lg">
+                  <p className="mt-4 font-mono tracking-tight lg:text-lg">
                     Successful graduate students shall be invited to join an
                     alumni network connecting you with peers from over 50
                     institutions who have learnt along with you as a Community.
@@ -1091,7 +1170,7 @@ export default function Home() {
               </div>
               <div className="max-w-5xl mx-auto pl-4 lg:pl-0">
                 <div className="max-w-3xl space-y-6 text-white ">
-                  <p className="mt-4 text-sm lg:text-lg">
+                  <p className="mt-4 font-mono tracking-tight lg:text-lg">
                     All students who are studying in 2nd year and above and wish
                     to apply for the Minor Degree in Advanced Web Development
                     may give their names directly to the LITE Faculty
@@ -1140,7 +1219,13 @@ export default function Home() {
                   <h3 className="text-3xl text-indigo-500">Questions?</h3>
                   <p className="text-white pt-4">
                     Contact your institutions LITE Faculty Co-ordinator or email
-                    us at wd@pupilfirst.org.
+                    us at{" "}
+                    <a
+                      className="font-semibold text-indigo-400 underline hover:bg-indigo-900 hover:bg-opacity-50 transition"
+                      href="mailto:wd@pupilfirst.org"
+                    >
+                      wd@pupilfirst.org.
+                    </a>
                   </p>
                 </div>
               </div>
@@ -1149,8 +1234,8 @@ export default function Home() {
         </section>
 
         <section className="mx-auto relative">
-          <div className="bg-gray-800 py-10 border-t border-gray-700">
-            <p className="max-w-5xl font-bold text-indigo-500 text-center text-2xl lg:text-3xl lg:leading-tight ml-4 lg:mx-auto">
+          <div className="bg-gray-800 p-4 lg:p-10 border-t border-gray-700">
+            <p className="max-w-5xl font-bold text-indigo-500 text-center text-xl lg:text-3xl lg:leading-tight lg:mx-auto">
               LITE - Creating a Culture of Teaching Excellence
             </p>
           </div>
