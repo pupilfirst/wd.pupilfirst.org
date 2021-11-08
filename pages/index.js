@@ -3,7 +3,7 @@ import Head from "next/head";
 function ImageWithDescription({ name, githuburl, caption, role, imgSrc }) {
   return (
     <div>
-      <div className="relative rounded-lg bg-gradient-to-br from-primary-400 to-primary-500 w-5/6 md:w-auto shadow-md ">
+      <div className="relative rounded-lg bg-gradient-to-br from-primary-400 to-primary-500 w-auto shadow-md ">
         <img
           src={imgSrc}
           alt={caption}
@@ -27,7 +27,7 @@ export default function Home() {
         <title>Leadership in Teaching Excellence (LITE)</title>
         <meta
           name="description"
-          content="AICTE’s Leadership in Teaching Excellence (LITE) is a national programme to equip 50 colleges and 50 schools with leadership in teaching excellence."
+          content="The Minor Degree in Advanced Web Development Curriculum is approved by All India Council for Technical Education (AICTE) under the National Educational Alliance for Technology (NEAT) programme of the Ministry of Education, Government of India. This degree can be opted for and pursued by students who are enrolled in the Institutes selected as part of the Batch 1 of LITE programme."
         ></meta>
         <meta
           name="keywords"
@@ -57,12 +57,12 @@ export default function Home() {
         <meta name="theme-color" content="#111827" />
         <meta
           property="og:image"
-          content="leadership-in-teaching-excellence.jpg"
+          content="Minor-Degree-in-Advanced-Web-Development.png"
         />
         <meta property="og:url" content="https://wd.pupilfirst.org/" />
         <meta
           name="twitter:card"
-          content="leadership-in-teaching-excellence.jpg"
+          content="Minor-Degree-in-Advanced-Web-Development.png"
         />
         <meta
           property="og:site_name"
@@ -91,8 +91,8 @@ export default function Home() {
             <div className="flex justify-between items-center">
               <a className="block" href="/">
                 <img
-                  className="block w-20 md:w-16"
-                  src="logos/wd-logo.svg"
+                  className="block w-48 md:w-64"
+                  src="logos/wd-pupilfirst-logo.svg"
                   alt="Logo of Leadership in Teaching Excellence (LITE)national programme."
                 />
               </a>
@@ -187,6 +187,16 @@ export default function Home() {
                   an intent to create a pathway for students from all
                   engineering disciplines to find a pathway into the global web
                   development industry.
+                </p>
+                <p class="mt-4 text-sm md:text-base">
+                  Learn More at:{" "}
+                  <a
+                    class="text-indigo-400 font-semibold hover:underline hover:bg-indigo-900"
+                    target="_blank"
+                    href="https://pupilfirst.org/"
+                  >
+                    https://pupilfirst.org/
+                  </a>
                 </p>
               </div>
 
@@ -517,7 +527,7 @@ export default function Home() {
                 />
               </svg>
               <div className="max-w-5xl mx-auto relative z-10 pl-4 lg:pl-0">
-                <div className="space-y-10 sm:space-y-0 sm:grid sm:grid-cols-3 sm:gap-4 md:gap-8 lg:gap-12 py-12 lg:pb-16">
+                <div className="space-y-12 sm:space-y-0 sm:grid sm:grid-cols-3 sm:gap-12 lg:gap-12 py-12 lg:pb-16">
                   <ImageWithDescription
                     name="Hari Gopal"
                     githuburl={
