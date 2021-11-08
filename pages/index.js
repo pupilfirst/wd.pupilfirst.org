@@ -1,6 +1,6 @@
 import Head from "next/head";
 
-function ImageWithDescription({ name, caption, role, imgSrc }) {
+function ImageWithDescription({ name, githuburl, caption, role, imgSrc }) {
   return (
     <div>
       <div className="relative rounded-lg bg-gradient-to-br from-primary-400 to-primary-500 w-5/6 md:w-auto shadow-md ">
@@ -10,8 +10,11 @@ function ImageWithDescription({ name, caption, role, imgSrc }) {
           className="block w-full object-cover md:object-contain p-0.5 rounded-lg"
         />
       </div>
-      <p className={"text-lg text-indigo-400 font-semibold pt-2"}>{name}</p>
-      <p className={"text-sm text-gray-100 leading-tight pt-1"}>{caption}</p>
+      <div className="flex space-x-4 justify-between pt-4">
+        <p className={"text-lg text-indigo-400 font-semibold"}>{name}</p>
+        <div className="pr-1">{githuburl}</div>
+      </div>
+      <p className={"text-sm text-gray-100 leading-tight pt-3"}>{caption}</p>
       <p>{role}</p>
     </div>
   );
@@ -45,27 +48,27 @@ export default function Home() {
         />
         <meta
           property="og:title"
-          content="Leadership in Teaching Excellence (LITE)"
+          content="Minor Degree in Advanced Web Development"
         />
         <meta
           property="og:description"
-          content="AICTE’s Leadership in Teaching Excellence (LITE) is a national programme to equip 50 colleges and 50 schools with leadership in teaching excellence."
+          content="The Minor Degree in Advanced Web Development Curriculum is approved by All India Council for Technical Education (AICTE) under the National Educational Alliance for Technology (NEAT) programme of the Ministry of Education, Government of India. This degree can be opted for and pursued by students who are enrolled in the Institutes selected as part of the Batch 1 of LITE programme."
         />
-        <meta name="theme-color" content="#FDFAF7" />
+        <meta name="theme-color" content="#111827" />
         <meta
           property="og:image"
           content="leadership-in-teaching-excellence.jpg"
         />
-        <meta property="og:url" content="https://lite.pupilfirst.org/" />
+        <meta property="og:url" content="https://wd.pupilfirst.org/" />
         <meta
           name="twitter:card"
           content="leadership-in-teaching-excellence.jpg"
         />
         <meta
           property="og:site_name"
-          content="Leadership in Teaching Excellence (LITE)"
+          content="Minor Degree in Advanced Web Development"
         />
-        <meta name="AICTE’s Leadership in Teaching Excellence (LITE) is a national programme to equip 50 colleges and 50 schools with leadership in teaching excellence." />
+        <meta name="The Minor Degree in Advanced Web Development Curriculum is approved by All India Council for Technical Education (AICTE) under the National Educational Alliance for Technology (NEAT) programme of the Ministry of Education, Government of India. This degree can be opted for and pursued by students who are enrolled in the Institutes selected as part of the Batch 1 of LITE programme." />
 
         <script
           async
@@ -84,7 +87,7 @@ export default function Home() {
       </Head>
       <main className="bg-gradient-to-br from-gray-800 to-gray-900 mx-auto">
         <section className="hero__bg-pattern bg-gray-900 relative">
-          <header className="max-w-7xl 2xl:max-w-8xl mx-auto py-4 px-4 xl:px-0 relative z-10">
+          <header className="max-w-6xl 2xl:max-w-7xl mx-auto py-4 px-4 xl:px-0 relative z-10">
             <div className="flex justify-between items-center">
               <a className="block" href="/">
                 <img
@@ -100,19 +103,19 @@ export default function Home() {
               />
             </div>
           </header>
-          <div className="lg:grid grid-cols-12 gap-x-8 relative max-w-7xl 2xl:max-w-8xl flex flex-col md:flex-row justify-between mx-auto pb-8 md:pb-16 px-4 xl:px-0">
+          <div className="lg:grid grid-cols-12 gap-x-8 relative max-w-6xl 2xl:max-w-7xl flex flex-col md:flex-row justify-between mx-auto pb-8 md:pb-16 px-4 xl:px-0">
             <div className="col-span-6 w-full mx-auto relative z-10">
               <div className="inline-block rounded bg-gray-800 py-1 px-1 md:px-2 mt-4 ">
                 <p className="font-medium text-sm text-gray-400">
                   All India Council for Technical Education.
                 </p>
               </div>
-              <h1 className="text-primary-500 text-3xl md:text-5xl lg:text-7xl py-2 font-extrabold lg:leading-tight">
+              <h1 className="text-primary-500 text-3xl md:text-3xl lg:text-5xl xl:text-6xl py-2 font-extrabold lg:leading-tight xl:leading-tight">
                 Minor Degree in <br />
                 Advanced Web Development
                 <span className="text-indigo-500">.</span>
               </h1>
-              <p className="max-w-3xl font-mono mx-auto pr-4 text-base lg:text-lg text-white">
+              <p className="max-w-3xl font-mono mx-auto pr-4 pt-4 text-base lg:text-lg text-white">
                 The Minor Degree in Advanced Web Development Curriculum is
                 approved by All India Council for Technical Education (AICTE)
                 under the National Educational Alliance for Technology (NEAT)
@@ -157,7 +160,7 @@ export default function Home() {
           </div>
         </section>
         <section className="px-4 xl:mx-0 pb-10 md:pb-16 bg-gray-900">
-          <div className="bg-gradient-to-br from-gray-800 to-gray-900 rounded-3xl border border-gray-700 relative shadow-lg max-w-7xl 2xl:max-w-8xl mx-auto">
+          <div className="bg-gradient-to-br from-gray-800 to-gray-900 rounded-3xl border border-gray-700 relative shadow-lg max-w-6xl 2xl:max-w-7xl mx-auto">
             <div className="flex space-y-4 md:space-y-0 flex-col md:flex-row justify-between text-white">
               <div className="md:w-8/12 p-4 lg:p-10">
                 <h2 className="text-xl md:text-3xl text-primary-500">
@@ -167,8 +170,15 @@ export default function Home() {
                   India’s leading Software as a Service company
                 </p>
                 <p className="mt-4 font-mono text-sm md:text-base lg:text-lg">
-                  Pupilfirst along with along with Freshworks (NASDAQ:FRSH),
-                  India’s leader in Software as a Service (SaaS) industry,
+                  Pupilfirst along with along with Freshworks (
+                  <a
+                    className="font-semibold text-indigo-400 underline hover:bg-indigo-900 hover:bg-opacity-50 transition"
+                    href="https://www.freshworks.com/day-zero-for-freshworks-blog/"
+                    target="_blank"
+                  >
+                    NASDAQ:FRSH
+                  </a>
+                  ), India’s leader in Software as a Service (SaaS) industry,
                   designed the curriculum for a minor degree in web development.
                 </p>
                 <p className="mt-4 font-mono text-sm md:text-base lg:text-lg">
@@ -205,19 +215,19 @@ export default function Home() {
         </section>
 
         <section className="relative bg-gray-900 border-t border-gray-700">
-          <div className="max-w-7xl 2xl:max-w-8xl mx-auto">
+          <div className="max-w-6xl 2xl:max-w-7xl  mx-auto">
             <div className="border-l border-gray-700 mx-4 xl:mx-0">
               <div className="lg:grid lg:grid-cols-12 lg:gap-12 2xl:gap-5 px-0 pb-10 lg:pb-20">
                 <div className="lg:col-span-7 2xl:col-span-8">
                   <div className="pt-10 lg:pt-20">
                     <div className="heading-with-leftborder">
-                      <h2 className="max-w-5xl font-bold text-2xl lg:text-6xl text-primary-500 leading-snug lg:ml-24 2xl:ml-32 pl-4">
+                      <h2 className="max-w-5xl font-bold text-2xl lg:text-6xl text-primary-500 leading-snug lg:ml-8 xl:ml-11 2xl:ml-32 pl-4">
                         Everything you
                         <br /> need to know
                       </h2>
                     </div>
                   </div>
-                  <div className="space-y-6 md:space-y-12 md:pr-12 pt-4 md:pt-10 text-white ml-4 lg:ml-28 2xl:ml-36">
+                  <div className="space-y-6 md:space-y-12 md:pr-12 pt-4 md:pt-10 text-white ml-4 lg:ml-12 xl:ml-16 2xl:ml-36">
                     <div>
                       <h3 className="heading-with-underscore text-xl lg:text-2xl text-indigo-400 font-semibold">
                         What is this program?
@@ -465,7 +475,7 @@ export default function Home() {
         </section>
 
         <section className="bg-gray-800 border-t border-b border-gray-700 mx-auto relative">
-          <div className=" max-w-7xl 2xl:max-w-8xl mx-auto">
+          <div className="max-w-6xl 2xl:max-w-7xl mx-auto">
             <div className="border-l border-gray-700 mx-4 xl:mx-0">
               <div className="pt-10 lg:pt-20">
                 <div className="heading-with-leftborder">
@@ -510,6 +520,24 @@ export default function Home() {
                 <div className="space-y-10 sm:space-y-0 sm:grid sm:grid-cols-3 sm:gap-4 md:gap-8 lg:gap-12 py-12 lg:pb-16">
                   <ImageWithDescription
                     name="Hari Gopal"
+                    githuburl={
+                      <a
+                        className="inline-flex text-gray-300 hover:text-indigo-400 transition"
+                        href="https://github.com/harigopal"
+                        target="_blank"
+                      >
+                        <svg
+                          xmlns="http://www.w3.org/2000/svg"
+                          width="16"
+                          height="16"
+                          fill="currentColor"
+                          class="w-6 h-6"
+                          viewBox="0 0 16 16"
+                        >
+                          <path d="M8 0C3.58 0 0 3.58 0 8c0 3.54 2.29 6.53 5.47 7.59.4.07.55-.17.55-.38 0-.19-.01-.82-.01-1.49-2.01.37-2.53-.49-2.69-.94-.09-.23-.48-.94-.82-1.13-.28-.15-.68-.52-.01-.53.63-.01 1.08.58 1.23.82.72 1.21 1.87.87 2.33.66.07-.52.28-.87.51-1.07-1.78-.2-3.64-.89-3.64-3.95 0-.87.31-1.59.82-2.15-.08-.2-.36-1.02.08-2.12 0 0 .67-.21 2.2.82.64-.18 1.32-.27 2-.27.68 0 1.36.09 2 .27 1.53-1.04 2.2-.82 2.2-.82.44 1.1.16 1.92.08 2.12.51.56.82 1.27.82 2.15 0 3.07-1.87 3.75-3.65 3.95.29.25.54.73.54 1.48 0 1.07-.01 1.93-.01 2.2 0 .21.15.46.55.38A8.012 8.012 0 0 0 16 8c0-4.42-3.58-8-8-8z" />
+                        </svg>
+                      </a>
+                    }
                     caption={<p>Chief Technology Officer, Pupilfirst</p>}
                     role={
                       <p className="font-mono tracking-tight leading-snug text-white mt-3">
@@ -523,6 +551,24 @@ export default function Home() {
                   />
                   <ImageWithDescription
                     name="Prashanth Reddy Koteru"
+                    githuburl={
+                      <a
+                        className="inline-flex text-gray-300 hover:text-indigo-400 transition"
+                        href="https://github.com/prashanth726"
+                        target="_blank"
+                      >
+                        <svg
+                          xmlns="http://www.w3.org/2000/svg"
+                          width="16"
+                          height="16"
+                          fill="currentColor"
+                          class="w-6 h-6"
+                          viewBox="0 0 16 16"
+                        >
+                          <path d="M8 0C3.58 0 0 3.58 0 8c0 3.54 2.29 6.53 5.47 7.59.4.07.55-.17.55-.38 0-.19-.01-.82-.01-1.49-2.01.37-2.53-.49-2.69-.94-.09-.23-.48-.94-.82-1.13-.28-.15-.68-.52-.01-.53.63-.01 1.08.58 1.23.82.72 1.21 1.87.87 2.33.66.07-.52.28-.87.51-1.07-1.78-.2-3.64-.89-3.64-3.95 0-.87.31-1.59.82-2.15-.08-.2-.36-1.02.08-2.12 0 0 .67-.21 2.2.82.64-.18 1.32-.27 2-.27.68 0 1.36.09 2 .27 1.53-1.04 2.2-.82 2.2-.82.44 1.1.16 1.92.08 2.12.51.56.82 1.27.82 2.15 0 3.07-1.87 3.75-3.65 3.95.29.25.54.73.54 1.48 0 1.07-.01 1.93-.01 2.2 0 .21.15.46.55.38A8.012 8.012 0 0 0 16 8c0-4.42-3.58-8-8-8z" />
+                        </svg>
+                      </a>
+                    }
                     caption={<p>Coach-Web Development, Pupilfirst</p>}
                     role={
                       <p className="font-mono tracking-tight leading-snug text-white mt-3">
@@ -535,6 +581,24 @@ export default function Home() {
                   />
                   <ImageWithDescription
                     name="Mahesh Krishna Kumar"
+                    githuburl={
+                      <a
+                        className="inline-flex text-gray-300 hover:text-indigo-400 transition"
+                        href="https://github.com/mahesh-krishnakumar"
+                        target="_blank"
+                      >
+                        <svg
+                          xmlns="http://www.w3.org/2000/svg"
+                          width="16"
+                          height="16"
+                          fill="currentColor"
+                          class="w-6 h-6"
+                          viewBox="0 0 16 16"
+                        >
+                          <path d="M8 0C3.58 0 0 3.58 0 8c0 3.54 2.29 6.53 5.47 7.59.4.07.55-.17.55-.38 0-.19-.01-.82-.01-1.49-2.01.37-2.53-.49-2.69-.94-.09-.23-.48-.94-.82-1.13-.28-.15-.68-.52-.01-.53.63-.01 1.08.58 1.23.82.72 1.21 1.87.87 2.33.66.07-.52.28-.87.51-1.07-1.78-.2-3.64-.89-3.64-3.95 0-.87.31-1.59.82-2.15-.08-.2-.36-1.02.08-2.12 0 0 .67-.21 2.2.82.64-.18 1.32-.27 2-.27.68 0 1.36.09 2 .27 1.53-1.04 2.2-.82 2.2-.82.44 1.1.16 1.92.08 2.12.51.56.82 1.27.82 2.15 0 3.07-1.87 3.75-3.65 3.95.29.25.54.73.54 1.48 0 1.07-.01 1.93-.01 2.2 0 .21.15.46.55.38A8.012 8.012 0 0 0 16 8c0-4.42-3.58-8-8-8z" />
+                        </svg>
+                      </a>
+                    }
                     caption={<p>Full-stack developer, Pupilfirst</p>}
                     role={
                       <p className="font-mono tracking-tight leading-snug text-white mt-3">
@@ -547,6 +611,24 @@ export default function Home() {
                   />
                   <ImageWithDescription
                     name="Bodhish Thomas"
+                    githuburl={
+                      <a
+                        className="inline-flex text-gray-300 hover:text-indigo-400 transition"
+                        href="https://github.com/bodhish"
+                        target="_blank"
+                      >
+                        <svg
+                          xmlns="http://www.w3.org/2000/svg"
+                          width="16"
+                          height="16"
+                          fill="currentColor"
+                          class="w-6 h-6"
+                          viewBox="0 0 16 16"
+                        >
+                          <path d="M8 0C3.58 0 0 3.58 0 8c0 3.54 2.29 6.53 5.47 7.59.4.07.55-.17.55-.38 0-.19-.01-.82-.01-1.49-2.01.37-2.53-.49-2.69-.94-.09-.23-.48-.94-.82-1.13-.28-.15-.68-.52-.01-.53.63-.01 1.08.58 1.23.82.72 1.21 1.87.87 2.33.66.07-.52.28-.87.51-1.07-1.78-.2-3.64-.89-3.64-3.95 0-.87.31-1.59.82-2.15-.08-.2-.36-1.02.08-2.12 0 0 .67-.21 2.2.82.64-.18 1.32-.27 2-.27.68 0 1.36.09 2 .27 1.53-1.04 2.2-.82 2.2-.82.44 1.1.16 1.92.08 2.12.51.56.82 1.27.82 2.15 0 3.07-1.87 3.75-3.65 3.95.29.25.54.73.54 1.48 0 1.07-.01 1.93-.01 2.2 0 .21.15.46.55.38A8.012 8.012 0 0 0 16 8c0-4.42-3.58-8-8-8z" />
+                        </svg>
+                      </a>
+                    }
                     caption={<>Full-stack developer, Pupilfirst</>}
                     role={
                       <p className="font-mono tracking-tight leading-snug text-white mt-3">
@@ -559,6 +641,24 @@ export default function Home() {
                   />
                   <ImageWithDescription
                     name="Bellam Vamsi Krishna"
+                    githuburl={
+                      <a
+                        className="inline-flex text-gray-300 hover:text-indigo-400 transition"
+                        href="https://github.com/vamsikri-hash"
+                        target="_blank"
+                      >
+                        <svg
+                          xmlns="http://www.w3.org/2000/svg"
+                          width="16"
+                          height="16"
+                          fill="currentColor"
+                          class="w-6 h-6"
+                          viewBox="0 0 16 16"
+                        >
+                          <path d="M8 0C3.58 0 0 3.58 0 8c0 3.54 2.29 6.53 5.47 7.59.4.07.55-.17.55-.38 0-.19-.01-.82-.01-1.49-2.01.37-2.53-.49-2.69-.94-.09-.23-.48-.94-.82-1.13-.28-.15-.68-.52-.01-.53.63-.01 1.08.58 1.23.82.72 1.21 1.87.87 2.33.66.07-.52.28-.87.51-1.07-1.78-.2-3.64-.89-3.64-3.95 0-.87.31-1.59.82-2.15-.08-.2-.36-1.02.08-2.12 0 0 .67-.21 2.2.82.64-.18 1.32-.27 2-.27.68 0 1.36.09 2 .27 1.53-1.04 2.2-.82 2.2-.82.44 1.1.16 1.92.08 2.12.51.56.82 1.27.82 2.15 0 3.07-1.87 3.75-3.65 3.95.29.25.54.73.54 1.48 0 1.07-.01 1.93-.01 2.2 0 .21.15.46.55.38A8.012 8.012 0 0 0 16 8c0-4.42-3.58-8-8-8z" />
+                        </svg>
+                      </a>
+                    }
                     caption={<>Assistant Coach - Web Development, Pupilfirst</>}
                     role={
                       <p className="font-mono tracking-tight leading-snug text-white mt-3">
@@ -578,7 +678,7 @@ export default function Home() {
         </section>
 
         <section>
-          <div className="max-w-7xl 2xl:max-w-8xl mx-auto">
+          <div className="max-w-6xl 2xl:max-w-7xl mx-auto">
             <div className="border-l border-gray-700 mx-4 xl:mx-0 py-10 lg:py-16">
               <div className="heading-with-leftborder">
                 <h2 className="max-w-5xl font-bold text-2xl text-primary-500 lg:text-6xl leading-tight ml-4 lg:mx-auto">
@@ -666,7 +766,7 @@ export default function Home() {
               </div>
             </div>
           </div>
-          <div className="max-w-7xl 2xl:max-w-8xl mx-auto">
+          <div className="max-w-6xl 2xl:max-w-7xl mx-auto">
             <div className="border-l border-gray-700 mx-4 xl:mx-0 pt-10 lg:pt-16">
               <div className="heading-with-leftborder">
                 <h2 className="max-w-5xl font-bold text-primary-500 text-2xl lg:text-6xl leading-tight ml-4 lg:mx-auto">
@@ -676,10 +776,18 @@ export default function Home() {
               <div className="max-w-5xl mx-auto pl-4 lg:pl-0">
                 <div className="max-w-3xl font-mono tracking-tight space-y-6 text-white ">
                   <p className="mt-4 lg:text-lg">
-                    AICTE expert committee has approved the curriculum created
-                    jointly by Pupilfirst and Freshworks that enables
-                    institutions to offer advanced web development courses using
-                    typed functional programming.
+                    The All India Council for Technical Education has approved
+                    the curriculum created jointly by Pupilfirst and Freshworks
+                    that enables{" "}
+                    <a
+                      className="font-semibold text-indigo-400 underline hover:bg-indigo-900 hover:bg-opacity-50 transition"
+                      target="_blank"
+                      ahref="https://lite.pupilfirst.org/"
+                    >
+                      LITE approved institutions
+                    </a>{" "}
+                    to offer advanced web development courses using typed
+                    functional programming.
                   </p>
                   <p className="mt-4 lg:text-lg">
                     Most modern programming languages widely used in the
@@ -696,21 +804,21 @@ export default function Home() {
               </div>
             </div>
           </div>
-          <div className="max-w-7xl 2xl:max-w-8xl mx-auto">
+          <div className="max-w-6xl 2xl:max-w-7xl mx-auto">
             <div className="border-l border-gray-700 mx-4 xl:mx-0 py-10 lg:py-16">
               <div className="heading-with-leftborder">
-                <h2 className="max-w-7xl mx-auto lg:ml-32 2xl:ml-32 2xl:pl-0 font-bold text-2xl text-primary-500 lg:text-6xl leading-tight ml-4 lg:mx-auto">
+                <h2 className="max-w-6xl 2xl:max-w-7xl mx-auto lg:ml-8 xl:ml-12 px-4 2xl:ml-32 2xl:pl-0 font-bold text-2xl text-primary-500 lg:text-6xl leading-tight ml-4 lg:mx-auto">
                   Gain Professional Skills
                 </h2>
               </div>
-              <div className="max-w-7xl mx-auto lg:ml-28 2xl:ml-32 pl-4 2xl:pl-0">
+              <div className="max-w-6xl 2xl:max-w-7xl mx-auto lg:ml-8 xl:ml-12 2xl:ml-32 pl-4 2xl:pl-0">
                 <div className="max-w-3xl space-y-6 text-white ">
                   <p className="mt-4 font-mono tracking-tight lg:text-lg">
                     The courses are arranged to enable you to gain professional
                     skills used everyday in the web development industry.
                   </p>
                 </div>
-                <div className="lg:grid grid-cols-12 gap-x-10 gap-y-64 lg:pt-32 relative">
+                <div className="lg:grid grid-cols-12 gap-x-10 gap-y-32 2xl:gap-y-64 lg:pt-32 relative">
                   <div className="col-span-6 text-white pt-10 lg:pt-24">
                     <p className="text-gray-400 font-semibold">
                       A good web developer is...
@@ -822,7 +930,7 @@ export default function Home() {
         </section>
 
         <section className="bg-gray-800 border-t border-b border-gray-700 mx-auto relative">
-          <div className="max-w-7xl 2xl:max-w-8xl mx-auto">
+          <div className="max-w-6xl 2xl:max-w-7xl mx-auto">
             <div className="border-l border-gray-700 mx-4 xl:mx-0 py-10 lg:py-16">
               <div className="heading-with-leftborder">
                 <h2 className="max-w-5xl font-bold text-primary-500 text-2xl lg:text-6xl lg:leading-tight ml-4 lg:mx-auto">
@@ -856,7 +964,7 @@ export default function Home() {
         </section>
 
         <section className="mx-auto relative">
-          <div className="max-w-7xl 2xl:max-w-8xl mx-auto">
+          <div className="max-w-6xl 2xl:max-w-7xl mx-auto">
             <div className="border-l border-gray-700 mx-4 xl:mx-0 py-10 lg:py-16">
               <div className="heading-with-leftborder">
                 <h2 className="max-w-5xl font-bold text-primary-500 text-2xl lg:text-6xl lg:leading-tight ml-4 lg:mx-auto">
@@ -894,7 +1002,7 @@ export default function Home() {
         </section>
 
         <section className="mx-auto relative">
-          <div className="max-w-7xl 2xl:max-w-8xl mx-auto">
+          <div className="max-w-6xl 2xl:max-w-7xl mx-auto">
             <div className="border-l border-gray-700 mx-4 xl:mx-0 py-10 lg:py-16">
               <div className="heading-with-leftborder">
                 <h2 className="max-w-5xl font-bold text-primary-500 text-2xl lg:text-6xl lg:leading-tight ml-4 lg:mx-auto">
@@ -1094,7 +1202,7 @@ export default function Home() {
         </section>
 
         <section className="mx-auto relative">
-          <div className="max-w-7xl 2xl:max-w-8xl mx-auto">
+          <div className="max-w-6xl 2xl:max-w-7xl mx-auto">
             <div className="border-l border-gray-700 mx-4 xl:mx-0 py-10 lg:py-16">
               <div className="heading-with-leftborder">
                 <h2 className="max-w-5xl font-bold text-primary-500 text-2xl lg:text-6xl lg:leading-tight ml-4 lg:mx-auto">
@@ -1131,7 +1239,7 @@ export default function Home() {
         </section>
 
         <section className="mx-auto relative">
-          <div className="max-w-7xl 2xl:max-w-8xl mx-auto">
+          <div className="max-w-6xl 2xl:max-w-7xl mx-auto">
             <div className="border-l border-gray-700 mx-4 xl:mx-0 py-10 lg:py-16">
               <div className="heading-with-leftborder">
                 <h2 className="max-w-5xl font-bold text-primary-500 text-2xl lg:text-6xl lg:leading-tight ml-4 lg:mx-auto">
@@ -1161,7 +1269,7 @@ export default function Home() {
         </section>
 
         <section className="mx-auto relative">
-          <div className="max-w-7xl 2xl:max-w-8xl mx-auto">
+          <div className="max-w-6xl 2xl:max-w-7xl mx-auto">
             <div className="border-l border-gray-700 mx-4 xl:mx-0 py-10 lg:py-16">
               <div className="heading-with-leftborder">
                 <h2 className="max-w-5xl font-bold text-primary-500 text-2xl lg:text-6xl lg:leading-tight ml-4 lg:mx-auto">
@@ -1197,8 +1305,9 @@ export default function Home() {
                   </svg>
                 </a>
                 <a
-                  href="/"
-                  className="inline-flex justify-between items-center space-x-4 mt-12 w-full p-4 bg-gradient-to-r from-primary-500 to-primary-600 rounded-lg text-lg font-semibold shadow-lg hover:underline hover:shadow-xl transition "
+                  href="https://docs.google.com/document/d/e/2PACX-1vQAWmQAJwBVVW40phmsR_A3iZQBEw0nK9vF_L8kIsBfCc_79ERcdVfpjsolloUymkLST7NU1se3Jy40/pub"
+                  target="_blank"
+                  className="inline-flex justify-between items-center space-x-4 mt-12 w-full p-4 bg-gradient-to-r from-primary-500 to-primary-600 hover:from-primary-600 hover:to-primary-400 rounded-lg text-lg font-semibold shadow-lg hover:underline hover:shadow-xl transition "
                 >
                   <span>Frequently Asked Questions</span>
                   <svg
