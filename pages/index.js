@@ -362,8 +362,8 @@ export default function Home() {
                         </p>
                       </div>
                       <div className="flex flex-col mt-8">
-                        <div className="ml-8 shadow border-b border-gray-700 sm:rounded-lg">
-                          <table className="table-auto border border-gray-800 rounded-lg shadow-lg">
+                        <div className="ml-8 shadow border-gray-700 sm:rounded-lg">
+                          <table className="table-auto overflow-hidden border border-gray-800 rounded-lg shadow-lg">
                             <thead className="rounded-t-lg bg-gradient-to-r from-gray-700 to-gray-800 border-b border-gray-700">
                               <tr>
                                 <th
