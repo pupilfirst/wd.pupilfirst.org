@@ -164,13 +164,13 @@ export default function Home() {
             <div className="flex space-y-4 md:space-y-0 flex-col md:flex-row justify-between text-white">
               <div className="md:w-8/12 p-4 lg:p-10">
                 <h2 className="text-xl md:text-3xl text-primary-500">
-                  Supported by Freshworks
+                  Co-created by Freshworks
                 </h2>
                 <p className="mt-4 font-mono text-sm md:text-base lg:text-lg">
                   India’s leading Software as a Service company
                 </p>
                 <p className="mt-4 font-mono text-sm md:text-base lg:text-lg">
-                  Pupilfirst along with along with Freshworks (
+                  Pupilfirst along with Freshworks (
                   <a
                     className="font-semibold text-indigo-400 underline hover:bg-indigo-900 hover:bg-opacity-50 transition"
                     href="https://www.freshworks.com/day-zero-for-freshworks-blog/"
@@ -182,11 +182,10 @@ export default function Home() {
                   designed the curriculum for a minor degree in web development.
                 </p>
                 <p className="mt-4 font-mono text-sm md:text-base lg:text-lg">
-                  Freshworks enabled the creation of curriculum from its own
-                  internal training programme for computer science students with
-                  an intent to create a pathway for students from all
-                  engineering disciplines to find a pathway into the global web
-                  development industry.
+                  
+                This course was initially created based on Freshworks’ internal training program for their new employees, 
+                 and is continuously updated to meet student’s requirements and changing industry demands. 
+                The intent of this course is to create a pathway for students from all engineering disciplines to the global web development industry.
                 </p>
                 <p class="mt-4 text-sm md:text-base">
                   Learn More at:{" "}
@@ -398,10 +397,11 @@ export default function Home() {
                                   1
                                 </td>
                                 <td className="px-4 py-4 lg:whitespace-nowrap text-sm">
-                                  Web Development 101
+                                  Web Development 101 (Getting started with Javascript) 
+                                   
                                 </td>
-                                <td className="px-4 py-4 lg:whitespace-nowrap text-sm">
-                                  -
+                                <td className="px-4 py-4 lg:whitespace-nowrap text-sm rowspan="2">
+                                  10,000
                                 </td>
                               </tr>
 
@@ -410,10 +410,10 @@ export default function Home() {
                                   2
                                 </td>
                                 <td className="px-4 py-4 lg:whitespace-nowrap text-sm">
-                                  Web Development 201
+                                  Web Development 201 (Server-side programming with Ruby on Rails)
                                 </td>
                                 <td className="px-4 py-4 lg:whitespace-nowrap text-sm">
-                                  10,000
+                                  
                                 </td>
                               </tr>
 
