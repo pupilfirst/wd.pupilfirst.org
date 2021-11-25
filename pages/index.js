@@ -120,14 +120,14 @@ export default function Home() {
                 approved by All India Council for Technical Education (AICTE)
                 under the National Educational Alliance for Technology (NEAT)
                 programme of the Ministry of Education, Government of India.
-                This degree can be opted for and pursued by students who are
+                This can be opted for and pursued by students who are
                 enrolled in the Institutes selected as part of the Batch 1 of
                 LITE programme.
               </p>
               <div className="pt-4 md:pt-8">
                 <div>
                   <a
-                    href="#"
+                    href="https://docs.google.com/document/d/e/2PACX-1vQj8aeoRfOHYlOALcUt4mWmFefHAeGtKd5eu6SQDHOaDfckGkBDFz8JrtEiLZmGX-KyFyaDMLdCDkTL/pub"
                     target="_blank"
                     className="inline-flex space-x-3 p-3 lg:px-6 lg:py-3.5 text-white bg-indigo-600 rounded-md text-base lg:text-lg text-center font-semibold shadow-lg hover:shadow-xl focus:ring-2 focus:ring-indigo-400 focus:ring-offset-2 transition "
                   >
@@ -265,7 +265,7 @@ export default function Home() {
                       <p className="ml-8 font-mono tracking-tight mt-2 pt-1 lg:text-lg ">
                         This programme is available for students from Institutes
                         whose faculty coordinator has completed the faculty
-                        training. These Institutes are amongst the first batch
+                        training requirements. These Institutes are amongst the first batch
                         of{" "}
                         <a
                           className="font-semibold text-indigo-400 underline hover:bg-indigo-900 hover:bg-opacity-50 transition"
@@ -278,7 +278,7 @@ export default function Home() {
                         Excellence (LITE) program.
                       </p>
                       <p className="ml-8 font-mono tracking-tight mt-2 pt-1 lg:text-lg ">
-                        Within these 50 institutions , students can apply based
+                        Within these institutions, students can apply based
                         on the Minor Degree format implemented in their
                         respective Institute. Check with your LITE faculty
                         coordinator for more information.
@@ -289,7 +289,7 @@ export default function Home() {
                         When?
                       </h3>
                       <p className="ml-8 font-mono tracking-tight mt-2 pt-1 lg:text-lg ">
-                        From your next academic semester. Contact the faculty
+                        You can enrol from your next academic semester. Contact the faculty
                         coordinator from your Institute for further details.
                       </p>
                     </div>
@@ -298,7 +298,7 @@ export default function Home() {
                         Credits?
                       </h3>
                       <p className="ml-8 font-mono tracking-tight mt-2 pt-1 lg:text-lg ">
-                        The minor degree in advanced web development has three
+                        The minor degree in advanced web development has 3
                         courses and a minor project adding upto 20 credits.
                       </p>
                     </div>
@@ -345,7 +345,7 @@ export default function Home() {
                         from your university along with the Major Degree you are
                         pursuing (eg: B.Tech/BE in Electronics with Minor in
                         Advanced Web Development). In addition you will also
-                        receive course completion certificates on completing
+                        receive course completion certificates from Pupilfirst on completing
                         respective courses in the minor track.
                       </p>
                     </div>
@@ -672,10 +672,12 @@ export default function Home() {
                     caption={<>Assistant Coach - Web Development, Pupilfirst</>}
                     role={
                       <p className="font-mono tracking-tight leading-snug text-white mt-3">
-                        Vamsi completed the WD 201 course at SASTRA University
-                        in 2019, and is currently interning at a prominent
-                        software development firm in Chennai. He has also been a
-                        teaching assistant for web development courses, starting
+                        Vamsi has been a Teaching Assistant for Web Development courses offered by Pupilfirst 
+                        for over two years after completing the courses successfully as a student. 
+                        He is currently working at Hottinger Brüel & Kjær (HBK) as an Engineering Trainee. 
+                        His interest mostly lies in the area of full stack web development. 
+                        He likes to learn and explore more parts of web development.
+
                         from 2020.
                       </p>
                     }
@@ -1296,7 +1298,7 @@ export default function Home() {
                   </p>
                 </div>
                 <a
-                  href="/"
+                  href="https://docs.google.com/document/d/e/2PACX-1vSVFaCSJp9_NuHFBlMfQJxwa_S8Da1cxVbaQFfxOQ01PvoX8JVa86iAMn6p3ukGo4cGRNWFrFUdDoc1/pub"
                   className="inline-flex items-center space-x-4 mt-4 w-full py-3 text-indigo-400 rounded-md text-lg font-semibold hover:underline hover:shadow-xl transition "
                 >
                   <span>See list of institutions</span>
