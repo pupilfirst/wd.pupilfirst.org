@@ -120,9 +120,9 @@ export default function Home() {
                 approved by All India Council for Technical Education (AICTE)
                 under the National Educational Alliance for Technology (NEAT)
                 programme of the Ministry of Education, Government of India.
-                This can be opted for and pursued by students who are
-                enrolled in the Institutes selected as part of the Batch 1 of
-                LITE programme.
+                This can be opted for and pursued by students who are enrolled
+                in the Institutes selected as part of the Batch 1 of LITE
+                programme.
               </p>
               <div className="pt-4 md:pt-8">
                 <div>
@@ -146,7 +146,7 @@ export default function Home() {
                 </div>
               </div>
             </div>
-            <div className="col-span-6 px-8 py-12 lg:pt-0 pb-12"> 
+            <div className="col-span-6 px-8 py-12 lg:pt-0 pb-12">
               <img className="w-full" src="hero/hero-student.svg" alt="" />
             </div>
           </div>
@@ -182,10 +182,12 @@ export default function Home() {
                   designed the curriculum for a minor degree in web development.
                 </p>
                 <p className="mt-4 font-mono text-sm md:text-base lg:text-lg">
-                  
-                This course was initially created based on Freshworks’ internal training program for their new employees, 
-                 and is continuously updated to meet student’s requirements and changing industry demands. 
-                The intent of this course is to create a pathway for students from all engineering disciplines to the global web development industry.
+                  This course was initially created based on Freshworks’
+                  internal training program for their new employees, and is
+                  continuously updated to meet student’s requirements and
+                  changing industry demands. The intent of this course is to
+                  create a pathway for students from all engineering disciplines
+                  to the global web development industry.
                 </p>
                 <p class="mt-4 text-sm md:text-base">
                   Learn More at:{" "}
@@ -226,7 +228,7 @@ export default function Home() {
         <section className="relative bg-gray-900 border-t border-gray-700">
           <div className="max-w-6xl 2xl:max-w-7xl  mx-auto">
             <div className="border-l border-gray-700 mx-4 xl:mx-0">
-              <div className="lg:grid lg:grid-cols-12 lg:gap-12 2xl:gap-5 px-0 pb-10 lg:pb-20">
+              <div className="lg:grid lg:grid-cols-12 lg:gap-12 2xl:gap-5 px-0 pb-8">
                 <div className="lg:col-span-7 2xl:col-span-8">
                   <div className="pt-10 lg:pt-20">
                     <div className="heading-with-leftborder">
@@ -236,7 +238,7 @@ export default function Home() {
                       </h2>
                     </div>
                   </div>
-                  <div className="space-y-6 md:space-y-12 md:pr-12 pt-4 md:pt-10 text-white ml-4 lg:ml-12 xl:ml-16 2xl:ml-36">
+                  <div className="space-y-6 md:space-y-12 md:pr-12 pt-4 md:pt-10 text-white ml-2 md:ml-4 lg:ml-12 xl:ml-16 2xl:ml-36">
                     <div>
                       <h3 className="heading-with-underscore text-xl lg:text-2xl text-indigo-400 font-semibold">
                         What is this program?
@@ -264,8 +266,8 @@ export default function Home() {
                       <p className="ml-8 font-mono tracking-tight mt-2 pt-1 lg:text-lg ">
                         This programme is available for students from Institutes
                         whose faculty coordinator has completed the faculty
-                        training requirements. These Institutes are amongst the first batch
-                        of{" "}
+                        training requirements. These Institutes are amongst the
+                        first batch of{" "}
                         <a
                           className="font-semibold text-indigo-400 underline hover:bg-indigo-900 hover:bg-opacity-50 transition"
                           href="https://lite.pupilfirst.org/ay-2021-22"
@@ -277,10 +279,10 @@ export default function Home() {
                         Excellence (LITE) program.
                       </p>
                       <p className="ml-8 font-mono tracking-tight mt-2 pt-1 lg:text-lg ">
-                        Within these institutions, students can apply based
-                        on the Minor Degree format implemented in their
-                        respective Institute. Check with your LITE faculty
-                        coordinator for more information.
+                        Within these institutions, students can apply based on
+                        the Minor Degree format implemented in their respective
+                        Institute. Check with your LITE faculty coordinator for
+                        more information.
                       </p>
                     </div>
                     <div>
@@ -288,8 +290,9 @@ export default function Home() {
                         When?
                       </h3>
                       <p className="ml-8 font-mono tracking-tight mt-2 pt-1 lg:text-lg ">
-                        You can enrol from your next academic semester. Contact the faculty
-                        coordinator from your Institute for further details.
+                        You can enrol from your next academic semester. Contact
+                        the faculty coordinator from your Institute for further
+                        details.
                       </p>
                     </div>
                     <div>
@@ -344,94 +347,9 @@ export default function Home() {
                         from your university along with the Major Degree you are
                         pursuing (eg: B.Tech/BE in Electronics with Minor in
                         Advanced Web Development). In addition you will also
-                        receive course completion certificates from Pupilfirst on completing
-                        respective courses in the minor track.
+                        receive course completion certificates from Pupilfirst
+                        on completing respective courses in the minor track.
                       </p>
-                    </div>
-                    <div>
-                      <h3 className="heading-with-underscore text-xl lg:text-2xl text-indigo-400 font-semibold">
-                        Cost?
-                      </h3>
-                      <div className="ml-8 font-mono tracking-tight pt-1 lg:text-lg ">
-                        <p>
-                          The AICTE (NEAT) approved course fees are mentioned
-                          below. You can contact the faculty coordinator of your
-                          institute to understand the schedules of payment to be
-                          made.
-                        </p>
-                      </div>
-                      <div className="flex flex-col mt-8">
-                        <div className="ml-8 shadow border-gray-700 sm:rounded-lg">
-                          <table className="table-auto overflow-hidden border border-gray-800 rounded-lg shadow-lg">
-                            <thead className="rounded-t-lg bg-gradient-to-r from-gray-700 to-gray-800 border-b border-gray-700">
-                              <tr>
-                                <th
-                                  scope="col"
-                                  className="px-4 py-3 text-left text-xs font-medium text-gray-100 uppercase tracking-wider"
-                                >
-                                  S. No
-                                </th>
-                                <th
-                                  scope="col"
-                                  className="px-4 py-3 text-left text-xs font-medium text-gray-100 uppercase tracking-wider"
-                                >
-                                  Course Name
-                                </th>
-                                <th
-                                  scope="col"
-                                  className="px-4 py-3 text-left text-xs font-medium text-gray-100 uppercase tracking-wider"
-                                >
-                                  <span className="hidden lg:block">
-                                    AICTE approved course fee per student (in
-                                    Rs.)
-                                  </span>
-                                  <span className="block lg:hidden">
-                                    course fee per student (in Rs.)
-                                  </span>
-                                </th>
-                              </tr>
-                            </thead>
-                            <tbody className="bg-gradient-to-r from-gray-800 to-gray-900 text-gray-50">
-                              <tr className="font-mono">
-                                <td className="px-4 py-4 lg:whitespace-nowrap text-sm font-medium">
-                                  1
-                                </td>
-                                <td className="px-4 py-4 lg:whitespace-nowrap text-sm">
-                                  Web Development 101
-                                   
-                                </td>
-                                <td className="px-4 py-4 lg:whitespace-nowrap text-sm" rowspan="2">
-                                  10,000
-                                </td>
-                              </tr>
-
-                              <tr className="font-mono">
-                                <td className="px-4 py-4 lg:whitespace-nowrap text-sm font-medium">
-                                  2
-                                </td>
-                                <td className="px-4 py-4 lg:whitespace-nowrap text-sm">
-                                  Web Development 201
-                                </td>
-                                <td className="px-4 py-4 lg:whitespace-nowrap text-sm">
-                                  
-                                </td>
-                              </tr>
-
-                              <tr className="font-mono">
-                                <td className="px-4 py-4 lg:whitespace-nowrap text-sm font-medium">
-                                  3
-                                </td>
-                                <td className="px-4 py-4 lg:whitespace-nowrap text-sm">
-                                  Web Development 301
-                                </td>
-                                <td className="px-4 py-4 lg:whitespace-nowrap text-sm">
-                                  10,000
-                                </td>
-                              </tr>
-                            </tbody>
-                          </table>
-                        </div>
-                      </div>
                     </div>
                   </div>
                 </div>
@@ -478,6 +396,90 @@ export default function Home() {
                       </div>
                     </div>
                   </div>
+                </div>
+              </div>
+
+              <div className="flex flex-col mt-4 pb-10 lg:pb-20 ml-2 md:ml-4 lg:ml-12 xl:ml-16 2xl:ml-36">
+                <div>
+                  <h3 className="heading-with-underscore text-xl lg:text-2xl text-indigo-400 font-semibold">
+                    Cost?
+                  </h3>
+                  <div className="ml-8 max-w-4xl font-mono text-white tracking-tight pt-1 lg:text-lg ">
+                    <p>
+                      The AICTE (NEAT) approved course fees are mentioned below.
+                      You can contact the faculty coordinator of your institute
+                      to understand the schedules of payment to be made.
+                    </p>
+                  </div>
+                </div>
+                <div className="sm:rounded-lg md:ml-8 mt-8">
+                  <table className="table-auto w-full overflow-hidden border border-gray-800 shadow-lg">
+                    <thead className="bg-gradient-to-r from-primary-500 to-primary-600 text-gray-900 font-semibold">
+                      <tr className="border border-gray-500 text-xs">
+                        <th
+                          scope="col"
+                          className="p-2 md:px-6 md:py-3 text-left uppercase tracking-wider"
+                        >
+                          S. No
+                        </th>
+                        <th
+                          scope="col"
+                          className="p-2 md:px-6 md:py-3 text-left uppercase tracking-wider"
+                        >
+                          Course Name
+                        </th>
+                        <th
+                          scope="col"
+                          className="p-2 md:px-6 md:py-3 text-left uppercase tracking-wider"
+                        >
+                          <span className="hidden lg:block">
+                            AICTE approved course fee per student (in Rs.)
+                          </span>
+                          <span className="block lg:hidden">
+                            course fee per student (in Rs.)
+                          </span>
+                        </th>
+                      </tr>
+                    </thead>
+                    <tbody className="bg-gradient-to-r w-full from-gray-800 to-gray-900 text-gray-50">
+                      <tr className="font-mono bg-gray-700 bg-opacity-50 text-sm md:text-lg border border-gray-500">
+                        <td className="p-2 md:p-6 lg:whitespace-nowrap font-medium ">
+                          1
+                        </td>
+                        <td className="p-2 md:p-6 lg:whitespace-nowrap border-r border-gray-500">
+                          Web Development 101 (Getting Started with JavaScript)
+                        </td>
+                        <td
+                          className="p-2 md:p-6 lg:whitespace-nowrap border-r border-gray-500"
+                          rowspan="2"
+                        >
+                          10,000
+                        </td>
+                      </tr>
+
+                      <tr className="font-mono bg-gray-700 bg-opacity-50 text-sm md:text-lg border border-gray-500">
+                        <td className="p-2 md:p-6 lg:whitespace-nowrap font-medium ">
+                          2
+                        </td>
+                        <td className="p-2 md:p-6 lg:whitespace-nowrap border-r border-gray-500">
+                          Web Development 201 (Server-side programming with Ruby
+                          on Rails)
+                        </td>
+                      </tr>
+
+                      <tr className="font-mono text-sm md:text-lg">
+                        <td className="p-2 md:p-6 lg:whitespace-nowrap font-medium">
+                          3
+                        </td>
+                        <td className="p-2 md:p-6 lg:whitespace-nowrap">
+                          Web Development 301 (Typed Functional Programming)
+                        </td>
+                        <td className="p-2 md:p-6 lg:whitespace-nowrap">
+                          10,000
+                        </td>
+                      </tr>
+                    </tbody>
+                  </table>
                 </div>
               </div>
             </div>
@@ -672,13 +674,13 @@ export default function Home() {
                     caption={<>Assistant Coach - Web Development, Pupilfirst</>}
                     role={
                       <p className="font-mono tracking-tight leading-snug text-white mt-3">
-                        Vamsi has been a Teaching Assistant for Web Development courses offered by Pupilfirst 
-                        for over two years after completing the courses successfully as a student. 
-                        He is currently working at Hottinger Brüel & Kjær (HBK) as an Engineering Trainee. 
-                        His interest mostly lies in the area of full stack web development. 
-                        He likes to learn and explore more parts of web development.
-
-                        from 2020.
+                        Vamsi has been a Teaching Assistant for Web Development
+                        courses offered by Pupilfirst for over two years after
+                        completing the courses successfully as a student. He is
+                        currently working at Hottinger Brüel & Kjær (HBK) as an
+                        Engineering Trainee. His interest mostly lies in the
+                        area of full stack web development. He likes to learn
+                        and explore more parts of web development. from 2020.
                       </p>
                     }
                     imgSrc="people/bellam-vamsi.png"
@@ -792,9 +794,9 @@ export default function Home() {
                     the curriculum created jointly by Pupilfirst and Freshworks
                     that enables{" "}
                     <a
+                      href="https://lite.pupilfirst.org/"
                       className="font-semibold text-indigo-400 underline hover:bg-indigo-900 hover:bg-opacity-50 transition"
                       target="_blank"
-                      ahref="https://lite.pupilfirst.org/"
                     >
                       LITE approved institutions
                     </a>{" "}
