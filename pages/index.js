@@ -400,7 +400,7 @@ export default function Home() {
                                   Web Development 101 (Getting started with Javascript) 
                                    
                                 </td>
-                                <td className="px-4 py-4 lg:whitespace-nowrap text-sm rowspan="2">
+                                <td className="px-4 py-4 lg:whitespace-nowrap text-sm" rowspan="2">
                                   10,000
                                 </td>
                               </tr>
