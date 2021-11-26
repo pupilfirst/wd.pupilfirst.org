@@ -146,7 +146,7 @@ export default function Home() {
                 </div>
               </div>
             </div>
-            <div className="col-span-6 px-8 py-12 lg:pt-0 pb-12">
+            <div className="col-span-6 px-8 py-12 lg:pt-0 pb-12"> 
               <img className="w-full" src="hero/hero-student.svg" alt="" />
             </div>
           </div>
