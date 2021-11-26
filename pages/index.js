@@ -397,7 +397,7 @@ export default function Home() {
                                   1
                                 </td>
                                 <td className="px-4 py-4 lg:whitespace-nowrap text-sm">
-                                  Web Development 101 (Getting started with Javascript) 
+                                  Web Development 101
                                    
                                 </td>
                                 <td className="px-4 py-4 lg:whitespace-nowrap text-sm" rowspan="2">
@@ -410,7 +410,7 @@ export default function Home() {
                                   2
                                 </td>
                                 <td className="px-4 py-4 lg:whitespace-nowrap text-sm">
-                                  Web Development 201 (Server-side programming with Ruby on Rails)
+                                  Web Development 201
                                 </td>
                                 <td className="px-4 py-4 lg:whitespace-nowrap text-sm">
                                   
