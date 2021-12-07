@@ -680,10 +680,10 @@ export default function Home() {
                         currently working at Hottinger Brüel & Kjær (HBK) as an
                         Engineering Trainee. His interest mostly lies in the
                         area of full stack web development. He likes to learn
-                        and explore more parts of web development. from 2020.
+                        and explore more parts of web development. 
                       </p>
                     }
-                    imgSrc="people/bellam-vamsi.png"
+                    imgSrc="people/vamsi_bellam-1.jpeg"
                   />
                 </div>
               </div>
