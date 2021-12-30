@@ -1293,10 +1293,9 @@ export default function Home() {
               <div className="max-w-5xl mx-auto pl-4 lg:pl-0">
                 <div className="max-w-3xl space-y-6 text-white ">
                   <p className="mt-4 font-mono tracking-tight lg:text-lg">
-                    All students who are studying in 2nd year and above and wish
-                    to apply for the Minor Degree in Advanced Web Development
-                    may give their names directly to the LITE Faculty
-                    Coordinator at your institution.
+                    All students who wish to apply for the Minor Degree in Advanced Web Development
+                    may contact LITE Faculty
+                    Coordinator at their institution for details.
                   </p>
                 </div>
                 <a
