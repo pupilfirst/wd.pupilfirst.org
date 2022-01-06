@@ -485,6 +485,102 @@ export default function Home() {
             </div>
           </div>
         </section>
+%Reena
+
+<section className="bg-gray-800 border-t border-b border-gray-700 mx-auto relative">
+          <div className="max-w-6xl 2xl:max-w-7xl mx-auto">
+            <div className="border-l border-gray-700 mx-4 xl:mx-0">
+              <div className="pt-10 lg:pt-20">
+                <div className="heading-with-leftborder">
+                  <h2 className="max-w-5xl font-bold text-2xl lg:text-6xl text-primary-500 leading-tight ml-4 lg:mx-auto">
+                  Price
+                  </h2>
+                </div>
+              </div>
+
+              <div className="flex flex-col mt-4 pb-10 lg:pb-20 ml-2 md:ml-4 lg:ml-12 xl:ml-16 2xl:ml-36">
+                
+                  <div className="ml-8 max-w-4xl font-mono text-white tracking-tight pt-1 lg:text-lg ">
+                    <p>
+                      The AICTE (NEAT) approved course fees are mentioned below.
+                      You can contact the faculty coordinator of your institute
+                      to understand the schedules of payment to be made.
+                    </p>
+                  </div>
+          
+                <div className="sm:rounded-lg md:ml-8 mt-8">
+                  <table className="table-auto w-full overflow-hidden border border-gray-800 shadow-lg">
+                    <thead className="bg-gradient-to-r from-primary-500 to-primary-600 text-gray-900 font-semibold">
+                      <tr className="border border-gray-500 text-xs">
+                        <th
+                          scope="col"
+                          className="p-2 md:px-6 md:py-3 text-left uppercase tracking-wider"
+                        >
+                          S. No
+                        </th>
+                        <th
+                          scope="col"
+                          className="p-2 md:px-6 md:py-3 text-left uppercase tracking-wider"
+                        >
+                          Course Name
+                        </th>
+                        <th
+                          scope="col"
+                          className="p-2 md:px-6 md:py-3 text-left uppercase tracking-wider"
+                        >
+                          <span className="hidden lg:block">
+                            AICTE approved course fee per student (in Rs.)
+                          </span>
+                          <span className="block lg:hidden">
+                            course fee per student (in Rs.)
+                          </span>
+                        </th>
+                      </tr>
+                    </thead>
+                    <tbody className="bg-gradient-to-r w-full from-gray-800 to-gray-900 text-gray-50">
+                      <tr className="font-mono bg-gray-700 bg-opacity-50 text-sm md:text-lg border border-gray-500">
+                        <td className="p-2 md:p-6 lg:whitespace-nowrap font-medium ">
+                          1
+                        </td>
+                        <td className="p-2 md:p-6 lg:whitespace-nowrap border-r border-gray-500">
+                          Web Development 101 (Getting Started with JavaScript)
+                        </td>
+                        <td
+                          className="p-2 md:p-6 lg:whitespace-nowrap border-r border-gray-500"
+                          rowspan="2"
+                        >
+                          10,000
+                        </td>
+                      </tr>
+
+                      <tr className="font-mono bg-gray-700 bg-opacity-50 text-sm md:text-lg border border-gray-500">
+                        <td className="p-2 md:p-6 lg:whitespace-nowrap font-medium ">
+                          2
+                        </td>
+                        <td className="p-2 md:p-6 lg:whitespace-nowrap border-r border-gray-500">
+                          Web Development 201 (Server-side programming with Ruby
+                          on Rails)
+                        </td>
+                      </tr>
+
+                      <tr className="font-mono text-sm md:text-lg">
+                        <td className="p-2 md:p-6 lg:whitespace-nowrap font-medium">
+                          3
+                        </td>
+                        <td className="p-2 md:p-6 lg:whitespace-nowrap">
+                          Web Development 301 (Typed Functional Programming)
+                        </td>
+                        <td className="p-2 md:p-6 lg:whitespace-nowrap">
+                          10,000
+                        </td>
+                      </tr>
+                    </tbody>
+                  </table>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
 
         <section className="bg-gray-800 border-t border-b border-gray-700 mx-auto relative">
           <div className="max-w-6xl 2xl:max-w-7xl mx-auto">
