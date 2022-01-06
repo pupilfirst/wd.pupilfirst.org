@@ -398,21 +398,33 @@ export default function Home() {
                   </div>
                 </div>
               </div>
+            </div>
+          </div>
+        </section>
+
+
+<section className="bg-gray-800 border-t border-b border-gray-700 mx-auto relative">
+          <div className="max-w-6xl 2xl:max-w-7xl mx-auto">
+            <div className="border-l border-gray-700 mx-4 xl:mx-0">
+              <div className="pt-10 lg:pt-20">
+                <div className="heading-with-leftborder">
+                  <h2 className="max-w-5xl font-bold text-2xl lg:text-6xl text-primary-500 leading-tight ml-4 lg:mx-auto">
+                  Price
+                  </h2>
+                </div>
+              </div>
 
               <div className="flex flex-col mt-4 pb-10 lg:pb-20 ml-2 md:ml-4 lg:ml-12 xl:ml-16 2xl:ml-36">
-                <div>
-                  <h3 className="heading-with-underscore text-xl lg:text-2xl text-indigo-400 font-semibold">
-                    Cost?
-                  </h3>
-                  <div className="ml-8 max-w-4xl font-mono text-white tracking-tight pt-1 lg:text-lg ">
+                
+                  <div className="max-w-4xl font-mono text-white tracking-tight pt-1 lg:text-lg ">
                     <p>
                       The AICTE (NEAT) approved course fees are mentioned below.
                       You can contact the faculty coordinator of your institute
                       to understand the schedules of payment to be made.
                     </p>
                   </div>
-                </div>
-                <div className="sm:rounded-lg md:ml-8 mt-8">
+          
+                <div className="sm:rounded-lg mt-8">
                   <table className="table-auto w-full overflow-hidden border border-gray-800 shadow-lg">
                     <thead className="bg-gradient-to-r from-primary-500 to-primary-600 text-gray-900 font-semibold">
                       <tr className="border border-gray-500 text-xs">
