@@ -416,7 +416,7 @@ export default function Home() {
 
               <div className="flex flex-col mt-4 pb-10 lg:pb-20 ml-2 md:ml-4 lg:ml-12 xl:ml-16 2xl:ml-36">
                 
-                  <div className="ml-8 max-w-4xl font-mono text-white tracking-tight pt-1 lg:text-lg ">
+                  <div className="max-w-4xl font-mono text-white tracking-tight pt-1 lg:text-lg ">
                     <p>
                       The AICTE (NEAT) approved course fees are mentioned below.
                       You can contact the faculty coordinator of your institute
@@ -424,7 +424,7 @@ export default function Home() {
                     </p>
                   </div>
           
-                <div className="sm:rounded-lg md:ml-8 mt-8">
+                <div className="sm:rounded-lg mt-8">
                   <table className="table-auto w-full overflow-hidden border border-gray-800 shadow-lg">
                     <thead className="bg-gradient-to-r from-primary-500 to-primary-600 text-gray-900 font-semibold">
                       <tr className="border border-gray-500 text-xs">
