@@ -1353,7 +1353,6 @@ export default function Home() {
                   <h3 className="text-3xl text-indigo-500">Questions?</h3>
                   <p className="text-white pt-4">
                     Please contact the LITE Faculty Co-ordinator of your institution.
-                    </a>
                   </p>
                 </div>
               </div>
