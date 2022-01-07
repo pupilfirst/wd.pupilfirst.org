@@ -1314,7 +1314,7 @@ export default function Home() {
                   href="https://docs.google.com/document/d/e/2PACX-1vSVFaCSJp9_NuHFBlMfQJxwa_S8Da1cxVbaQFfxOQ01PvoX8JVa86iAMn6p3ukGo4cGRNWFrFUdDoc1/pub"
                   className="inline-flex items-center space-x-4 mt-4 w-full py-3 text-indigo-400 rounded-md text-lg font-semibold hover:underline hover:shadow-xl transition "
                 >
-                  <span>See list of institutions</span>
+                  <span>See list of Institutions and Faculty Coordinators</span>
                   <svg
                     xmlns="http://www.w3.org/2000/svg"
                     width="16"
