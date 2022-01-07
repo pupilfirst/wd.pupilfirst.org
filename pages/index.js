@@ -1352,13 +1352,7 @@ export default function Home() {
                 <div className="mt-16">
                   <h3 className="text-3xl text-indigo-500">Questions?</h3>
                   <p className="text-white pt-4">
-                    Contact your institutions LITE Faculty Co-ordinator or email
-                    us at{" "}
-                    <a
-                      className="font-semibold text-indigo-400 underline hover:bg-indigo-900 hover:bg-opacity-50 transition"
-                      href="mailto:wd@pupilfirst.org"
-                    >
-                      wd@pupilfirst.org.
+                    Please contact the LITE Faculty Co-ordinator of your institution.
                     </a>
                   </p>
                 </div>
