@@ -371,7 +371,8 @@ export default function Home() {
                         </p>
                         <div className="pt-4">
                           <a
-                            href="/"
+                            href="https://docs.google.com/document/d/e/2PACX-1vSVFaCSJp9_NuHFBlMfQJxwa_S8Da1cxVbaQFfxOQ01PvoX8JVa86iAMn6p3ukGo4cGRNWFrFUdDoc1/pub"
+                            target="_blank"
                             className="inline-flex items-center space-x-4 w-full py-3 text-indigo-400 rounded-md text-lg font-semibold hover:underline hover:shadow-xl transition "
                           >
                             <span>See list of institutions</span>
