@@ -166,9 +166,7 @@ export default function Home() {
                 <h2 className="text-xl md:text-3xl text-primary-500">
                   Co-created by Freshworks
                 </h2>
-                <p className="mt-4 font-mono text-sm md:text-base lg:text-lg">
-                  India’s leading Software as a Service company
-                </p>
+                
                 <p className="mt-4 font-mono text-sm md:text-base lg:text-lg">
                   Pupilfirst along with Freshworks (
                   <a
@@ -367,10 +365,9 @@ export default function Home() {
                         </h3>
 
                         <p className="text-base md:text-lg font-mono tracking-tight mt-3 space-y-3">
-                          All students who are studying in 2<sup>nd</sup> year
-                          and above and wish to apply for the Minor Degree in
-                          Advanced Web Development may give their names directly
-                          to the LITE Faculty Coordinator at your institution.
+                           All students who wish to apply for the Minor Degree in Advanced Web Development 
+                          may contact LITE Faculty Coordinator at their institution for details.
+                         
                         </p>
                         <div className="pt-4">
                           <a
@@ -1241,13 +1238,13 @@ export default function Home() {
                   <p className="mt-4 font-mono tracking-tight lg:text-lg">
                     Students who have graduated from the minor degree track
                     shall possess skills that are at the cutting edge of the
-                    modern software industry. As Covid 19 accelerated digital
+                    modern software industry. As COVID-19 accelerated digital
                     transformation and remote work, you shall gain skills for
                     global employment opportunities or start your own technology
                     startup.
                   </p>
                   <p className="mt-4 font-mono tracking-tight">
-                    As the world is transitioning into a knowledge economy , the
+                    As the world is transitioning into a knowledge economy, the
                     demand for web development engineers who are able to build
                     web applications on the internet is outpacing the supply.
                     The venture capital investments in India is also on the rise
