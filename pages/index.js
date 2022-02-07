@@ -774,15 +774,32 @@ export default function Home() {
                       <span className="font-semibold">Advanced</span> - Front-end development with React & TypeScript
                     </p>
                   </div>
+                <div className="flex items-center justify-center w-full h-4 md:w-4 md:h-auto md:transform md:-rotate-90">
+                    <svg
+                      xmlns="http://www.w3.org/2000/svg"
+                      width="16"
+                      height="16"
+                      fill="currentColor"
+                      className="text-indigo-700"
+                      viewBox="0 0 16 16"
+                    >
+                      <path
+                        fillRule="evenodd"
+                        d="M8 4a.5.5 0 0 1 .5.5v5.793l2.146-2.147a.5.5 0 0 1 .708.708l-3 3a.5.5 0 0 1-.708 0l-3-3a.5.5 0 1 1 .708-.708L7.5 10.293V4.5A.5.5 0 0 1 8 4z"
+                      />
+                    </svg>
+                  </div>
+
                   <div className="w-full md:flex-1 bg-gradient-to-br from-gray-700 to-gray-900 border border-green-500 rounded-lg shadow-md p-3 md:p-4">
                     <p className="text-red-500 text-xl md:text-2xl font-bold">
                       WD 401
                     </p>
                     <p className="font-mono tracking-tight text-white leading-snug mt-1">
-                      <span className="font-semibold">Getting ready for production
+                      <span className="font-semibold"> Getting ready for production
                     </p>
                   </div>
                 </div>
+
                 <p className="mt-4 text-sm text-white ">
                   More advanced courses would be added to give a broader choice
                   of specialisations.
