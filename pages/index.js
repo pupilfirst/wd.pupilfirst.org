@@ -795,7 +795,7 @@ export default function Home() {
                       WD 401
                     </p>
                     <p className="font-mono tracking-tight text-white leading-snug mt-1">
-                      <className="font-semibold"> Getting ready for production
+                      <span className="font-semibold"> </span> Getting ready for production
                     </p>
                   </div>
                 </div>
