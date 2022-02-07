@@ -298,8 +298,8 @@ export default function Home() {
                         Credits?
                       </h3>
                       <p className="ml-8 font-mono tracking-tight mt-2 pt-1 lg:text-lg ">
-                        The minor degree in advanced web development has 3
-                        courses and a minor project adding upto 20 credits.
+                        The minor degree in advanced web development has 4
+                        courses adding upto 20 credits.
                       </p>
                     </div>
                     <div>
@@ -712,7 +712,7 @@ export default function Home() {
               <div className="max-w-5xl mx-auto pl-4 lg:pl-0">
                 <div className="max-w-5xl mt-4">
                   <p className="font-mono tracking-tight text-white lg:text-lg">
-                    This programme is designed with 3 courses such that selected
+                    This programme is designed with 4 courses such that selected
                     institutions can offer a 20 credit “Minor Degree in Advanced
                     Web Development” through their trained faculty to students.
                   </p>
@@ -772,6 +772,14 @@ export default function Home() {
                     </p>
                     <p className="font-mono tracking-tight text-white leading-snug mt-1">
                       <span className="font-semibold">Advanced</span> - Front-end development with React & TypeScript
+                    </p>
+                  </div>
+                  <div className="w-full md:flex-1 bg-gradient-to-br from-gray-700 to-gray-900 border border-green-500 rounded-lg shadow-md p-3 md:p-4">
+                    <p className="text-red-500 text-xl md:text-2xl font-bold">
+                      WD 401
+                    </p>
+                    <p className="font-mono tracking-tight text-white leading-snug mt-1">
+                      <span className="font-semibold">Getting ready for production
                     </p>
                   </div>
                 </div>
