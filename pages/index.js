@@ -482,7 +482,7 @@ export default function Home() {
                           3
                         </td>
                         <td className="p-2 md:p-6 lg:whitespace-nowrap">
-                          Web Development 301 (Typed Functional Programming)
+                          Web Development 301 (Front-end development with React & TypeScript)
                         </td>
                         <td className="p-2 md:p-6 lg:whitespace-nowrap">
                           10,000
@@ -724,7 +724,7 @@ export default function Home() {
                     </p>
                     <p className="font-mono tracking-tight text-white leading-snug mt-1">
                       <span className="font-semibold">Beginner</span> - Getting
-                      started with Javascript (WD 101).
+                      started with Javascript.
                     </p>
                   </div>
                   <div className="flex items-center justify-center w-full h-4 md:w-4 md:h-auto md:transform md:-rotate-90">
@@ -771,8 +771,7 @@ export default function Home() {
                       WD 301
                     </p>
                     <p className="font-mono tracking-tight text-white leading-snug mt-1">
-                      <span className="font-semibold">Advanced</span> - Typed
-                      Functional Programming
+                      <span className="font-semibold">Advanced</span> - Front-end development with React & TypeScript
                     </p>
                   </div>
                 </div>
