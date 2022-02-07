@@ -790,7 +790,7 @@ export default function Home() {
                     </svg>
                   </div>
 
-                  <div className="w-full md:flex-1 bg-gradient-to-br from-gray-700 to-gray-900 border border-green-500 rounded-lg shadow-md p-3 md:p-4">
+                  <div className="w-full md:flex-1 bg-gradient-to-br from-gray-700 to-gray-900 border border-red-500 rounded-lg shadow-md p-3 md:p-4">
                     <p className="text-red-500 text-xl md:text-2xl font-bold">
                       WD 401
                     </p>
