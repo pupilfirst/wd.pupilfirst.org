@@ -166,7 +166,7 @@ export default function Home() {
                 <h2 className="text-xl md:text-3xl text-primary-500">
                   Co-created by Freshworks
                 </h2>
-                
+
                 <p className="mt-4 font-mono text-sm md:text-base lg:text-lg">
                   Pupilfirst along with Freshworks (
                   <a
@@ -365,9 +365,9 @@ export default function Home() {
                         </h3>
 
                         <p className="text-base md:text-lg font-mono tracking-tight mt-3 space-y-3">
-                           All students who wish to apply for the Minor Degree in Advanced Web Development 
-                          may contact LITE Faculty Coordinator at their institution for details.
-                         
+                          All students who wish to apply for the Minor Degree in
+                          Advanced Web Development may contact LITE Faculty
+                          Coordinator at their institution for details.
                         </p>
                         <div className="pt-4">
                           <a
@@ -375,7 +375,9 @@ export default function Home() {
                             target="_blank"
                             className="inline-flex items-center space-x-4 w-full py-3 text-indigo-400 rounded-md text-lg font-semibold hover:underline hover:shadow-xl transition "
                           >
-                            <span>See list of institutions and Faculty Coordinators</span>
+                            <span>
+                              See list of institutions and Faculty Coordinators
+                            </span>
                             <svg
                               xmlns="http://www.w3.org/2000/svg"
                               width="16"
@@ -400,28 +402,26 @@ export default function Home() {
           </div>
         </section>
 
-
-<section className="bg-gray-800 border-t border-b border-gray-700 mx-auto relative">
+        <section className="bg-gray-800 border-t border-b border-gray-700 mx-auto relative">
           <div className="max-w-6xl 2xl:max-w-7xl mx-auto">
             <div className="border-l border-gray-700 mx-4 xl:mx-0">
               <div className="pt-10 lg:pt-20">
                 <div className="heading-with-leftborder">
                   <h2 className="max-w-5xl font-bold text-2xl lg:text-6xl text-primary-500 leading-tight ml-4 lg:mx-auto">
-                  Price
+                    Price
                   </h2>
                 </div>
               </div>
 
               <div className="flex flex-col mt-4 pb-10 lg:pb-20 ml-2 md:ml-4 lg:ml-12 xl:ml-16 2xl:ml-36">
-                
-                  <div className="max-w-4xl font-mono text-white tracking-tight pt-1 lg:text-lg ">
-                    <p>
-                      The AICTE (NEAT) approved course fees are mentioned below.
-                      You can contact the faculty coordinator of your institute
-                      to understand the schedules of payment to be made.
-                    </p>
-                  </div>
-          
+                <div className="max-w-4xl font-mono text-white tracking-tight pt-1 lg:text-lg ">
+                  <p>
+                    The AICTE (NEAT) approved course fees are mentioned below.
+                    You can contact the faculty coordinator of your institute to
+                    understand the schedules of payment to be made.
+                  </p>
+                </div>
+
                 <div className="sm:rounded-lg mt-8">
                   <table className="table-auto w-full overflow-hidden border border-gray-800 shadow-lg">
                     <thead className="bg-gradient-to-r from-primary-500 to-primary-600 text-gray-900 font-semibold">
@@ -482,7 +482,8 @@ export default function Home() {
                           3
                         </td>
                         <td className="p-2 md:p-6 lg:whitespace-nowrap">
-                          Web Development 301 (Front-end development with React & TypeScript)
+                          Web Development 301 (Front-end development with React
+                          & TypeScript)
                         </td>
                         <td className="p-2 md:p-6 lg:whitespace-nowrap">
                           10,000
@@ -690,7 +691,7 @@ export default function Home() {
                         currently working at Hottinger Brüel & Kjær (HBK) as an
                         Engineering Trainee. His interest mostly lies in the
                         area of full stack web development. He likes to learn
-                        and explore more parts of web development. 
+                        and explore more parts of web development.
                       </p>
                     }
                     imgSrc="people/vamsi_bellam-1.jpeg"
@@ -722,7 +723,7 @@ export default function Home() {
                     <p className="text-primary-400 text-xl md:text-2xl font-bold">
                       WD 101
                     </p>
-                    <p className="font-mono tracking-tight text-white leading-snug mt-1">
+                    <p className="text-white leading-snug mt-1">
                       <span className="font-semibold">Beginner</span> - Getting
                       started with Javascript.
                     </p>
@@ -746,7 +747,7 @@ export default function Home() {
                     <p className="text-indigo-400 text-xl md:text-2xl font-bold">
                       WD 201
                     </p>
-                    <p className="font-mono tracking-tight text-white leading-snug mt-1">
+                    <p className="text-white leading-snug mt-1">
                       <span className="font-semibold">Intermediate</span> -
                       Server-side programming with Ruby on Rails.
                     </p>
@@ -770,11 +771,12 @@ export default function Home() {
                     <p className="text-green-500 text-xl md:text-2xl font-bold">
                       WD 301
                     </p>
-                    <p className="font-mono tracking-tight text-white leading-snug mt-1">
-                      <span className="font-semibold">Advanced</span> - Front-end development with React & TypeScript
+                    <p className="text-white leading-snug mt-1">
+                      <span className="font-semibold">Advanced</span> -
+                      Front-end development with React &amp; TypeScript.
                     </p>
                   </div>
-                <div className="flex items-center justify-center w-full h-4 md:w-4 md:h-auto md:transform md:-rotate-90">
+                  <div className="flex items-center justify-center w-full h-4 md:w-4 md:h-auto md:transform md:-rotate-90">
                     <svg
                       xmlns="http://www.w3.org/2000/svg"
                       width="16"
@@ -791,11 +793,12 @@ export default function Home() {
                   </div>
 
                   <div className="w-full md:flex-1 bg-gradient-to-br from-gray-700 to-gray-900 border border-red-500 rounded-lg shadow-md p-3 md:p-4">
-                    <p className="text-red-500 text-xl md:text-2xl font-bold">
+                    <p className="text-red-400 text-xl md:text-2xl font-bold">
                       WD 401
                     </p>
-                    <p className="font-mono tracking-tight text-white leading-snug mt-1">
-                      <span className="font-semibold"> </span> Getting ready for production
+                    <p className="text-white leading-snug mt-1">
+                      <span className="font-semibold"> </span> Getting ready for
+                      production.
                     </p>
                   </div>
                 </div>
@@ -1327,8 +1330,8 @@ export default function Home() {
               <div className="max-w-5xl mx-auto pl-4 lg:pl-0">
                 <div className="max-w-3xl space-y-6 text-white ">
                   <p className="mt-4 font-mono tracking-tight lg:text-lg">
-                    All students who wish to apply for the Minor Degree in Advanced Web Development
-                    may contact LITE Faculty
+                    All students who wish to apply for the Minor Degree in
+                    Advanced Web Development may contact LITE Faculty
                     Coordinator at their institution for details.
                   </p>
                 </div>
@@ -1375,7 +1378,8 @@ export default function Home() {
                 <div className="mt-16">
                   <h3 className="text-3xl text-indigo-500">Questions?</h3>
                   <p className="text-white pt-4">
-                    Please contact the LITE Faculty Coordinator of your institution.
+                    Please contact the LITE Faculty Coordinator of your
+                    institution.
                   </p>
                 </div>
               </div>
