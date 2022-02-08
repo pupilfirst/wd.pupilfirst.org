@@ -298,8 +298,8 @@ export default function Home() {
                         Credits?
                       </h3>
                       <p className="ml-8 font-mono tracking-tight mt-2 pt-1 lg:text-lg ">
-                        The minor degree in advanced web development has 3
-                        courses and a minor project adding upto 20 credits.
+                        The minor degree in advanced web development has 4
+                        courses adding upto 20 credits.
                       </p>
                     </div>
                     <div>
@@ -482,7 +482,7 @@ export default function Home() {
                           3
                         </td>
                         <td className="p-2 md:p-6 lg:whitespace-nowrap">
-                          Web Development 301 (Typed Functional Programming)
+                          Web Development 301 (Front-end development with React & TypeScript)
                         </td>
                         <td className="p-2 md:p-6 lg:whitespace-nowrap">
                           10,000
@@ -712,7 +712,7 @@ export default function Home() {
               <div className="max-w-5xl mx-auto pl-4 lg:pl-0">
                 <div className="max-w-5xl mt-4">
                   <p className="font-mono tracking-tight text-white lg:text-lg">
-                    This programme is designed with 3 courses such that selected
+                    This programme is designed with 4 courses such that selected
                     institutions can offer a 20 credit “Minor Degree in Advanced
                     Web Development” through their trained faculty to students.
                   </p>
@@ -724,7 +724,7 @@ export default function Home() {
                     </p>
                     <p className="font-mono tracking-tight text-white leading-snug mt-1">
                       <span className="font-semibold">Beginner</span> - Getting
-                      started with Javascript (WD 101).
+                      started with Javascript.
                     </p>
                   </div>
                   <div className="flex items-center justify-center w-full h-4 md:w-4 md:h-auto md:transform md:-rotate-90">
@@ -771,11 +771,35 @@ export default function Home() {
                       WD 301
                     </p>
                     <p className="font-mono tracking-tight text-white leading-snug mt-1">
-                      <span className="font-semibold">Advanced</span> - Typed
-                      Functional Programming
+                      <span className="font-semibold">Advanced</span> - Front-end development with React & TypeScript
+                    </p>
+                  </div>
+                <div className="flex items-center justify-center w-full h-4 md:w-4 md:h-auto md:transform md:-rotate-90">
+                    <svg
+                      xmlns="http://www.w3.org/2000/svg"
+                      width="16"
+                      height="16"
+                      fill="currentColor"
+                      className="text-green-700"
+                      viewBox="0 0 16 16"
+                    >
+                      <path
+                        fillRule="evenodd"
+                        d="M8 4a.5.5 0 0 1 .5.5v5.793l2.146-2.147a.5.5 0 0 1 .708.708l-3 3a.5.5 0 0 1-.708 0l-3-3a.5.5 0 1 1 .708-.708L7.5 10.293V4.5A.5.5 0 0 1 8 4z"
+                      />
+                    </svg>
+                  </div>
+
+                  <div className="w-full md:flex-1 bg-gradient-to-br from-gray-700 to-gray-900 border border-red-500 rounded-lg shadow-md p-3 md:p-4">
+                    <p className="text-red-500 text-xl md:text-2xl font-bold">
+                      WD 401
+                    </p>
+                    <p className="font-mono tracking-tight text-white leading-snug mt-1">
+                      <span className="font-semibold"> </span> Getting ready for production
                     </p>
                   </div>
                 </div>
+
                 <p className="mt-4 text-sm text-white ">
                   More advanced courses would be added to give a broader choice
                   of specialisations.
