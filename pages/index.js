@@ -417,8 +417,6 @@ export default function Home() {
                 <div className="max-w-4xl font-mono text-white tracking-tight pt-1 lg:text-lg ">
                   <p>
                     The AICTE (NEAT) approved course fees are mentioned below.
-                    You can contact the faculty coordinator of your institute to
-                    understand the schedules of payment to be made.
                   </p>
                 </div>
 
