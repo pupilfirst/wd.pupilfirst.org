@@ -283,16 +283,18 @@ export default function Home() {
                         more information.
                       </p>
                     </div>
+                  {/*
                     <div>
                       <h3 className="heading-with-underscore text-xl lg:text-2xl text-indigo-400 font-semibold">
                         When?
                       </h3>
                       <p className="ml-8 font-mono tracking-tight mt-2 pt-1 lg:text-lg ">
-                        You can enrol from your next academic semester. Contact
+                        The first batch of students is tentatively planned from March-July 2022. Contact
                         the faculty coordinator from your Institute for further
                         details.
                       </p>
                     </div>
+                    */}
                     <div>
                       <h3 className="heading-with-underscore text-xl lg:text-2xl text-indigo-400 font-semibold">
                         Credits?
