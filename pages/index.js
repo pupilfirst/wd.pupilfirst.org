@@ -418,7 +418,8 @@ export default function Home() {
               <div className="flex flex-col mt-4 pb-10 lg:pb-20 ml-2 md:ml-4 lg:ml-12 xl:ml-16 2xl:ml-36">
                 <div className="max-w-4xl font-mono text-white tracking-tight pt-1 lg:text-lg ">
                   <p>
-                    The AICTE (NEAT) approved course fees are mentioned below.
+                    The AICTE (NEAT) approved course fees are mentioned below. This amount is  
+                    exclusive of the government taxes as applicable.
                   </p>
                 </div>
 
@@ -443,7 +444,7 @@ export default function Home() {
                           className="p-2 md:px-6 md:py-3 text-left uppercase tracking-wider"
                         >
                           <span className="hidden lg:block">
-                            AICTE approved course fee per student (in Rs.)
+                            AICTE approved course fee per student (in Rs.).  
                           </span>
                           <span className="block lg:hidden">
                             course fee per student (in Rs.)
