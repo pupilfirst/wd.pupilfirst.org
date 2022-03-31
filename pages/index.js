@@ -708,7 +708,7 @@ export default function Home() {
                         Vignesh is a seasoned UI Technology Evangelist with around 10 years of experience 
                         building and developing amazing User Experiences across various platforms and domains. 
                         He works with Oracle as a Principal Engineer solving UI engineering use cases for their Cloud and Cloud-native products.
-                        The stack he work on covers everything UI, although now he mainly codes on Javascript and Typescript.
+                        The stack he works on covers everything UI, although now he mainly codes on Javascript and Typescript.
                         In leisure, he writes a lot and read a lot more.
                       </p>
                     }
@@ -735,11 +735,10 @@ export default function Home() {
                       <p className="font-mono tracking-tight leading-snug text-white mt-3">
                         Avishek is an Engineer, a full-stack developer and an open-source contributor. 
                         Currently, he is working at GEOGO Techsolutions as Principal Engineer. 
-                        He started my professional career in 2013 and worked on technologies like: 
+                        He started his professional career in 2013 and worked on technologies like: 
                         Ruby on Rails, NodeJS, ReactJS, TypeScript etc. 
                         Apart from work, he loves to mentor and train fresh graduates to enhance their skills as per industry demands. 
                         Teaching is his way to contribute back to the society.
-
                       </p>
                     }
                     imgSrc="people/avishek_photo.jpeg"
