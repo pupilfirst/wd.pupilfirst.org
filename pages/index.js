@@ -1147,7 +1147,7 @@ export default function Home() {
                           and it was designed in a way that it helps me learn a
                           new language and improves my personal interests to do
                           independent research on the source Code of Ruby on
-                          Rails and the way it works.I have never done this in
+                          Rails and the way it works. I have never done this in
                           any of my other learnings. It was an awesome time
                           going through the course.
                         </p>
@@ -1156,6 +1156,35 @@ export default function Home() {
                           <div className="italic font-medium text-sm pl-3">
                             (CoronaSafe Engineering Fellowship Programme,
                             Jan-March 2021)
+                          </div>
+                        </p>
+                      </div>
+                      
+                      <div className="bg-red-200 lg:text-lg font-medium rounded-xl p-8 lg:p-12">
+                        <p>
+ 
+                          The courses helped me greatly in learning good web development practices and functional programming concepts.
+                          I also learnt how to develop a good backend system and also about React, which proved really helpful in my internship.
+                        </p>
+                        <p className="mt-6 font-bold">
+                          - Apurva Nagar
+                          <div className="italic font-medium text-sm pl-3">
+                           (CoronaSafe Engineering Fellowship Programme,
+                            Jan-March 2021)
+                          </div>
+                        </p>
+                      </div>
+                      <div className="bg-red-200 lg:text-lg font-medium rounded-xl p-8 lg:p-12">
+                        <p>
+ 
+                          The knowledge I gained during the course helped me while I was doing my internship project, and continues to do so even now. 
+                          The tech stack used here is different but the basic concepts and patterns are similar if not same. 
+                          I am really grateful for having been a part of this course and community. Thank you :)
+                        </p>
+                        <p className="mt-6 font-bold">
+                          - Mahendra Kennedy
+                          <div className="italic font-medium text-sm pl-3">
+                            (SASTRA July-Dec 2019)
                           </div>
                         </p>
                       </div>
