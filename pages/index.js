@@ -504,7 +504,7 @@ export default function Home() {
               <div className="pt-10 lg:pt-20">
                 <div className="heading-with-leftborder">
                   <h2 className="max-w-5xl font-bold text-2xl lg:text-6xl text-primary-500 leading-tight ml-4 lg:mx-auto">
-                    Coaches and Teaching Assistants
+                    Course Authors and Coaches
                   </h2>
                 </div>
               </div>
@@ -573,6 +573,7 @@ export default function Home() {
                     }
                     imgSrc="people/hari-gopal.png"
                   />
+                  {/*     
                   <ImageWithDescription
                     name="Prashanth Reddy Koteru"
                     githuburl={
@@ -696,6 +697,52 @@ export default function Home() {
                       </p>
                     }
                     imgSrc="people/vamsi_bellam-1.jpeg"
+                  />
+                  */}
+                <ImageWithDescription
+                    name="Vignesh Rajendran"
+                 
+                    caption={<p> Principal Engineer, Oracle</p>}
+                    role={
+                      <p className="font-mono tracking-tight leading-snug text-white mt-3">
+                        Vignesh is a seasoned UI Technology Evangelist with around 10 years of experience 
+                        building and developing amazing User Experiences across various platforms and domains. 
+                        He works with Oracle as a Principal Engineer solving UI engineering use cases for their Cloud and Cloud-native products.
+                        The stack he work on covers everything UI, although now he mainly codes on Javascript and Typescript.
+                        In leisure, he writes a lot and read a lot more.
+                      </p>
+                    }
+                    imgSrc="people/Vignesh_Profile.jpeg"
+                  />
+                   
+                    <ImageWithDescription
+                    name="Melson J Zacharias"
+                 
+                    caption={<p> CTO, Perleybrook Labs LLC.</p>}
+                    role={
+                      <p className="font-mono tracking-tight leading-snug text-white mt-3">
+                        Melson is CTO at Perleybrook Labs LLC, where he primarily works with C++, Python, and Typescript. 
+                        In his spare time, he would be reading a book or can be seen answering questions in StackOverflow. 
+                      </p>
+                    }
+                    imgSrc="people/melson.jpeg"
+                  />
+                  <ImageWithDescription
+                    name="Avishek Jana"
+                 
+                    caption={<p> Co-Founder & Principal Engineer, GEOGO Techsolutions Pvt. Ltd.</p>}
+                    role={
+                      <p className="font-mono tracking-tight leading-snug text-white mt-3">
+                        Avishek is an Engineer, a full-stack developer and an open-source contributor. 
+                        Currently, he is working at GEOGO Techsolutions as Principal Engineer. 
+                        He started my professional career in 2013 and worked on technologies like: 
+                        Ruby on Rails, NodeJS, ReactJS, TypeScript etc. 
+                        Apart from work, he loves to mentor and train fresh graduates to enhance their skills as per industry demands. 
+                        Teaching is his way to contribute back to the society.
+
+                      </p>
+                    }
+                    imgSrc="people/avishek_photo.jpeg"
                   />
                 </div>
               </div>
