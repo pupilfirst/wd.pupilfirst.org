@@ -1136,7 +1136,8 @@ export default function Home() {
                         <p className="mt-6 font-bold">
                           - Tanya Rampal
                           <div className="italic font-medium text-sm pl-3">
-                            (WD201 May-July 2021)
+                            (WD201 May-July 2021, Teaching Assistant <br />-
+                            LITE Batch 1)
                           </div>
                         </p>
                       </div>
