@@ -2,7 +2,7 @@ import Head from "next/head";
 
 function ImageWithDescription({ name, githuburl, caption, role, imgSrc }) {
   return (
-    <div>
+    <div className="md:px-4">
       <div className="relative rounded-lg bg-gradient-to-br from-primary-400 to-primary-500 w-auto shadow-md ">
         <img
           src={imgSrc}
@@ -283,7 +283,7 @@ export default function Home() {
                         more information.
                       </p>
                     </div>
-                  {/*
+                    {/*
                     <div>
                       <h3 className="heading-with-underscore text-xl lg:text-2xl text-indigo-400 font-semibold">
                         When?
@@ -418,8 +418,9 @@ export default function Home() {
               <div className="flex flex-col mt-4 pb-10 lg:pb-20 ml-2 md:ml-4 lg:ml-12 xl:ml-16 2xl:ml-36">
                 <div className="max-w-4xl font-mono text-white tracking-tight pt-1 lg:text-lg ">
                   <p>
-                    The AICTE (NEAT) approved course fees are mentioned below. This amount is  
-                    exclusive of the government taxes as applicable.
+                    The AICTE (NEAT) approved course fees are mentioned below.
+                    This amount is exclusive of the government taxes as
+                    applicable.
                   </p>
                 </div>
 
@@ -444,7 +445,7 @@ export default function Home() {
                           className="p-2 md:px-6 md:py-3 text-left uppercase tracking-wider"
                         >
                           <span className="hidden lg:block">
-                            AICTE approved course fee per student (in Rs.).  
+                            AICTE approved course fee per student (in Rs.).
                           </span>
                           <span className="block lg:hidden">
                             course fee per student (in Rs.)
@@ -541,7 +542,7 @@ export default function Home() {
                 />
               </svg>
               <div className="max-w-5xl mx-auto relative z-10 pl-4 lg:pl-0">
-                <div className="space-y-12 sm:space-y-0 sm:grid sm:grid-cols-3 sm:gap-12 lg:gap-12 py-12 lg:pb-16">
+                <div className="md:divide-x divide-gray-700 space-y-12 gap-y-12 md:space-y-0 sm:grid sm:grid-cols-2 lg:grid-cols-4 py-12 lg:pb-16">
                   <ImageWithDescription
                     name="Hari Gopal"
                     githuburl={
@@ -573,7 +574,7 @@ export default function Home() {
                     }
                     imgSrc="people/hari-gopal.png"
                   />
-                  {/*     
+                  {/*
                   <ImageWithDescription
                     name="Prashanth Reddy Koteru"
                     githuburl={
@@ -699,46 +700,58 @@ export default function Home() {
                     imgSrc="people/vamsi_bellam-1.jpeg"
                   />
                   */}
-                <ImageWithDescription
+                  <ImageWithDescription
                     name="Vignesh Rajendran"
-                 
                     caption={<p> Principal Engineer, Oracle</p>}
                     role={
                       <p className="font-mono tracking-tight leading-snug text-white mt-3">
-                        Vignesh is a seasoned UI Technology Evangelist with around 10 years of experience 
-                        building and developing amazing User Experiences across various platforms and domains. 
-                        He works with Oracle as a Principal Engineer solving UI engineering use cases for their Cloud and Cloud-native products.
-                        The stack he works on covers everything UI, although now he mainly codes on Javascript and Typescript.
-                        In leisure, he writes a lot and read a lot more.
+                        Vignesh is a seasoned UI Technology Evangelist with
+                        around 10 years of experience building and developing
+                        amazing User Experiences across various platforms and
+                        domains. He works with Oracle as a Principal Engineer
+                        solving UI engineering use cases for their Cloud and
+                        Cloud-native products. The stack he works on covers
+                        everything UI, although now he mainly codes on
+                        Javascript and Typescript. In leisure, he writes a lot
+                        and read a lot more.
                       </p>
                     }
-                    imgSrc="people/Vignesh_Profile.jpeg"
+                    imgSrc="people/Vignesh_Profile.jpg"
                   />
-                   
-                    <ImageWithDescription
+
+                  <ImageWithDescription
                     name="Melson J Zacharias"
-                 
                     caption={<p> CTO, Perleybrook Labs LLC.</p>}
                     role={
                       <p className="font-mono tracking-tight leading-snug text-white mt-3">
-                        Melson is CTO at Perleybrook Labs LLC, where he primarily works with C++, Python, and Typescript. 
-                        In his spare time, he would be reading a book or can be seen answering questions in StackOverflow. 
+                        Melson is CTO at Perleybrook Labs LLC, where he
+                        primarily works with C++, Python, and Typescript. In his
+                        spare time, he would be reading a book or can be seen
+                        answering questions in StackOverflow.
                       </p>
                     }
                     imgSrc="people/melson.jpeg"
                   />
                   <ImageWithDescription
                     name="Avishek Jana"
-                 
-                    caption={<p> Co-Founder & Principal Engineer, GEOGO Techsolutions Pvt. Ltd.</p>}
+                    caption={
+                      <p>
+                        {" "}
+                        Co-Founder & Principal Engineer, GEOGO Techsolutions
+                        Pvt. Ltd.
+                      </p>
+                    }
                     role={
                       <p className="font-mono tracking-tight leading-snug text-white mt-3">
-                        Avishek is an Engineer, a full-stack developer and an open-source contributor. 
-                        Currently, he is working at GEOGO Techsolutions as Principal Engineer. 
-                        He started his professional career in 2013 and worked on technologies like: 
-                        Ruby on Rails, NodeJS, ReactJS, TypeScript etc. 
-                        Apart from work, he loves to mentor and train fresh graduates to enhance their skills as per industry demands. 
-                        Teaching is his way to contribute back to the society.
+                        Avishek is an Engineer, a full-stack developer and an
+                        open-source contributor. Currently, he is working at
+                        GEOGO Techsolutions as Principal Engineer. He started
+                        his professional career in 2013 and worked on
+                        technologies like: Ruby on Rails, NodeJS, ReactJS,
+                        TypeScript etc. Apart from work, he loves to mentor and
+                        train fresh graduates to enhance their skills as per
+                        industry demands. Teaching is his way to contribute back
+                        to the society.
                       </p>
                     }
                     imgSrc="people/avishek_photo.jpeg"
@@ -1159,27 +1172,31 @@ export default function Home() {
                           </div>
                         </p>
                       </div>
-                      
+
                       <div className="bg-red-200 lg:text-lg font-medium rounded-xl p-8 lg:p-12">
                         <p>
- 
-                          The courses helped me greatly in learning good web development practices and functional programming concepts.
-                          I also learnt how to develop a good backend system and also about React, which proved really helpful in my internship.
+                          The courses helped me greatly in learning good web
+                          development practices and functional programming
+                          concepts. I also learnt how to develop a good backend
+                          system and also about React, which proved really
+                          helpful in my internship.
                         </p>
                         <p className="mt-6 font-bold">
                           - Apurva Nagar
                           <div className="italic font-medium text-sm pl-3">
-                           (CoronaSafe Engineering Fellowship Programme,
+                            (CoronaSafe Engineering Fellowship Programme,
                             Jan-March 2021)
                           </div>
                         </p>
                       </div>
                       <div className="bg-red-200 lg:text-lg font-medium rounded-xl p-8 lg:p-12">
                         <p>
- 
-                          The knowledge I gained during the course helped me while I was doing my internship project, and continues to do so even now. 
-                          The tech stack used here is different but the basic concepts and patterns are similar if not same. 
-                          I am really grateful for having been a part of this course and community. Thank you :)
+                          The knowledge I gained during the course helped me
+                          while I was doing my internship project, and continues
+                          to do so even now. The tech stack used here is
+                          different but the basic concepts and patterns are
+                          similar if not same. I am really grateful for having
+                          been a part of this course and community. Thank you :)
                         </p>
                         <p className="mt-6 font-bold">
                           - Mahendra Kennedy
