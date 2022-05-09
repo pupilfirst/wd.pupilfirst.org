@@ -187,10 +187,10 @@ export default function Home() {
                   create a pathway for students from all engineering disciplines
                   to the global web development industry.
                 </p>
-                <p class="mt-4 text-sm md:text-base">
+                <p className="mt-4 text-sm md:text-base">
                   Learn More at:{" "}
                   <a
-                    class="text-indigo-400 font-semibold hover:underline hover:bg-indigo-900"
+                    className="text-indigo-400 font-semibold hover:underline hover:bg-indigo-900"
                     target="_blank"
                     href="https://pupilfirst.org/"
                   >
@@ -222,9 +222,376 @@ export default function Home() {
             </div>
           </div>
         </section>
+        <section className="w-full bg-white px-4 py-16 h-full">
+          <div className="max-w-6xl 2xl:max-w-7xl mx-auto">
+            <div className="max-w-3xl mx-auto text-center pb-4">
+              <h2 className="text-2xl lg:text-6xl text-gray-600 leading-snug">
+                Hiring Network
+              </h2>
+              <p className="font-mono pt-4">
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit. In vel
+                dictum urna. Integer eu mi gravida, rhoncus erat in, congue
+                nunc. Mauris posuere efficitur lobortis. Praesent euismod justo
+                sed tempus consectetur.
+              </p>
+            </div>
+            <div className="mt-6 grid grid-cols-2 gap-0.5 md:grid-cols-5 lg:mt-8">
+              <a
+                href="#"
+                className="col-span-1 flex justify-center items-center p-8 rounded-md hover:shadow-lg z-10 relative transition"
+              >
+                <img
+                  className="max-h-16"
+                  src="early-adopters/AgroCast-Analytics-Pvt-Ltd.jpg"
+                  alt=""
+                />
+              </a>
+              <a
+                href="#"
+                className="col-span-1 flex justify-center items-center p-8 rounded-md hover:shadow-lg z-10 relative transition"
+              >
+                <img
+                  className="max-h-16"
+                  src="early-adopters/Ai-Health-Highway-India-Pvt-Ltd.jpg"
+                  alt=""
+                />
+              </a>
+              <a
+                href="#"
+                className="col-span-1 flex justify-center items-center p-8 rounded-md hover:shadow-lg z-10 relative transition"
+              >
+                <img
+                  className="max-h-16"
+                  src="early-adopters/Champion-Semiconductor-LLP.jpg"
+                  alt=""
+                />
+              </a>
+              <a
+                href="#"
+                className="col-span-1 flex justify-center items-center p-8 rounded-md hover:shadow-lg z-10 relative transition"
+              >
+                <img
+                  className="max-h-12"
+                  src="early-adopters/Datazoic.jpg"
+                  alt=""
+                />
+              </a>
+              <a
+                href="#"
+                className="col-span-1 flex justify-center items-center p-8 rounded-md hover:shadow-lg z-10 relative transition"
+              >
+                <img
+                  className="max-h-16"
+                  src="early-adopters/Delta-X-Automotive.jpg"
+                  alt=""
+                />
+              </a>
+              <a
+                href="#"
+                className="col-span-1 flex justify-center items-center p-8 rounded-md hover:shadow-lg z-10 relative transition"
+              >
+                <img
+                  className="max-h-16"
+                  src="early-adopters/DeltaX.jpg"
+                  alt=""
+                />
+              </a>
+              <a
+                href="#"
+                className="col-span-1 flex justify-center items-center p-8 rounded-md hover:shadow-lg z-10 relative transition"
+              >
+                <img
+                  className="max-h-12"
+                  src="early-adopters/DIYCAM-India-Pvt-Ltd.png"
+                  alt=""
+                />
+              </a>
+              <a
+                href="#"
+                className="col-span-1 flex justify-center items-center p-8 rounded-md hover:shadow-lg z-10 relative transition"
+              >
+                <img
+                  className="max-h-12"
+                  src="early-adopters/Economize-Inc.png"
+                  alt=""
+                />
+              </a>
+              <a
+                href="#"
+                className="col-span-1 flex justify-center items-center p-8 rounded-md hover:shadow-lg z-10 relative transition"
+              >
+                <img
+                  className="max-h-16"
+                  src="early-adopters/Eduhex.jpg"
+                  alt=""
+                />
+              </a>
+              <a
+                href="#"
+                className="col-span-1 flex justify-center items-center p-8 rounded-md hover:shadow-lg z-10 relative transition"
+              >
+                <img
+                  className="max-h-16"
+                  src="early-adopters/Embright-Infotech-Private-LImited.jpg"
+                  alt=""
+                />
+              </a>
+              <a
+                href="#"
+                className="col-span-1 flex justify-center items-center p-8 rounded-md hover:shadow-lg z-10 relative transition"
+              >
+                <img
+                  className="max-h-24"
+                  src="early-adopters/Ensynapse-Technique-Pvt-Ltd.jpg"
+                  alt=""
+                />
+              </a>
+              <a
+                href="#"
+                className="col-span-1 flex justify-center items-center p-8 rounded-md hover:shadow-lg z-10 relative transition"
+              >
+                <img
+                  className="max-h-16"
+                  src="early-adopters/Fintech-IT-Solutions-LLP.jpg"
+                  alt=""
+                />
+              </a>
+              <a
+                href="#"
+                className="col-span-1 flex justify-center items-center p-8 rounded-md hover:shadow-lg z-10 relative transition"
+              >
+                <img
+                  className="max-h-16"
+                  src="early-adopters/Grus-Grade-Private-Limited.jpg"
+                  alt=""
+                />
+              </a>
+              <a
+                href="#"
+                className="col-span-1 flex justify-center items-center p-8 rounded-md hover:shadow-lg z-10 relative transition"
+              >
+                <img
+                  className="max-h-16"
+                  src="early-adopters/Hostune-Labs-Pvt-Ltd.jpg"
+                  alt=""
+                />
+              </a>
+              <a
+                href="#"
+                className="col-span-1 flex justify-center items-center p-8 rounded-md hover:shadow-lg z-10 relative transition"
+              >
+                <img
+                  className="max-h-16"
+                  src="early-adopters/MiClient-Private-Limited.jpg"
+                  alt=""
+                />
+              </a>
+              <a
+                href="#"
+                className="col-span-1 flex justify-center items-center p-8 rounded-md hover:shadow-lg z-10 relative transition"
+              >
+                <img
+                  className="max-h-16"
+                  src="early-adopters/Movio-Mobility.jpg"
+                  alt=""
+                />
+              </a>
+              <a
+                href="#"
+                className="col-span-1 flex justify-center items-center p-8 rounded-md hover:shadow-lg z-10 relative transition"
+              >
+                <img
+                  className="max-h-16"
+                  src="early-adopters/Nebula-Cloud.jpg"
+                  alt=""
+                />
+              </a>
+              <a
+                href="#"
+                className="col-span-1 flex justify-center items-center p-8 rounded-md hover:shadow-lg z-10 relative transition"
+              >
+                <img
+                  className="max-h-16"
+                  src="early-adopters/Neos-HealthTech-Private-Limited.jpg"
+                  alt=""
+                />
+              </a>
+              <a
+                href="#"
+                className="col-span-1 flex justify-center items-center p-8 rounded-md hover:shadow-lg z-10 relative transition"
+              >
+                <img
+                  className="max-h-16"
+                  src="early-adopters/Next-Smart-Solutions-Pvt-Ltd.jpg"
+                  alt=""
+                />
+              </a>
+              <a
+                href="#"
+                className="col-span-1 flex justify-center items-center p-8 rounded-md hover:shadow-lg z-10 relative transition"
+              >
+                <img
+                  className="max-h-16"
+                  src="early-adopters/Nordstello-Technologies.jpg"
+                  alt=""
+                />
+              </a>
+              <a
+                href="#"
+                className="col-span-1 flex justify-center items-center p-8 rounded-md hover:shadow-lg z-10 relative transition"
+              >
+                <img
+                  className="max-h-16"
+                  src="early-adopters/Nyx-Wolves.jpg"
+                  alt=""
+                />
+              </a>
+              <a
+                href="#"
+                className="col-span-1 flex justify-center items-center p-8 rounded-md hover:shadow-lg z-10 relative transition"
+              >
+                <img
+                  className="max-h-16"
+                  src="early-adopters/Pankhtech-India-Pvt-Ltd.jpg"
+                  alt=""
+                />
+              </a>
+              <a
+                href="#"
+                className="col-span-1 flex justify-center items-center p-8 rounded-md hover:shadow-lg z-10 relative transition"
+              >
+                <img
+                  className="max-h-20"
+                  src="early-adopters/Papswap-Policies-over-Politics.jpg"
+                  alt=""
+                />
+              </a>
+              <a
+                href="#"
+                className="col-span-1 flex justify-center items-center p-8 rounded-md hover:shadow-lg z-10 relative transition"
+              >
+                <img
+                  className="max-h-16"
+                  src="early-adopters/Peak.jpg"
+                  alt=""
+                />
+              </a>
+              <a
+                href="#"
+                className="col-span-1 flex justify-center items-center p-8 rounded-md hover:shadow-lg z-10 relative transition"
+              >
+                <img
+                  className="max-h-16"
+                  src="early-adopters/PORTPRO.jpg"
+                  alt=""
+                />
+              </a>
+              <a
+                href="#"
+                className="col-span-1 flex justify-center items-center p-8 rounded-md hover:shadow-lg z-10 relative transition"
+              >
+                <img
+                  className="max-h-16"
+                  src="early-adopters/Reeudo.jpg"
+                  alt=""
+                />
+              </a>
+              <a
+                href="#"
+                className="col-span-1 flex justify-center items-center p-8 rounded-md hover:shadow-lg z-10 relative transition"
+              >
+                <img
+                  className="max-h-16"
+                  src="early-adopters/Rhythmflows-Solutions-Private-Limited.jpg"
+                  alt=""
+                />
+              </a>
+              <a
+                href="#"
+                className="col-span-1 flex justify-center items-center p-8 rounded-md hover:shadow-lg z-10 relative transition"
+              >
+                <img
+                  className="max-h-16"
+                  src="early-adopters/SAT-Infotech-Pvt-Ltd.jpg"
+                  alt=""
+                />
+              </a>
+              <a
+                href="#"
+                className="col-span-1 flex justify-center items-center p-8 rounded-md hover:shadow-lg z-10 relative transition"
+              >
+                <img
+                  className="max-h-16"
+                  src="early-adopters/Specifx.jpg"
+                  alt=""
+                />
+              </a>
+              <a
+                href="#"
+                className="col-span-1 flex justify-center items-center p-8 rounded-md hover:shadow-lg z-10 relative transition"
+              >
+                <img
+                  className="max-h-16"
+                  src="early-adopters/SRG-technologies-private-limited.jpg"
+                  alt=""
+                />
+              </a>
+              <a
+                href="#"
+                className="col-span-1 flex justify-center items-center p-8 rounded-md hover:shadow-lg z-10 relative transition"
+              >
+                <img
+                  className="max-h-16"
+                  src="early-adopters/Suzami-Tech-Pvt-Ltd.svg"
+                  alt=""
+                />
+              </a>
+              <a
+                href="#"
+                className="col-span-1 flex justify-center items-center p-8 rounded-md hover:shadow-lg z-10 relative transition"
+              >
+                <img
+                  className="max-h-16"
+                  src="early-adopters/Tanumanasa-Service-Pvt-Ltd.jpg"
+                  alt=""
+                />
+              </a>
+              <a
+                href="#"
+                className="col-span-1 flex justify-center items-center p-8 rounded-md hover:shadow-lg z-10 relative transition"
+              >
+                <img
+                  className="max-h-16"
+                  src="early-adopters/Unostreet.jpg"
+                  alt=""
+                />
+              </a>
+              <a
+                href="#"
+                className="col-span-1 flex justify-center items-center p-8 rounded-md hover:shadow-lg z-10 relative transition"
+              >
+                <img
+                  className="max-h-16"
+                  src="early-adopters/Veri-Once.jpg"
+                  alt=""
+                />
+              </a>
+              <a
+                href="#"
+                className="col-span-1 flex justify-center items-center p-8 rounded-md hover:shadow-lg z-10 relative transition"
+              >
+                <img
+                  className="max-h-16"
+                  src="early-adopters/Yobny-Tech.jpg"
+                  alt=""
+                />
+              </a>
+            </div>
+          </div>
+        </section>
 
         <section className="relative bg-gray-900 border-t border-gray-700">
-          <div className="max-w-6xl 2xl:max-w-7xl  mx-auto">
+          <div className="max-w-6xl 2xl:max-w-7xl mx-auto">
             <div className="border-l border-gray-700 mx-4 xl:mx-0">
               <div className="lg:grid lg:grid-cols-12 lg:gap-12 2xl:gap-5 px-0 pb-8">
                 <div className="lg:col-span-7 2xl:col-span-8">
@@ -385,7 +752,7 @@ export default function Home() {
                               width="16"
                               height="16"
                               fill="currentColor"
-                              class="w-6 h-6"
+                              className="w-6 h-6"
                               viewBox="0 0 16 16"
                             >
                               <path
@@ -556,7 +923,7 @@ export default function Home() {
                           width="16"
                           height="16"
                           fill="currentColor"
-                          class="w-6 h-6"
+                          className="w-6 h-6"
                           viewBox="0 0 16 16"
                         >
                           <path d="M8 0C3.58 0 0 3.58 0 8c0 3.54 2.29 6.53 5.47 7.59.4.07.55-.17.55-.38 0-.19-.01-.82-.01-1.49-2.01.37-2.53-.49-2.69-.94-.09-.23-.48-.94-.82-1.13-.28-.15-.68-.52-.01-.53.63-.01 1.08.58 1.23.82.72 1.21 1.87.87 2.33.66.07-.52.28-.87.51-1.07-1.78-.2-3.64-.89-3.64-3.95 0-.87.31-1.59.82-2.15-.08-.2-.36-1.02.08-2.12 0 0 .67-.21 2.2.82.64-.18 1.32-.27 2-.27.68 0 1.36.09 2 .27 1.53-1.04 2.2-.82 2.2-.82.44 1.1.16 1.92.08 2.12.51.56.82 1.27.82 2.15 0 3.07-1.87 3.75-3.65 3.95.29.25.54.73.54 1.48 0 1.07-.01 1.93-.01 2.2 0 .21.15.46.55.38A8.012 8.012 0 0 0 16 8c0-4.42-3.58-8-8-8z" />
@@ -588,7 +955,7 @@ export default function Home() {
                           width="16"
                           height="16"
                           fill="currentColor"
-                          class="w-6 h-6"
+                          className="w-6 h-6"
                           viewBox="0 0 16 16"
                         >
                           <path d="M8 0C3.58 0 0 3.58 0 8c0 3.54 2.29 6.53 5.47 7.59.4.07.55-.17.55-.38 0-.19-.01-.82-.01-1.49-2.01.37-2.53-.49-2.69-.94-.09-.23-.48-.94-.82-1.13-.28-.15-.68-.52-.01-.53.63-.01 1.08.58 1.23.82.72 1.21 1.87.87 2.33.66.07-.52.28-.87.51-1.07-1.78-.2-3.64-.89-3.64-3.95 0-.87.31-1.59.82-2.15-.08-.2-.36-1.02.08-2.12 0 0 .67-.21 2.2.82.64-.18 1.32-.27 2-.27.68 0 1.36.09 2 .27 1.53-1.04 2.2-.82 2.2-.82.44 1.1.16 1.92.08 2.12.51.56.82 1.27.82 2.15 0 3.07-1.87 3.75-3.65 3.95.29.25.54.73.54 1.48 0 1.07-.01 1.93-.01 2.2 0 .21.15.46.55.38A8.012 8.012 0 0 0 16 8c0-4.42-3.58-8-8-8z" />
@@ -618,7 +985,7 @@ export default function Home() {
                           width="16"
                           height="16"
                           fill="currentColor"
-                          class="w-6 h-6"
+                          className="w-6 h-6"
                           viewBox="0 0 16 16"
                         >
                           <path d="M8 0C3.58 0 0 3.58 0 8c0 3.54 2.29 6.53 5.47 7.59.4.07.55-.17.55-.38 0-.19-.01-.82-.01-1.49-2.01.37-2.53-.49-2.69-.94-.09-.23-.48-.94-.82-1.13-.28-.15-.68-.52-.01-.53.63-.01 1.08.58 1.23.82.72 1.21 1.87.87 2.33.66.07-.52.28-.87.51-1.07-1.78-.2-3.64-.89-3.64-3.95 0-.87.31-1.59.82-2.15-.08-.2-.36-1.02.08-2.12 0 0 .67-.21 2.2.82.64-.18 1.32-.27 2-.27.68 0 1.36.09 2 .27 1.53-1.04 2.2-.82 2.2-.82.44 1.1.16 1.92.08 2.12.51.56.82 1.27.82 2.15 0 3.07-1.87 3.75-3.65 3.95.29.25.54.73.54 1.48 0 1.07-.01 1.93-.01 2.2 0 .21.15.46.55.38A8.012 8.012 0 0 0 16 8c0-4.42-3.58-8-8-8z" />
@@ -648,7 +1015,7 @@ export default function Home() {
                           width="16"
                           height="16"
                           fill="currentColor"
-                          class="w-6 h-6"
+                          className="w-6 h-6"
                           viewBox="0 0 16 16"
                         >
                           <path d="M8 0C3.58 0 0 3.58 0 8c0 3.54 2.29 6.53 5.47 7.59.4.07.55-.17.55-.38 0-.19-.01-.82-.01-1.49-2.01.37-2.53-.49-2.69-.94-.09-.23-.48-.94-.82-1.13-.28-.15-.68-.52-.01-.53.63-.01 1.08.58 1.23.82.72 1.21 1.87.87 2.33.66.07-.52.28-.87.51-1.07-1.78-.2-3.64-.89-3.64-3.95 0-.87.31-1.59.82-2.15-.08-.2-.36-1.02.08-2.12 0 0 .67-.21 2.2.82.64-.18 1.32-.27 2-.27.68 0 1.36.09 2 .27 1.53-1.04 2.2-.82 2.2-.82.44 1.1.16 1.92.08 2.12.51.56.82 1.27.82 2.15 0 3.07-1.87 3.75-3.65 3.95.29.25.54.73.54 1.48 0 1.07-.01 1.93-.01 2.2 0 .21.15.46.55.38A8.012 8.012 0 0 0 16 8c0-4.42-3.58-8-8-8z" />
@@ -678,7 +1045,7 @@ export default function Home() {
                           width="16"
                           height="16"
                           fill="currentColor"
-                          class="w-6 h-6"
+                          className="w-6 h-6"
                           viewBox="0 0 16 16"
                         >
                           <path d="M8 0C3.58 0 0 3.58 0 8c0 3.54 2.29 6.53 5.47 7.59.4.07.55-.17.55-.38 0-.19-.01-.82-.01-1.49-2.01.37-2.53-.49-2.69-.94-.09-.23-.48-.94-.82-1.13-.28-.15-.68-.52-.01-.53.63-.01 1.08.58 1.23.82.72 1.21 1.87.87 2.33.66.07-.52.28-.87.51-1.07-1.78-.2-3.64-.89-3.64-3.95 0-.87.31-1.59.82-2.15-.08-.2-.36-1.02.08-2.12 0 0 .67-.21 2.2.82.64-.18 1.32-.27 2-.27.68 0 1.36.09 2 .27 1.53-1.04 2.2-.82 2.2-.82.44 1.1.16 1.92.08 2.12.51.56.82 1.27.82 2.15 0 3.07-1.87 3.75-3.65 3.95.29.25.54.73.54 1.48 0 1.07-.01 1.93-.01 2.2 0 .21.15.46.55.38A8.012 8.012 0 0 0 16 8c0-4.42-3.58-8-8-8z" />
@@ -1440,7 +1807,7 @@ export default function Home() {
                     width="16"
                     height="16"
                     fill="currentColor"
-                    class="w-6 h-6"
+                    className="w-6 h-6"
                     viewBox="0 0 16 16"
                   >
                     <path
@@ -1460,7 +1827,7 @@ export default function Home() {
                     width="16"
                     height="16"
                     fill="currentColor"
-                    class="w-6 h-6"
+                    className="w-6 h-6"
                     viewBox="0 0 16 16"
                   >
                     <path
