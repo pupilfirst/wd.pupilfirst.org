@@ -242,6 +242,32 @@ export default function Home() {
               >
                 <img
                   className="max-h-16"
+                  src="early-adopters/freshworks-logo.svg"
+                  alt=""
+                />
+              </a>
+              <a
+                href="#"
+                className="col-span-1 flex justify-center items-center p-8 rounded-md hover:shadow-lg z-10 relative transition"
+              >
+                <img className="max-h-8" src="early-adopters/open.svg" alt="" />
+              </a>
+              <a
+                href="#"
+                className="col-span-1 flex justify-center items-center p-8 rounded-md hover:shadow-lg z-10 relative transition"
+              >
+                <img
+                  className="max-h-16"
+                  src="early-adopters/carestack.svg"
+                  alt=""
+                />
+              </a>
+              <a
+                href="#"
+                className="col-span-1 flex justify-center items-center p-8 rounded-md hover:shadow-lg z-10 relative transition"
+              >
+                <img
+                  className="max-h-16"
                   src="early-adopters/AgroCast-Analytics-Pvt-Ltd.jpg"
                   alt=""
                 />
