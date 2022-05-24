@@ -1,4 +1,6 @@
 import Head from "next/head";
+import React, { useEffect, useState } from "react";
+import ReactDOM from "react-dom";
 
 function ImageWithDescription({ name, githuburl, caption, role, imgSrc }) {
   return (
@@ -21,6 +23,11 @@ function ImageWithDescription({ name, githuburl, caption, role, imgSrc }) {
 }
 
 export default function Home() {
+  const [showMe, setShowMe] = useState(false);
+  function toggle() {
+    setShowMe(!showMe);
+  }
+
   return (
     <div className={""}>
       <Head>
@@ -176,7 +183,7 @@ export default function Home() {
                   >
                     NASDAQ:FRSH
                   </a>
-                  ), India’s leader in Software as a Service (SaaS) industry,
+                  ), India's leader in Software as a Service (SaaS) industry,
                   designed the curriculum for a minor degree in web development.
                 </p>
                 <p className="mt-4 font-mono text-sm md:text-base lg:text-lg">
@@ -228,14 +235,8 @@ export default function Home() {
               <h2 className="text-2xl lg:text-6xl text-gray-600 leading-snug">
                 Hiring Network
               </h2>
-              <p className="font-mono pt-4">
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit. In vel
-                dictum urna. Integer eu mi gravida, rhoncus erat in, congue
-                nunc. Mauris posuere efficitur lobortis. Praesent euismod justo
-                sed tempus consectetur.
-              </p>
             </div>
-            <div className="mt-6 grid grid-cols-2 gap-0.5 md:grid-cols-5 lg:mt-8">
+            <div className="mt-2 lg:mt-4 grid grid-cols-2 gap-0.5 md:grid-cols-5">
               <a
                 href="#"
                 className="col-span-1 flex justify-center items-center p-8 rounded-md hover:shadow-lg z-10 relative transition"
@@ -332,286 +333,492 @@ export default function Home() {
                   alt=""
                 />
               </a>
-              <a
-                href="#"
-                className="col-span-1 flex justify-center items-center p-8 rounded-md hover:shadow-lg z-10 relative transition"
+            </div>
+            <div
+              style={{
+                display: showMe ? "block" : "none",
+              }}
+            >
+              <div className="grid grid-cols-2 gap-0.5 md:grid-cols-5">
+                <a
+                  href="#"
+                  className="col-span-1 flex justify-center items-center p-8 rounded-md hover:shadow-lg z-10 relative transition"
+                >
+                  <img
+                    className="max-h-12"
+                    src="early-adopters/Economize-Inc.png"
+                    alt=""
+                  />
+                </a>
+                <a
+                  href="#"
+                  className="col-span-1 flex justify-center items-center p-8 rounded-md hover:shadow-lg z-10 relative transition"
+                >
+                  <img
+                    className="max-h-16"
+                    src="early-adopters/Eduhex.jpg"
+                    alt=""
+                  />
+                </a>
+                <a
+                  href="#"
+                  className="col-span-1 flex justify-center items-center p-8 rounded-md hover:shadow-lg z-10 relative transition"
+                >
+                  <img
+                    className="max-h-16"
+                    src="early-adopters/Embright-Infotech-Private-LImited.jpg"
+                    alt=""
+                  />
+                </a>
+                <a
+                  href="#"
+                  className="col-span-1 flex justify-center items-center p-8 rounded-md hover:shadow-lg z-10 relative transition"
+                >
+                  <img
+                    className="max-h-24"
+                    src="early-adopters/Ensynapse-Technique-Pvt-Ltd.jpg"
+                    alt=""
+                  />
+                </a>
+                <a
+                  href="#"
+                  className="col-span-1 flex justify-center items-center p-8 rounded-md hover:shadow-lg z-10 relative transition"
+                >
+                  <img
+                    className="max-h-16"
+                    src="early-adopters/Fintech-IT-Solutions-LLP.jpg"
+                    alt=""
+                  />
+                </a>
+                <a
+                  href="#"
+                  className="col-span-1 flex justify-center items-center p-8 rounded-md hover:shadow-lg z-10 relative transition"
+                >
+                  <img
+                    className="max-h-16"
+                    src="early-adopters/Grus-Grade-Private-Limited.jpg"
+                    alt=""
+                  />
+                </a>
+                <a
+                  href="#"
+                  className="col-span-1 flex justify-center items-center p-8 rounded-md hover:shadow-lg z-10 relative transition"
+                >
+                  <img
+                    className="max-h-16"
+                    src="early-adopters/Hostune-Labs-Pvt-Ltd.jpg"
+                    alt=""
+                  />
+                </a>
+                <a
+                  href="#"
+                  className="col-span-1 flex justify-center items-center p-8 rounded-md hover:shadow-lg z-10 relative transition"
+                >
+                  <img
+                    className="max-h-16"
+                    src="early-adopters/MiClient-Private-Limited.jpg"
+                    alt=""
+                  />
+                </a>
+                <a
+                  href="#"
+                  className="col-span-1 flex justify-center items-center p-8 rounded-md hover:shadow-lg z-10 relative transition"
+                >
+                  <img
+                    className="max-h-16"
+                    src="early-adopters/Movio-Mobility.jpg"
+                    alt=""
+                  />
+                </a>
+                <a
+                  href="#"
+                  className="col-span-1 flex justify-center items-center p-8 rounded-md hover:shadow-lg z-10 relative transition"
+                >
+                  <img
+                    className="max-h-16"
+                    src="early-adopters/Nebula-Cloud.jpg"
+                    alt=""
+                  />
+                </a>
+                <a
+                  href="#"
+                  className="col-span-1 flex justify-center items-center p-8 rounded-md hover:shadow-lg z-10 relative transition"
+                >
+                  <img
+                    className="max-h-16"
+                    src="early-adopters/Neos-HealthTech-Private-Limited.jpg"
+                    alt=""
+                  />
+                </a>
+                <a
+                  href="#"
+                  className="col-span-1 flex justify-center items-center p-8 rounded-md hover:shadow-lg z-10 relative transition"
+                >
+                  <img
+                    className="max-h-16"
+                    src="early-adopters/Next-Smart-Solutions-Pvt-Ltd.jpg"
+                    alt=""
+                  />
+                </a>
+                <a
+                  href="#"
+                  className="col-span-1 flex justify-center items-center p-8 rounded-md hover:shadow-lg z-10 relative transition"
+                >
+                  <img
+                    className="max-h-16"
+                    src="early-adopters/Nordstello-Technologies.jpg"
+                    alt=""
+                  />
+                </a>
+                <a
+                  href="#"
+                  className="col-span-1 flex justify-center items-center p-8 rounded-md hover:shadow-lg z-10 relative transition"
+                >
+                  <img
+                    className="max-h-16"
+                    src="early-adopters/Nyx-Wolves.jpg"
+                    alt=""
+                  />
+                </a>
+                <a
+                  href="#"
+                  className="col-span-1 flex justify-center items-center p-8 rounded-md hover:shadow-lg z-10 relative transition"
+                >
+                  <img
+                    className="max-h-16"
+                    src="early-adopters/Pankhtech-India-Pvt-Ltd.jpg"
+                    alt=""
+                  />
+                </a>
+                <a
+                  href="#"
+                  className="col-span-1 flex justify-center items-center p-8 rounded-md hover:shadow-lg z-10 relative transition"
+                >
+                  <img
+                    className="max-h-20"
+                    src="early-adopters/Papswap-Policies-over-Politics.jpg"
+                    alt=""
+                  />
+                </a>
+                <a
+                  href="#"
+                  className="col-span-1 flex justify-center items-center p-8 rounded-md hover:shadow-lg z-10 relative transition"
+                >
+                  <img
+                    className="max-h-16"
+                    src="early-adopters/Peak.jpg"
+                    alt=""
+                  />
+                </a>
+                <a
+                  href="#"
+                  className="col-span-1 flex justify-center items-center p-8 rounded-md hover:shadow-lg z-10 relative transition"
+                >
+                  <img
+                    className="max-h-16"
+                    src="early-adopters/Stek-Innovations-Pvt-Ltd.jpg"
+                    alt=""
+                  />
+                </a>
+                <a
+                  href="#"
+                  className="col-span-1 flex justify-center items-center p-8 rounded-md hover:shadow-lg z-10 relative transition"
+                >
+                  <img
+                    className="max-h-20"
+                    src="early-adopters/Koncept-Klear-Edtech-Pvt-Ltd.jpg"
+                    alt=""
+                  />
+                </a>
+                <a
+                  href="#"
+                  className="col-span-1 flex justify-center items-center p-8 rounded-md hover:shadow-lg z-10 relative transition"
+                >
+                  <img
+                    className="max-h-16"
+                    src="early-adopters/PORTPRO.jpg"
+                    alt=""
+                  />
+                </a>
+                <a
+                  href="#"
+                  className="col-span-1 flex justify-center items-center p-8 rounded-md hover:shadow-lg z-10 relative transition"
+                >
+                  <img
+                    className="max-h-16"
+                    src="early-adopters/Reeudo.jpg"
+                    alt=""
+                  />
+                </a>
+                <a
+                  href="#"
+                  className="col-span-1 flex justify-center items-center p-8 rounded-md hover:shadow-lg z-10 relative transition"
+                >
+                  <img
+                    className="max-h-16"
+                    src="early-adopters/Rhythmflows-Solutions-Private-Limited.jpg"
+                    alt=""
+                  />
+                </a>
+                <a
+                  href="#"
+                  className="col-span-1 flex justify-center items-center p-8 rounded-md hover:shadow-lg z-10 relative transition"
+                >
+                  <img
+                    className="max-h-16"
+                    src="early-adopters/SAT-Infotech-Pvt-Ltd.jpg"
+                    alt=""
+                  />
+                </a>
+                <a
+                  href="#"
+                  className="col-span-1 flex justify-center items-center p-8 rounded-md hover:shadow-lg z-10 relative transition"
+                >
+                  <img
+                    className="max-h-16"
+                    src="early-adopters/Specifx.jpg"
+                    alt=""
+                  />
+                </a>
+                <a
+                  href="#"
+                  className="col-span-1 flex justify-center items-center p-8 rounded-md hover:shadow-lg z-10 relative transition"
+                >
+                  <img
+                    className="max-h-16"
+                    src="early-adopters/SRG-technologies-private-limited.jpg"
+                    alt=""
+                  />
+                </a>
+                <a
+                  href="#"
+                  className="col-span-1 flex justify-center items-center p-8 rounded-md hover:shadow-lg z-10 relative transition"
+                >
+                  <img
+                    className="max-h-16"
+                    src="early-adopters/Suzami-Tech-Pvt-Ltd.svg"
+                    alt=""
+                  />
+                </a>
+                <a
+                  href="#"
+                  className="col-span-1 flex justify-center items-center p-8 rounded-md hover:shadow-lg z-10 relative transition"
+                >
+                  <img
+                    className="max-h-16"
+                    src="early-adopters/Tanumanasa-Service-Pvt-Ltd.jpg"
+                    alt=""
+                  />
+                </a>
+                <a
+                  href="#"
+                  className="col-span-1 flex justify-center items-center p-8 rounded-md hover:shadow-lg z-10 relative transition"
+                >
+                  <img
+                    className="max-h-16"
+                    src="early-adopters/Unostreet.jpg"
+                    alt=""
+                  />
+                </a>
+                <a
+                  href="#"
+                  className="col-span-1 flex justify-center items-center p-8 rounded-md hover:shadow-lg z-10 relative transition"
+                >
+                  <img
+                    className="max-h-16"
+                    src="early-adopters/Veri-Once.jpg"
+                    alt=""
+                  />
+                </a>
+                <a
+                  href="#"
+                  className="col-span-1 flex justify-center items-center p-8 rounded-md hover:shadow-lg z-10 relative transition"
+                >
+                  <img
+                    className="max-h-16"
+                    src="early-adopters/Yobny-Tech.jpg"
+                    alt=""
+                  />
+                </a>
+                <a
+                  href="#"
+                  className="col-span-1 flex justify-center items-center p-8 rounded-md hover:shadow-lg z-10 relative transition"
+                >
+                  <img
+                    className="max-h-16"
+                    src="early-adopters/Beyondscale-Technologies-Pvt-Ltd.jpg"
+                    alt=""
+                  />
+                </a>
+                <a
+                  href="#"
+                  className="col-span-1 flex justify-center items-center p-8 rounded-md hover:shadow-lg z-10 relative transition"
+                >
+                  <img
+                    className="max-h-16"
+                    src="early-adopters/Cureous-Labs-Private-Limited.jpg"
+                    alt=""
+                  />
+                </a>
+                <a
+                  href="#"
+                  className="col-span-1 flex justify-center items-center p-8 rounded-md hover:shadow-lg z-10 relative transition"
+                >
+                  <img
+                    className="max-h-20"
+                    src="early-adopters/Deepmindz-Innovations-Pvt-Ltd.jpg"
+                    alt=""
+                  />
+                </a>
+                <a
+                  href="#"
+                  className="col-span-1 flex justify-center items-center p-8 rounded-md hover:shadow-lg z-10 relative transition"
+                >
+                  <img
+                    className="max-h-20"
+                    src="early-adopters/Greatpelican-Digital-Systems-Pvt-Ltd.jpg"
+                    alt=""
+                  />
+                </a>
+                <a
+                  href="#"
+                  className="col-span-1 flex justify-center items-center p-8 rounded-md hover:shadow-lg z-10 relative transition"
+                >
+                  <img
+                    className="max-h-20"
+                    src="early-adopters/Greentin-Solutions-Pvt-Ltd.jpg"
+                    alt=""
+                  />
+                </a>
+                <a
+                  href="#"
+                  className="col-span-1 flex justify-center items-center p-8 rounded-md hover:shadow-lg z-10 relative transition"
+                >
+                  <img
+                    className="max-h-16"
+                    src="early-adopters/Grotesque.jpg"
+                    alt=""
+                  />
+                </a>
+                <a
+                  href="#"
+                  className="col-span-1 flex justify-center items-center p-8 rounded-md hover:shadow-lg z-10 relative transition"
+                >
+                  <img
+                    className="max-h-12"
+                    src="early-adopters/Instasell.jpg"
+                    alt=""
+                  />
+                </a>
+                <a
+                  href="#"
+                  className="col-span-1 flex justify-center items-center p-8 rounded-md hover:shadow-lg z-10 relative transition"
+                >
+                  <img
+                    className="max-h-12"
+                    src="early-adopters/Ikigai-Infotech-Saleshandy.jpg"
+                    alt=""
+                  />
+                </a>
+                <a
+                  href="#"
+                  className="col-span-1 flex justify-center items-center p-8 rounded-md hover:shadow-lg z-10 relative transition"
+                >
+                  <img
+                    className="max-h-12"
+                    src="early-adopters/iSimplexity-Pvt-limited.jpg"
+                    alt=""
+                  />
+                </a>
+                <a
+                  href="#"
+                  className="col-span-1 flex justify-center items-center p-8 rounded-md hover:shadow-lg z-10 relative transition"
+                >
+                  <img
+                    className="max-h-16"
+                    src="early-adopters/Kodeleaf-Software-Pvt-Ltd.jpg"
+                    alt=""
+                  />
+                </a>
+                <a
+                  href="#"
+                  className="col-span-1 flex justify-center items-center p-8 rounded-md hover:shadow-lg z-10 relative transition"
+                >
+                  <img
+                    className="max-h-16"
+                    src="early-adopters/Leadzen-ai.jpg"
+                    alt=""
+                  />
+                </a>
+                <a
+                  href="#"
+                  className="col-span-1 flex justify-center items-center p-8 rounded-md hover:shadow-lg z-10 relative transition"
+                >
+                  <img
+                    className="max-h-16"
+                    src="early-adopters/Max-Vision-Solutions-Pvt-Ltd.jpg"
+                    alt=""
+                  />
+                </a>
+                <a
+                  href="#"
+                  className="col-span-1 flex justify-center items-center p-8 rounded-md hover:shadow-lg z-10 relative transition"
+                >
+                  <img
+                    className="max-h-16"
+                    src="early-adopters/Padantra-Technologies-LLP.jpg"
+                    alt=""
+                  />
+                </a>
+                <a
+                  href="#"
+                  className="col-span-1 flex justify-center items-center p-8 rounded-md hover:shadow-lg z-10 relative transition"
+                >
+                  <img
+                    className="max-h-16"
+                    src="early-adopters/Pixotronics.jpg"
+                    alt=""
+                  />
+                </a>
+                <a
+                  href="#"
+                  className="col-span-1 flex justify-center items-center p-8 rounded-md hover:shadow-lg z-10 relative transition"
+                >
+                  <img
+                    className="max-h-16"
+                    src="early-adopters/Rational-Knowledge-Services-Private-Limited.jpg"
+                    alt=""
+                  />
+                </a>
+                <a
+                  href="#"
+                  className="col-span-1 flex justify-center items-center p-8 rounded-md hover:shadow-lg z-10 relative transition"
+                >
+                  <img
+                    className="max-h-16"
+                    src="early-adopters/SiSoC-Semiconductor-Technologies.jpg"
+                    alt=""
+                  />
+                </a>
+                <a
+                  href="#"
+                  className="col-span-1 flex justify-center items-center p-8 rounded-md hover:shadow-lg z-10 relative transition"
+                >
+                  <img
+                    className="max-h-20"
+                    src="early-adopters/Soulpage-IT-Solutions-Private-Limited.png"
+                    alt=""
+                  />
+                </a>
+              </div>
+            </div>
+            <div className="flex items-center justify-center mt-4">
+              <button
+                className="text-sm font-semibold text-secondary-600 px-3 py-2 bg-secondary-50 rounded-md"
+                onClick={toggle}
               >
-                <img
-                  className="max-h-12"
-                  src="early-adopters/Economize-Inc.png"
-                  alt=""
-                />
-              </a>
-              <a
-                href="#"
-                className="col-span-1 flex justify-center items-center p-8 rounded-md hover:shadow-lg z-10 relative transition"
-              >
-                <img
-                  className="max-h-16"
-                  src="early-adopters/Eduhex.jpg"
-                  alt=""
-                />
-              </a>
-              <a
-                href="#"
-                className="col-span-1 flex justify-center items-center p-8 rounded-md hover:shadow-lg z-10 relative transition"
-              >
-                <img
-                  className="max-h-16"
-                  src="early-adopters/Embright-Infotech-Private-LImited.jpg"
-                  alt=""
-                />
-              </a>
-              <a
-                href="#"
-                className="col-span-1 flex justify-center items-center p-8 rounded-md hover:shadow-lg z-10 relative transition"
-              >
-                <img
-                  className="max-h-24"
-                  src="early-adopters/Ensynapse-Technique-Pvt-Ltd.jpg"
-                  alt=""
-                />
-              </a>
-              <a
-                href="#"
-                className="col-span-1 flex justify-center items-center p-8 rounded-md hover:shadow-lg z-10 relative transition"
-              >
-                <img
-                  className="max-h-16"
-                  src="early-adopters/Fintech-IT-Solutions-LLP.jpg"
-                  alt=""
-                />
-              </a>
-              <a
-                href="#"
-                className="col-span-1 flex justify-center items-center p-8 rounded-md hover:shadow-lg z-10 relative transition"
-              >
-                <img
-                  className="max-h-16"
-                  src="early-adopters/Grus-Grade-Private-Limited.jpg"
-                  alt=""
-                />
-              </a>
-              <a
-                href="#"
-                className="col-span-1 flex justify-center items-center p-8 rounded-md hover:shadow-lg z-10 relative transition"
-              >
-                <img
-                  className="max-h-16"
-                  src="early-adopters/Hostune-Labs-Pvt-Ltd.jpg"
-                  alt=""
-                />
-              </a>
-              <a
-                href="#"
-                className="col-span-1 flex justify-center items-center p-8 rounded-md hover:shadow-lg z-10 relative transition"
-              >
-                <img
-                  className="max-h-16"
-                  src="early-adopters/MiClient-Private-Limited.jpg"
-                  alt=""
-                />
-              </a>
-              <a
-                href="#"
-                className="col-span-1 flex justify-center items-center p-8 rounded-md hover:shadow-lg z-10 relative transition"
-              >
-                <img
-                  className="max-h-16"
-                  src="early-adopters/Movio-Mobility.jpg"
-                  alt=""
-                />
-              </a>
-              <a
-                href="#"
-                className="col-span-1 flex justify-center items-center p-8 rounded-md hover:shadow-lg z-10 relative transition"
-              >
-                <img
-                  className="max-h-16"
-                  src="early-adopters/Nebula-Cloud.jpg"
-                  alt=""
-                />
-              </a>
-              <a
-                href="#"
-                className="col-span-1 flex justify-center items-center p-8 rounded-md hover:shadow-lg z-10 relative transition"
-              >
-                <img
-                  className="max-h-16"
-                  src="early-adopters/Neos-HealthTech-Private-Limited.jpg"
-                  alt=""
-                />
-              </a>
-              <a
-                href="#"
-                className="col-span-1 flex justify-center items-center p-8 rounded-md hover:shadow-lg z-10 relative transition"
-              >
-                <img
-                  className="max-h-16"
-                  src="early-adopters/Next-Smart-Solutions-Pvt-Ltd.jpg"
-                  alt=""
-                />
-              </a>
-              <a
-                href="#"
-                className="col-span-1 flex justify-center items-center p-8 rounded-md hover:shadow-lg z-10 relative transition"
-              >
-                <img
-                  className="max-h-16"
-                  src="early-adopters/Nordstello-Technologies.jpg"
-                  alt=""
-                />
-              </a>
-              <a
-                href="#"
-                className="col-span-1 flex justify-center items-center p-8 rounded-md hover:shadow-lg z-10 relative transition"
-              >
-                <img
-                  className="max-h-16"
-                  src="early-adopters/Nyx-Wolves.jpg"
-                  alt=""
-                />
-              </a>
-              <a
-                href="#"
-                className="col-span-1 flex justify-center items-center p-8 rounded-md hover:shadow-lg z-10 relative transition"
-              >
-                <img
-                  className="max-h-16"
-                  src="early-adopters/Pankhtech-India-Pvt-Ltd.jpg"
-                  alt=""
-                />
-              </a>
-              <a
-                href="#"
-                className="col-span-1 flex justify-center items-center p-8 rounded-md hover:shadow-lg z-10 relative transition"
-              >
-                <img
-                  className="max-h-20"
-                  src="early-adopters/Papswap-Policies-over-Politics.jpg"
-                  alt=""
-                />
-              </a>
-              <a
-                href="#"
-                className="col-span-1 flex justify-center items-center p-8 rounded-md hover:shadow-lg z-10 relative transition"
-              >
-                <img
-                  className="max-h-16"
-                  src="early-adopters/Peak.jpg"
-                  alt=""
-                />
-              </a>
-              <a
-                href="#"
-                className="col-span-1 flex justify-center items-center p-8 rounded-md hover:shadow-lg z-10 relative transition"
-              >
-                <img
-                  className="max-h-16"
-                  src="early-adopters/PORTPRO.jpg"
-                  alt=""
-                />
-              </a>
-              <a
-                href="#"
-                className="col-span-1 flex justify-center items-center p-8 rounded-md hover:shadow-lg z-10 relative transition"
-              >
-                <img
-                  className="max-h-16"
-                  src="early-adopters/Reeudo.jpg"
-                  alt=""
-                />
-              </a>
-              <a
-                href="#"
-                className="col-span-1 flex justify-center items-center p-8 rounded-md hover:shadow-lg z-10 relative transition"
-              >
-                <img
-                  className="max-h-16"
-                  src="early-adopters/Rhythmflows-Solutions-Private-Limited.jpg"
-                  alt=""
-                />
-              </a>
-              <a
-                href="#"
-                className="col-span-1 flex justify-center items-center p-8 rounded-md hover:shadow-lg z-10 relative transition"
-              >
-                <img
-                  className="max-h-16"
-                  src="early-adopters/SAT-Infotech-Pvt-Ltd.jpg"
-                  alt=""
-                />
-              </a>
-              <a
-                href="#"
-                className="col-span-1 flex justify-center items-center p-8 rounded-md hover:shadow-lg z-10 relative transition"
-              >
-                <img
-                  className="max-h-16"
-                  src="early-adopters/Specifx.jpg"
-                  alt=""
-                />
-              </a>
-              <a
-                href="#"
-                className="col-span-1 flex justify-center items-center p-8 rounded-md hover:shadow-lg z-10 relative transition"
-              >
-                <img
-                  className="max-h-16"
-                  src="early-adopters/SRG-technologies-private-limited.jpg"
-                  alt=""
-                />
-              </a>
-              <a
-                href="#"
-                className="col-span-1 flex justify-center items-center p-8 rounded-md hover:shadow-lg z-10 relative transition"
-              >
-                <img
-                  className="max-h-16"
-                  src="early-adopters/Suzami-Tech-Pvt-Ltd.svg"
-                  alt=""
-                />
-              </a>
-              <a
-                href="#"
-                className="col-span-1 flex justify-center items-center p-8 rounded-md hover:shadow-lg z-10 relative transition"
-              >
-                <img
-                  className="max-h-16"
-                  src="early-adopters/Tanumanasa-Service-Pvt-Ltd.jpg"
-                  alt=""
-                />
-              </a>
-              <a
-                href="#"
-                className="col-span-1 flex justify-center items-center p-8 rounded-md hover:shadow-lg z-10 relative transition"
-              >
-                <img
-                  className="max-h-16"
-                  src="early-adopters/Unostreet.jpg"
-                  alt=""
-                />
-              </a>
-              <a
-                href="#"
-                className="col-span-1 flex justify-center items-center p-8 rounded-md hover:shadow-lg z-10 relative transition"
-              >
-                <img
-                  className="max-h-16"
-                  src="early-adopters/Veri-Once.jpg"
-                  alt=""
-                />
-              </a>
-              <a
-                href="#"
-                className="col-span-1 flex justify-center items-center p-8 rounded-md hover:shadow-lg z-10 relative transition"
-              >
-                <img
-                  className="max-h-16"
-                  src="early-adopters/Yobny-Tech.jpg"
-                  alt=""
-                />
-              </a>
+                {showMe ? "Show Less" : "Show More"}
+              </button>
             </div>
           </div>
         </section>
