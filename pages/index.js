@@ -3,7 +3,7 @@
 import Head from "next/head";
 import React, { useEffect, useState } from "react";
 import ReactDOM from "react-dom";
-import json from "./../public/hiringNetwork.json";
+import data from "./../data/hiringNetwork.json";
 
 function ImageWithDescription({ name, githuburl, caption, role, imgSrc }) {
 	return (
@@ -39,9 +39,7 @@ let hiringPartner = (title, url, logoSrc) => {
 
 export default function Home() {
 	const [showMore, setShowMore] = useState(false);
-
-	const data = JSON.parse(JSON.stringify(json));
-	const hiringNetwok = showMore ? data : data.slice(0, 10);
+	const hiringNetwork = showMore ? data : data.slice(0, 10);
 
 	return (
 		<div className={""}>
@@ -252,7 +250,7 @@ export default function Home() {
 							</h2>
 						</div>
 						<div className="mt-2 lg:mt-4 grid grid-cols-2 gap-0.5 md:grid-cols-5">
-							{hiringNetwok.map((partner, index) =>
+							{hiringNetwork.map((partner, index) =>
 								hiringPartner(partner.title, partner.url, partner.logoSrc)
 							)}
 						</div>
