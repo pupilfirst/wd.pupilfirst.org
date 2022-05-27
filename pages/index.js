@@ -3,7 +3,7 @@
 import Head from "next/head";
 import React, { useEffect, useState } from "react";
 import ReactDOM from "react-dom";
-import data from "./../data/hiringNetwork.json";
+import data from "./../data/hiring-network.json";
 
 function ImageWithDescription({ name, githuburl, caption, role, imgSrc }) {
 	return (
@@ -32,14 +32,14 @@ let hiringPartner = (title, url, logoSrc) => {
 			href={url}
 			className="col-span-1 flex justify-center items-center p-8 rounded-md hover:shadow-lg z-10 relative transition"
 		>
-			<img className="max-h-16" src={logoSrc} alt={title} />
+			<img className="max-h-16" src={`hiring-network/${logoSrc}`} alt={title} />
 		</a>
 	);
 };
 
 export default function Home() {
-	const [showMore, setShowMore] = useState(false);
-	const hiringNetwork = showMore ? data : data.slice(0, 10);
+	const [showLess, setShowLess] = useState(false);
+	const hiringNetwork = showLess ? data : data.slice(0, 10);
 
 	return (
 		<div className={""}>
@@ -256,9 +256,9 @@ export default function Home() {
 						</div>
 						<button
 							className="block mx-auto my-4 text-sm font-semibold text-secondary-600 px-3 py-2 bg-secondary-50 rounded-md"
-							onClick={() => setShowMore((prev) => !prev)}
+							onClick={() => setShowLess((prev) => !prev)}
 						>
-							{showMore ? "Show Less" : "Show more"}
+							{showLess ? "Show Less" : "Show more"}
 						</button>
 					</div>
 				</section>
