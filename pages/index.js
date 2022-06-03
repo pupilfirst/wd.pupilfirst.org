@@ -28,8 +28,9 @@ function ImageWithDescription({ name, githuburl, caption, role, imgSrc }) {
 let hiringPartner = (title, url, logoSrc) => {
 	return (
 		<a
-			key={url}
+			key={title}
 			href={url}
+			target="_blank"
 			className="col-span-1 flex justify-center items-center p-8 rounded-md hover:shadow-lg z-10 relative transition"
 		>
 			<img className="max-h-16" src={`hiring-network/${logoSrc}`} alt={title} />
@@ -249,7 +250,7 @@ export default function Home() {
 								Hiring Network
 							</h2>
 						</div>
-						<div className="mt-2 lg:mt-4 grid grid-cols-2 gap-0.5 md:grid-cols-5">
+						<div className="mt-2 lg:mt-4 grid grid-cols-2 gap-1 md:grid-cols-5">
 							{hiringNetwork.map((partner, index) =>
 								hiringPartner(partner.title, partner.url, partner.logoSrc)
 							)}
