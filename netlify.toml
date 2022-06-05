@@ -1,6 +1,6 @@
 [build]
   publish = "build"
-  command = "npm i && npm run export"
+  command = "yarn install && yarn run export"
 
 [[redirects]]
   from = "/*"
