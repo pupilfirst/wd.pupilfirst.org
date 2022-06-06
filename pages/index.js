@@ -91,7 +91,6 @@ export default function Home(props) {
           content="Minor Degree in Advanced Web Development"
         />
         <meta name="The Minor Degree in Advanced Web Development Curriculum is approved by All India Council for Technical Education (AICTE) under the National Educational Alliance for Technology (NEAT) programme of the Ministry of Education, Government of India. This degree can be opted for and pursued by students who are enrolled in the Institutes selected as part of the Batch 1 of LITE programme." />
-
         <script
           async
           src="https://www.googletagmanager.com/gtag/js?id=G-6H1NS1GQNW"
@@ -1539,7 +1538,6 @@ export default function Home(props) {
     </div>
   );
 }
-
 export async function getStaticProps() {
   return {
     props: {
