@@ -1,4 +1,3 @@
-const plugin = require("tailwindcss/plugin");
 module.exports = {
   future: {
     // removeDeprecatedGapUtilities: true,
@@ -14,8 +13,9 @@ module.exports = {
   theme: {
     extend: {
       fontFamily: {
-        anek: "Anek Malayalam, sans-serif",
-        notoSansMalayalam: "Noto Sans Malayalam,  sans-serif",
+        montserrat:
+          'Montserrat, system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";',
+        mono: 'Source Code Pro, SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace',
       },
       colors: {
         primary: {
@@ -46,8 +46,5 @@ module.exports = {
     },
   },
   variants: {},
-  plugins: [
-    require("@tailwindcss/aspect-ratio"),
-    require("@tailwindcss/typography"),
-  ],
+  plugins: [require("@tailwindcss/aspect-ratio")],
 };

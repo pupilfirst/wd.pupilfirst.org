@@ -2,6 +2,7 @@
 
 import Head from "next/head";
 import React, { useState } from "react";
+import hiringNetworkData from "./../data/hiring-network.json";
 
 function ImageWithDescription({ name, githuburl, caption, role, imgSrc }) {
   return (
@@ -25,7 +26,23 @@ function ImageWithDescription({ name, githuburl, caption, role, imgSrc }) {
   );
 }
 
-export default function Home() {
+let hiringPartner = (index, title, url, logoSrc) => {
+  return (
+    <a
+      key={index}
+      href={url}
+      target="_blank"
+      className="col-span-1 flex justify-center items-center p-8 rounded-md hover:shadow-lg z-10 relative transition"
+    >
+      <img className="max-h-16" src={`hiring-network/${logoSrc}`} alt={title} />
+    </a>
+  );
+};
+
+export default function Home(props) {
+  const [showLess, setShowLess] = useState(false);
+  const hiringNetwork = showLess ? props.data : props.data.slice(0, 10);
+
   return (
     <div className={""}>
       <Head>
@@ -47,10 +64,8 @@ export default function Home() {
         <link rel="icon" href="/favicon.ico" type="image/x-icon" />
         <link rel="preconnect" href="https://fonts.googleapis.com" />
         <link rel="preconnect" href="https://fonts.gstatic.com" crossOrigin />
-        <link rel="preconnect" href="https://fonts.googleapis.com" />
-        <link rel="preconnect" href="https://fonts.gstatic.com" crossOrigin />
         <link
-          href="https://fonts.googleapis.com/css2?family=Anek+Malayalam:wght@500;700&family=Noto+Sans+Malayalam:wght@400;500;600;700&display=swap"
+          href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700;800&family=Source+Code+Pro&display=swap"
           rel="stylesheet"
         />
         <meta
@@ -91,719 +106,1442 @@ export default function Home() {
           }}
         />
       </Head>
-      <main className="bg-gray-100 py-4 md:py-8 space-y-4">
-        <section className="max-w-6xl bg-white shadow-md mx-auto">
-          <div className="bg-green-600 p-12 ">
-            <h1 className="font-anek text-center max-w-2xl w-full leading-tight mx-auo text-white mx-auto">
-              നവകേരള നിർമിതിക്കായി അന്താരാഷ്ട്ര നവഅധ്യായന ഗവേഷണ ശൃംഖല
-            </h1>
-          </div>
-        </section>
-        <section className="max-w-6xl bg-white shadow-md p-4 md:p-8 mx-auto prose lg:prose-xl">
-          <h2 className="font-anek text-center">ആമുഖം</h2>
-          <div className="max-w-4xl mx-auto">
-            <p>
-              ലോക വ്യാവസായിക വിപ്ലവത്തിലെ മാറ്റങ്ങൾ ഉൾക്കൊണ്ട്
-              വിവരസാങ്കേതികവിദ്യ അടിസ്ഥാനമാക്കിയ നവകേരള യുഗത്തിലേക്ക് നാം
-              കാൽവെപ്പേകുകയാണ്.
-            </p>
-            <p>
-              ഇന്റർനെറ്റ് എല്ലാ പൗരന്റെയും ജന്മാവകാശമായി പ്രഖ്യാപിച്ച സംസ്ഥാനം,
-              ഇനി അടിസ്ഥാന വിവരസാങ്കേതിക വിദ്യാഭ്യാസം എല്ലാ ജനങ്ങൾക്കും നൽകുക
-              എന്ന ലക്‌ഷ്യം കൈവരിക്കണം.
-            </p>
-            <p>
-              ഇരുപതു ലക്ഷം ഹൈസ്കൂൾ-എഞ്ചിനീയറിംഗ് വിദ്യാർത്ഥികൾക്ക് വിവരസാങ്കേതിക
-              വിദ്യയിൽ പരിശീലനം, ഒരു ലക്ഷം വിദ്യാർത്ഥികൾക്ക് വിവരസാങ്കേതിക
-              വ്യാവസായിക ലോകോത്തര കഴിവുകൾ, പതിനായിരം നൂതന സാങ്കേതിക വിദ്യ
-              സംരംഭങ്ങൾ എന്നീ സുപ്രധാന ലക്ഷ്യങ്ങൾ രണ്ടായിരത്തി ഇരുപത്തിയാറ്
-              മാർച്ചു മാസത്തിനകം എങ്ങനെ സാധ്യമാക്കാം എന്നതാണ് ഈ പദ്ധതിയുടെ
-              ഉള്ളടക്കം.
-            </p>
-            <p>
-              വിജ്ഞാനാധിഷ്ഠിതമായ നവകേരളത്തിന്റെ സാമൂഹിക-സാമ്പത്തിക അടിത്തറയ്ക്കു
-              കരുത്തേകുവാൻ ഈ പദ്ധതിയുടെ രൂപരേഖ ഭരണാനുമതിക്കായി ഉന്നത വിദ്യാഭ്യാസ
-              വകുപ്പ് മേധാവി വഴി ബഹുമാനപെട്ട മുഖ്യമന്ത്രിക്ക് സമർപ്പിക്കുന്നു.
-            </p>
-            <p>
-              <span className="font-semibold text-2xl">സഞ്ജയ് വിജയകുമാർ</span>
-              <br />
-              സഹസ്ഥാപകൻ, പ്യൂപ്പിൾഫസ്റ്റ്
-            </p>
-          </div>
-        </section>
-        <section className="max-w-6xl bg-white shadow-md p-4 md:p-8 mx-auto prose lg:prose-xl">
-          <h2 className="font-anek text-center">ഉള്ളടക്കം</h2>
-          <div className="max-w-4xl mx-auto">
-            <ol>
-              <li>വിവരസാങ്കേതികവിദ്യാലോകത്തെ തൊഴിലവസര കലവറ.</li>
-              <li>നവകേരള കാഴ്ചപ്പാടും ഇന്നത്തെ നിജസ്ഥിതിയും.</li>
-              <li>ഉന്നതവിദ്യാഭ്യാസ രംഗത്ത് അലകും പിടിയും മാറ്റുന്നതെങ്ങനെ</li>
-              <li>
-                അന്തർദേശിയവും ദേശീയവുമായി തെളിയിക്കപ്പെട്ട നവഅധ്യായന മാതൃക.
-              </li>
-              <li>
-                പഠനവും വ്യാവസായിക വളർച്ചയും ഗവേഷണവും സമന്വയിപ്പിക്കുന്നതെങ്ങനെ?
-              </li>
-              <li>ദാരിദ്ര്യം തുടച്ചുമാറ്റുവാനുള്ള സാമൂഹ്യ പ്രതിബദ്ധത.</li>
-              <li>
-                ലക്‌ഷ്യം സാക്ഷാത്ക്കരിക്കുവാൻ വേണ്ട സർക്കാർ വകുപ്പുതല
-                നടപടിക്രമങ്ങൾ.
-              </li>
-              <li>നവകേരളം: ഒരു ജനതയുടെ നവോത്ഥാന സാക്ഷാത്കാരം.</li>
-            </ol>
-          </div>
-        </section>
-        <section className="max-w-6xl bg-white shadow-md p-4 md:p-8 mx-auto prose lg:prose-xl lg:prose-h2:mt-4">
-          <span className="inline-flex w-full justify-center text-center text-green-600 font-medium">
-            ഒന്നാം അധ്യായം
-          </span>
-          <h2 className="font-anek text-center max-w-3xl mx-auto">
-            വിവരസാങ്കേതിക വിദ്യാലോകത്തെ തൊഴിൽഅവസരങ്ങളുടെ കലവറ
-          </h2>
-          <div className="max-w-4xl mx-auto">
-            <p>
-              കേരളത്തിലെ ആബാലവൃദ്ധ ജനങ്ങൾ മുഴുവൻ തൊഴിൽ നേടിയാലും നിറയാത്ത
-              തൊഴിലവസരങ്ങളുടെ കലവറയാണ്‌ വിവരസാങ്കേതികവിദ്യയുടെ ലോകം.
-            </p>
-            <p>
-              കോവിഡ് മഹാമാരി ലോകമെമ്പാടുമുള്ള നാനാവിധ വ്യവസായങ്ങളിൽ വിതച്ച
-              മാറ്റങ്ങൾ വിവരസാങ്കേതികവിദ്യയുടെ അതിതീവ്ര വളർച്ചക്ക് മൂലകാരണമായി.
-            </p>
-            <p>
-              തതഃ കാരണം ഈ വ്യാവസായിക മേഖലയിൽ രണ്ടായിരത്തി ഇരുപത്തഞ്ചോടെ പതിനഞ്ചു
-              കോടി തൊഴിൽ അവസരങ്ങൾ നിറഞ്ഞ കലവറയായി രൂപപ്പെട്ടിട്ടുണ്ട്.
-            </p>
-          </div>
-          <figure>
-            <img src="chapter-1/Digital-job-capacity-from-2020-2025-01.png"></img>
-            <figcaption className="text-center">
-              2020-2025 കാലഘട്ടത്തിലെ വിവരസാങ്കേതിക വിദ്യാലോകത്തെ തൊഴിൽഅവസരങ്ങൾ.
-            </figcaption>
-          </figure>
-          <div className="max-w-4xl mx-auto">
-            <p>
-              വിവരസാങ്കേതികശൃംഖലയായി നാം വിളിക്കുന്ന “ഇന്റർനെറ്റിൽ” ഒരു സമ്പൂർണ
-              വെബ്സൈറ്റ് നിർമിക്കുവാൻ വേണ്ട സാങ്കേതികവിദ്യ അടിമുടി അറിയുന്ന
-              സോഫ്റ്റ്‌വെയർ എഞ്ചിനീയറിംഗ് വിദഗ്ദ്ധർക്കാണ് പത്തു കോടി തൊഴിൽ
-              അവസരങ്ങൾ.
-            </p>
-            <p>
-              ഈ തൊഴിലവസരങ്ങളിലേക്കുള്ള പ്രവേശന വിജ്ഞാനം സമൂഹത്തിലെ എല്ലാ
-              ജനങ്ങൾക്കും ലഭിക്കണം എന്ന ആശയമാണ് പ്യൂപ്പിൾഫസ്റ്റ്
-              മുന്നോട്ടുവയ്ക്കുന്നത്. പദ്ധതിയുടെ ആദ്യഘട്ടമായി ഉന്നത വിദ്യാഭ്യാസ
-              മേഖലയിൽ{" "}
-              <strong>അന്താരാഷ്ട്ര നവഅധ്യായന ഗവേഷണ കേന്ദ്രം സ്ഥാപിക്കുക</strong>{" "}
-              എന്ന ലക്‌ഷ്യം സാക്ഷാത്കരിക്കണം.
-            </p>
-          </div>
-        </section>
-        <section className="max-w-6xl bg-white shadow-md p-4 md:p-8 mx-auto prose lg:prose-xl lg:prose-h2:mt-4">
-          <span className="inline-flex w-full justify-center text-center text-green-600 font-medium">
-            രണ്ടാം അധ്യായം
-          </span>
-          <h2 className="font-anek text-center max-w-3xl mx-auto">
-            നവകേരള കാഴ്ചപ്പാടും ഇന്നത്തെ നിജസ്ഥിതിയും
-          </h2>
-          <div className="max-w-4xl mx-auto">
-            <p>
-              ഇന്ത്യൻ സ്വാതന്ത്ര്യത്തിന്റെ നൂറാം പിറന്നാൾ ആഘോഷിക്കുന്ന വേളയിൽ
-              ലോകത്തിലെ വികസിത രാജ്യങ്ങളുടെ ജീവിത നിലവാരത്തിലേക്കുയരുവാൻ
-              കേരളത്തെ പ്രാപ്തമാക്കുക എന്നതാണ് നവകേരള കാഴ്ചപ്പാട്.
-            </p>
-            <p>
-              കേരളത്തിന്റെ സാമ്പത്തിക അടിത്തറ പൊളിച്ചെഴുതി വിവരസാങ്കേതിക
-              വിദ്യയിൽ അധിഷ്ടിതമാകുക , ശാസ്ത്രീയമായ വിജ്ഞാനം ഉൾക്കൊണ്ട് ഉത്പാദക
-              ശേഷി വർധിപ്പിക്കുക, വിജ്ഞാനം നൂതനസാങ്കേതിക വിദ്യയാക്കി
-              സ്റ്റാർട്ടപ്പ് സംരംഭങ്ങൾ തഴച്ചുവളരുന്ന മണ്ണാക്കി മാറ്റുക എന്നീ
-              മാർഗനിർദേശങ്ങളും വ്യക്തമാണ്.
-            </p>
-            <p>
-              ഇത് കൂടാതെ വിജ്ഞാന അധിഷ്ഠിത സംസ്ഥാനമായി മാറുവാൻ ഇന്റർനെറ്റ് ഒരു
-              മൗലികാവകാശമായി പ്രഖ്യാപിച്ച ലോകത്തിലെ ഏക സംസ്ഥാനം ആണ് കേരളം.
-            </p>
-            <p>
-              എന്നാൽ ഇന്റർനെറ്റ് ഉപയോഗിക്കുക എന്നത് അല്ലാതെ ഈ സാങ്കേതികവിദ്യ
-              ഉപയോഗിച്ച് എങ്ങനെ ലോകവിപണിക്കുതകുന്ന സോഫ്റ്റ്‌വെയർ ഉത്പന്നങ്ങൾ
-              നിർമ്മിക്കാനാവും എന്നത് നമ്മുടെ സമൂഹത്തിൽ ചുരുക്കം പേർക്ക്
-              മാത്രമുള്ള അറിവാണ് എന്നതാണ് യാഥാർഥ്യം.
-            </p>
-            <p>
-              കോവിഡ് നിറഞ്ഞാടിയ ദുർഘടഘട്ടത്തിൽ ദുരന്തനിവാരണ സോഫ്റ്റ്‌വെയർ
-              നിർമ്മാണത്തിനായി ദേശീയതലത്തിൽ എഞ്ചിനീയറിംഗ് കോളേജ് വിദ്യാർത്ഥികളിൽ
-              നിന്ന് അപേക്ഷ ക്ഷണിക്കുകയുണ്ടായി. കേരളത്തിലെ ഏകദേശം എല്ലാ
-              എഞ്ചിനീയറിംഗ് വിദ്യാലയങ്ങളിൽ നിന്നുമായി മികവുള്ള രണ്ടായിരത്തിൽപരം
-              വിദ്യാർഥികൾ പരിശ്രമിച്ചപ്പോൾ വെറും അഞ്ചു പേർക്കാണ് വ്യാവസായിക
-              സമൂഹം നിശ്ചയിച്ച അടിസ്ഥാന അളവുകോൽ താണ്ടാനായത്.
-            </p>
-            <p>
-              കൃത്യമായി പറഞ്ഞാൽ കാൽ ശതമാനം (0.25%) വിദ്യാർത്ഥികൾക്കാണ് അടിസ്ഥാന
-              യോഗ്യത പ്രകടിപ്പിച്ചത്.
-            </p>
-            <p>
-              കഴിഞ്ഞ സാമ്പതിക വർഷം ഇന്ത്യയിൽ 1,80,463 കോടി രൂപയുടെ നിക്ഷേപം
-              നടക്കുമ്പോൾ സ്കൂൾ വിദ്യാഭ്യാസത്തിൽ ദശാബ്ദങ്ങൾ ആയി ദേശീയതലത്തിൽ
-              മുന്നിൽ നിൽക്കുന്ന കേരളത്തിൽ 1600 കോടി രൂപ (ഒരു ശതമാനത്തിൽ താഴെ)
-              മാത്രമായിരുന്നു നിക്ഷേപം എന്ന യാഥാർഥ്യവും നമുക്ക് മുന്നിലുണ്ട്.
-            </p>
-            <p>
-              ഈ സാഹചര്യങ്ങൾ മറികടന്നു വിവരസാങ്കേതികവിദ്യയിൽ കേരള ജനതയുടെ,
-              പ്രത്യേകിച്ച് യുവാക്കളുടെ കഴിവുകൾ വളർത്തിയെടുക്കുന്നതിനും
-              സ്റ്റാർട്ടപ്പ് രംഗത്തെ വ്യാവസായിക മൂലധനനിക്ഷേപം പതിന്മടങ്ങു
-              വർധിപ്പിക്കുവാൻ ശേഷിയുള്ള നവകേരള ശില്പികളെ വാർത്തെടുക്കുവാൻ ഉന്നത
-              വിദ്യാഭ്യാസ മേഖലയുടെ അലകും പിടിയും മാറ്റുക തന്നെ വേണം.
-            </p>
-          </div>
-        </section>
-        <section className="max-w-6xl bg-white shadow-md p-4 md:p-8 mx-auto prose lg:prose-xl lg:prose-h2:mt-4">
-          <span className="inline-flex w-full justify-center text-center text-green-600 font-medium">
-            മൂന്നാം അധ്യായം
-          </span>
-          <h2 className="font-anek text-center max-w-3xl mx-auto">
-            ഉന്നത വിദ്യാഭ്യാസരംഗത്തെ അലകും പിടിയും മാറ്റുന്നതെങ്ങനെ?
-          </h2>
-          <div className="max-w-4xl mx-auto">
-            <p>
-              ഉത്തര അമേരിക്കയുടെ പടിഞ്ഞാറേതീരത്തുള്ള കാലിഫോർണിയ എന്ന
-              സംസ്ഥാനത്തിൽ ഏകദേശം കൊച്ചി മുതൽ തൃശൂർ വരെയുള്ള ദൂരം ആണ്
-              സ്റ്റാൻഫോർഡ് സർവകലാശാലയിൽ നിന്ന് സാൻഫ്രാൻസിസ്കോ നഗരം വരെ.
-            </p>
-            <p>
-              ഇന്ന് ലോകമെമ്പാടും നിത്യേന ഉപയോഗിക്കുന്ന ഗൂഗിൾ, മൈക്രോസോഫ്ട്,
-              ആപ്പിൾ , ഫേസ്ബുക്, ട്വിറ്റെർ എന്നീ എല്ലാ സാങ്കേതിക വിദ്യയും ഈ
-              കൊച്ചു ഭൂപ്രദേശത്തു നിന്ന് വരുന്നു എന്നതും യാഥാർഥ്യം.
-            </p>
-            <p>
-              കേരള ജനസംഖ്യയുടെ പത്തു ശതമാനം മാത്രം അധികം ജനങ്ങൾ വസിക്കുന്ന ഈ
-              സംസ്ഥാനത്തിന്റെ സാമ്പത്തവ്യവസ്ഥ 3.4 റ്റ്രില്ല്യൻ അമേരിക്കൻ ഡോളർ
-              അഥവാ രണ്ടു കോടി അറുപത്തിമൂന്ന് ലക്ഷം കോടി രൂപയാണ്.
-            </p>
-            <p>
-              എഴുന്നൂറ്റി എഴുപത്തിയഞ്ച് കോടി വരുന്ന ലോക ജനസംഖ്യയുടെ
-              അറുപത്തിമൂന്ന് ശതമാനം അഥവാ അമ്പതു കോടി ജനങ്ങൾ ഇന്ന് ഇന്റർനെറ്റ്
-              ഉപയോഗിക്കുന്നു. അമേരിക്കൻ സമ്പദ്‌വ്യവസ്ഥയുടെ പത്തു ശതമാനവും,
-              ചൈനയുടെ സമ്പദ്‌വ്യവസ്ഥയുടെ നാൽപതു ശതമാനവും ഇന്ന്
-              വിജ്ഞാനാധിഷ്ഠിതമായി കഴിഞ്ഞിരിക്കുന്നു.
-            </p>
-            <p>
-              വിജ്ഞാനാധിഷ്ഠിതമായ ഒരു സമ്പദ്‌വ്യവസ്ഥയിലേക്ക് മാറുന്നതോടുകൂടി
-              കേരളത്തിനും അടുത്ത രണ്ടര ദശാബ്ദം കൊണ്ട് വികസിത രാജ്യങ്ങളുടെ
-              നിരയിലേക്ക്‌ ഉയരുവാനുള്ള പൂർണസാധ്യത ഈ കണക്കുകൾ സുവ്യക്തമാക്കുന്നു.
-            </p>
-            <p>
-              ഈ സ്വപ്നം സാക്ഷാത്കരിക്കുവാൻ വിവരസാങ്കേതിക വ്യാവസായിക-വിദ്യാഭ്യാസ-
-              ഗവേഷണ മേഖലകൾ പരസ്പരം ബന്ധിപ്പിച്ചു ഒരു ശൃംഖലയുടെ കണ്ണികൾ ആയി
-              അന്യോന്യം ശക്തിപ്പെടുത്തുന്ന മാതൃക ഭാരതത്തിന്റെ ഉന്നത വിദ്യാഭ്യാസ
-              നിയന്ത്രണ ചുമതലയുള്ള അഖില ഭാരതീയ സാങ്കേതികവിദ്യ പരിഷത്തുമായി
-              ചേർന്നു ആറുകൊല്ലം കൊണ്ട് പ്യൂപ്പിൾഫസ്റ്റ് വികസിപ്പിച്ചെടുത്തു
-              കഴിഞ്ഞു.
-            </p>
-          </div>
-          <figure>
-            <img src="chapter-3/Learning-Analytics-Research-Network-LeARN.png"></img>
-            <figcaption className="text-center">---</figcaption>
-          </figure>
-          <div className="max-w-4xl mx-auto">
-            <p>
-              ലോകത്തിലെതന്നെ ഏറ്റവും വലിയ വിദ്യാഭ്യാസശൃംഖലയായ ഭാരതത്തിൽ രണ്ടു
-              വിദ്യാഭ്യാസ നിയന്ത്രണ അധികാരികൾക്ക് കീഴിൽ 1043 സർവ്വകലാശാലകൾ,
-              40,000 കോളേജുകൾ, 15 ലക്ഷം സ്കൂളുകൾ, 1 കോടി അധ്യാപകർ 25 കോടി
-              വിദ്യാർത്ഥികളും അംഗങ്ങൾ ആണ്.
-            </p>
-            <p>
-              ഈ ബൃഹത്ശൃംഖലയുടെ അണു കണ്ണി ഒരു ക്ലാസ്മുറിയും അവിടെ നടക്കുന്ന
-              അധ്യായന രീതിയും ആകുന്നു.
-            </p>
-            <h3>പരമ്പരാഗതമായ അധ്യായന ശൈലിയും നവഅധ്യായന ശൈലിയും</h3>
-            <ul>
-              <li>
-                <h4>പ്രാചീനശൈലി:</h4>
-                <p>
-                  ഗുരുകുല സമ്പ്രദായ മാതൃകയിലാണ് പ്രാചീന ഭാരതത്തിലെ അധ്യായനം
-                  ഉത്ഭവിച്ചത്.
-                </p>
-              </li>
-            </ul>
-          </div>
-          <figure>
-            <img src="chapter-3/Vision-today-tomorrrow.jpg"></img>
-            <figcaption className="text-center">---</figcaption>
-          </figure>
-          <div className="max-w-4xl mx-auto">
-            <ul>
-              <li>
-                <h4>നാളിതുവരെ:</h4>
-                <p>
-                  ബ്രിട്ടീഷ് ഭരണാധികാരി ആയ തോമസ് മക്കൗലെ സ്ഥാപിച്ച ബ്രിട്ടീഷ്
-                  അധ്യായന രീതിയിലാണ് സ്വാതന്ത്ര്യത്തിനു ശേഷവും അധ്യായനം
-                  നടക്കുന്നത്.
-                </p>
-                <p>
-                  പുസ്തകത്തിൽ പറയുന്ന വസ്തുതകൾ മനഃപാഠമാക്കി പരീക്ഷയിൽ അത് പോലെ
-                  പകർന്നു നൽകുന്നതിനുള്ള ശേഷി അളന്നു നോക്കുന്ന സമ്പ്രദായം ആണ്
-                  കേരള സാങ്കേതിക സർവ്വകലാശാലയിൽ ബഹുഭൂരിപക്ഷം വിദ്യാർത്ഥികളുടെയും
-                  പരാജയത്തിനുള്ള മൂലകാരണം.
-                </p>
-                <p>
-                  സ്വതന്ത്രഭാരത ചിന്തക്ക് സ്ഥാനം നൽകാതെ ബ്രിട്ടീഷ്
-                  ഭരണാധികാരികൾക്ക് വിധേയരായ ഒരു വർഗം സൃഷ്ടിക്കുക എന്ന ലക്‌ഷ്യം
-                  മുൻനിർത്തിയുള്ള ഈ അധ്യായന മാതൃക മാറേണ്ടത് കാലഘട്ടത്തിന്റെ
-                  ആവശ്യകതയാണ്.
-                </p>
-              </li>
-            </ul>
-            <ul>
-              <li>
-                <h4>നാളയുടെ രീതി:</h4>
-                <p>
-                  വിവരസാങ്കേതികവിദ്യ അടിസ്ഥാനമാക്കിയ നവഅധ്യായന മാതൃകയാണ്
-                  നാളെയുടെ അധ്യായന രീതി.
-                </p>
-                <p>
-                  ഈ മാതൃകയിൽ എല്ലാ വിദ്യാർത്ഥികളും നേടേണ്ട വ്യാവസായിക സാങ്കേതിക
-                  കഴിവുകൾ പാഠ്യ പദ്ധതിയായി വിവരസാങ്കേതികവിദ്യ വ്യവസായരംഗത്തെ
-                  വിദഗ്ദ്ധർ നിർമ്മിക്കുന്നു.
-                </p>
-                <p>
-                  ഈ പാഠ്യപദ്ധതി ഓരോ വിദ്യാർത്ഥിക്കും അവരവർക്കു ഇഷ്ടമുള്ള രീതിയിൽ
-                  സ്വതന്ത്രമായി ചിന്തിച്ചു പഠനം നടത്തുന്നതിനുള്ള സ്വാതന്ത്ര്യം
-                  അനുവദിക്കുന്നു.
-                </p>
-                <p>
-                  ഇങ്ങനെ സ്വയം മനസിലാക്കി പഠനം മുന്നോട്ടു കൊണ്ട് പോകുമ്പോൾ ഓരോ
-                  വിദ്യാർത്ഥിയും വരുത്തുന്ന തെറ്റുകൾ അപ്പോൾ തന്നെ
-                  തിരുത്തുന്നതിനായി വിദഗ്ദ്ധപരിശീലനം ലഭിച്ച മുതിർന്ന
-                  വിദ്യാർത്ഥികളെ നിയോഗിക്കുന്നു.
-                </p>
-                <p>
-                  അങ്ങനെ തെറ്റുകൾ തിരുത്തി പടിപടിയായി വിദ്യാർത്ഥികൾ
-                  പാഠ്യപദ്ധതിയിൽ മുന്നേറുകയും വ്യവസായ വിദഗ്ദ്ധർ നിർദേശിച്ച
-                  കഴിവുകൾ ആർജ്ജിക്കുകയും ചെയ്യുന്നു.
-                </p>
-                <p>
-                  കഴിവുകൾ ആർജിച്ച മുതിർന്ന വിദ്യാർത്ഥികൾ സഹപാഠികളെയും ഇളയ
-                  തലമുറയിലെ വിദ്യാർത്ഥികളെയും പഠിക്കുവാൻ പ്രോത്സാഹിപ്പിക്കുകയും
-                  അവരുടെ സാങ്കേതിക തെറ്റുകൾ തിരുത്തുകയും ചെയ്യുന്നു.
-                </p>
-                <p>
-                  നവഅധ്യായന മാതൃകയിൽ പരിശീലനം ലഭിച്ച അധ്യാപകർ ഈ പഠന
-                  പ്രക്രിയകൾക്കു മേൽനോട്ടം വഹിക്കുകയും ഗവേഷണത്തിലൂടെ
-                  കാലാനുസൃതമായ മാറ്റങ്ങൾ അനുദിനം ഉൾപ്പെടുത്തുകയും ചെയ്യുന്നു.
-                </p>
-                <p>
-                  പത്തു സുപ്രധാന പ്രക്രിയകൾ അടങ്ങിയ ഈ മാതൃകയുടെ രൂപരേഖ ചുവടെ
-                  കൊടുത്തിരിക്കുന്നു.
-                </p>
-              </li>
-            </ul>
-          </div>
-          <figure>
-            <img src="chapter-3/പത്തു-സുപ്രധാന-പ്രക്രിയകൾ-അടങ്ങിയ-ഈ-മാതൃകയുടെ-രൂപം.png"></img>
-            <figcaption className="text-center">
-              പത്തു സുപ്രധാന പ്രക്രിയകൾ അടങ്ങിയ നവഅധ്യായന മാതൃകയുടെ രൂപരേഖ.
-            </figcaption>
-          </figure>
-        </section>
-        <section className="max-w-6xl bg-white shadow-md p-4 md:p-8 mx-auto prose lg:prose-xl lg:prose-h2:mt-4">
-          <span className="inline-flex w-full justify-center text-center text-green-600 font-medium">
-            നാലാം അധ്യായം
-          </span>
-          <h2 className="font-anek text-center max-w-3xl mx-auto">
-            അന്തർദേശീയവും ദേശീയവുമായി അംഗീകരിക്കപ്പെട്ട നവഅധ്യായന മാതൃക
-          </h2>
-          <div className="max-w-4xl mx-auto">
-            <p>
-              എറണാകുളം ജില്ലയിലെ നാന്നൂറിൽപരം ആശുപത്രികൾ ഒരൊറ്റ ആരോഗ്യശൃംഖലയുടെ
-              കണ്ണികളാക്കി, മൂന്നര ലക്ഷം കോവിഡ് ബാധിത ജനങ്ങളുടെ
-              ആരോഗ്യപരിരക്ഷക്കു വേണ്ടി ഒന്നേകാൽ ലക്ഷം ആംബുലൻസ് സർവിസുകൾ
-              ഏകോപിക്കുവാൻ ഉപയോഗിച്ച കൊറോണസേഫ് നെറ്റ്‌വർക്ക് എന്ന
-              സ്വതന്ത്രസോഫ്റ്റ്‌വെയർ നിർമ്മിക്കുന്നതിൽ നിർണായ പങ്കുവഹിച്ചത്
-              ഭാരതത്തിലെ എഞ്ചിനീയറിംഗ് വിദ്യാർത്ഥികൾ ആണ് എന്നത് ചുരുക്കംപേർക്കു
-              മാത്രം അറിയാവുന്ന വാസ്തവമാണ്.
-            </p>
-          </div>
-          <figure>
-            <img
-              className="rounded-xl"
-              src="chapter-4/CoronaSafe-War-Room.jpg"
-            ></img>
-            <figcaption className="text-center">
-              കൊറോണസേഫ് നെറ്റ്‌വർക്ക് വാർ-റൂം
-            </figcaption>
-          </figure>
-          <div className="max-w-4xl mx-auto">
-            <div className="grid md:grid-cols-6 items-center md:gap-8 bg-gray-200 px-4 md:px-8 rounded">
-              <figure className="md:col-span-2">
+      <main className="bg-gradient-to-br from-gray-800 to-gray-900 mx-auto">
+        <section className="hero__bg-pattern bg-gray-900 relative">
+          <header className="max-w-6xl 2xl:max-w-7xl mx-auto py-4 px-4 xl:px-0 relative z-10">
+            <div className="flex justify-between items-center">
+              <a className="block" href="/">
                 <img
-                  className=""
-                  src="chapter-4/Digital-Public-Goods-logo.svg"
-                ></img>
-              </figure>
-              <div className="md:col-span-4">
-                <p className=" font-anek">
-                  അഖില ഭാരതീയ സാങ്കേതികവിദ്യ പരിഷത്തുമായി ചേർന്നു
-                  പ്യൂപ്പിൾഫസ്റ്റ് നവഅധ്യായന രീതിയിലൂടെ പരിശീലിപ്പിച്ച
-                  വിദ്യാർത്ഥികളുടെ കഴിവുകൾക്ക് ഐക്യരാഷ്ട്രസഭയുടെ{" "}
-                  <strong>ഡിജിറ്റൽ പബ്ലിക് ഗുഡ്സ്</strong> എന്ന അന്തർദേശിയ
-                  അംഗീകാരം.
+                  className="block w-48 md:w-64"
+                  src="logos/wd-pupilfirst-logo.svg"
+                  alt="Logo of Leadership in Teaching Excellence (LITE)national programme."
+                />
+              </a>
+              <img
+                className="w-16 md:w-24"
+                src="logos/aicte-logo.png"
+                alt="Logo of All India Council for Technical Education (AICTE)"
+              />
+            </div>
+          </header>
+          <div className="lg:grid grid-cols-12 gap-x-8 relative max-w-6xl 2xl:max-w-7xl flex flex-col md:flex-row justify-between mx-auto pb-8 md:pb-16 px-4 xl:px-0">
+            <div className="col-span-6 w-full mx-auto relative z-10">
+              <div className="inline-block rounded bg-gray-800 py-1 px-1 md:px-2 mt-4 ">
+                <p className="font-medium text-sm text-gray-400">
+                  All India Council for Technical Education.
                 </p>
               </div>
+              <h1 className="text-primary-500 text-3xl md:text-3xl lg:text-5xl xl:text-6xl py-2 font-extrabold lg:leading-tight xl:leading-tight">
+                Minor Degree in <br />
+                Advanced Web Development
+                <span className="text-indigo-500">.</span>
+              </h1>
+              <p className="max-w-3xl font-mono mx-auto pr-4 pt-4 text-base lg:text-lg text-white">
+                The Minor Degree in Advanced Web Development Curriculum is
+                approved by All India Council for Technical Education (AICTE)
+                under the National Educational Alliance for Technology (NEAT)
+                programme of the Ministry of Education, Government of India.
+                This can be opted for and pursued by students who are enrolled
+                in the Institutes selected as part of the Batch 1 of LITE
+                programme.
+              </p>
+              <div className="pt-4 md:pt-8">
+                <div>
+                  <a
+                    href="https://docs.google.com/document/d/e/2PACX-1vQj8aeoRfOHYlOALcUt4mWmFefHAeGtKd5eu6SQDHOaDfckGkBDFz8JrtEiLZmGX-KyFyaDMLdCDkTL/pub"
+                    target="_blank"
+                    className="inline-flex space-x-3 p-3 lg:px-6 lg:py-3.5 text-white bg-indigo-600 rounded-md text-base lg:text-lg text-center font-semibold shadow-lg hover:shadow-xl focus:ring-2 focus:ring-indigo-400 focus:ring-offset-2 transition "
+                  >
+                    <svg
+                      xmlns="http://www.w3.org/2000/svg"
+                      width="16"
+                      height="16"
+                      fill="currentColor"
+                      className="w-6 h-6"
+                      viewBox="0 0 16 16"
+                    >
+                      <path d="M14 14V4.5L9.5 0H4a2 2 0 0 0-2 2v12a2 2 0 0 0 2 2h8a2 2 0 0 0 2-2zM9.5 3A1.5 1.5 0 0 0 11 4.5h2V9H3V2a1 1 0 0 1 1-1h5.5v2zM3 12v-2h2v2H3zm0 1h2v2H4a1 1 0 0 1-1-1v-1zm3 2v-2h7v1a1 1 0 0 1-1 1H6zm7-3H6v-2h7v2z" />
+                    </svg>
+                    <span>See list of institutions</span>
+                  </a>
+                </div>
+              </div>
             </div>
-            <p>
-              ഭാരതീയ വിദ്യാർത്ഥികളുടെ സാങ്കേതിക മികവിന്റെ ആഗോള അംഗീകാരമായി
-              പൊതുസമൂഹത്തിനു മുന്നിൽ തെളിയിച്ച ഈ മാതൃകയിലെ പാഠ്യക്രമം ദേശിയ
-              മാതൃകയായി അഖില ഭാരതീയ സാങ്കേതികവിദ്യ പരിഷത്ത് മാർച്ച് 2022ന്
-              പ്രസദ്ധീകരിക്കുകയും ചെയ്തു.
-            </p>
-            <p>
-              ദേശിയ വിദ്യാഭ്യാസ നയത്തിന്റെ ഭാഗമായി ഭാരതത്തിലെ രണ്ടു കോടി നാൽപതു
-              ലക്ഷം വിദ്യാർത്ഥികൾക്ക് ഈ അറിവുകൾ പകർന്നു നൽകുവാൻ ഒരു ലക്ഷം
-              അധ്യാപകരെ പ്രാപ്തരാക്കുക എന്ന ബൃഹത്ദൗത്യവും അഖില ഭാരതീയ
-              സാങ്കേതികവിദ്യ പരിഷത്ത് പ്യൂപ്പിൾഫസ്റ്റ്ന് നൽകിക്കഴിഞ്ഞു.
-            </p>
-            <p>
-              ആദ്യപാദത്തിൽ കേരളം ഉൾപ്പെടെ പതിനൊന്നു സംസ്ഥാനങ്ങളിലെ
-              പൊതുസാങ്കേതികവിദ്യ സർവകലാശാലകളിലെ തിരഞ്ഞെടുത്ത അൻപതു അധ്യാപകർക്ക്
-              പരിശീലനം നൽകിവരുന്നു.
-            </p>
+            <div className="col-span-6 px-8 py-12 lg:pt-0 pb-12">
+              <img className="w-full" src="hero/hero-student.svg" alt="" />
+            </div>
           </div>
-          <figure>
+          <div className="absolute inset-0 md:inset-x-0 md:top-8 2xl:inset-0 z-0">
             <img
-              className="rounded-xl"
-              src="chapter-4/LITE-first-batch-completed-stats-map.png"
-            ></img>
-            <figcaption className="text-center">
-              ഭൂപടരേഖ: LITE ആദ്യപാദത്തിൽ തിരഞ്ഞെടുക്കപ്പെട്ട സർവ്വകലാശാലകൾ.
-            </figcaption>
-          </figure>
-        </section>
-        <section className="max-w-6xl bg-white shadow-md p-4 md:p-8 mx-auto prose lg:prose-xl lg:prose-h2:mt-4">
-          <span className="inline-flex w-full justify-center text-center text-green-600 font-medium">
-            അഞ്ചാം അധ്യായം
-          </span>
-          <h2 className="font-anek text-center max-w-3xl mx-auto">
-            പഠനവും വ്യാവസായിക വളർച്ചയും ഗവേഷണവും സമന്വയിപ്പിക്കുന്നതെങ്ങനെ?
-          </h2>
-          <div className="max-w-4xl mx-auto">
-            <p>
-              നവഅധ്യായന മാതൃക നടപ്പിലാക്കുവാൻ നിലവിലുള്ള അധ്യായന രീതിയെ
-              പൂർണമായും ഒരൊറ്റ ശ്രമത്തിൽ മാറ്റുന്നതിന് പകരം കുറച്ചു വർഷങ്ങൾ
-              എടുത്തു മാറ്റുന്നതായിരിക്കും ഉചിതം. അധ്യാപക സമൂഹത്തെ
-              വിശ്വാസത്തിലെടുത്തു മാറ്റങ്ങൾക്കു തിരി കൊളുത്തുവാൻ മൂന്ന് പ്രധാന
-              നടപടികൾ സ്വീകരിക്കേണ്ടതുണ്ട്.
-            </p>
-            <h4>1. ദേശിയ മാതൃകയായ പാഠ്യക്രമം സർവകലാശാലകളിൽ ഉൾപെടുത്തുക</h4>
-            <p>
-              അടിസ്ഥാനം, പ്രഥമ ഘട്ടം, അന്തിമ ഘട്ടം വ്യവസായിക പര്യാപ്ത എന്നീ നാലു
-              തലങ്ങളിൽ ആയിട്ടാണ് സോഫ്റ്റ്‌വെയർ എഞ്ചിനീയറിംഗ് പാഠ്യക്രമം
-              തയ്യാറാക്കിയിരിക്കുന്നത്.
-            </p>
-            <p>
-              പദ്ധതിയുടെ ഒന്നാം ഘട്ടത്തിൽ കേരളത്തിലെ സർവകലാശാലകളിലെ എല്ലാ
-              വിദ്യാർത്ഥികൾക്കും, വരുന്ന അധ്യയന വർഷം അടിസ്ഥാന വിവരസാങ്കേതിക
-              വിദ്യാഭ്യാസം നൽകുന്നതാണ്.
-            </p>
-            <p>
-              പതിനഞ്ചു മണിക്കൂർ ദൈര്‍ഘ്യം ഉള്ള അടിസ്ഥാന കോഴ്സ് പൂർത്തിയാക്കുന്ന
-              വിദ്യാർത്ഥികൾക്ക് ഒരു അക്കാദമിക് ക്രെഡിറ്റ് ആയിരിക്കും ലഭിക്കുക.
-            </p>
-            <p>
-              ഇന്റർനെറ്റ് എങ്ങനെ ആണ് പ്രവർത്തിക്കുന്നതെന്നും ഒരു സോഫ്റ്റ്‌വെയർ
-              എഞ്ചിനീയർ എങ്ങനെ ആണ് ഒരു വെബ്സൈറ്റ് നിർമ്മിക്കുന്നതെന്നും ലളിതമായി
-              പ്രാവർത്തിക വിജ്ഞാനം നൽകുവാനാണ്‌ അടിസ്ഥാന വിദ്യാഭ്യാസം വഴി
-              ലക്ഷ്യമിടുന്നത്.
-            </p>
-            <p>
-              <strong>പ്രവേശനധനം:</strong> അഖില ഭാരതീയ സാങ്കേതികവിദ്യ പരിഷത്ത്
-              നിശ്ചയിച്ച പ്രകാരം മുപ്പതിനായിരം രൂപ ആയിരിക്കും സാമ്പത്തികമായി
-              മുന്നോക്കം നിൽക്കുന്ന കുടുംബത്തിലെ ഒരു വിദ്യാർത്ഥിയുടെ പ്രവേശനധനം.
-            </p>
-            <h4>2. നവകേരള വ്യാവസായിക മേഖലയുമായി സംയോജനം</h4>
-            <p>
-              <strong>ആദ്യമായി, പൊതുജന സേവനങ്ങൾ:</strong>
-            </p>
-            <p>
-              വിവരസാങ്കേതികവിദ്യയിൽ വ്യാവസായിക അറിവ് സിദ്ധിക്കുന്ന
-              വിദ്യാർത്ഥികളിൽ മികച്ച അമ്പതു വിദ്യാർത്ഥികൾ ആയിരിക്കും
-              മുഖ്യമന്ത്രിയുടെ നവകേരള യുവശില്പി ഫെല്ലോഷിപ്പിനു അർഹരാകുന്നത്.
-              പ്രതിമാസം പതിനായിരം രൂപ ഫെല്ലോഷിപ്പ് തുക കൊടുക്കുന്നത്
-              പ്യൂപ്പിൾഫസ്റ്റ് ആയിരിക്കും.
-            </p>
-            <p>
-              സർക്കാർ സേവനങ്ങൾ ജനങ്ങളിലേക്ക് എത്തിക്കുവാൻ വേണ്ടിയുള്ള നൂതന
-              വിവരസാങ്കേതികവിദ്യകൾ തയാറാക്കുകയും പ്രവർത്തിപ്പിച്ചു
-              വിജയിപ്പിക്കുകയും ചെയ്യുകയാണ് ഇവരുടെ ലക്‌ഷ്യം. ഈ പഠനഘട്ടത്തെ
-              മെഡിക്കൽ വിദ്യാർത്ഥികളുടെ ഹൗസ്‌ സർജൻസിയോട് താര്യതമ്യം ചെയ്യുവാൻ
-              സാധിക്കും.
-            </p>
-            <p>
-              <strong>
-                രണ്ടാമതായി, വിവരസാങ്കേതിക വ്യവസായ അടിത്തറയുടെ പുനർനിർമാണം:
-              </strong>
-            </p>
-            <p>
-              ലോകമെമ്പാടും സാങ്കേതികവിദ്യാ വിദഗ്ദ്ധരുടെ അഭാവം നേരിടുന്ന
-              ഇപ്പോഴത്തെ സാഹചര്യം, സാങ്കേതിക കഴിവുകൾ സിദ്ധിച്ച വിദ്യാർത്ഥികൾക്ക്
-              ഏറ്റവും അനുയോജ്യമാണ്.
-            </p>
-            <p>
-              വിദ്യാർത്ഥികളിൽ സ്വയംതൊഴിൽ രീതി അവലംബിച്ചു സംരംഭകരാകാൻ
-              അഭിരുചിയുള്ളവരെ രണ്ടാമത് തിരഞ്ഞെടുത്തു കേരളത്തിലെ സ്റ്റാർട്ടപ്പ്
-              മിഷന്റെ കീഴിലുള്ള സാങ്കേതിക വ്യവസായ പരിപോഷണ കേന്ദ്രങ്ങളിലേക്ക്
-              പ്രവേശനം നൽകാം.
-            </p>
-            <p>
-              വ്യാവസായിക മേഖലയിലെ തൊഴിലവസരങ്ങളിൽ പങ്കാളികളാകാൻ അഭിരുചിയുള്ള
-              വിദ്യാർത്ഥികളെ ഇന്റർനെറ്റ് അടിസ്ഥാനായി പ്രവർത്തിക്കുന്ന വിവിധ
-              വ്യവസായങ്ങളുമായി തന്നെ പ്യൂപ്പിൾഫസ്റ്റ് നേരിട്ട് ജോലിക്കുള്ള
-              അഭിമുഖങ്ങൾക്ക് അവസരം ലഭ്യമാക്കും.
-            </p>
-          </div>
-          <figure>
-            <img
-              className="rounded-xl"
-              src="chapter-3/Learning-Analytics-Research-Network-LeARN.png"
-            ></img>
-            <figcaption className="text-center">---</figcaption>
-          </figure>
-          <div className="max-w-4xl mx-auto">
-            <h4>3. നവഅധ്യായന ഗവേഷണ ശൃംഖലയുമായി ഏകോപനം</h4>
-            <p>
-              <strong>ആദ്യമായി പൊതുജന സേവനങ്ങൾ:</strong>
-            </p>
-            <p>
-              നവകേരള കാഴ്ചപ്പാടിൽ പ്രതിപാദിച്ചിരിക്കുന്ന ഗവേഷണ സ്ഥാപനങ്ങളും,
-              വിദ്യാഭ്യാസ സ്ഥാപനങ്ങളും, വ്യവസായിക ഉത്പാദന മേഖലയും പരസ്പരം
-              ബന്ധിപ്പിച്ചു പ്രവർത്തിക്കുന്ന വിവരസാങ്കേതികവിദ്യ സംവിധാനത്തിന്റെ
-              അച്ചുതണ്ട് ആയിരിക്കും അന്താരാഷ്ട്ര നവഅധ്യായന ഗവേഷണ ശൃംഖല.
-            </p>
-            <p>
-              തലച്ചോറിനെക്കുറിച്ചുള്ള പരിമിതമായ അറിവുകൾക്കുള്ളിൽ നിന്ന്
-              ശാസ്ത്രീയമായി തെളിയിക്കപ്പെട്ട വിദ്യാഭ്യാസ സിദ്ധാന്തങ്ങൾ
-              ഉൾപ്പെടുത്തി അത്യാധുനിക വിവരസാങ്കേതിക വിദ്യയിൽ നിർമിച്ചു പ്രവർത്തന
-              വിജയം കൈവരിച്ചു ദേശീയതലത്തിൽ കേന്ദ്ര വിദ്യാഭ്യാസ മന്ത്രാലയം
-              അംഗീകരിച്ച മാതൃകയാണ്.
-            </p>
-            <p>
-              ഈ അടിത്തറയുടെ മുകളിൽ നവകേരള ശില്പികളെ വാർത്തെടുക്കുവാൻ
-              വിവരസാങ്കേതിക വിദ്യ അടിസ്ഥാനമാക്കിയുള്ള അധ്യയന രീതി ശാസ്ത്രീയമായി
-              ഇനിയും വർഷങ്ങൾ വികസിപ്പിച്ചെടുക്കേണ്ടതുണ്ട്.
-            </p>
-            <p>
-              മനുഷ്യന്റെ തലച്ചോറ് എങ്ങനെ ആണ് ഒരു അറിവ് നേടുന്നത് എന്ന്
-              ശാസ്ത്രിയമായി ഇന്നും തെളിയിക്കപ്പെട്ടിട്ടില്ല. തതഃ കാരണം ഈ മേഖലയിൽ
-              ഗവേഷണം നടക്കേണ്ടത് സർവ്വപ്രധാനമാണ്.
-            </p>
-            <p>
-              <strong>ഗവേഷണ സമിതി അംഗങ്ങൾ</strong>
-            </p>
-            <p>
-              ദേശിയ വിദ്യാഭ്യാസ നയരൂപീകരണ സമിതിയുടെ ഭാഗമായി പ്രവർത്തിച്ച പ്രൊഫസർ
-              ലീന ചന്ദ്രൻ വാഡിയ, പ്രൊഫസർ വിരാജ് കുമാർ എന്നിവർ ആയിരിക്കും
-              അദ്ധ്യായന ഗവേഷണ ശൃംഖലയുടെ മേൽനോട്ടം വഹിക്കുന്നത്.
-            </p>
-            <p>
-              തിരുവനന്തപുരം സർക്കാർ എഞ്ചിനീയറിംഗ് കോളേജ് കമ്പ്യൂട്ടർ ശാസ്ത്ര
-              വകുപ്പിലെ പൂർവ്വ വിദ്യാർത്ഥി അപർണ സുന്ദരേശൻ, കാലിഫോർണിയയിലെ
-              സ്റ്റാൻഫോർഡ്/ബെർക്കിലി സർവകലാശാലകളിലെ ഗ്രിഗറി ല ബ്ലാങ്ക് എന്നിവർ
-              കൂടെ ഉൾപെടുന്നതായിരിക്കും ഗവേഷക സമിതി.
-            </p>
-            <p>
-              നവഅധ്യായന രീതിൽ പരിശീലനം പൂർത്തിയാക്കി പ്രാഗത്ഭ്യം സിദ്ധിച്ച
-              അധ്യാപകർക്ക് ഗവേഷണ വിഭാഗത്തിന്റെ ഭാഗമായി പ്രവർത്തിക്കുവാൻ അവസരം
-              ലഭിക്കുന്നതായിരിക്കും.
-            </p>
+              className="h-full w-full object-cover relative"
+              src="hero/hero-bg.webp"
+              alt="LITE - hero background image"
+            />
+            <div className="absolute inset-0"></div>
           </div>
         </section>
-        <section className="max-w-6xl bg-white shadow-md p-4 md:p-8 mx-auto prose lg:prose-xl lg:prose-h2:mt-4">
-          <span className="inline-flex w-full justify-center text-center text-green-600 font-medium">
-            ഏഴാം അധ്യായം
-          </span>
-          <h2 className="font-anek text-center max-w-3xl mx-auto">
-            ദാരിദ്യം തുടച്ചുമാറ്റുവാനുള്ള സാമൂഹ്യ പ്രതിബദ്ധത
-          </h2>
-          <div className="max-w-4xl mx-auto">
-            <p>
-              കേന്ദ്രവിദ്യാഭ്യാസ മന്ത്രാലയവുമായി ചേർന്ന് പ്യൂപ്പിൾഫസ്റ്റ് ഒപ്പ്
-              വച്ച ധാരണാപത്രം പ്രകാരം സാമൂഹികമായും സാമ്പത്തികമായും പിന്നോക്കം
-              നിൽക്കുന്ന ഭാരതത്തിലെ അറുപതു ലക്ഷം വിദ്യാർത്ഥികൾക്ക് പൂർണ
-              സൗജന്യമായിട്ടായിരിക്കും ഈ നവഅധ്യായന മാതൃകയിൽ അറിവ് നേടാനാകുക.
-            </p>
-            <p>
-              എട്ടുലക്ഷം രൂപയിൽ താഴെ വാർഷിക കുടുംബ വരുമാനമുള്ളവർക്കായിരിക്കും ഈ
-              സ്കോളർഷിപ് പദ്ധതിയുടെ പ്രയോജനം ലഭിക്കുക.
-            </p>
-            <p>
-              വിവരസാങ്കേതികവിദ്യ വ്യാവസായിക ലോകത്തെ പ്രാഥമിക ലോകഭാഷ ഇംഗ്ലീഷ്
-              ആയതു കാരണം സമൂഹത്തിന്റെ താഴെതട്ടിലെ പല വിദ്യാർത്ഥികൾക്കും
-              വിവരസാങ്കേതികവ്യവസായിക ലോകത്തേക്ക് എത്തിനോക്കുവാൻ പോലും
-              സാധിക്കുകയില്ല.
-            </p>
-            <p>
-              ഇത് സാമൂഹ്യ അന്തരം മറികടക്കാൻ തമിഴ്നാട്ടിലെ സർക്കാർ സ്കൂളിൽ
-              പന്ത്രണ്ടാം ക്ലാസ് പരീക്ഷ വിജയിക്കുകയും എന്നാൽ ഉപരി പഠനത്തിന്
-              സാമ്പത്തികമില്ലാതെ വഴി മുട്ടി നിന്ന പതിമൂന്നു വിദ്യാർത്ഥികൾക്ക്
-              ഒരു ഇംഗ്ലീഷ് അധ്യാപികയുടെ കൂടി സഹായത്തോടെ പ്യൂപ്പിൾഫസ്റ്റ്
-              നവഅധ്യായന മാതൃകയിൽ പഠിക്കുവാൻ അവസരം ഒരുക്കുകയും ചെയ്തു.
-            </p>
-            <figure>
-              <img
-                className="w-full rounded-xl max-w-xl mx-auto"
-                src="chapter-6/Frshworks-students.png"
-              ></img>
-              <figcaption className="text-center">---</figcaption>
-            </figure>
-            <p>
-              ഒരു വർഷം നീണ്ട പരിശീലനകാലം കഴിഞ്ഞപ്പോൾ ഇതിൽ പതിമൂന്നു പേരും അഞ്ചു
-              ലക്ഷം രൂപ വാർഷിക ശമ്പളം ലഭിക്കുന്ന സോഫ്റ്റ്‌വെയർ എഞ്ചിനീയർമാരായി
-              ജോലി കരസ്ഥമാക്കി.
-            </p>
-            <p>
-              ഒരു നിർധന കുടുംബത്തിന് ദാരിദ്ര്യത്തിൽ നിന്നും എന്നന്നേക്കുമായി
-              കരകയറുവാൻ പറ്റും എന്ന് കൂടി ഈ മാതൃക തെളിയിച്ചു കഴിഞ്ഞു.
-            </p>
+        <section className="px-4 xl:mx-0 pb-10 md:pb-16 bg-gray-900">
+          <div className="bg-gradient-to-br from-gray-800 to-gray-900 rounded-3xl border border-gray-700 relative shadow-lg max-w-6xl 2xl:max-w-7xl mx-auto">
+            <div className="flex space-y-4 md:space-y-0 flex-col md:flex-row justify-between text-white">
+              <div className="md:w-8/12 p-4 lg:p-10">
+                <h2 className="text-xl md:text-3xl text-primary-500">
+                  Co-created by Freshworks
+                </h2>
+
+                <p className="mt-4 font-mono text-sm md:text-base lg:text-lg">
+                  Pupilfirst along with Freshworks (
+                  <a
+                    className="font-semibold text-indigo-400 underline hover:bg-indigo-900 hover:bg-opacity-50 transition"
+                    href="https://www.freshworks.com/day-zero-for-freshworks-blog/"
+                    target="_blank"
+                  >
+                    NASDAQ:FRSH
+                  </a>
+                  ), India's leader in Software as a Service (SaaS) industry,
+                  designed the curriculum for a minor degree in web development.
+                </p>
+                <p className="mt-4 font-mono text-sm md:text-base lg:text-lg">
+                  This course was initially created based on Freshworks’
+                  internal training program for their new employees, and is
+                  continuously updated to meet student’s requirements and
+                  changing industry demands. The intent of this course is to
+                  create a pathway for students from all engineering disciplines
+                  to the global web development industry.
+                </p>
+                <p className="mt-4 text-sm md:text-base">
+                  Learn More at:{" "}
+                  <a
+                    className="text-indigo-400 font-semibold hover:underline hover:bg-indigo-900"
+                    target="_blank"
+                    href="https://pupilfirst.org/"
+                  >
+                    https://pupilfirst.org/
+                  </a>
+                </p>
+              </div>
+
+              <div className="md:w-4/12 flex flex-col items-center justify-between flex-shrink-0 border-l border-gray-700 rounded-b-lg md:rounded-bl-none md:rounded-r-lg">
+                <div className="w-full lg:h-1/2 flex items-center justify-center flex-shrink-0 rounded-t-3xl md:rounded-tl-none bg-gradient-to-br from-gray-50 to-gray-200">
+                  <div className="p-6 md:p-3">
+                    <img
+                      className="w-44 h-24 md:w-64 lg:w-72 object-contain"
+                      src="logos/freshworks-logo.svg"
+                      alt="Freshworks logo"
+                    />
+                  </div>
+                </div>
+                <div className="w-full lg:h-1/2 flex items-center justify-center flex-shrink-0 rounded-b-3xl md:rounded-bl-none bg-gradient-to-br from-purple-700 to-purple-900">
+                  <div className="p-6 md:p-3">
+                    <img
+                      className="w-36 h-24 md:w-48 lg:w-60 object-contain"
+                      src="logos/pupilfirst-logo-white.svg"
+                      alt="Pupilfirst logo"
+                    />
+                  </div>
+                </div>
+              </div>
+            </div>
           </div>
         </section>
-        <section className="max-w-6xl bg-white shadow-md p-4 md:p-8 mx-auto prose lg:prose-xl lg:prose-h2:mt-4">
-          <span className="inline-flex w-full justify-center text-center text-green-600 font-medium">
-            ആറാം അധ്യായം
-          </span>
-          <h2 className="font-anek text-center max-w-3xl mx-auto">
-            ലക്ഷ്യം സാക്ഷാത്ക്കരിക്കുവാൻ അനിവാര്യമായ സർക്കാർ വകുപ്പുതല
-            നടപടിക്രമങ്ങൾ
-          </h2>
-          <div className="max-w-4xl mx-auto">
-            <p>
-              അന്താരാഷ്ട്ര നവഅധ്യായന ഗവേഷണ കേന്ദ്രം സ്ഥാപിക്കുവാനുള്ള പദ്ധതി
-              നടപ്പിലാക്കുവാൻ സർക്കാർ സർവകലാശാല/ വകുപ്പ് / അനുബന്ധ സ്ഥാപങ്ങളുടെ
-              സഹകരണ മനോഭാവവും സമയബന്ധിതമായി ഇച്ഛാശക്തിയോടുകൂടിയുള്ള നടപടികൾ
-              അനിവാര്യമാണ്.
-            </p>
-            <ol>
-              <li>
-                <strong>കേരളത്തിലെ സർവ്വകലാശാലകൾ</strong>
-                <p className="flex space-x-4">
-                  <span>1.1</span>
-                  <span>
-                    സ്വതന്ത്ര ഗവേഷണ കേന്ദ്രം സ്ഥാപിക്കുവാനുള്ള ഭരണാനുമതി.
-                  </span>
-                </p>
-                <p className="flex space-x-4">
-                  <span>1.2</span>
-                  <span>
-                    മൈനർ ഡിഗ്രി പാഠ്യക്രമത്തിനു അക്കാഡമിക് കൗൺസിൽ അംഗീകാരം
-                  </span>
-                </p>
-                <p className="flex space-x-4">
-                  <span>1.3</span>
-                  <span>
-                    എല്ലാ വിദ്യാർത്ഥികൾക്കും യുജിസിയുടെ അക്കാദമിക് ബാങ്കിൽ
-                    അംഗത്വം
-                  </span>
-                </p>
-                <p className="flex space-x-4">
-                  <span>1.4</span>
-                  <span>
-                    ഗവേഷണ കേന്ദ്രത്തിന് അക്കാഡമിക് ബാങ്കുമായി ലയിക്കുവാനുള്ള
-                    സാങ്കേതിക സഹായങ്ങൾ ലഭ്യമാക്കുക.
-                  </span>
-                </p>
-              </li>
-              <li>
-                <strong>കേരള വ്യാവസായിക വികസന കോർപറേഷൻ</strong>
-                <p className="flex space-x-4">
-                  <span>2.1</span>
-                  <span>കേരള വ്യാവസായിക വികസന കോർപറേഷൻ</span>
-                </p>
-                <p className="flex space-x-4">
-                  <span>2.2</span>
-                  <span>
-                    സിയാൽ മാതൃകയിൽ കേരളം ആസ്ഥാനമാക്കി വളരുന്ന പ്യൂപ്പിൾഫസ്റ്റ്ൽ
-                    പതിനഞ്ചു കോടി രൂപ പ്രാരംഭ മൂലധന നിക്ഷേപം നടത്തിയിരിക്കുന്നത്
-                    എഴുപത്തിയഞ്ച് നിക്ഷേപരിൽ ഏറിയ പങ്കും മലയാളികളാണ്.
-                  </span>
-                </p>
-                <p className="flex space-x-4">
-                  <span>2.3</span>
-                  <span>
-                    ലോകവ്യവസായ രംഗത്തെ മികച്ച മലയാളികൾ ആയ ഫെഡെക്സ് മേധാവി രാജേഷ്
-                    സുബ്രമണ്യം, ട്വിറ്റെർ, ഗൂഗിൾ എന്നീ വിവരസാങ്കേതികവിദ്യ
-                    ലോകത്തെ പ്രമുഖ വ്യവസായങ്ങളിൽ സാങ്കേതിക പരിജ്ഞാനം ഉള്ള
-                    മലയാളികൾ ഇതിൽ ഉൾപെടും.
-                  </span>
-                </p>
-              </li>
-              <li>
-                <strong>കേരള ഐടി മിഷൻ</strong>
-                <p>
-                  രണ്ടാംഘട്ട പഠനം പൂർത്തീകരിക്കുന്ന അമ്പതു മികച്ച
-                  വിദ്യാർത്ഥികൾക്ക് നവകേരള ശില്പി ഫെല്ലോഷിപ്പ് വഴി
-                  പൊതുജനങ്ങൾക്കുള്ള സർക്കാർ സേവനങ്ങൾ മെച്ചപ്പെട്ട നിലയിൽ നൽകുവൻ
-                  സാധ്യമാക്കുക.
-                </p>
-              </li>
-              <li>
-                <strong>ഉന്നത വിദ്യാഭ്യാസ വകുപ്പ്</strong>
-                <p>
-                  വിദ്യാഭ്യാസ മേഖലയിലെ പരിഷ്‌കാരങ്ങൾ അധ്യയന വർഷത്തിന്റെ
-                  തുടക്കത്തിൽ ആണ് നടപ്പിലാക്കുവാൻ സാധിക്കുക. നടപ്പിലാക്കുന്ന
-                  പരിഷ്‌കാരങ്ങൾ ഫലം കാണുന്നതിന് കുറഞ്ഞത് ഒരു വർഷം
-                  സമയവുമെടുക്കും. 2022 ഓഗസ്റ്റ് മാസം തുടങ്ങുവാൻ ഇരിക്കുന്ന
-                  അധ്യായന വർഷത്തിൽ തന്നെ പദ്ധതി കാര്യക്ഷമമായി
-                  നടപ്പിലാക്കുവാനുള്ള ഏകോപന ചുമതല ഉന്നത വിദ്യാഭ്യാസ വകുപ്പ്
-                  മേധാവിക്കായിരിക്കും.
-                </p>
-              </li>
-            </ol>
+        <section className="w-full bg-white px-4 py-16 h-full">
+          <div className="max-w-6xl 2xl:max-w-7xl mx-auto">
+            <div className="max-w-3xl mx-auto text-center pb-4">
+              <h2 className="text-2xl lg:text-6xl text-gray-600 leading-snug">
+                Hiring Network
+              </h2>
+            </div>
+            <div className="mt-2 lg:mt-4 grid grid-cols-2 gap-1 md:grid-cols-5">
+              {hiringNetwork.map((partner, index) =>
+                hiringPartner(
+                  index,
+                  partner.title,
+                  partner.url,
+                  partner.logoSrc
+                )
+              )}
+            </div>
+            <button
+              className="block mx-auto my-4 text-sm font-semibold text-secondary-600 px-3 py-2 bg-secondary-50 rounded-md"
+              onClick={() => setShowLess((prev) => !prev)}
+            >
+              {showLess ? "Show Less" : "Show more"}
+            </button>
           </div>
         </section>
-        <section className="max-w-6xl bg-white shadow-md p-4 md:p-8 mx-auto prose lg:prose-xl lg:prose-h2:mt-4">
-          <span className="inline-flex w-full justify-center text-center text-green-600 font-medium">
-            എട്ടാം അധ്യായം
-          </span>
-          <h2 className="font-anek text-center max-w-3xl mx-auto">
-            നവകേരളം: ഒരു ജനതയുടെ നവോത്ഥാന സാക്ഷാത്കാരം
-          </h2>
-          <div className="max-w-4xl mx-auto">
-            <p>
-              ഇന്ന് എടുക്കുന്ന തീരുമാനങ്ങളാണ് മാറ്റങ്ങൾക്കായി ഭവിച്ചു ഭാവി
-              സൃഷ്ടിക്കുന്നത്.
-            </p>
-            <p>
-              പ്രകടന പത്രികയിലെ വാഗ്ദ്ധാനങ്ങൾ ആയ രാജ്യത്തെ വിദ്യാഭ്യാസ ഹബ്ബായി
-              കേരളത്തെ മാറ്റും (444), ഉന്നത വിദ്യാഭ്യാസ വ്യവസായ വികസന സഹകരണം
-              ശക്തിപ്പെടുത്തും (458), വ്യത്യസ്ത വിഷയങ്ങളിലുള്ള നിപുണത
-              വികസിപ്പിക്കുന്നതിനും പഠന നിലവാരം ഉയര്‍ത്തുന്നതിനുമുള്ള
-              തന്ത്രങ്ങള്‍ ആവിഷ്കരിക്കും.(462), സര്‍വകലാശാലകളിലെ സിലബസ്
-              കാലോചിതമായി പരിഷ്കരിക്കും. (470) എന്നീ ലക്ഷ്യങ്ങൾ കൈവരിക്കാൻ ഈ
-              പദ്ധതി സഹായകരമാകും.
-            </p>
-            <p>
-              പൊതു-സ്വകാര്യ മാതൃകയിൽ നടപ്പിലാക്കുവാൻ സമർപ്പിക്കുന്ന ഈ
-              കർമ്മപദ്ധതി പ്രകടന പത്രികയിലെ സുപ്രധാന വാഗ്ദ്ധാനങ്ങൾ ആയ 20 ലക്ഷം
-              തൊഴിൽ, 15,000 സ്റ്റാർട്ടപ്പ്, 10,000 കോടി വ്യാവസായിക നിക്ഷേപം,
-              ഉന്നത വിദ്യാഭ്യാസ അഴിച്ചുപണി എന്നിവ യാഥാർഥ്യമാക്കുന്നതിന്
-              സഹായകരമാകും.
-            </p>
-            <p>
-              വരുന്ന തലമുറകൾക്കായുള്ള നവകേരള ദർശനത്തിനടിസ്ഥാനമാക്കിയാണ്
-              നവഅധ്യായന പദ്ധതിയുടെ രൂപരേഖ വിഭാവനം ചെയ്തിരിക്കുന്നത്.
-            </p>
-            <p>
-              കേരള മണ്ണിൽ ജനിച്ചുവളർന്ന് കേരളത്തിൽ നവഅധ്യായനം നേടി വ്യാവസായിക
-              വിജയം നേടുവാനുള്ള വിജ്ഞാനം നമ്മുടെ ജനതയ്ക്ക് ലഭിക്കണം എന്ന
-              ആഗ്രഹത്തിൽനിന്നുടലെടുത്ത ഈ പദ്ധതി ബഹുമാനപെട്ട മുഖ്യമന്ത്രിക്ക്
-              ഭരണാനുമതിക്കായി ഉന്നത വിദ്യാഭ്യാസവകുപ്പ് മേധാവി വഴി
-              സമർപ്പിക്കുന്നു.
-            </p>
-            <p>പരിപൂർണ വിശ്വസ്തതയോടെ,</p>
-            <p>
-              <strong>സഞ്ജയ് വിജയകുമാർ</strong>
-              <span className="text-lg block">പ്യൂപ്പിൾഫസ്റ്റ് സഹസ്ഥാപകൻ</span>
+
+        <section className="relative bg-gray-900 border-t border-gray-700">
+          <div className="max-w-6xl 2xl:max-w-7xl mx-auto">
+            <div className="border-l border-gray-700 mx-4 xl:mx-0">
+              <div className="lg:grid lg:grid-cols-12 lg:gap-12 2xl:gap-5 px-0 pb-8">
+                <div className="lg:col-span-7 2xl:col-span-8">
+                  <div className="pt-10 lg:pt-20">
+                    <div className="heading-with-leftborder">
+                      <h2 className="max-w-5xl font-bold text-2xl lg:text-6xl text-primary-500 leading-snug lg:ml-8 xl:ml-11 2xl:ml-32 pl-4">
+                        Everything you
+                        <br /> need to know
+                      </h2>
+                    </div>
+                  </div>
+                  <div className="space-y-6 md:space-y-12 md:pr-12 pt-4 md:pt-10 text-white ml-2 md:ml-4 lg:ml-12 xl:ml-16 2xl:ml-36">
+                    <div>
+                      <h3 className="heading-with-underscore text-xl lg:text-2xl text-indigo-400 font-semibold">
+                        What is this program?
+                      </h3>
+                      <p className="ml-8 font-mono tracking-tight mt-2 pt-1 lg:text-lg ">
+                        Industry led Minor degree programme in Advanced Web
+                        Development that would enable you to become a skilled
+                        web developer in the global Software as a Service (SaaS)
+                        Industry.
+                      </p>
+                    </div>
+                    <div>
+                      <h3 className="heading-with-underscore text-xl lg:text-2xl text-indigo-400 font-semibold">
+                        Why?
+                      </h3>
+                      <p className="ml-8 font-mono tracking-tight mt-2 pt-1 lg:text-lg ">
+                        To learn the professional web development knowledge and
+                        practical skills used every day in the industry.
+                      </p>
+                    </div>
+                    <div>
+                      <h3 className="heading-with-underscore text-xl lg:text-2xl text-indigo-400 font-semibold">
+                        Who is this for?
+                      </h3>
+                      <p className="ml-8 font-mono tracking-tight mt-2 pt-1 lg:text-lg ">
+                        This programme is available for students from Institutes
+                        whose faculty coordinator has completed the faculty
+                        training requirements. These Institutes are amongst the
+                        first batch of{" "}
+                        <a
+                          className="font-semibold text-indigo-400 underline hover:bg-indigo-900 hover:bg-opacity-50 transition"
+                          href="https://lite.pupilfirst.org/ay-2021-22"
+                          target="_blank"
+                        >
+                          50 selected institutions
+                        </a>{" "}
+                        who have qualified for AICTE’s Leadership in Teaching
+                        Excellence (LITE) program.
+                      </p>
+                      <p className="ml-8 font-mono tracking-tight mt-2 pt-1 lg:text-lg ">
+                        Within these institutions, students can apply based on
+                        the Minor Degree format implemented in their respective
+                        Institute. Check with your LITE faculty coordinator for
+                        more information.
+                      </p>
+                    </div>
+                    {/*
+                    <div>
+                      <h3 className="heading-with-underscore text-xl lg:text-2xl text-indigo-400 font-semibold">
+                        When?
+                      </h3>
+                      <p className="ml-8 font-mono tracking-tight mt-2 pt-1 lg:text-lg ">
+                        The first batch of students is tentatively planned from March-July 2022. Contact
+                        the faculty coordinator from your Institute for further
+                        details.
+                      </p>
+                    </div>
+                    */}
+                    <div>
+                      <h3 className="heading-with-underscore text-xl lg:text-2xl text-indigo-400 font-semibold">
+                        Credits?
+                      </h3>
+                      <p className="ml-8 font-mono tracking-tight mt-2 pt-1 lg:text-lg ">
+                        The minor degree in advanced web development has 4
+                        courses adding upto 20 credits.
+                      </p>
+                    </div>
+                    <div>
+                      <h3 className="heading-with-underscore text-xl lg:text-2xl text-indigo-400 font-semibold">
+                        Format
+                      </h3>
+                      <p className="ml-8 font-mono tracking-tight mt-2 pt-1 lg:text-lg ">
+                        Self-paced learning with personalised feedback from
+                        industry coaches, LITE Faculty co-ordinators and
+                        teaching assistants.
+                      </p>
+                    </div>
+                    <div>
+                      <h3 className="heading-with-underscore text-xl lg:text-2xl text-indigo-400 font-semibold">
+                        Assignments &amp; assessments
+                      </h3>
+                      <p className="ml-8 font-mono tracking-tight mt-2 pt-1 lg:text-lg ">
+                        You'll work on lots of assignments in our courses, and
+                        it's possible to get a perfect score on each and every
+                        assignment. However, it's unlikely that you'll get a
+                        perfect score on your first try. We expect you to try to
+                        improve because that's how professionals work.{" "}
+                      </p>
+                      <p className="ml-8 font-mono tracking-tight mt-2 pt-1 lg:text-lg ">
+                        In a professional project, you rarely (if ever) get
+                        things right on the first try. Instead, you're expected
+                        to listen to user feedback, do some research of your
+                        own, and then iterate on your work. Our courses are
+                        designed by industry professionals to mimic this. You'll
+                        learn just enough to complete assignments, and we know
+                        from experience what kind of mistakes you'll make. So
+                        every time you submit, you'll get feedback prepared by
+                        pros to nudge your work closer to perfection.
+                      </p>
+                    </div>
+                    <div>
+                      <h3 className="heading-with-underscore text-xl lg:text-2xl text-indigo-400 font-semibold">
+                        Degree Certificate
+                      </h3>
+                      <p className="ml-8 font-mono tracking-tight pt-1 lg:text-lg ">
+                        Yes. Upon successful completion of the programme, you
+                        shall receive a Minor Degree in Advanced Web Development
+                        from your university along with the Major Degree you are
+                        pursuing (eg: B.Tech/BE in Electronics with Minor in
+                        Advanced Web Development). In addition you will also
+                        receive course completion certificates from Pupilfirst
+                        on completing respective courses in the minor track.
+                      </p>
+                    </div>
+                  </div>
+                </div>
+                <div className="hidden lg:block lg:col-span-5 2xl:col-span-4">
+                  <div className="sticky top-0 pl-0 pt-10 lg:pt-20 -ml-px md:ml-0">
+                    <div className="bg-gradient-to-br from-gray-800 to-gray-900 text-white rounded-r md:rounded-lg border border-gray-700 relative shadow-lg">
+                      <div className="flex space-x-2 px-2 md:px-4 lg:px-5 2xl:px-6 py-4 border-b border-gray-700">
+                        <div className="w-3 h-3 bg-gray-700 rounded-full"></div>
+                        <div className="w-3 h-3 bg-gray-700 rounded-full"></div>
+                        <div className="w-3 h-3 bg-gray-700 rounded-full"></div>
+                      </div>
+                      <div className="p-2 md:p-4 lg:p-8">
+                        <h3 className="text-2xl lg:text-3xl font-semibold leading-tight text-primary-500">
+                          How to apply?
+                        </h3>
+
+                        <p className="text-base md:text-lg font-mono tracking-tight mt-3 space-y-3">
+                          All students who wish to apply for the Minor Degree in
+                          Advanced Web Development may contact LITE Faculty
+                          Coordinator at their institution for details.
+                        </p>
+                        <div className="pt-4">
+                          <a
+                            href="https://docs.google.com/document/d/e/2PACX-1vSVFaCSJp9_NuHFBlMfQJxwa_S8Da1cxVbaQFfxOQ01PvoX8JVa86iAMn6p3ukGo4cGRNWFrFUdDoc1/pub"
+                            target="_blank"
+                            className="inline-flex items-center space-x-4 w-full py-3 text-indigo-400 rounded-md text-lg font-semibold hover:underline hover:shadow-xl transition "
+                          >
+                            <span>
+                              See list of institutions and Faculty Coordinators
+                            </span>
+                            <svg
+                              xmlns="http://www.w3.org/2000/svg"
+                              width="16"
+                              height="16"
+                              fill="currentColor"
+                              className="w-6 h-6"
+                              viewBox="0 0 16 16"
+                            >
+                              <path
+                                fillRule="evenodd"
+                                d="M1 8a.5.5 0 0 1 .5-.5h11.793l-3.147-3.146a.5.5 0 0 1 .708-.708l4 4a.5.5 0 0 1 0 .708l-4 4a.5.5 0 0 1-.708-.708L13.293 8.5H1.5A.5.5 0 0 1 1 8z"
+                              />
+                            </svg>
+                          </a>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        <section className="bg-gray-800 border-t border-b border-gray-700 mx-auto relative">
+          <div className="max-w-6xl 2xl:max-w-7xl mx-auto">
+            <div className="border-l border-gray-700 mx-4 xl:mx-0">
+              <div className="pt-10 lg:pt-20">
+                <div className="heading-with-leftborder">
+                  <h2 className="max-w-5xl font-bold text-2xl lg:text-6xl text-primary-500 leading-tight ml-4 lg:mx-auto">
+                    Price
+                  </h2>
+                </div>
+              </div>
+
+              <div className="flex flex-col mt-4 pb-10 lg:pb-20 ml-2 md:ml-4 lg:ml-12 xl:ml-16 2xl:ml-36">
+                <div className="max-w-4xl font-mono text-white tracking-tight pt-1 lg:text-lg ">
+                  <p>
+                    The AICTE (NEAT) approved course fees are mentioned below.
+                    This amount is exclusive of the government taxes as
+                    applicable.
+                  </p>
+                </div>
+
+                <div className="sm:rounded-lg mt-8">
+                  <table className="table-auto w-full overflow-hidden border border-gray-800 shadow-lg">
+                    <thead className="bg-gradient-to-r from-primary-500 to-primary-600 text-gray-900 font-semibold">
+                      <tr className="border border-gray-500 text-xs">
+                        <th
+                          scope="col"
+                          className="p-2 md:px-6 md:py-3 text-left uppercase tracking-wider"
+                        >
+                          S. No
+                        </th>
+                        <th
+                          scope="col"
+                          className="p-2 md:px-6 md:py-3 text-left uppercase tracking-wider"
+                        >
+                          Course Name
+                        </th>
+                        <th
+                          scope="col"
+                          className="p-2 md:px-6 md:py-3 text-left uppercase tracking-wider"
+                        >
+                          <span className="hidden lg:block">
+                            AICTE approved course fee per student (in Rs.).
+                          </span>
+                          <span className="block lg:hidden">
+                            course fee per student (in Rs.)
+                          </span>
+                        </th>
+                      </tr>
+                    </thead>
+                    <tbody className="bg-gradient-to-r w-full from-gray-800 to-gray-900 text-gray-50">
+                      <tr className="font-mono bg-gray-700 bg-opacity-50 text-sm md:text-lg border border-gray-500">
+                        <td className="p-2 md:p-6 lg:whitespace-nowrap font-medium ">
+                          1
+                        </td>
+                        <td className="p-2 md:p-6 lg:whitespace-nowrap border-r border-gray-500">
+                          Web Development 101 (Getting Started with JavaScript)
+                        </td>
+                        <td
+                          className="p-2 md:p-6 lg:whitespace-nowrap border-r border-gray-500"
+                          rowSpan="2"
+                        >
+                          10,000
+                        </td>
+                      </tr>
+
+                      <tr className="font-mono bg-gray-700 bg-opacity-50 text-sm md:text-lg border border-gray-500">
+                        <td className="p-2 md:p-6 lg:whitespace-nowrap font-medium ">
+                          2
+                        </td>
+                        <td className="p-2 md:p-6 lg:whitespace-nowrap border-r border-gray-500">
+                          Web Development 201 (Server-side programming with Ruby
+                          on Rails)
+                        </td>
+                      </tr>
+
+                      <tr className="font-mono text-sm md:text-lg">
+                        <td className="p-2 md:p-6 lg:whitespace-nowrap font-medium">
+                          3
+                        </td>
+                        <td className="p-2 md:p-6 lg:whitespace-nowrap">
+                          Web Development 301 (Front-end development with React
+                          & TypeScript)
+                        </td>
+                        <td className="p-2 md:p-6 lg:whitespace-nowrap">
+                          10,000
+                        </td>
+                      </tr>
+                    </tbody>
+                  </table>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        <section className="bg-gray-800 border-t border-b border-gray-700 mx-auto relative">
+          <div className="max-w-6xl 2xl:max-w-7xl mx-auto">
+            <div className="border-l border-gray-700 mx-4 xl:mx-0">
+              <div className="pt-10 lg:pt-20">
+                <div className="heading-with-leftborder">
+                  <h2 className="max-w-5xl font-bold text-2xl lg:text-6xl text-primary-500 leading-tight ml-4 lg:mx-auto">
+                    Course Authors and Coaches
+                  </h2>
+                </div>
+              </div>
+              <svg
+                className="absolute right-0 top-1/4 object-center"
+                width="120"
+                height="400"
+                fill="none"
+                viewBox="0 0 120 400"
+              >
+                <defs>
+                  <pattern
+                    id="5d0dd344-b041-4d26-bec4-8d33ea57ec9b"
+                    x="0"
+                    y="0"
+                    width="20"
+                    height="20"
+                    patternUnits="userSpaceOnUse"
+                  >
+                    <rect
+                      x="0"
+                      y="0"
+                      width="4"
+                      height="4"
+                      className="text-gray-700"
+                      fill="currentColor"
+                    />
+                  </pattern>
+                </defs>
+                <rect
+                  width="120"
+                  height="400"
+                  fill="url(#5d0dd344-b041-4d26-bec4-8d33ea57ec9b)"
+                />
+              </svg>
+              <div className="max-w-5xl mx-auto relative z-10 pl-4 lg:pl-0">
+                <div className="md:divide-x divide-gray-700 space-y-12 gap-y-12 md:space-y-0 sm:grid sm:grid-cols-2 lg:grid-cols-4 py-12 lg:pb-16">
+                  <ImageWithDescription
+                    name="Hari Gopal"
+                    githuburl={
+                      <a
+                        className="inline-flex text-gray-300 hover:text-indigo-400 transition"
+                        href="https://github.com/harigopal"
+                        target="_blank"
+                      >
+                        <svg
+                          xmlns="http://www.w3.org/2000/svg"
+                          width="16"
+                          height="16"
+                          fill="currentColor"
+                          className="w-6 h-6"
+                          viewBox="0 0 16 16"
+                        >
+                          <path d="M8 0C3.58 0 0 3.58 0 8c0 3.54 2.29 6.53 5.47 7.59.4.07.55-.17.55-.38 0-.19-.01-.82-.01-1.49-2.01.37-2.53-.49-2.69-.94-.09-.23-.48-.94-.82-1.13-.28-.15-.68-.52-.01-.53.63-.01 1.08.58 1.23.82.72 1.21 1.87.87 2.33.66.07-.52.28-.87.51-1.07-1.78-.2-3.64-.89-3.64-3.95 0-.87.31-1.59.82-2.15-.08-.2-.36-1.02.08-2.12 0 0 .67-.21 2.2.82.64-.18 1.32-.27 2-.27.68 0 1.36.09 2 .27 1.53-1.04 2.2-.82 2.2-.82.44 1.1.16 1.92.08 2.12.51.56.82 1.27.82 2.15 0 3.07-1.87 3.75-3.65 3.95.29.25.54.73.54 1.48 0 1.07-.01 1.93-.01 2.2 0 .21.15.46.55.38A8.012 8.012 0 0 0 16 8c0-4.42-3.58-8-8-8z" />
+                        </svg>
+                      </a>
+                    }
+                    caption={<p>Chief Technology Officer, Pupilfirst</p>}
+                    role={
+                      <p className="font-mono tracking-tight leading-snug text-white mt-3">
+                        Hari is a full-stack software engineer with 12 years of
+                        experience and leads the development of Pupilfirst LMS,
+                        one of the largest open-source projects that uses the
+                        ReScript programming language.
+                      </p>
+                    }
+                    imgSrc="people/hari-gopal.png"
+                  />
+                  {/*
+                  <ImageWithDescription
+                    name="Prashanth Reddy Koteru"
+                    githuburl={
+                      <a
+                        className="inline-flex text-gray-300 hover:text-indigo-400 transition"
+                        href="https://github.com/prashanth726"
+                        target="_blank"
+                      >
+                        <svg
+                          xmlns="http://www.w3.org/2000/svg"
+                          width="16"
+                          height="16"
+                          fill="currentColor"
+                          className="w-6 h-6"
+                          viewBox="0 0 16 16"
+                        >
+                          <path d="M8 0C3.58 0 0 3.58 0 8c0 3.54 2.29 6.53 5.47 7.59.4.07.55-.17.55-.38 0-.19-.01-.82-.01-1.49-2.01.37-2.53-.49-2.69-.94-.09-.23-.48-.94-.82-1.13-.28-.15-.68-.52-.01-.53.63-.01 1.08.58 1.23.82.72 1.21 1.87.87 2.33.66.07-.52.28-.87.51-1.07-1.78-.2-3.64-.89-3.64-3.95 0-.87.31-1.59.82-2.15-.08-.2-.36-1.02.08-2.12 0 0 .67-.21 2.2.82.64-.18 1.32-.27 2-.27.68 0 1.36.09 2 .27 1.53-1.04 2.2-.82 2.2-.82.44 1.1.16 1.92.08 2.12.51.56.82 1.27.82 2.15 0 3.07-1.87 3.75-3.65 3.95.29.25.54.73.54 1.48 0 1.07-.01 1.93-.01 2.2 0 .21.15.46.55.38A8.012 8.012 0 0 0 16 8c0-4.42-3.58-8-8-8z" />
+                        </svg>
+                      </a>
+                    }
+                    caption={<p>Coach-Web Development, Pupilfirst</p>}
+                    role={
+                      <p className="font-mono tracking-tight leading-snug text-white mt-3">
+                        Prashanth is a full-stack web developer and product
+                        engineer with five years of experience and an active
+                        evangelist in the indian developer community.
+                      </p>
+                    }
+                    imgSrc="people/prashanth-reddy.png"
+                  />
+                  <ImageWithDescription
+                    name="Mahesh Krishna Kumar"
+                    githuburl={
+                      <a
+                        className="inline-flex text-gray-300 hover:text-indigo-400 transition"
+                        href="https://github.com/mahesh-krishnakumar"
+                        target="_blank"
+                      >
+                        <svg
+                          xmlns="http://www.w3.org/2000/svg"
+                          width="16"
+                          height="16"
+                          fill="currentColor"
+                          className="w-6 h-6"
+                          viewBox="0 0 16 16"
+                        >
+                          <path d="M8 0C3.58 0 0 3.58 0 8c0 3.54 2.29 6.53 5.47 7.59.4.07.55-.17.55-.38 0-.19-.01-.82-.01-1.49-2.01.37-2.53-.49-2.69-.94-.09-.23-.48-.94-.82-1.13-.28-.15-.68-.52-.01-.53.63-.01 1.08.58 1.23.82.72 1.21 1.87.87 2.33.66.07-.52.28-.87.51-1.07-1.78-.2-3.64-.89-3.64-3.95 0-.87.31-1.59.82-2.15-.08-.2-.36-1.02.08-2.12 0 0 .67-.21 2.2.82.64-.18 1.32-.27 2-.27.68 0 1.36.09 2 .27 1.53-1.04 2.2-.82 2.2-.82.44 1.1.16 1.92.08 2.12.51.56.82 1.27.82 2.15 0 3.07-1.87 3.75-3.65 3.95.29.25.54.73.54 1.48 0 1.07-.01 1.93-.01 2.2 0 .21.15.46.55.38A8.012 8.012 0 0 0 16 8c0-4.42-3.58-8-8-8z" />
+                        </svg>
+                      </a>
+                    }
+                    caption={<p>Full-stack developer, Pupilfirst</p>}
+                    role={
+                      <p className="font-mono tracking-tight leading-snug text-white mt-3">
+                        Mahesh is currently a full-stack developer at Pupilfirst
+                        with close to five years experience in product building
+                        using Ruby on Rails, Javascript and ReScript.
+                      </p>
+                    }
+                    imgSrc="people/mahesh.jpg"
+                  />
+                  <ImageWithDescription
+                    name="Bodhish Thomas"
+                    githuburl={
+                      <a
+                        className="inline-flex text-gray-300 hover:text-indigo-400 transition"
+                        href="https://github.com/bodhish"
+                        target="_blank"
+                      >
+                        <svg
+                          xmlns="http://www.w3.org/2000/svg"
+                          width="16"
+                          height="16"
+                          fill="currentColor"
+                          className="w-6 h-6"
+                          viewBox="0 0 16 16"
+                        >
+                          <path d="M8 0C3.58 0 0 3.58 0 8c0 3.54 2.29 6.53 5.47 7.59.4.07.55-.17.55-.38 0-.19-.01-.82-.01-1.49-2.01.37-2.53-.49-2.69-.94-.09-.23-.48-.94-.82-1.13-.28-.15-.68-.52-.01-.53.63-.01 1.08.58 1.23.82.72 1.21 1.87.87 2.33.66.07-.52.28-.87.51-1.07-1.78-.2-3.64-.89-3.64-3.95 0-.87.31-1.59.82-2.15-.08-.2-.36-1.02.08-2.12 0 0 .67-.21 2.2.82.64-.18 1.32-.27 2-.27.68 0 1.36.09 2 .27 1.53-1.04 2.2-.82 2.2-.82.44 1.1.16 1.92.08 2.12.51.56.82 1.27.82 2.15 0 3.07-1.87 3.75-3.65 3.95.29.25.54.73.54 1.48 0 1.07-.01 1.93-.01 2.2 0 .21.15.46.55.38A8.012 8.012 0 0 0 16 8c0-4.42-3.58-8-8-8z" />
+                        </svg>
+                      </a>
+                    }
+                    caption={<>Full-stack developer, Pupilfirst</>}
+                    role={
+                      <p className="font-mono tracking-tight leading-snug text-white mt-3">
+                        Bodhish is a full-stack developer with about four years
+                        of experience in product development at Pupilfirst. He's
+                        very active in the developer community.
+                      </p>
+                    }
+                    imgSrc="people/bodhish.jpg"
+                  />
+                  <ImageWithDescription
+                    name="Bellam Vamsi Krishna"
+                    githuburl={
+                      <a
+                        className="inline-flex text-gray-300 hover:text-indigo-400 transition"
+                        href="https://github.com/vamsikri-hash"
+                        target="_blank"
+                      >
+                        <svg
+                          xmlns="http://www.w3.org/2000/svg"
+                          width="16"
+                          height="16"
+                          fill="currentColor"
+                          className="w-6 h-6"
+                          viewBox="0 0 16 16"
+                        >
+                          <path d="M8 0C3.58 0 0 3.58 0 8c0 3.54 2.29 6.53 5.47 7.59.4.07.55-.17.55-.38 0-.19-.01-.82-.01-1.49-2.01.37-2.53-.49-2.69-.94-.09-.23-.48-.94-.82-1.13-.28-.15-.68-.52-.01-.53.63-.01 1.08.58 1.23.82.72 1.21 1.87.87 2.33.66.07-.52.28-.87.51-1.07-1.78-.2-3.64-.89-3.64-3.95 0-.87.31-1.59.82-2.15-.08-.2-.36-1.02.08-2.12 0 0 .67-.21 2.2.82.64-.18 1.32-.27 2-.27.68 0 1.36.09 2 .27 1.53-1.04 2.2-.82 2.2-.82.44 1.1.16 1.92.08 2.12.51.56.82 1.27.82 2.15 0 3.07-1.87 3.75-3.65 3.95.29.25.54.73.54 1.48 0 1.07-.01 1.93-.01 2.2 0 .21.15.46.55.38A8.012 8.012 0 0 0 16 8c0-4.42-3.58-8-8-8z" />
+                        </svg>
+                      </a>
+                    }
+                    caption={<>Assistant Coach - Web Development, Pupilfirst</>}
+                    role={
+                      <p className="font-mono tracking-tight leading-snug text-white mt-3">
+                        Vamsi has been a Teaching Assistant for Web Development
+                        courses offered by Pupilfirst for over two years after
+                        completing the courses successfully as a student. He is
+                        currently working at Hottinger Brüel & Kjær (HBK) as an
+                        Engineering Trainee. His interest mostly lies in the
+                        area of full stack web development. He likes to learn
+                        and explore more parts of web development.
+                      </p>
+                    }
+                    imgSrc="people/vamsi_bellam-1.jpeg"
+                  />
+                  */}
+                  <ImageWithDescription
+                    name="Vignesh Rajendran"
+                    caption={<p> Principal Engineer, Oracle</p>}
+                    role={
+                      <p className="font-mono tracking-tight leading-snug text-white mt-3">
+                        Vignesh is a seasoned UI Technology Evangelist with
+                        around 10 years of experience building and developing
+                        amazing User Experiences across various platforms and
+                        domains. He works with Oracle as a Principal Engineer
+                        solving UI engineering use cases for their Cloud and
+                        Cloud-native products. The stack he works on covers
+                        everything UI, although now he mainly codes on
+                        Javascript and Typescript. In leisure, he writes a lot
+                        and read a lot more.
+                      </p>
+                    }
+                    imgSrc="people/Vignesh_Profile.jpg"
+                  />
+
+                  <ImageWithDescription
+                    name="Melson J Zacharias"
+                    caption={<p> CTO, Perleybrook Labs LLC.</p>}
+                    role={
+                      <p className="font-mono tracking-tight leading-snug text-white mt-3">
+                        Melson is CTO at Perleybrook Labs LLC, where he
+                        primarily works with C++, Python, and Typescript. In his
+                        spare time, he would be reading a book or can be seen
+                        answering questions in StackOverflow.
+                      </p>
+                    }
+                    imgSrc="people/melson.jpeg"
+                  />
+                  <ImageWithDescription
+                    name="Avishek Jana"
+                    caption={
+                      <p>
+                        {" "}
+                        Co-Founder & Principal Engineer, GEOGO Techsolutions
+                        Pvt. Ltd.
+                      </p>
+                    }
+                    role={
+                      <p className="font-mono tracking-tight leading-snug text-white mt-3">
+                        Avishek is an Engineer, a full-stack developer and an
+                        open-source contributor. Currently, he is working at
+                        GEOGO Techsolutions as Principal Engineer. He started
+                        his professional career in 2013 and worked on
+                        technologies like: Ruby on Rails, NodeJS, ReactJS,
+                        TypeScript etc. Apart from work, he loves to mentor and
+                        train fresh graduates to enhance their skills as per
+                        industry demands. Teaching is his way to contribute back
+                        to the society.
+                      </p>
+                    }
+                    imgSrc="people/avishek_photo.jpeg"
+                  />
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        <section>
+          <div className="max-w-6xl 2xl:max-w-7xl mx-auto">
+            <div className="border-l border-gray-700 mx-4 xl:mx-0 py-10 lg:py-16">
+              <div className="heading-with-leftborder">
+                <h2 className="max-w-5xl font-bold text-2xl text-primary-500 lg:text-6xl leading-tight ml-4 lg:mx-auto">
+                  Beginner to advanced courses
+                </h2>
+              </div>
+              <div className="max-w-5xl mx-auto pl-4 lg:pl-0">
+                <div className="max-w-5xl mt-4">
+                  <p className="font-mono tracking-tight text-white lg:text-lg">
+                    This programme is designed with 4 courses such that selected
+                    institutions can offer a 20 credit “Minor Degree in Advanced
+                    Web Development” through their trained faculty to students.
+                  </p>
+                </div>
+                <div className="flex flex-col md:flex-row space-y-2 md:space-y-0 md:space-x-2 mt-8">
+                  <div className="w-full md:flex-1 bg-gradient-to-br from-gray-700 to-gray-900 border border-primary-400 rounded-lg shadow-md p-3 md:p-4">
+                    <p className="text-primary-400 text-xl md:text-2xl font-bold">
+                      WD 101
+                    </p>
+                    <p className="text-white leading-snug mt-1">
+                      <span className="font-semibold">Beginner</span> - Getting
+                      started with Javascript.
+                    </p>
+                  </div>
+                  <div className="flex items-center justify-center w-full h-4 md:w-4 md:h-auto md:transform md:-rotate-90">
+                    <svg
+                      xmlns="http://www.w3.org/2000/svg"
+                      width="16"
+                      height="16"
+                      fill="currentColor"
+                      className="text-primary-700"
+                      viewBox="0 0 16 16"
+                    >
+                      <path
+                        fillRule="evenodd"
+                        d="M8 4a.5.5 0 0 1 .5.5v5.793l2.146-2.147a.5.5 0 0 1 .708.708l-3 3a.5.5 0 0 1-.708 0l-3-3a.5.5 0 1 1 .708-.708L7.5 10.293V4.5A.5.5 0 0 1 8 4z"
+                      />
+                    </svg>
+                  </div>
+                  <div className="w-full md:flex-1 bg-gradient-to-br from-gray-700 to-gray-900 border border-indigo-400 rounded-lg shadow-md p-3 md:p-4">
+                    <p className="text-indigo-400 text-xl md:text-2xl font-bold">
+                      WD 201
+                    </p>
+                    <p className="text-white leading-snug mt-1">
+                      <span className="font-semibold">Intermediate</span> -
+                      Server-side programming with Ruby on Rails.
+                    </p>
+                  </div>
+                  <div className="flex items-center justify-center w-full h-4 md:w-4 md:h-auto md:transform md:-rotate-90">
+                    <svg
+                      xmlns="http://www.w3.org/2000/svg"
+                      width="16"
+                      height="16"
+                      fill="currentColor"
+                      className="text-indigo-700"
+                      viewBox="0 0 16 16"
+                    >
+                      <path
+                        fillRule="evenodd"
+                        d="M8 4a.5.5 0 0 1 .5.5v5.793l2.146-2.147a.5.5 0 0 1 .708.708l-3 3a.5.5 0 0 1-.708 0l-3-3a.5.5 0 1 1 .708-.708L7.5 10.293V4.5A.5.5 0 0 1 8 4z"
+                      />
+                    </svg>
+                  </div>
+                  <div className="w-full md:flex-1 bg-gradient-to-br from-gray-700 to-gray-900 border border-green-500 rounded-lg shadow-md p-3 md:p-4">
+                    <p className="text-green-500 text-xl md:text-2xl font-bold">
+                      WD 301
+                    </p>
+                    <p className="text-white leading-snug mt-1">
+                      <span className="font-semibold">Advanced</span> -
+                      Front-end development with React &amp; TypeScript.
+                    </p>
+                  </div>
+                  <div className="flex items-center justify-center w-full h-4 md:w-4 md:h-auto md:transform md:-rotate-90">
+                    <svg
+                      xmlns="http://www.w3.org/2000/svg"
+                      width="16"
+                      height="16"
+                      fill="currentColor"
+                      className="text-green-700"
+                      viewBox="0 0 16 16"
+                    >
+                      <path
+                        fillRule="evenodd"
+                        d="M8 4a.5.5 0 0 1 .5.5v5.793l2.146-2.147a.5.5 0 0 1 .708.708l-3 3a.5.5 0 0 1-.708 0l-3-3a.5.5 0 1 1 .708-.708L7.5 10.293V4.5A.5.5 0 0 1 8 4z"
+                      />
+                    </svg>
+                  </div>
+
+                  <div className="w-full md:flex-1 bg-gradient-to-br from-gray-700 to-gray-900 border border-red-500 rounded-lg shadow-md p-3 md:p-4">
+                    <p className="text-red-400 text-xl md:text-2xl font-bold">
+                      WD 401
+                    </p>
+                    <p className="text-white leading-snug mt-1">
+                      <span className="font-semibold"> </span> Getting ready for
+                      production.
+                    </p>
+                  </div>
+                </div>
+
+                <p className="mt-4 text-sm text-white ">
+                  More advanced courses would be added to give a broader choice
+                  of specialisations.
+                </p>
+                <div className="pt-8 lg:pt-16">
+                  <img
+                    className="w-full h-full object-contain mix-blend-color-dodge"
+                    src="course-path/course-pathway.png"
+                    alt="Course pathway"
+                  />
+                </div>
+              </div>
+            </div>
+          </div>
+          <div className="max-w-6xl 2xl:max-w-7xl mx-auto">
+            <div className="border-l border-gray-700 mx-4 xl:mx-0 pt-10 lg:pt-16">
+              <div className="heading-with-leftborder">
+                <h2 className="max-w-5xl font-bold text-primary-500 text-2xl lg:text-6xl leading-tight ml-4 lg:mx-auto">
+                  Advanced Industry Curriculum Approved by AICTE
+                </h2>
+              </div>
+              <div className="max-w-5xl mx-auto pl-4 lg:pl-0">
+                <div className="max-w-3xl font-mono tracking-tight space-y-6 text-white ">
+                  <p className="mt-4 lg:text-lg">
+                    The All India Council for Technical Education has approved
+                    the curriculum created jointly by Pupilfirst and Freshworks
+                    that enables{" "}
+                    <a
+                      href="https://lite.pupilfirst.org/"
+                      className="font-semibold text-indigo-400 underline hover:bg-indigo-900 hover:bg-opacity-50 transition"
+                      target="_blank"
+                    >
+                      LITE approved institutions
+                    </a>{" "}
+                    to offer advanced web development courses using typed
+                    functional programming.
+                  </p>
+                  <p className="mt-4 lg:text-lg">
+                    Most modern programming languages widely used in the
+                    industry are converging towards this paradigm by adopting
+                    its features like types, discriminated unions, and immutable
+                    programming.
+                  </p>
+                  <p className="mt-4 lg:text-lg">
+                    In our knowledge, courses on functional programming are
+                    currently taught in India at IIT-Madras, IIT-Bombay,
+                    IIT-Kanpur and IIT-Mandi.
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div className="max-w-6xl 2xl:max-w-7xl mx-auto">
+            <div className="border-l border-gray-700 mx-4 xl:mx-0 py-10 lg:py-16">
+              <div className="heading-with-leftborder">
+                <h2 className="max-w-6xl 2xl:max-w-7xl mx-auto lg:ml-8 xl:ml-12 px-4 2xl:ml-32 2xl:pl-0 font-bold text-2xl text-primary-500 lg:text-6xl leading-tight ml-4 lg:mx-auto">
+                  Gain Professional Skills
+                </h2>
+              </div>
+              <div className="max-w-6xl 2xl:max-w-7xl mx-auto lg:ml-8 xl:ml-12 2xl:ml-32 pl-4 2xl:pl-0">
+                <div className="max-w-3xl space-y-6 text-white ">
+                  <p className="mt-4 font-mono tracking-tight lg:text-lg">
+                    The courses are arranged to enable you to gain professional
+                    skills used everyday in the web development industry.
+                  </p>
+                </div>
+                <div className="lg:grid grid-cols-12 gap-x-10 gap-y-32 2xl:gap-y-64 lg:pt-32 relative">
+                  <div className="col-span-6 text-white pt-10 lg:pt-24">
+                    <p className="text-gray-400 font-semibold">
+                      A good web developer is...
+                    </p>
+                    <h3 className="text-4xl lg:text-5xl text-indigo-500 lg:-ml-7">
+                      <span className="text-primary-500">_</span>an artist
+                    </h3>
+                    <p className="font-mono tracking-tight lg:text-lg pt-4 lg:pt-8 lg:pr-12">
+                      Learn to see the beauty in code, and to write elegant
+                      code: Your code doesn't just solve a problem - it's
+                      something you create. Just like writing a story, or a
+                      poem, you're unlikely to get it right the first time.
+                      Learn the art of refactoring - how to go over your code
+                      repeatedly, making incremental improvements. It might end
+                      up doing the same thing at the end, but it'll read better
+                      while doing it.
+                    </p>
+                  </div>
+                  <div className="col-span-6 pt-12 lg:pt-0">
+                    <img
+                      className="w-full h-full object-contain"
+                      src="professional-skills/artist.svg"
+                      alt="artist"
+                    />
+                  </div>
+
+                  <div className="col-span-6 text-white pt-24">
+                    <p className="text-gray-400 font-semibold">
+                      A good web developer is...
+                    </p>
+                    <h3 className="text-4xl lg:text-5xl text-indigo-500 lg:-ml-7">
+                      <span className="text-primary-500">_</span>a good
+                      communicator
+                    </h3>
+                    <p className="font-mono tracking-tight lg:text-lg pt-4 lg:pt-8 lg:pr-12">
+                      Learn how to ask technical questions, and how to answer
+                      them: Coding isn't a solo journey. You're going to get
+                      stuck a lot, and the easiest way to get unstuck is to ask
+                      someone who knows better. There's a skill to asking
+                      questions well, though. And once you know something, you
+                      can help others out - there's a certain skill to answering
+                      questions as well.
+                    </p>
+                    <p className="font-mono tracking-tight lg:text-lg pt-4 lg:pt-8 lg:pr-12">
+                      Learn how to talk to your peers fluently through your
+                      code: In your career, you're going to work with many
+                      others. A good programmer knows how to write code so that
+                      it can be read, understood, and appreciated by those who
+                      work with them.
+                    </p>
+                  </div>
+                  <div className="col-span-6 pt-12 lg:pt-0">
+                    <img
+                      className="w-full h-full object-contain"
+                      src="professional-skills/good-communicator.svg"
+                      alt="good communicator"
+                    />
+                  </div>
+
+                  <div className="col-span-6 text-white pt-24">
+                    <p className="text-gray-400 font-semibold">
+                      A good web developer is...
+                    </p>
+                    <h3 className="text-4xl lg:text-5xl text-indigo-500 lg:-ml-7">
+                      <span className="text-primary-500">_</span>persistent
+                    </h3>
+                    <p className="font-mono tracking-tight lg:text-lg pt-4 lg:pt-8 lg:pr-12">
+                      Learn how to interpret error messages: Seeing error
+                      messages is a part and parcel of life as a developer. You
+                      shouldn't be dismayed when you see an error message though
+                      - it's just the computer trying to tell you that something
+                      went wrong, and that it needs some help. You'll need time
+                      and patience to get used to these messages, and to get to
+                      the root of the issue.
+                    </p>
+                  </div>
+                  <div className="col-span-6 pt-12 lg:pt-0">
+                    <img
+                      className="w-full h-full object-contain"
+                      src="professional-skills/persistent.svg"
+                      alt="persistent"
+                    />
+                  </div>
+
+                  <div className="col-span-6 text-white pt-24">
+                    <p className="text-gray-400 font-semibold">
+                      A good web developer is...
+                    </p>
+                    <h3 className="text-4xl lg:text-5xl text-indigo-500 lg:-ml-7">
+                      <span className="text-primary-500">_</span>curious
+                    </h3>
+                    <p className="font-mono tracking-tight lg:text-lg pt-4 lg:pt-8 lg:pr-12">
+                      We can never teach you everything that goes into web
+                      development. There's just too much to teach. We can,
+                      however, teach you how to continue learning on your own.
+                    </p>
+                  </div>
+                  <div className="col-span-6 pt-12 lg:pt-0">
+                    <img
+                      className="w-full h-full object-contain"
+                      src="professional-skills/curious.svg"
+                      alt="curious"
+                    />
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        <section className="bg-gray-800 border-t border-b border-gray-700 mx-auto relative">
+          <div className="max-w-6xl 2xl:max-w-7xl mx-auto">
+            <div className="border-l border-gray-700 mx-4 xl:mx-0 py-10 lg:py-16">
+              <div className="heading-with-leftborder">
+                <h2 className="max-w-5xl font-bold text-primary-500 text-2xl lg:text-6xl lg:leading-tight ml-4 lg:mx-auto">
+                  Qualify as a <br /> Teaching Assistant
+                </h2>
+              </div>
+              <div className="max-w-5xl mx-auto pl-4 lg:pl-0">
+                <div className="max-w-3xl space-y-6 text-white ">
+                  <p className="mt-4 font-mono tracking-tight lg:text-lg">
+                    If you are among the top performers in this course, you’ll
+                    stand a chance to engage future batches as a Teaching
+                    Assistant (TA). As a TA, you’ll be working closely with the
+                    industry experts and the Pupilfirst to meaningfully deliver
+                    learning for students in future batches. The National goal
+                    of All India Council for Technical Education, under which
+                    all the engineering colleges in India are affiliated is to
+                    eventually{" "}
+                    <a
+                      className="font-semibold text-indigo-400 underline hover:bg-indigo-900 hover:bg-opacity-50 transition"
+                      href="https://lite.pupilfirst.org/letter-from-VCM/Letter-from-the-VCM-AICTE.pdf"
+                      target="_blank"
+                    >
+                      take this course to 2.4Crore students
+                    </a>{" "}
+                    over many years.
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        <section className="mx-auto relative">
+          <div className="max-w-6xl 2xl:max-w-7xl mx-auto">
+            <div className="border-l border-gray-700 mx-4 xl:mx-0 py-10 lg:py-16">
+              <div className="heading-with-leftborder">
+                <h2 className="max-w-5xl font-bold text-primary-500 text-2xl lg:text-6xl lg:leading-tight ml-4 lg:mx-auto">
+                  Contribute to <br />
+                  Global Digital Corps
+                </h2>
+              </div>
+              <div className="max-w-5xl mx-auto pl-4 lg:pl-0">
+                <div className="max-w-3xl space-y-6 text-white ">
+                  <p className="mt-4 font-mono tracking-tight lg:text-lg">
+                    Before this minor degree program reached you, it was taught
+                    to 24 students selected from 50,482 applications across 2437
+                    institutions. With the skills gained, 14 students qualified
+                    for a six month internship programme with CoronaSafe Network
+                    and their open-source contributions has been recognised by
+                    the United Nations as a global Digital Public Good.
+                  </p>
+                  <p className="mt-4 font-mono tracking-tight">
+                    The top performers from each institution would have an
+                    opportunity to work along with eGovernments Foundation
+                    co-founded by Nandan Nilekani and Srikanth Nadhamuni
+                    (Founding CTO of Aadhaar) and get admitted to the{" "}
+                    <a
+                      className="font-semibold text-indigo-400 underline hover:bg-indigo-900 hover:bg-opacity-50 transition"
+                      href="https://gdc.network/"
+                      target="_blank"
+                    >
+                      Global Digital Corps programme.
+                    </a>
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        <section className="mx-auto relative">
+          <div className="max-w-6xl 2xl:max-w-7xl mx-auto">
+            <div className="border-l border-gray-700 mx-4 xl:mx-0 py-10 lg:py-16">
+              <div className="heading-with-leftborder">
+                <h2 className="max-w-5xl font-bold text-primary-500 text-2xl lg:text-6xl lg:leading-tight ml-4 lg:mx-auto">
+                  Feedback
+                </h2>
+              </div>
+              <div className="max-w-5xl mx-auto pl-4 lg:pl-0">
+                <div className="max-w-3xl space-y-6 text-white ">
+                  <p className="mt-4 font-mono tracking-tight lg:text-lg">
+                    Here’s what some of our students had to say
+                  </p>
+                </div>
+                <div className="divide-y space-y-12 lg:space-y-24 divide-gray-700 relative">
+                  <div className="lg:grid grid-cols-12 gap-x-10">
+                    <div className="col-span-6 text-white lg:pt-24">
+                      <div className="sticky top-0 pt-16">
+                        <p className="text-sm font-semibold uppercase text-gray-500">
+                          Question 1
+                        </p>
+                        <h3 className="text-indigo-400">
+                          On the course content:
+                        </h3>
+                      </div>
+                    </div>
+                    <div className="col-span-6 pt-8 lg:pt-24 space-y-8 lg:space-y-12">
+                      <div className="bg-red-200 lg:text-lg font-medium rounded-xl p-8 lg:p-12">
+                        <p>
+                          The course content was sophisticated for beginners
+                          like me, as it broadly covered the absolute basics of
+                          the front-end like Ruby programming and OOP at first,
+                          followed by content relating to back-end development.
+                        </p>
+                        <p className="mt-6 font-bold">
+                          - Tanya Rampal
+                          <span className="block italic font-medium text-sm pl-3">
+                            (WD201 May-July 2021, Teaching Assistant <br />-
+                            LITE Batch 1)
+                          </span>
+                        </p>
+                      </div>
+                      <div className="bg-red-200 lg:text-lg font-medium rounded-xl p-8 lg:p-12">
+                        <p>
+                          It was very much easy to progress through the course
+                          and it was designed in a way that it helps me learn a
+                          new language and improves my personal interests to do
+                          independent research on the source Code of Ruby on
+                          Rails and the way it works. I have never done this in
+                          any of my other learnings. It was an awesome time
+                          going through the course.
+                        </p>
+                        <p className="mt-6 font-bold">
+                          - Shri Hari L
+                          <span className="block italic font-medium text-sm pl-3">
+                            (CoronaSafe Engineering Fellowship Programme,
+                            Jan-March 2021)
+                          </span>
+                        </p>
+                      </div>
+
+                      <div className="bg-red-200 lg:text-lg font-medium rounded-xl p-8 lg:p-12">
+                        <p>
+                          The courses helped me greatly in learning good web
+                          development practices and functional programming
+                          concepts. I also learnt how to develop a good backend
+                          system and also about React, which proved really
+                          helpful in my internship.
+                        </p>
+                        <p className="mt-6 font-bold">
+                          - Apurva Nagar
+                          <span className="block italic font-medium text-sm pl-3">
+                            (CoronaSafe Engineering Fellowship Programme,
+                            Jan-March 2021)
+                          </span>
+                        </p>
+                      </div>
+                      <div className="bg-red-200 lg:text-lg font-medium rounded-xl p-8 lg:p-12">
+                        <p>
+                          The knowledge I gained during the course helped me
+                          while I was doing my internship project, and continues
+                          to do so even now. The tech stack used here is
+                          different but the basic concepts and patterns are
+                          similar if not same. I am really grateful for having
+                          been a part of this course and community. Thank you :)
+                        </p>
+                        <p className="mt-6 font-bold">
+                          - Mahendra Kennedy
+                          <span className="block italic font-medium text-sm pl-3">
+                            (SASTRA July-Dec 2019)
+                          </span>
+                        </p>
+                      </div>
+                    </div>
+                  </div>
+
+                  <div className="lg:grid grid-cols-12 gap-x-10">
+                    <div className="col-span-6 text-white lg:pt-24">
+                      <div className="sticky top-0 pt-16">
+                        <p className="text-sm font-semibold uppercase text-gray-500">
+                          Question 2
+                        </p>
+                        <h3 className="text-indigo-400">
+                          On the course management done by Pupilfirst:
+                        </h3>
+                      </div>
+                    </div>
+                    <div className="col-span-6 pt-8 lg:pt-24 space-y-8 lg:space-y-12">
+                      <div className="bg-green-200 lg:text-lg font-medium rounded-xl p-8 lg:p-12">
+                        <p>
+                          The feedback from my perspective is the BEST part of
+                          the course. I loved all my feedback and it helped
+                          sustain my learning curve.
+                        </p>
+                        <p className="mt-6 font-bold">
+                          - Aravind Kannan Rathinasabapathi
+                          <span className="block italic font-medium text-sm pl-3">
+                            (WD201 May-July 2021, Intern - CitiBank)
+                          </span>
+                        </p>
+                      </div>
+                      <div className="bg-green-200 lg:text-lg font-medium rounded-xl p-8 lg:p-12">
+                        <p>
+                          The team is very sincere and I like the ways that they
+                          manage time. The course calendar was really helpful as
+                          well.
+                        </p>
+                        <p className="mt-6 font-bold">
+                          - Mohd Saad
+                          <span className="block italic font-medium text-sm pl-3">
+                            (WD201 May-July 2021, Teaching Assistant <br />-
+                            LITE Batch 1)
+                          </span>
+                        </p>
+                      </div>
+                    </div>
+                  </div>
+
+                  <div className="lg:grid grid-cols-12 gap-x-10">
+                    <div className="col-span-6 text-white lg:pt-24">
+                      <div className="sticky top-0 pt-16">
+                        <p className="text-sm font-semibold uppercase text-gray-500">
+                          Question 3
+                        </p>
+                        <h3 className="text-indigo-400">
+                          On learning using Pupilfirst platform
+                        </h3>
+                      </div>
+                    </div>
+                    <div className="col-span-6 pt-8 lg:pt-24 space-y-8 lg:space-y-12">
+                      <div className="bg-indigo-200 lg:text-lg font-medium rounded-xl p-8 lg:p-12">
+                        <p>
+                          The UI is really good and the Pupilfirst LMS is easy
+                          to use.
+                        </p>
+                        <p className="mt-6 font-bold">
+                          - Ayush Vijayant
+                          <span className="block italic font-medium text-sm pl-3">
+                            (WD201 May-July 2021)
+                          </span>
+                        </p>
+                      </div>
+                      <div className="bg-indigo-200 lg:text-lg font-medium rounded-xl p-8 lg:p-12">
+                        <p>
+                          The Pupilfirst LMS was very easy to use. I like that
+                          it is easy to track all the levels and assignments
+                          that have been done.
+                        </p>
+                        <p className="mt-6 font-bold">
+                          - Sandra Kakkarayil Jayakum
+                          <span className="block italic font-medium text-sm pl-3">
+                            (CoronaSafe Engineering Fellowship Programme,
+                            Jan-March 2021)
+                          </span>
+                        </p>
+                      </div>
+                    </div>
+                  </div>
+
+                  <div className="lg:grid grid-cols-12 gap-x-10">
+                    <div className="col-span-6 text-white lg:pt-24">
+                      <div className="sticky top-0 pt-16">
+                        <h3 className="text-indigo-400">
+                          On improvement at JavaScript :
+                        </h3>
+                      </div>
+                    </div>
+                    <div className="col-span-6 pt-8 lg:pt-24 space-y-8 lg:space-y-12">
+                      <div className="bg-yellow-100 lg:text-lg font-medium rounded-xl p-8 lg:p-12">
+                        <p className="font-bold">LITE Faculty Batch 1</p>
+                        <p className="pt-2">
+                          In this batch, 77% faculty members mentioned that they
+                          got much better at JavaScript as compared to the
+                          beginning of the WD101 course.
+                        </p>
+                        <div className="bg-gray-200 shadow-inner w-full h-12 rounded-lg mt-4">
+                          <div className="flex justify-center items-center shadow-lg text-green-900 text-center font-semibold bg-green-500 h-12 rounded-l-lg w-[77%]">
+                            <p> 77%</p>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+
+                  <div className="lg:grid grid-cols-12 gap-x-10">
+                    <div className="col-span-6 text-white lg:pt-24">
+                      <div className="sticky top-0 pt-16">
+                        <h3 className="text-indigo-400">
+                          On improvement at back-end web development:
+                        </h3>
+                      </div>
+                    </div>
+                    <div className="col-span-6 pt-8 lg:pt-24 space-y-8 lg:space-y-12">
+                      <div className="bg-pink-200 lg:text-lg font-medium rounded-xl p-8 lg:p-12">
+                        <p className="font-bold">WD201 May-July 2021 Batch</p>
+                        <p className="pt-2">
+                          In this batch, 91% students mentioned that they got
+                          much better at back-end web development as compared to
+                          the beginning of the WD201 course.
+                        </p>
+                        <div className="bg-gray-200 shadow-inner w-full h-12 rounded-lg mt-4">
+                          <div className="flex justify-center items-center shadow-lg text-green-900 text-center font-semibold bg-green-500 h-12 rounded-l-lg w-[91%]">
+                            <p>91%</p>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        <section className="mx-auto relative">
+          <div className="max-w-6xl 2xl:max-w-7xl mx-auto">
+            <div className="border-l border-gray-700 mx-4 xl:mx-0 py-10 lg:py-16">
+              <div className="heading-with-leftborder">
+                <h2 className="max-w-5xl font-bold text-primary-500 text-2xl lg:text-6xl lg:leading-tight ml-4 lg:mx-auto">
+                  Expand Your <br />
+                  Career Choices
+                </h2>
+              </div>
+              <div className="max-w-5xl mx-auto pl-4 lg:pl-0">
+                <div className="max-w-3xl space-y-6 text-white ">
+                  <p className="mt-4 font-mono tracking-tight lg:text-lg">
+                    Students who have graduated from the minor degree track
+                    shall possess skills that are at the cutting edge of the
+                    modern software industry. As COVID-19 accelerated digital
+                    transformation and remote work, you shall gain skills for
+                    global employment opportunities or start your own technology
+                    startup.
+                  </p>
+                  <p className="mt-4 font-mono tracking-tight">
+                    As the world is transitioning into a knowledge economy, the
+                    demand for web development engineers who are able to build
+                    web applications on the internet is outpacing the supply.
+                    The venture capital investments in India is also on the rise
+                    enabling new startups to emulate the success of Freshworks.
+                  </p>
+                  <p className="mt-4 font-mono tracking-tight">
+                    With the skills gained, the choice is yours to take up a
+                    job/ do research/study further/build a startup and lead a
+                    fulfilling life.
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        <section className="mx-auto relative">
+          <div className="max-w-6xl 2xl:max-w-7xl mx-auto">
+            <div className="border-l border-gray-700 mx-4 xl:mx-0 py-10 lg:py-16">
+              <div className="heading-with-leftborder">
+                <h2 className="max-w-5xl font-bold text-primary-500 text-2xl lg:text-6xl lg:leading-tight ml-4 lg:mx-auto">
+                  Gain a Wider <br />
+                  Alumni Network
+                </h2>
+              </div>
+              <div className="max-w-5xl mx-auto pl-4 lg:pl-0">
+                <div className="max-w-3xl space-y-6 text-white ">
+                  <p className="mt-4 font-mono tracking-tight lg:text-lg">
+                    Successful graduate students shall be invited to join an
+                    alumni network connecting you with peers from over 50
+                    institutions who have learnt along with you as a Community.
+                    As the years pass by, these fellow engineers would be able
+                    to open up more professional opportunities to advance your
+                    career.
+                  </p>
+                </div>
+                <img
+                  className="w-full h-full object-contain mt-8 rounded-xl shadow-lg"
+                  src="stats-map/LITE-50-Faculty-List.png"
+                  alt="LITE 50 Faculty List"
+                />
+              </div>
+            </div>
+          </div>
+        </section>
+
+        <section className="mx-auto relative">
+          <div className="max-w-6xl 2xl:max-w-7xl mx-auto">
+            <div className="border-l border-gray-700 mx-4 xl:mx-0 py-10 lg:py-16">
+              <div className="heading-with-leftborder">
+                <h2 className="max-w-5xl font-bold text-primary-500 text-2xl lg:text-6xl lg:leading-tight ml-4 lg:mx-auto">
+                  How to Apply?
+                </h2>
+              </div>
+              <div className="max-w-5xl mx-auto pl-4 lg:pl-0">
+                <div className="max-w-3xl space-y-6 text-white ">
+                  <p className="mt-4 font-mono tracking-tight lg:text-lg">
+                    All students who wish to apply for the Minor Degree in
+                    Advanced Web Development may contact LITE Faculty
+                    Coordinator at their institution for details.
+                  </p>
+                </div>
+                <a
+                  href="https://docs.google.com/document/d/e/2PACX-1vSVFaCSJp9_NuHFBlMfQJxwa_S8Da1cxVbaQFfxOQ01PvoX8JVa86iAMn6p3ukGo4cGRNWFrFUdDoc1/pub"
+                  target="_blank"
+                  className="inline-flex items-center space-x-4 mt-4 w-full py-3 text-indigo-400 rounded-md text-lg font-semibold hover:underline hover:shadow-xl transition "
+                >
+                  <span>See list of Institutions and Faculty Coordinators</span>
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    width="16"
+                    height="16"
+                    fill="currentColor"
+                    className="w-6 h-6"
+                    viewBox="0 0 16 16"
+                  >
+                    <path
+                      fillRule="evenodd"
+                      d="M1 8a.5.5 0 0 1 .5-.5h11.793l-3.147-3.146a.5.5 0 0 1 .708-.708l4 4a.5.5 0 0 1 0 .708l-4 4a.5.5 0 0 1-.708-.708L13.293 8.5H1.5A.5.5 0 0 1 1 8z"
+                    />
+                  </svg>
+                </a>
+                <a
+                  href="https://docs.google.com/document/d/e/2PACX-1vQAWmQAJwBVVW40phmsR_A3iZQBEw0nK9vF_L8kIsBfCc_79ERcdVfpjsolloUymkLST7NU1se3Jy40/pub"
+                  target="_blank"
+                  className="inline-flex justify-between items-center space-x-4 mt-12 w-full p-4 bg-gradient-to-r from-primary-500 to-primary-600 hover:from-primary-600 hover:to-primary-400 rounded-lg text-lg font-semibold shadow-lg hover:underline hover:shadow-xl transition "
+                >
+                  <span>Frequently Asked Questions</span>
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    width="16"
+                    height="16"
+                    fill="currentColor"
+                    className="w-6 h-6"
+                    viewBox="0 0 16 16"
+                  >
+                    <path
+                      fillRule="evenodd"
+                      d="M1 8a.5.5 0 0 1 .5-.5h11.793l-3.147-3.146a.5.5 0 0 1 .708-.708l4 4a.5.5 0 0 1 0 .708l-4 4a.5.5 0 0 1-.708-.708L13.293 8.5H1.5A.5.5 0 0 1 1 8z"
+                    />
+                  </svg>
+                </a>
+                <div className="mt-16">
+                  <h3 className="text-3xl text-indigo-500">Questions?</h3>
+                  <p className="text-white pt-4">
+                    Please contact the LITE Faculty Coordinator of your
+                    institution.
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        <section className="mx-auto relative">
+          <div className="bg-gray-800 p-4 lg:p-10 border-t border-gray-700">
+            <p className="max-w-5xl font-bold text-indigo-500 text-center text-xl lg:text-3xl lg:leading-tight lg:mx-auto">
+              LITE - Creating a Culture of Teaching Excellence
             </p>
           </div>
         </section>
       </main>
     </div>
   );
+}
+export async function getStaticProps() {
+  return {
+    props: {
+      data: hiringNetworkData,
+    },
+  };
 }

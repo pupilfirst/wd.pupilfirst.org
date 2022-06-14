@@ -5,7 +5,7 @@ html {
   scroll-behavior: smooth;
 }
 body {
-  @apply font-notoSansMalayalam;
+  @apply font-montserrat;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   text-rendering: optimizeLegibility;
