@@ -3,6 +3,7 @@
 import Head from "next/head";
 import React, { useState } from "react";
 import hiringNetworkData from "./../data/hiring-network.json";
+import VideoModal from "./../components/VideoModal";
 
 function ImageWithDescription({ name, githuburl, caption, role, imgSrc }) {
   return (
@@ -167,7 +168,10 @@ export default function Home(props) {
                 </div>
               </div>
             </div>
-            <div className="col-span-6 px-8 py-12 lg:pt-0 pb-12">
+            <div className="relative col-span-6 px-8 py-12 lg:pt-0 pb-12 z-20">
+							<div className="play-button absolute bottom-[12%] left-[2%] md:bottom-[22%] md:left-[5%]">
+								<VideoModal />
+							</div>
               <img className="w-full" src="hero/hero-student.svg" alt="" />
             </div>
           </div>

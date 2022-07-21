@@ -175,3 +175,48 @@ h4 {
 .stats__side-nav-item--active {
   @apply bg-primary-200 bg-opacity-50 text-secondary-600;
 }
+
+.animate-ring {
+  stroke-dasharray: 10;
+  stroke-width: 4px;
+  animation: ringAnimation 1s ease-in-out infinite;
+}
+
+@media screen and (min-width: 870px) {
+	div .play-button {
+		bottom: 10%;
+		left: 1%;
+	}
+}
+
+@media screen and (min-width: 970px) {
+	div .play-button {
+		bottom: 10%;
+		left: 2%;
+	}
+}
+
+@media screen and (min-width: 1024px) {
+	div .play-button {
+		bottom: 15%;
+		left: 8%;
+	}
+}
+
+@media screen and (min-width: 1124px) {
+	div .play-button {
+		bottom: 10%;
+		left: 8%;
+	}
+}
+
+
+@keyframes ringAnimation {
+  0% {
+    stroke-dashoffset: 0;
+  }
+  100% {
+    stroke-dashoffset: 100;
+  }
+}
+  
