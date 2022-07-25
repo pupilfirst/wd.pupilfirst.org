@@ -168,10 +168,10 @@ export default function Home(props) {
                 </div>
               </div>
             </div>
-            <div className="relative col-span-6 px-8 py-12 lg:pt-0 pb-12 z-20">
-							<div className="play-button absolute bottom-[12%] left-[2%] md:bottom-[22%] md:left-[5%]">
-								<VideoModal />
-							</div>
+            <div className="relative col-span-6 flex items-end px-8 py-12 lg:pt-0 pb-12 z-20">
+              <div className="play-button absolute bottom-2 left-2 sm:left-24 md:bottom-4 md:left-8 lg:bottom-4 lg:left-10 xl:bottom-4 xl:left-16 transform hover:shadow-xl hover:-translate-y-1 transition">
+                <VideoModal />
+              </div>
               <img className="w-full" src="hero/hero-student.svg" alt="" />
             </div>
           </div>
