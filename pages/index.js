@@ -108,7 +108,7 @@ export default function Home(props) {
       </Head>
       <main className="bg-gradient-to-br from-gray-800 to-gray-900 mx-auto">
         <section className="hero__bg-pattern bg-gray-900 relative">
-          <div className="absolute inset-0 md:inset-x-0 md:top-8 2xl:inset-0 -z-30">
+          <div className="absolute inset-0 md:inset-x-0 md:top-8 2xl:inset-0">
             <img
               className="h-full w-full object-cover relative"
               src="hero/hero-bg.webp"
