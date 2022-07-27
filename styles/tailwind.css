@@ -175,3 +175,21 @@ h4 {
 .stats__side-nav-item--active {
   @apply bg-primary-200 bg-opacity-50 text-secondary-600;
 }
+
+.animate-ring {
+  stroke-dasharray: 10;
+  stroke-width: 2px;
+  animation: ringAnimation 1.25s ease-in-out infinite;
+}
+.play-button:hover .animate-ring {
+  animation-play-state: paused;
+}
+
+@keyframes ringAnimation {
+  0% {
+    stroke-dashoffset: 0;
+  }
+  100% {
+    stroke-dashoffset: 100;
+  }
+}

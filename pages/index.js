@@ -108,6 +108,14 @@ export default function Home(props) {
       </Head>
       <main className="bg-gradient-to-br from-gray-800 to-gray-900 mx-auto">
         <section className="hero__bg-pattern bg-gray-900 relative">
+          <div className="absolute inset-0 md:inset-x-0 md:top-8 2xl:inset-0 -z-30">
+            <img
+              className="h-full w-full object-cover relative"
+              src="hero/hero-bg.webp"
+              alt="LITE - hero background image"
+            />
+            <div className="absolute inset-0"></div>
+          </div>
           <header className="max-w-6xl 2xl:max-w-7xl mx-auto py-4 px-4 xl:px-0 relative z-10">
             <div className="flex justify-between items-center">
               <a className="block" href="/">
@@ -124,63 +132,70 @@ export default function Home(props) {
               />
             </div>
           </header>
-          <div className="lg:grid grid-cols-12 gap-x-8 relative max-w-6xl 2xl:max-w-7xl flex flex-col md:flex-row justify-between mx-auto pb-8 md:pb-16 px-4 xl:px-0">
-            <div className="col-span-6 w-full mx-auto relative z-10">
-              <div className="inline-block rounded bg-gray-800 py-1 px-1 md:px-2 mt-4 ">
-                <p className="font-medium text-sm text-gray-400">
+          <div className="relative pb-8 md:pb-16 px-4 xl:px-0">
+            <div className="max-w-6xl 2xl:max-w-7xl mx-auto">
+              <div className="z-10 flex flex-col items-center">
+                <p className=" rounded bg-gray-800 py-1 px-1 md:px-2 mt-4 font-medium text-sm text-gray-400 max-w-max">
                   All India Council for Technical Education.
                 </p>
-              </div>
-              <h1 className="text-primary-500 text-3xl md:text-3xl lg:text-5xl xl:text-6xl py-2 font-extrabold lg:leading-tight xl:leading-tight">
-                Minor Degree in <br />
-                Advanced Web Development
-                <span className="text-indigo-500">.</span>
-              </h1>
-              <p className="max-w-3xl font-mono mx-auto pr-4 pt-4 text-base lg:text-lg text-white">
-                The Minor Degree in Advanced Web Development Curriculum is
-                approved by All India Council for Technical Education (AICTE)
-                under the National Educational Alliance for Technology (NEAT)
-                programme of the Ministry of Education, Government of India.
-                This can be opted for and pursued by students who are enrolled
-                in the Institutes selected as part of the Batch 1 of LITE
-                programme.
-              </p>
-              <div className="pt-4 md:pt-8">
-                <div>
-                  <a
-                    href="https://docs.google.com/document/d/e/2PACX-1vQj8aeoRfOHYlOALcUt4mWmFefHAeGtKd5eu6SQDHOaDfckGkBDFz8JrtEiLZmGX-KyFyaDMLdCDkTL/pub"
-                    target="_blank"
-                    className="inline-flex space-x-3 p-3 lg:px-6 lg:py-3.5 text-white bg-indigo-600 rounded-md text-base lg:text-lg text-center font-semibold shadow-lg hover:shadow-xl focus:ring-2 focus:ring-indigo-400 focus:ring-offset-2 transition "
-                  >
-                    <svg
-                      xmlns="http://www.w3.org/2000/svg"
-                      width="16"
-                      height="16"
-                      fill="currentColor"
-                      className="w-6 h-6"
-                      viewBox="0 0 16 16"
+                <h1 className="text-primary-500 text-center text-3xl md:text-3xl lg:text-5xl xl:text-6xl py-2 font-extrabold lg:leading-tight xl:leading-tight">
+                  Minor Degree in <br />
+                  Advanced Web Development
+                  <span className="text-indigo-500">.</span>
+                </h1>
+                <p className="text-center max-w-3xl font-mono mx-auto pr-4 pt-4 text-base text-white">
+                  The Minor Degree in Advanced Web Development Curriculum is
+                  approved by All India Council for Technical Education (AICTE)
+                  under the National Educational Alliance for Technology (NEAT)
+                  programme of the Ministry of Education, Government of India.
+                  This can be opted for and pursued by students who are enrolled
+                  in the Institutes selected as part of the Batch 1 of LITE
+                  programme.
+                </p>
+                <div className="pt-4 md:pt-8">
+                  <div>
+                    <a
+                      href="https://docs.google.com/document/d/e/2PACX-1vQj8aeoRfOHYlOALcUt4mWmFefHAeGtKd5eu6SQDHOaDfckGkBDFz8JrtEiLZmGX-KyFyaDMLdCDkTL/pub"
+                      target="_blank"
+                      className="inline-flex space-x-3 p-3 lg:px-6 lg:py-3.5 text-white bg-indigo-600 rounded-md text-base lg:text-lg text-center font-semibold shadow-lg hover:shadow-xl focus:ring-2 focus:ring-indigo-400 focus:ring-offset-2 transition "
                     >
-                      <path d="M14 14V4.5L9.5 0H4a2 2 0 0 0-2 2v12a2 2 0 0 0 2 2h8a2 2 0 0 0 2-2zM9.5 3A1.5 1.5 0 0 0 11 4.5h2V9H3V2a1 1 0 0 1 1-1h5.5v2zM3 12v-2h2v2H3zm0 1h2v2H4a1 1 0 0 1-1-1v-1zm3 2v-2h7v1a1 1 0 0 1-1 1H6zm7-3H6v-2h7v2z" />
-                    </svg>
-                    <span>See list of institutions</span>
-                  </a>
+                      <svg
+                        xmlns="http://www.w3.org/2000/svg"
+                        width="16"
+                        height="16"
+                        fill="currentColor"
+                        className="w-6 h-6"
+                        viewBox="0 0 16 16"
+                      >
+                        <path d="M14 14V4.5L9.5 0H4a2 2 0 0 0-2 2v12a2 2 0 0 0 2 2h8a2 2 0 0 0 2-2zM9.5 3A1.5 1.5 0 0 0 11 4.5h2V9H3V2a1 1 0 0 1 1-1h5.5v2zM3 12v-2h2v2H3zm0 1h2v2H4a1 1 0 0 1-1-1v-1zm3 2v-2h7v1a1 1 0 0 1-1 1H6zm7-3H6v-2h7v2z" />
+                      </svg>
+                      <span>See list of institutions</span>
+                    </a>
+                  </div>
                 </div>
               </div>
             </div>
-            <div className="col-span-6 px-8 py-12 lg:pt-0 pb-12">
-              <img className="w-full" src="hero/hero-student.svg" alt="" />
+          </div>
+          <div className="px-4 lg:px-0 pb-8 max-w-6xl 2xl:max-w-7xl mx-auto">
+            <div style={{ padding: "52.73% 0 0 0", position: "relative" }}>
+              <iframe
+                className="rounded-3xl shadow-2xl border-2 border-gray-900"
+                src="https://player.vimeo.com/video/733554719?h=c8851152f3&amp;badge=0&amp;autopause=0&amp;player_id=0&amp;app_id=58479"
+                frameBorder="0"
+                allow="autoplay; fullscreen; picture-in-picture"
+                style={{
+                  position: "absolute",
+                  top: 0,
+                  left: 0,
+                  width: "100%",
+                  height: "100%",
+                }}
+                title="Web Development @ Pupilfirst"
+              ></iframe>
             </div>
           </div>
-          <div className="absolute inset-0 md:inset-x-0 md:top-8 2xl:inset-0 z-0">
-            <img
-              className="h-full w-full object-cover relative"
-              src="hero/hero-bg.webp"
-              alt="LITE - hero background image"
-            />
-            <div className="absolute inset-0"></div>
-          </div>
         </section>
-        <section className="px-4 xl:mx-0 pb-10 md:pb-16 bg-gray-900">
+        <section className="px-4 xl:mx-0 py-10 md:py-16 bg-gray-900">
           <div className="bg-gradient-to-br from-gray-800 to-gray-900 rounded-3xl border border-gray-700 relative shadow-lg max-w-6xl 2xl:max-w-7xl mx-auto">
             <div className="flex space-y-4 md:space-y-0 flex-col md:flex-row justify-between text-white">
               <div className="md:w-8/12 p-4 lg:p-10">
@@ -589,37 +604,6 @@ export default function Home(props) {
               </svg>
               <div className="max-w-5xl mx-auto relative z-10 pl-4 lg:pl-0">
                 <div className="md:divide-x divide-gray-700 space-y-12 gap-y-12 md:space-y-0 sm:grid sm:grid-cols-2 lg:grid-cols-4 py-12 lg:pb-16">
-                  <ImageWithDescription
-                    name="Hari Gopal"
-                    githuburl={
-                      <a
-                        className="inline-flex text-gray-300 hover:text-indigo-400 transition"
-                        href="https://github.com/harigopal"
-                        target="_blank"
-                      >
-                        <svg
-                          xmlns="http://www.w3.org/2000/svg"
-                          width="16"
-                          height="16"
-                          fill="currentColor"
-                          className="w-6 h-6"
-                          viewBox="0 0 16 16"
-                        >
-                          <path d="M8 0C3.58 0 0 3.58 0 8c0 3.54 2.29 6.53 5.47 7.59.4.07.55-.17.55-.38 0-.19-.01-.82-.01-1.49-2.01.37-2.53-.49-2.69-.94-.09-.23-.48-.94-.82-1.13-.28-.15-.68-.52-.01-.53.63-.01 1.08.58 1.23.82.72 1.21 1.87.87 2.33.66.07-.52.28-.87.51-1.07-1.78-.2-3.64-.89-3.64-3.95 0-.87.31-1.59.82-2.15-.08-.2-.36-1.02.08-2.12 0 0 .67-.21 2.2.82.64-.18 1.32-.27 2-.27.68 0 1.36.09 2 .27 1.53-1.04 2.2-.82 2.2-.82.44 1.1.16 1.92.08 2.12.51.56.82 1.27.82 2.15 0 3.07-1.87 3.75-3.65 3.95.29.25.54.73.54 1.48 0 1.07-.01 1.93-.01 2.2 0 .21.15.46.55.38A8.012 8.012 0 0 0 16 8c0-4.42-3.58-8-8-8z" />
-                        </svg>
-                      </a>
-                    }
-                    caption={<p>Chief Technology Officer, Pupilfirst</p>}
-                    role={
-                      <p className="font-mono tracking-tight leading-snug text-white mt-3">
-                        Hari is a full-stack software engineer with 12 years of
-                        experience and leads the development of Pupilfirst LMS,
-                        one of the largest open-source projects that uses the
-                        ReScript programming language.
-                      </p>
-                    }
-                    imgSrc="people/hari-gopal.png"
-                  />
                   {/*
                   <ImageWithDescription
                     name="Prashanth Reddy Koteru"
@@ -801,6 +785,37 @@ export default function Home(props) {
                       </p>
                     }
                     imgSrc="people/avishek_photo.jpeg"
+                  />
+                  <ImageWithDescription
+                    name="Hari Gopal"
+                    githuburl={
+                      <a
+                        className="inline-flex text-gray-300 hover:text-indigo-400 transition"
+                        href="https://github.com/harigopal"
+                        target="_blank"
+                      >
+                        <svg
+                          xmlns="http://www.w3.org/2000/svg"
+                          width="16"
+                          height="16"
+                          fill="currentColor"
+                          className="w-6 h-6"
+                          viewBox="0 0 16 16"
+                        >
+                          <path d="M8 0C3.58 0 0 3.58 0 8c0 3.54 2.29 6.53 5.47 7.59.4.07.55-.17.55-.38 0-.19-.01-.82-.01-1.49-2.01.37-2.53-.49-2.69-.94-.09-.23-.48-.94-.82-1.13-.28-.15-.68-.52-.01-.53.63-.01 1.08.58 1.23.82.72 1.21 1.87.87 2.33.66.07-.52.28-.87.51-1.07-1.78-.2-3.64-.89-3.64-3.95 0-.87.31-1.59.82-2.15-.08-.2-.36-1.02.08-2.12 0 0 .67-.21 2.2.82.64-.18 1.32-.27 2-.27.68 0 1.36.09 2 .27 1.53-1.04 2.2-.82 2.2-.82.44 1.1.16 1.92.08 2.12.51.56.82 1.27.82 2.15 0 3.07-1.87 3.75-3.65 3.95.29.25.54.73.54 1.48 0 1.07-.01 1.93-.01 2.2 0 .21.15.46.55.38A8.012 8.012 0 0 0 16 8c0-4.42-3.58-8-8-8z" />
+                        </svg>
+                      </a>
+                    }
+                    caption={<p>Chief Technology Officer, Pupilfirst</p>}
+                    role={
+                      <p className="font-mono tracking-tight leading-snug text-white mt-3">
+                        Hari is a full-stack software engineer with 12 years of
+                        experience and leads the development of Pupilfirst LMS,
+                        one of the largest open-source projects that uses the
+                        ReScript programming language.
+                      </p>
+                    }
+                    imgSrc="people/hari-gopal.png"
                   />
                 </div>
               </div>
