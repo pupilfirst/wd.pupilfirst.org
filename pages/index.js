@@ -5,6 +5,7 @@ import React, { useState } from "react";
 import SectionWithHeading from "../components/SectionWithHeading";
 import Testimonial from "../components/Testimonial";
 import Testimonials from "../components/Testimonials";
+import Timeline from "../components/Timeline";
 import hiringNetworkData from "./../data/hiring-network.json";
 
 function ImageWithDescription({ name, githuburl, caption, role, imgSrc }) {
@@ -522,6 +523,57 @@ export default function Home(props) {
 				</SectionWithHeading>
 
 				<Testimonials />
+
+				<SectionWithHeading heading="Key Timelines" darkBackground={true}>
+					<Timeline />
+					<div className="text-white p-6 rounded-lg bg-gray-700">
+						<h4>Important</h4>
+						<ul className="list-disc ml-4">
+							<li className="mt-4">
+								Students can apply and get onboarded to the WD101 course between
+								24 August 2022 to 16 September 2022. We recommend that you
+								submit your application earlier, in order to give yourself more
+								time to complete the WD101 course.
+							</li>
+							<li className="mt-4">
+								Students who are not keeping up with the course work within the
+								set timelines shall be dropped out from the course and lose
+								their scholarship. This scholarship seat shall be restored to
+								the overall pool, and a new student will be admitted from the
+								wait-list.{" "}
+							</li>
+						</ul>
+					</div>
+					<div className="p-12 rounded-lg bg-indigo-500 flex flex-col items-center text-center gap-6 mt-12">
+						<h4 className="text-white text-3xl font-semibold mt-8 w-4/5">
+							Admissions open for 10,000 Minor Degree Scholarships in Web
+							Development.
+						</h4>
+						<a
+							href="https://docs.google.com/document/d/e/2PACX-1vQj8aeoRfOHYlOALcUt4mWmFefHAeGtKd5eu6SQDHOaDfckGkBDFz8JrtEiLZmGX-KyFyaDMLdCDkTL/pub"
+							target="_blank"
+							className="inline-flex space-x-3 p-3 lg:px-6 lg:py-3.5 bg-white text-indigo-500 rounded-md text-base lg:text-lg text-center font-semibold shadow-lg hover:shadow-xl focus:ring-2 focus:ring-indigo-400 focus:ring-offset-2 transition "
+						>
+							Apply now
+						</a>
+					</div>
+					<div className="text-white mt-12">
+						<h4>Code of Conduct</h4>
+						<p>
+							Students shall adhere to the Code of Conduct and provide only
+							truthful information. Any discrepancies shall lead to withdrawal
+							of scholarship and being dropped from the course.
+						</p>
+						<h4 className="mt-6">Questions?</h4>
+						<p>
+							Please refer to the Frequently Asked Questions (FAQ) document, as
+							you may find the answer if another student has asked this
+							question. If you still need help, please email to "insert email
+							id" with your name, branch, semester, college, and university
+							along with your question, and we shall get back to you.{" "}
+						</p>
+					</div>
+				</SectionWithHeading>
 
 				<section>
 					<div className="max-w-6xl 2xl:max-w-7xl mx-auto">
