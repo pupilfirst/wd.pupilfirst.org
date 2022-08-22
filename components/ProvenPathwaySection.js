@@ -1,0 +1,217 @@
+import { useEffect } from "react";
+import SectionWithHeading from "./SectionWithHeading";
+
+let joinWordsWithHyphen = (string) => {
+	return string.split(" ").join("-");
+};
+
+let headings = [
+	"Learn Web Development 101",
+	"Apply for Admission to Minor Degree",
+	"Start Learning with peers from across the country",
+	"Become a Teaching Assistant",
+	"Gain Internships through the Hiring Network",
+	"An Opportunity to Contribute to Digital Public Goods",
+	"Become a Teaching Assistant -",
+	"Join a growing Alumni Network",
+	"Contribute as an Industry Teaching Fellow",
+];
+
+const Step = ({ stepNumber, stepHeading, stepImgSrc, children }) => {
+	return (
+		<div
+			id={joinWordsWithHyphen(stepHeading)}
+			className="step flex gap-8 flex-col sm:flex-row border-t border-gray-800 pt-6 pb-4"
+		>
+			<div className="w-32 h-32 object-contain overflow-hidden">
+				<img src="/people/avishek_photo.jpeg" />
+			</div>
+			<div className="flex-1">
+				<p className="font-semibold text-gray-400">Step {stepNumber}</p>
+				<p className="font-semibold text-lg text-white">{stepHeading}</p>
+				<div className="mt-4 text-gray-200 text-sm">{children}</div>
+			</div>
+		</div>
+	);
+};
+
+const SectionLink = ({ heading }) => {
+	return (
+		<div>
+			<p>
+				<a
+					className="p-2 rounded-md block text-gray-400 hover:bg-gray-800"
+					href={"#" + joinWordsWithHyphen(heading)}
+				>
+					{heading}
+				</a>
+			</p>
+		</div>
+	);
+};
+
+export default function ProvenPathwaySection() {
+	useEffect(() => {
+		let observer = new IntersectionObserver(
+			(entries) => {
+				entries.forEach((entry) => {
+					if (entry.isIntersecting) {
+						let id = entry.target.id;
+						let link = document.querySelector(`a[href="#${id}"]`);
+						link.classList.add("text-indigo-200");
+						link.classList.add("bg-indigo-900");
+					} else {
+						let id = entry.target.id;
+						let link = document.querySelector(`a[href="#${id}"]`);
+						link.classList.remove("text-indigo-200");
+						link.classList.remove("bg-indigo-900");
+					}
+				});
+			},
+			{
+				rootMargin: "-8px 0px -98% 0px",
+			}
+		);
+		let targets = document.querySelectorAll(".step");
+		targets.forEach((target) => {
+			observer.observe(target);
+		});
+	}, []);
+
+	return (
+		<div>
+			<SectionWithHeading heading="Enter a proven career pathway">
+				<p className="text-white mt-4 w-4/5">
+					Approved by the “All India Council for Technical Education” as
+					National Model Curriculum for Indian Universities
+				</p>
+				<div className="grid grid-cols-8 gap-4 mt-12">
+					<div className="col-span-3">
+						<div className="sticky top-0 py-8">
+							{headings.map((heading, index) => {
+								return <SectionLink key={index} heading={heading} />;
+							})}
+						</div>
+					</div>
+					<div className="col-span-5 p-5 bg-gray-800 rounded-lg">
+						<Step stepNumber="1" stepHeading="Learn Web Development 101">
+							<p>Duration: 15 hours / 1 Academic Credit</p>
+							<p className="mt-2">
+								Learn to write code the way professionals do and build a simple
+								website.
+							</p>
+						</Step>
+						<Step
+							stepNumber="2"
+							stepHeading="Apply for Admission to Minor Degree"
+						>
+							<p>Duration: 300 hours/ 19 Academic Credits</p>
+							<p className="mt-2">
+								Register your interest by filling in a form your faculty shall
+								share.
+							</p>
+						</Step>
+						<Step
+							stepNumber="3"
+							stepHeading="Start Learning with peers from across the country"
+						>
+							<p>
+								From all applicants, 300 students who demonstrate learning speed
+								and impressive submissions in WD 101 shall get an Admission
+								Letter to join the Minor Degree Programme as the first batch.
+							</p>
+							<p className="mt-2">
+								All other students shall be on a waitlist and get admission
+								letters as soon as the first batch of students become Teaching
+								Assistants.
+							</p>
+						</Step>
+						<Step stepNumber="4" stepHeading="Become a Teaching Assistant">
+							<p>
+								From all applicants, 300 students who demonstrate learning speed
+								and impressive submissions in WD 101 shall get an Admission
+								Letter to join the Minor Degree Programme as the first batch.
+							</p>
+							<p className="mt-2">
+								All other students shall be on a waitlist and get admission
+								letters as soon as the first batch of students become Teaching
+								Assistants.
+							</p>
+						</Step>
+						<Step
+							stepNumber="5"
+							stepHeading="Gain Internships through the Hiring Network"
+						>
+							<p>
+								An increasing list of companies are participating to onboard
+								full stack developer interns as you finish your courses.
+							</p>
+						</Step>
+						<Step
+							stepNumber="6"
+							stepHeading="An Opportunity to Contribute to Digital Public Goods"
+						>
+							<p>
+								Selected learners who demonstrate the application of skills
+								ahead of peers shall be invited to join the GDC Batch of 2022
+								and contribute towards building Digital Public Goods along with
+								the title of National Software Engineering Fellow.
+							</p>
+							<p className="mt-2">
+								<a className="text-indigo-400 font-semibold" href="">
+									{" "}
+									Learn More about GDC Internships
+								</a>
+							</p>
+						</Step>
+						<Step stepNumber="7" stepHeading="Become a Teaching Assistant -">
+							<p>
+								Be among the pioneers who graduate from University with a
+								B.Tech/BE in X with a Minor Degree in Advanced Web Development;
+								where X = your current branch of study.
+							</p>
+						</Step>
+						<div
+							className="step border-t border-gray-800"
+							id={joinWordsWithHyphen("Join a growing Alumni Network")}
+						>
+							<div className="flex gap-8 flex-col sm:flex-row">
+								<div className="w-32 h-32 object-contain overflow-hidden">
+									<img src="/people/avishek_photo.jpeg" />
+								</div>
+								<div className="flex-1">
+									<p className="font-semibold text-gray-400">Step 8</p>
+									<p className="font-semibold text-lg text-white">
+										Join a growing Alumni Network
+									</p>
+									<div className="mt-4 text-gray-200 text-sm">
+										<p>Graduating WD students can join over X alumni</p>
+									</div>
+								</div>
+							</div>
+							<div className="w-full mt-5">
+								<img
+									className="w-full"
+									src="/company-logos-on-white.png"
+									alt="Alumni network Company Logos"
+								/>
+							</div>
+						</div>
+						<Step
+							stepNumber="9"
+							stepHeading="Contribute as an Industry Teaching Fellow"
+						>
+							<p>
+								Vamsi Krishna is a Teaching Fellow who graduated in this
+								programme during July-December 2019 and is now working at
+								Hottinger Brüel & Kjær (HBK) as a Software Engineer. He shares
+								the knowledge gained from the industry by upgrading the
+								curriculum for new learners.
+							</p>
+						</Step>
+					</div>
+				</div>
+			</SectionWithHeading>
+		</div>
+	);
+}

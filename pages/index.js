@@ -2,6 +2,9 @@
 
 import Head from "next/head";
 import React, { useState } from "react";
+import LearnerShowcase from "../components/LearnerShowcase";
+import PersonalizedLearningExperiece from "../components/PersonalizedLearningExperiece";
+import ProvenPathwaySection from "../components/ProvenPathwaySection";
 import SectionWithHeading from "../components/SectionWithHeading";
 import Testimonial from "../components/Testimonial";
 import Testimonials from "../components/Testimonials";
@@ -112,7 +115,7 @@ export default function Home(props) {
 			</Head>
 			<main className="bg-gradient-to-br from-gray-800 to-gray-900 mx-auto">
 				<section className="hero__bg-pattern bg-gray-900 relative">
-					<div className="absolute inset-0 md:inset-x-0 md:top-8 2xl:inset-0">
+					<div className="absolute inset-0 md:inset-x-0 md:top-8 2xl:inset-0 -z-10">
 						<img
 							className="h-full w-full object-cover relative"
 							src="hero/hero-bg.webp"
@@ -205,7 +208,22 @@ export default function Home(props) {
 							</div>
 						</div>
 					</div>
-					<div className="px-4 lg:px-0 pb-8 max-w-6xl 2xl:max-w-7xl mx-auto">
+					<section className="px-4 xl:mx-0 pb-10 md:pb-16 pt-6 md:pt-6 bg-gray-900">
+						<div className="max-w-6xl 2xl:max-w-7xl mx-auto px-16 pb-16 pt-10 bg-white rounded-lg flex items-center flex-col">
+							<p className="text-2xl font-bold">Scholarships supported by</p>
+							<div className="w-full flex flex-wrap gap-10 items-center lg:justify-between mt-12">
+								<img src="/logos/msdf-logo.png" alt="" />
+								<img src="/logos/schmidt-futures.png" alt="" />
+								<img src="/logos/ACT-Logo.png" alt="" />
+								<img src="/logos/sgf-logo.png" alt="" />
+								<img src="/logos/meta-logo.png" alt="" />
+							</div>
+						</div>
+					</section>
+					<div className="px-4 lg:px-0 pb-12 max-w-6xl 2xl:max-w-7xl mx-auto">
+						<p className="text-lg font-semibold text-primary-500 pb-4">
+							Watch mini video
+						</p>
 						<div style={{ padding: "52.73% 0 0 0", position: "relative" }}>
 							<iframe
 								className="rounded-3xl shadow-2xl border-2 border-gray-900"
@@ -221,151 +239,6 @@ export default function Home(props) {
 								}}
 								title="Web Development @ Pupilfirst"
 							></iframe>
-						</div>
-					</div>
-				</section>
-				<section className="px-4 xl:mx-0 py-10 md:py-16 bg-gray-900">
-					<div className="max-w-6xl 2xl:max-w-7xl mx-auto px-16 pb-16 pt-10 bg-white rounded-lg flex items-center flex-col">
-						<p className="text-2xl font-bold">Scholarships supported by</p>
-						<div className="w-full flex flex-wrap gap-10 items-center lg:justify-between mt-12">
-							<img src="/logos/msdf-logo.png" alt="" />
-							<img src="/logos/schmidt-futures.png" alt="" />
-							<img src="/logos/ACT-Logo.png" alt="" />
-							<img src="/logos/sgf-logo.png" alt="" />
-							<img src="/logos/meta-logo.png" alt="" />
-						</div>
-					</div>
-				</section>
-
-				<section className="bg-gray-900 border-t border-b border-gray-700 relative">
-					<div className="max-w-6xl 2xl:max-w-7xl mx-auto">
-						<div className="border-l border-gray-700 mx-4 xl:mx-0">
-							<div className="pt-10 lg:pt-20">
-								<div className="heading-with-leftborder">
-									<div className="ml-2 md:ml-4 lg:ml-12 xl:ml-16 2xl:ml-36 flex items-center justify-between">
-										<h2 className="font-bold text-2xl lg:text-6xl text-primary-500 leading-tight ">
-											Interest-Based
-											<br />
-											Admissions Test
-										</h2>
-										<div>
-											<a
-												href="https://docs.google.com/document/d/e/2PACX-1vQj8aeoRfOHYlOALcUt4mWmFefHAeGtKd5eu6SQDHOaDfckGkBDFz8JrtEiLZmGX-KyFyaDMLdCDkTL/pub"
-												target="_blank"
-												className="inline-flex space-x-3 p-3 lg:px-6 lg:py-3.5 text-white bg-indigo-500 rounded-md text-base lg:text-lg text-center font-semibold shadow-lg hover:shadow-xl focus:ring-2 focus:ring-indigo-400 focus:ring-offset-2 transition "
-											>
-												Apply now
-											</a>
-										</div>
-									</div>
-								</div>
-							</div>
-
-							<div className="flex flex-col mt-4 pb-10 lg:pb-20 ml-2 md:ml-4 lg:ml-12 xl:ml-16 2xl:ml-36">
-								<div className="max-w-4xl text-white tracking-tight pt-1 lg:text-lg ">
-									<p>
-										Your admission to the minor degree programme is based only
-										on a{" "}
-										<span className="bg-gradient-to-b from-transparent via-transparent to-yellow-800">
-											{" "}
-											demonstration of learning interest by completing Web
-											Development 101 course
-										</span>{" "}
-										and not any prior knowledge or marks.
-									</p>
-								</div>
-
-								<div className="sm:rounded-lg mt-8 bg-white p-8">
-									<div className="flex gap-4 items-center">
-										<p className="text-lg font-semibold flex">
-											Participating Institutions
-										</p>
-										<div className="max-w-fullf flex-1 h-1 border-t-2 border-gray-200"></div>
-									</div>
-									<div className="grid grid-cols-3 md:grid-cols-4 place-items-center px-4 py-10 gap-12">
-										<img
-											className="h-16 object-contain"
-											src="/logos/Chaitanya_Bharathi_Institute_of_Technology_Hyderabad_ko1tbr.png"
-											alt=""
-										/>
-										<img
-											className="h-16 object-contain"
-											src="/logos/G_H_Raisoni_College_of_Engineering_Nagpur_pydlgd.png"
-											alt=""
-										/>
-										<img
-											className="h-16 object-contain"
-											src="/logos/G.Narayanamma_Institute_of_Technology_and_Science_For_Women_JNTUH_Hyderabad_mw4dpi.png"
-											alt=""
-										/>
-										<img
-											className="h-16 object-contain"
-											src="/logos/Malla_Reddy_College_of_Engineering_and_Technology_Hyderabad_uhmeh3.png"
-											alt=""
-										/>
-										<img
-											className="h-16 object-contain"
-											src="/logos/Marwadi University.png"
-											alt=""
-										/>
-										<img
-											className="h-16 object-contain"
-											src="/logos/Institute_of_Aeronautical_Engineering_Hyderabad_yfvmpb.png"
-											alt=""
-										/>
-										<img
-											className="h-16 object-contain"
-											src="/logos/Pimpri_Chinchwad_College_of_Engineering_PCCoE_Pune_xsgv1f.webp"
-											alt=""
-										/>
-										<img
-											className="h-16 object-contain"
-											src="/logos/Vardhaman_College_of_Engineering_Shamshabad_rxs2mh.jpg"
-											alt=""
-										/>
-										<img
-											className="h-16 object-contain"
-											src="/logos/University of Engineering and Management, Jaipur.png"
-											alt=""
-										/>
-										<img
-											className="h-16 object-contain"
-											src="/logos/Sreyas_Institute_of_Engineering_and_Technology_lgccdo.png"
-											alt=""
-										/>
-										<img
-											className="h-16 object-contain"
-											src="/logos/Sankalchand_Patel_College_of_Engineering_Visnagar_bxsrst.png"
-											alt=""
-										/>
-										<img
-											className="h-16 object-contain"
-											src="/logos/Tula_s_Institute_Dehradun_wxryss.png"
-											alt=""
-										/>
-									</div>
-									<div className="p-4 bg-gray-100 rounded-lg">
-										<p>
-											If your institution is not listed,{" "}
-											<a
-												className="font-medium underline text-indigo-500 hover:text-indigo-700"
-												href=""
-											>
-												register your interest here
-											</a>
-										</p>
-										<p>
-											More institutions are in the{" "}
-											<a
-												className="font-medium underline text-indigo-500 hover:text-indigo-700"
-												href=""
-											>
-												approval process
-											</a>
-										</p>
-									</div>
-								</div>
-							</div>
 						</div>
 					</div>
 				</section>
@@ -387,7 +260,6 @@ export default function Home(props) {
 					</div>
 					<img className="mt-12" src="/radical-shift.jpg" alt="" />
 				</SectionWithHeading>
-
 				<SectionWithHeading
 					heading={
 						<span>
@@ -522,6 +394,273 @@ export default function Home(props) {
 					</svg>
 				</SectionWithHeading>
 
+				<PersonalizedLearningExperiece />
+
+				<SectionWithHeading heading="No Speed Limit" darkBackground={true}>
+					<p className="text-white mt-4 w-4/5">
+						There is no speed limit for learning.
+					</p>
+					<div className="md:grid flex flex-col gap-12 items-center md:items-start md:grid-cols-8 mt-8">
+						<div className="col-span-3 md:pb-12">
+							<div className="relative w-64 gap-10 text-white p-4 bg-gray-700 rounded-2xl border-b md:border-b-0 md:border-r border-primary-600">
+								<p className="text">
+									GDC batch students have completed this curriculum in
+								</p>
+								<p className="text-2xl font-semibold mt-2">
+									12 Weeks{" "}
+									<span className="text-base font-medium">(3 Months)</span>
+								</p>
+								<svg
+									className="absolute right-1/2 md:-right-2 rotate-90 md:rotate-0 -bottom-5 md:bottom-auto md:top-1/2 transform -translate-y-1/2 md:-translate-y-1/2"
+									width="8"
+									height="16"
+									viewBox="0 0 8 16"
+									fill="none"
+									xmlns="http://www.w3.org/2000/svg"
+								>
+									<g clip-path="url(#clip0_247_6)">
+										<rect
+											x="-8.48535"
+											y="8.48535"
+											width="12"
+											height="12"
+											rx="3"
+											transform="rotate(-45 -8.48535 8.48535)"
+											fill="#FFD761"
+										/>
+									</g>
+									<defs>
+										<clipPath id="clip0_247_6">
+											<rect width="8" height="16" fill="white" />
+										</clipPath>
+									</defs>
+								</svg>
+							</div>
+						</div>
+						<div className="col-span-5 pl-12 md:pl-0">
+							<div>
+								<div className="flex gap-3 -ml-5 items-center">
+									<svg
+										width="8"
+										height="8"
+										viewBox="0 0 8 8"
+										fill="none"
+										xmlns="http://www.w3.org/2000/svg"
+									>
+										<path
+											fill-rule="evenodd"
+											clip-rule="evenodd"
+											d="M2.25008 0.5L6.75008 0.499999C7.02622 0.499999 7.25008 0.723857 7.25008 0.999999L7.25008 5.5C7.25008 5.77614 7.02622 6 6.75008 6C6.47393 6 6.25008 5.77614 6.25008 5.5L6.25008 2.20711L1.10363 7.35355C0.908367 7.54882 0.591784 7.54882 0.396522 7.35355C0.20126 7.15829 0.20126 6.84171 0.396522 6.64645L5.54297 1.5L2.25008 1.5C1.97393 1.5 1.75008 1.27614 1.75008 1C1.75008 0.723857 1.97393 0.5 2.25008 0.5Z"
+											fill="#FFD761"
+										/>
+									</svg>
+
+									<p className="text-gray-500 font-semibold">
+										Web Development 101:
+									</p>
+								</div>
+								<p className="text-3xl text-white font-semibold">1 Day</p>
+							</div>
+							<div>
+								<div className="flex gap-3 -ml-5 items-center mt-8">
+									<svg
+										width="8"
+										height="8"
+										viewBox="0 0 8 8"
+										fill="none"
+										xmlns="http://www.w3.org/2000/svg"
+									>
+										<path
+											fill-rule="evenodd"
+											clip-rule="evenodd"
+											d="M2.25008 0.5L6.75008 0.499999C7.02622 0.499999 7.25008 0.723857 7.25008 0.999999L7.25008 5.5C7.25008 5.77614 7.02622 6 6.75008 6C6.47393 6 6.25008 5.77614 6.25008 5.5L6.25008 2.20711L1.10363 7.35355C0.908367 7.54882 0.591784 7.54882 0.396522 7.35355C0.20126 7.15829 0.20126 6.84171 0.396522 6.64645L5.54297 1.5L2.25008 1.5C1.97393 1.5 1.75008 1.27614 1.75008 1C1.75008 0.723857 1.97393 0.5 2.25008 0.5Z"
+											fill="#FFD761"
+										/>
+									</svg>
+
+									<p className="text-gray-500 font-semibold">
+										Web Development 201::
+									</p>
+								</div>
+								<p className="text-3xl text-white font-semibold">6 Weeks</p>
+							</div>
+							<div>
+								<div className="flex gap-3 -ml-5 items-center mt-8">
+									<svg
+										width="8"
+										height="8"
+										viewBox="0 0 8 8"
+										fill="none"
+										xmlns="http://www.w3.org/2000/svg"
+									>
+										<path
+											fill-rule="evenodd"
+											clip-rule="evenodd"
+											d="M2.25008 0.5L6.75008 0.499999C7.02622 0.499999 7.25008 0.723857 7.25008 0.999999L7.25008 5.5C7.25008 5.77614 7.02622 6 6.75008 6C6.47393 6 6.25008 5.77614 6.25008 5.5L6.25008 2.20711L1.10363 7.35355C0.908367 7.54882 0.591784 7.54882 0.396522 7.35355C0.20126 7.15829 0.20126 6.84171 0.396522 6.64645L5.54297 1.5L2.25008 1.5C1.97393 1.5 1.75008 1.27614 1.75008 1C1.75008 0.723857 1.97393 0.5 2.25008 0.5Z"
+											fill="#FFD761"
+										/>
+									</svg>
+
+									<p className="text-gray-500 font-semibold">
+										Web Development 301:
+									</p>
+								</div>
+								<p className="text-3xl text-white font-semibold">6 Weeks</p>
+							</div>
+							<div className="mt-12">
+								<p className="text-3xl text-indigo-600 w-4/5">
+									Fast Learners would be onboard as Teaching Assistants
+								</p>
+								<div className="mt-6">
+									<a
+										href="https://docs.google.com/document/d/e/2PACX-1vQj8aeoRfOHYlOALcUt4mWmFefHAeGtKd5eu6SQDHOaDfckGkBDFz8JrtEiLZmGX-KyFyaDMLdCDkTL/pub"
+										target="_blank"
+										className="inline-flex space-x-3 p-3 lg:px-6 lg:py-3.5 text-white bg-indigo-500 rounded-md text-base lg:text-lg text-center font-semibold shadow-lg hover:shadow-xl focus:ring-2 focus:ring-indigo-400 focus:ring-offset-2 transition "
+									>
+										Apply now
+									</a>
+								</div>
+							</div>
+						</div>
+					</div>
+					<div className="mt-16">
+						<LearnerShowcase />
+					</div>
+				</SectionWithHeading>
+
+				<section className="bg-gray-900 border-t border-b border-gray-700 relative">
+					<div className="max-w-6xl 2xl:max-w-7xl mx-auto">
+						<div className="border-l border-gray-700 mx-4 xl:mx-0">
+							<div className="pt-10 lg:pt-20">
+								<div className="heading-with-leftborder">
+									<div className="ml-2 md:ml-4 lg:ml-12 xl:ml-16 2xl:ml-36 flex items-center justify-between">
+										<h2 className="font-bold text-2xl lg:text-6xl text-primary-500 leading-tight ">
+											How to apply?
+										</h2>
+										<div>
+											<a
+												href="https://docs.google.com/document/d/e/2PACX-1vQj8aeoRfOHYlOALcUt4mWmFefHAeGtKd5eu6SQDHOaDfckGkBDFz8JrtEiLZmGX-KyFyaDMLdCDkTL/pub"
+												target="_blank"
+												className="inline-flex space-x-3 p-3 lg:px-6 lg:py-3.5 text-white bg-indigo-500 rounded-md text-base lg:text-lg text-center font-semibold shadow-lg hover:shadow-xl focus:ring-2 focus:ring-indigo-400 focus:ring-offset-2 transition "
+											>
+												Apply now
+											</a>
+										</div>
+									</div>
+								</div>
+							</div>
+
+							<div className="flex flex-col mt-4 pb-10 lg:pb-20 ml-2 md:ml-4 lg:ml-12 xl:ml-16 2xl:ml-36">
+								<div className="max-w-4xl text-white tracking-tight pt-1 lg:text-lg ">
+									<p>
+										Your admission to the minor degree programme is based only
+										on a{" "}
+										<span className="bg-gradient-to-b from-transparent via-transparent to-yellow-800">
+											{" "}
+											demonstration of learning interest by completing Web
+											Development 101 course
+										</span>{" "}
+										and not any prior knowledge or marks.
+									</p>
+								</div>
+
+								<div className="sm:rounded-lg mt-8 bg-white p-8">
+									<div className="flex gap-4 items-center">
+										<p className="text-lg font-semibold flex">
+											Participating Institutions
+										</p>
+										<div className="max-w-fullf flex-1 h-1 border-t-2 border-gray-200"></div>
+									</div>
+									<div className="grid grid-cols-3 md:grid-cols-4 place-items-center px-4 py-10 gap-12">
+										<img
+											className="h-16 object-contain"
+											src="/logos/Chaitanya_Bharathi_Institute_of_Technology_Hyderabad_ko1tbr.png"
+											alt=""
+										/>
+										<img
+											className="h-16 object-contain"
+											src="/logos/G_H_Raisoni_College_of_Engineering_Nagpur_pydlgd.png"
+											alt=""
+										/>
+										<img
+											className="h-16 object-contain"
+											src="/logos/G.Narayanamma_Institute_of_Technology_and_Science_For_Women_JNTUH_Hyderabad_mw4dpi.png"
+											alt=""
+										/>
+										<img
+											className="h-16 object-contain"
+											src="/logos/Malla_Reddy_College_of_Engineering_and_Technology_Hyderabad_uhmeh3.png"
+											alt=""
+										/>
+										<img
+											className="h-16 object-contain"
+											src="/logos/Marwadi University.png"
+											alt=""
+										/>
+										<img
+											className="h-16 object-contain"
+											src="/logos/Institute_of_Aeronautical_Engineering_Hyderabad_yfvmpb.png"
+											alt=""
+										/>
+										<img
+											className="h-16 object-contain"
+											src="/logos/Pimpri_Chinchwad_College_of_Engineering_PCCoE_Pune_xsgv1f.webp"
+											alt=""
+										/>
+										<img
+											className="h-16 object-contain"
+											src="/logos/Vardhaman_College_of_Engineering_Shamshabad_rxs2mh.jpg"
+											alt=""
+										/>
+										<img
+											className="h-16 object-contain"
+											src="/logos/University of Engineering and Management, Jaipur.png"
+											alt=""
+										/>
+										<img
+											className="h-16 object-contain"
+											src="/logos/Sreyas_Institute_of_Engineering_and_Technology_lgccdo.png"
+											alt=""
+										/>
+										<img
+											className="h-16 object-contain"
+											src="/logos/Sankalchand_Patel_College_of_Engineering_Visnagar_bxsrst.png"
+											alt=""
+										/>
+										<img
+											className="h-16 object-contain"
+											src="/logos/Tula_s_Institute_Dehradun_wxryss.png"
+											alt=""
+										/>
+									</div>
+									<div className="p-4 bg-gray-100 rounded-lg">
+										<p>
+											If your institution is not listed,{" "}
+											<a
+												className="font-medium underline text-indigo-500 hover:text-indigo-700"
+												href=""
+											>
+												register your interest here
+											</a>
+										</p>
+										<p>
+											More institutions are in the{" "}
+											<a
+												className="font-medium underline text-indigo-500 hover:text-indigo-700"
+												href=""
+											>
+												approval process
+											</a>
+										</p>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</section>
+
+				<ProvenPathwaySection />
+
 				<Testimonials />
 
 				<SectionWithHeading heading="Key Timelines" darkBackground={true}>
@@ -552,7 +691,7 @@ export default function Home(props) {
 						<a
 							href="https://docs.google.com/document/d/e/2PACX-1vQj8aeoRfOHYlOALcUt4mWmFefHAeGtKd5eu6SQDHOaDfckGkBDFz8JrtEiLZmGX-KyFyaDMLdCDkTL/pub"
 							target="_blank"
-							className="inline-flex space-x-3 p-3 lg:px-6 lg:py-3.5 bg-white text-indigo-500 rounded-md text-base lg:text-lg text-center font-semibold shadow-lg hover:shadow-xl focus:ring-2 focus:ring-indigo-400 focus:ring-offset-2 transition "
+							className="inline-flex space-x-3 p-3 lg:px-6 lg:py-3.5 bg-primary-500 text-indigo-500 rounded-md text-base lg:text-lg text-center font-semibold shadow-lg hover:shadow-xl focus:ring-2 focus:ring-indigo-400 focus:ring-offset-2 transition "
 						>
 							Apply now
 						</a>
