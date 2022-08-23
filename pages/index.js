@@ -168,7 +168,7 @@ export default function Home(props) {
                 <div className="flex gap-4 items-start">
                   <div>
                     <a
-                      href="https://docs.google.com/document/d/e/2PACX-1vQj8aeoRfOHYlOALcUt4mWmFefHAeGtKd5eu6SQDHOaDfckGkBDFz8JrtEiLZmGX-KyFyaDMLdCDkTL/pub"
+                      href="#"
                       target="_blank"
                       className="inline-flex space-x-3 p-3 lg:px-6 lg:py-3.5 text-white bg-indigo-500 rounded-md text-base lg:text-lg text-center font-semibold shadow-lg hover:shadow-xl focus:ring-2 focus:ring-indigo-400 focus:ring-offset-2 transition "
                     >
@@ -652,7 +652,7 @@ export default function Home(props) {
                 </p>
                 <div className="mt-6">
                   <a
-                    href="https://docs.google.com/document/d/e/2PACX-1vQj8aeoRfOHYlOALcUt4mWmFefHAeGtKd5eu6SQDHOaDfckGkBDFz8JrtEiLZmGX-KyFyaDMLdCDkTL/pub"
+                    href="#"
                     target="_blank"
                     className="inline-flex space-x-3 p-3 lg:px-6 lg:py-3.5 text-white bg-indigo-500 rounded-md text-base lg:text-lg text-center font-semibold shadow-lg hover:shadow-xl focus:ring-2 focus:ring-indigo-400 focus:ring-offset-2 transition "
                   >
@@ -736,7 +736,7 @@ export default function Home(props) {
                     </h2>
                     <div>
                       <a
-                        href="https://docs.google.com/document/d/e/2PACX-1vQj8aeoRfOHYlOALcUt4mWmFefHAeGtKd5eu6SQDHOaDfckGkBDFz8JrtEiLZmGX-KyFyaDMLdCDkTL/pub"
+                        href="#"
                         target="_blank"
                         className="inline-flex space-x-3 p-3 lg:px-6 lg:py-3.5 text-white bg-indigo-500 rounded-md text-base lg:text-lg text-center font-semibold shadow-lg hover:shadow-xl focus:ring-2 focus:ring-indigo-400 focus:ring-offset-2 transition "
                       >
@@ -886,7 +886,7 @@ export default function Home(props) {
               Development.
             </h4>
             <a
-              href="https://docs.google.com/document/d/e/2PACX-1vQj8aeoRfOHYlOALcUt4mWmFefHAeGtKd5eu6SQDHOaDfckGkBDFz8JrtEiLZmGX-KyFyaDMLdCDkTL/pub"
+              href="#"
               target="_blank"
               className="inline-flex space-x-3 p-3 lg:px-6 lg:py-3.5 bg-primary-500 text-indigo-500 rounded-md text-base lg:text-lg text-center font-semibold shadow-lg hover:shadow-xl focus:ring-2 focus:ring-indigo-400 focus:ring-offset-2 transition "
             >
