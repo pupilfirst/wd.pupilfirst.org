@@ -145,10 +145,9 @@ export default function ProvenPathwaySection() {
                 assistants to pass on their knowledge to other students and
                 receive a stipend &amp; certificate.
               </p>
-              <p className="mt-2">
-                All other students shall be on a waitlist and get admission
-                letters as soon as the first batch of students become Teaching
-                Assistants.
+              <p className="mt-2 italic">
+                Web Development 301 is being upgraded and shall be available
+                from Jan 2023 onwards.
               </p>
             </Step>
             <Step
@@ -173,7 +172,11 @@ export default function ProvenPathwaySection() {
                 the title of National Software Engineering Fellow.
               </p>
               <p className="mt-2">
-                <a className="text-indigo-400 font-semibold" href="">
+                <a
+                  className="text-indigo-400 font-semibold"
+                  target="_blank"
+                  href="https://fullstack.gdc.network/"
+                >
                   {" "}
                   Learn More about GDC Internships
                 </a>
@@ -204,7 +207,10 @@ export default function ProvenPathwaySection() {
                     Join a growing Alumni Network
                   </p>
                   <div className="mt-4 text-gray-200 text-sm">
-                    <p>Graduating WD students can join over X alumni</p>
+                    <p>
+                      Graduating WD students can join over 770 alumni working in
+                      companies.
+                    </p>
                   </div>
                 </div>
               </div>
