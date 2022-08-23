@@ -46,9 +46,9 @@ export default function PersonalizedLearningExperiece() {
   return (
     <div className="text-white mt-20 w-full">
       <div className="md:w-3/5">
-        <div className="flex items-end gap-4 -ml-8">
-          <div className="w-4 h-0.5 bg-primary-700 mb-2"></div>
-          <h2 className="text-indigo-500 font-semibold">
+        <div className="flex items-end gap-4 ml-0 md:-ml-8">
+          <div className="w-4 h-0.5 bg-primary-700 mb-2 hidden md:block"></div>
+          <h2 className="text-indigo-500 font-semibold text-2xl md:text-3xl">
             Personalised Learning Experience
           </h2>
         </div>
