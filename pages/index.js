@@ -142,7 +142,7 @@ export default function Home(props) {
           <div className="relative pb-8 md:pb-16 px-4 xl:px-0">
             <div className="max-w-6xl 2xl:max-w-7xl mx-auto flex gap-8 xl:gap-20 items-center">
               <div className="z-10 flex-1 flex flex-col items-center text-center md:text-left md:items-start">
-                <p className=" rounded bg-gray-800 py-1 px-1 md:px-2 mt-4 font-medium text-sm text-gray-400 max-w-max">
+                <p className="rounded bg-gray-800 py-1 px-1 md:px-2 mt-4 font-medium text-sm text-gray-400 max-w-max">
                   Leadership in Teaching Excellence Programme.
                 </p>
                 <h1 className="text-primary-500 text-3xl md:text-3xl lg:text-5xl py-2 font-extrabold lg:leading-tight xl:leading-tight">
@@ -279,22 +279,15 @@ export default function Home(props) {
         </section>
 
         <SectionWithHeading
-          heading="Programme Highlights"
+          heading="Dynamic Curriculum by Industry Experts"
           darkBackground="true"
         >
-          <div className="text-white mt-10 w-full md:w-3/5">
-            <div className="flex items-end gap-4 ml-0 md:-ml-8">
-              <div className="w-4 h-0.5 bg-primary-700 mb-2 hidden md:block"></div>
-              <h2 className="text-indigo-500 font-semibold text-2xl md:text-3xl">
-                Dynamic Curriculum by Industry Experts
-              </h2>
-            </div>
-            <p className="mt-2">
-              Confidently learn how to become a full-stack developer in a
-              curriculum designed and maintained by practising software
-              engineering professionals.
-            </p>
-          </div>
+          <p className="text-white mt-4 md:text-lg w-full md:w-4/5">
+            Confidently, learn how to become a full-stack developer by learning
+            from a curriculum designed and maintained by practising software
+            engineering professionals.
+          </p>
+
           <div className="gap-8 md:divide-x divide-gray-700 sm:grid sm:grid-cols-2 lg:grid-cols-4 py-8 lg:pb-16">
             <ImageWithDescription
               name="Vignesh Rajendran"
@@ -393,151 +386,133 @@ export default function Home(props) {
             </a>{" "}
             based on student/faculty feedback and changes in the industry
           </p>
-
-          <div className="text-white mt-20 w-full">
-            <div className="md:w-4/5">
-              <div className="flex items-end gap-4 md:-ml-8">
-                <div className="w-4 h-0.5 bg-primary-700 mb-2 hidden md:block"></div>
-                <h2 className="text-indigo-500 font-semibold text-2xl md:text-3xl">
-                  Beginner to advanced courses
-                </h2>
-              </div>
-              <p className="mt-2">
-                This programme is designed with 4 courses such that selected
-                institutions can offer a 18-20 credit “Minor Degree in Advanced
-                Web Development” through their trained faculty to students.
+        </SectionWithHeading>
+        <SectionWithHeading heading="Beginner to advanced courses">
+          <p className="text-white mt-4 md:text-lg w-full md:w-4/5">
+            This programme is designed with 4 courses such that selected
+            institutions can offer a 18-20 credit “Minor Degree in Advanced Web
+            Development” through their trained faculty to students.
+          </p>
+          <div className="flex flex-col md:flex-row space-y-2 md:space-y-0 md:space-x-2 mt-8">
+            <div className="w-full md:flex-1 bg-gradient-to-br from-gray-700 to-gray-900 border border-primary-400 rounded-lg shadow-md p-3 md:p-4">
+              <p className="text-primary-400 text-xl md:text-2xl font-bold">
+                WD 101
+              </p>
+              <p className="text-white leading-snug mt-1">
+                <span className="font-semibold">Beginner</span> - Getting
+                Started with Javascript
               </p>
             </div>
-            <div className="flex flex-col md:flex-row space-y-2 md:space-y-0 md:space-x-2 mt-8">
-              <div className="w-full md:flex-1 bg-gradient-to-br from-gray-700 to-gray-900 border border-primary-400 rounded-lg shadow-md p-3 md:p-4">
-                <p className="text-primary-400 text-xl md:text-2xl font-bold">
-                  WD 101
-                </p>
-                <p className="text-white leading-snug mt-1">
-                  <span className="font-semibold">Beginner</span> - Getting
-                  Started with Javascript
-                </p>
-              </div>
-              <div className="flex items-center justify-center w-full h-4 md:w-4 md:h-auto md:transform md:-rotate-90">
-                <svg
-                  xmlns="http://www.w3.org/2000/svg"
-                  width="16"
-                  height="16"
-                  fill="currentColor"
-                  className="text-primary-700"
-                  viewBox="0 0 16 16"
-                >
-                  <path
-                    fillRule="evenodd"
-                    d="M8 4a.5.5 0 0 1 .5.5v5.793l2.146-2.147a.5.5 0 0 1 .708.708l-3 3a.5.5 0 0 1-.708 0l-3-3a.5.5 0 1 1 .708-.708L7.5 10.293V4.5A.5.5 0 0 1 8 4z"
-                  />
-                </svg>
-              </div>
-              <div className="w-full md:flex-1 bg-gradient-to-br from-gray-700 to-gray-900 border border-indigo-400 rounded-lg shadow-md p-3 md:p-4">
-                <p className="text-indigo-400 text-xl md:text-2xl font-bold">
-                  WD 201
-                </p>
-                <p className="text-white leading-snug mt-1">
-                  <span className="font-semibold">Intermediate</span> -
-                  Server-side programming with Node.js
-                </p>
-              </div>
-              <div className="flex items-center justify-center w-full h-4 md:w-4 md:h-auto md:transform md:-rotate-90">
-                <svg
-                  xmlns="http://www.w3.org/2000/svg"
-                  width="16"
-                  height="16"
-                  fill="currentColor"
-                  className="text-indigo-700"
-                  viewBox="0 0 16 16"
-                >
-                  <path
-                    fillRule="evenodd"
-                    d="M8 4a.5.5 0 0 1 .5.5v5.793l2.146-2.147a.5.5 0 0 1 .708.708l-3 3a.5.5 0 0 1-.708 0l-3-3a.5.5 0 1 1 .708-.708L7.5 10.293V4.5A.5.5 0 0 1 8 4z"
-                  />
-                </svg>
-              </div>
-              <div className="w-full md:flex-1 bg-gradient-to-br from-gray-700 to-gray-900 border border-green-500 rounded-lg shadow-md p-3 md:p-4">
-                <p className="text-green-500 text-xl md:text-2xl font-bold">
-                  WD 301
-                </p>
-                <p className="text-white leading-snug mt-1">
-                  <span className="font-semibold">Advanced</span> - Front-end
-                  development with React &amp; Typescript
-                </p>
-              </div>
-              <div className="flex items-center justify-center w-full h-4 md:w-4 md:h-auto md:transform md:-rotate-90">
-                <svg
-                  xmlns="http://www.w3.org/2000/svg"
-                  width="16"
-                  height="16"
-                  fill="currentColor"
-                  className="text-green-700"
-                  viewBox="0 0 16 16"
-                >
-                  <path
-                    fillRule="evenodd"
-                    d="M8 4a.5.5 0 0 1 .5.5v5.793l2.146-2.147a.5.5 0 0 1 .708.708l-3 3a.5.5 0 0 1-.708 0l-3-3a.5.5 0 1 1 .708-.708L7.5 10.293V4.5A.5.5 0 0 1 8 4z"
-                  />
-                </svg>
-              </div>
-
-              <div className="w-full md:flex-1 bg-gradient-to-br from-gray-700 to-gray-900 border border-red-500 rounded-lg shadow-md p-3 md:p-4">
-                <p className="text-red-400 text-xl md:text-2xl font-bold">
-                  WD 401
-                </p>
-                <p className="text-white leading-snug mt-1">
-                  <span className="font-semibold">Industry</span> - Getting
-                  ready for production deployment.
-                </p>
-              </div>
+            <div className="flex items-center justify-center w-full h-4 md:w-4 md:h-auto md:transform md:-rotate-90">
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                width="16"
+                height="16"
+                fill="currentColor"
+                className="text-primary-700"
+                viewBox="0 0 16 16"
+              >
+                <path
+                  fillRule="evenodd"
+                  d="M8 4a.5.5 0 0 1 .5.5v5.793l2.146-2.147a.5.5 0 0 1 .708.708l-3 3a.5.5 0 0 1-.708 0l-3-3a.5.5 0 1 1 .708-.708L7.5 10.293V4.5A.5.5 0 0 1 8 4z"
+                />
+              </svg>
+            </div>
+            <div className="w-full md:flex-1 bg-gradient-to-br from-gray-700 to-gray-900 border border-indigo-400 rounded-lg shadow-md p-3 md:p-4">
+              <p className="text-indigo-400 text-xl md:text-2xl font-bold">
+                WD 201
+              </p>
+              <p className="text-white leading-snug mt-1">
+                <span className="font-semibold">Intermediate</span> -
+                Server-side programming with Node.js
+              </p>
+            </div>
+            <div className="flex items-center justify-center w-full h-4 md:w-4 md:h-auto md:transform md:-rotate-90">
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                width="16"
+                height="16"
+                fill="currentColor"
+                className="text-indigo-700"
+                viewBox="0 0 16 16"
+              >
+                <path
+                  fillRule="evenodd"
+                  d="M8 4a.5.5 0 0 1 .5.5v5.793l2.146-2.147a.5.5 0 0 1 .708.708l-3 3a.5.5 0 0 1-.708 0l-3-3a.5.5 0 1 1 .708-.708L7.5 10.293V4.5A.5.5 0 0 1 8 4z"
+                />
+              </svg>
+            </div>
+            <div className="w-full md:flex-1 bg-gradient-to-br from-gray-700 to-gray-900 border border-green-500 rounded-lg shadow-md p-3 md:p-4">
+              <p className="text-green-500 text-xl md:text-2xl font-bold">
+                WD 301
+              </p>
+              <p className="text-white leading-snug mt-1">
+                <span className="font-semibold">Advanced</span> - Front-end
+                development with React &amp; Typescript
+              </p>
+            </div>
+            <div className="flex items-center justify-center w-full h-4 md:w-4 md:h-auto md:transform md:-rotate-90">
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                width="16"
+                height="16"
+                fill="currentColor"
+                className="text-green-700"
+                viewBox="0 0 16 16"
+              >
+                <path
+                  fillRule="evenodd"
+                  d="M8 4a.5.5 0 0 1 .5.5v5.793l2.146-2.147a.5.5 0 0 1 .708.708l-3 3a.5.5 0 0 1-.708 0l-3-3a.5.5 0 1 1 .708-.708L7.5 10.293V4.5A.5.5 0 0 1 8 4z"
+                />
+              </svg>
             </div>
 
-            <p className="mt-4 text-sm text-white ">
-              More advanced courses would be added to give a broader choice of
-              specialisations.
-            </p>
-            <div className="pt-8 lg:pt-16">
-              <img
-                className="w-full h-full object-contain mix-blend-color-dodge"
-                src="course-path/course-pathway.png"
-                alt="Course pathway"
-              />
+            <div className="w-full md:flex-1 bg-gradient-to-br from-gray-700 to-gray-900 border border-red-500 rounded-lg shadow-md p-3 md:p-4">
+              <p className="text-red-400 text-xl md:text-2xl font-bold">
+                WD 401
+              </p>
+              <p className="text-white leading-snug mt-1">
+                <span className="font-semibold">Industry</span> - Getting ready
+                for production deployment.
+              </p>
             </div>
           </div>
 
-          <div className="text-white mt-20 w-full md:w-3/5">
-            <div className="flex items-end gap-4 ml-0 md:-ml-8">
-              <div className="w-4 h-0.5 bg-primary-700 mb-2 hidden md:block "></div>
-              <h2 className="text-indigo-500 font-semibold text-2xl md:text-3xl">
-                Learner-Centered Classrooms
-              </h2>
-            </div>
-            <p className="mt-2">
-              You shall be part of the first batch of students across 6 states
-              in India to learn via Learner-Centered Classrooms under National
-              Educational Policy 2020 (NEP 2020)
-            </p>
+          <p className="mt-4 text-sm text-white ">
+            More advanced courses would be added to give a broader choice of
+            specialisations.
+          </p>
+          <div className="pt-8 lg:pt-16">
+            <img
+              className="w-full h-full object-contain mix-blend-color-dodge"
+              src="course-path/course-pathway.png"
+              alt="Course pathway"
+            />
           </div>
+        </SectionWithHeading>
+        <SectionWithHeading
+          heading="Learner-Centered Classrooms"
+          darkBackground="true"
+        >
+          <p className="text-white mt-4 md:text-lg w-full md:w-4/5">
+            You shall be part of the batch of students across 6 states in India
+            to learn via Learner-Centered Classrooms under National Educational
+            Policy 2020 (NEP 2020)
+          </p>
+
           <img className="mt-12" src="/radical-shift.jpg" alt="" />
+        </SectionWithHeading>
 
-          <PersonalizedLearningExperiece />
-
-          <div className="text-white mt-20 w-full">
-            <div className="md:w-3/5">
-              <div className="flex items-end gap-4 ml-0 md:-ml-8">
-                <div className="w-4 h-0.5 bg-primary-700 mb-2 hidden md:block"></div>
-                <h2 className="text-indigo-500 font-semibold text-2xl md:text-3xl">
-                  There is no speed limit for learning.
-                </h2>
-              </div>
-              <p className="mt-2">
-                As a beginner, we expect you to make many mistakes. Get
-                personalised guidance from LITE faculty members &amp; student
-                teaching assistants to find answers and confidently move ahead.
-              </p>
-            </div>
-          </div>
+        <PersonalizedLearningExperiece />
+        <SectionWithHeading
+          heading="There is no speed limit for learning."
+          darkBackground="true"
+        >
+          <p className="text-white mt-4 md:text-lg w-full md:w-4/5">
+            As a beginner, we expect you to make many mistakes. Get personalised
+            guidance from LITE faculty members &amp; student teaching assistants
+            to find answers and confidently move ahead.
+          </p>
 
           <div className="md:grid flex flex-col gap-12 items-center md:items-start md:grid-cols-8 mt-8">
             <div className="col-span-3 md:pb-12">
@@ -645,107 +620,71 @@ export default function Home(props) {
               </div>
             </div>
           </div>
-          <div className="mt-16">
-            <LearnerShowcase />
-          </div>
+        </SectionWithHeading>
+        <LearnerShowcase />
+        <SectionWithHeading
+          heading="Build a Successful Career"
+          darkBackground="true"
+        >
+          <div>
+            <p className="text-white mt-4 md:text-lg w-full md:w-4/5">
+              Your learning efforts to complete the curriculum shall deliver a
+              successful career.
+            </p>
 
-          <div>
-            <div className="text-white mt-20 w-full">
-              <div className="md:w-3/5">
-                <div className="flex items-end gap-4 -ml-8">
-                  <div className="w-4 h-0.5 bg-primary-700 mb-2"></div>
-                  <h2 className="text-indigo-500 font-semibold">
-                    Build a Successful Career
-                  </h2>
-                </div>
-                <p className="mt-2">
-                  Irrespective of your social and economic background, Your
-                  learning efforts to complete this curriculum shall deliver a
-                  successful career.
-                </p>
-              </div>
-              <div className="md:w-4/5 mt-4">
-                <img
-                  className="rounded-lg w-full "
-                  src="successful-career/Freshworks-Academy.jpg"
-                  alt="Freshwork Academy photo"
-                />
-                <p className="pt-2 md:text-lg italic">
-                  12th standard pass, non-english medium students have completed
-                  this curriculum and got placed as developers in Freshworks at
-                  5.5lacs CTC.
-                </p>
-              </div>
-              <div className="md:w-4/5 mt-6 md:mt-12 pt-6 md:pt-12 border-t border-gray-700">
-                <img
-                  className="rounded-lg w-full "
-                  src="successful-career/Shailesh-Anand.jpg"
-                  alt="Freshwork Academy photo"
-                />
-                <p className="pt-2 md:text-lg italic">
-                  GDC Students have completed this curriculum and got placed in
-                  Google at 28 lacs CTC.
-                </p>
-              </div>
-            </div>
-          </div>
-          <div>
-            <div className="text-white mt-20 w-full">
-              <div className="md:w-3/5">
-                <div className="flex items-end gap-4 -ml-8">
-                  <div className="w-4 h-0.5 bg-primary-700 mb-2"></div>
-                  <h2 className="text-indigo-500 font-semibold">
-                    Growing Hiring Network
-                  </h2>
-                </div>
-                <p className="mt-2">
-                  69 companies are currently participating in the hiring network
-                  which is being expanded every month.
-                </p>
-              </div>
-            </div>
-            <div className="bg-white rounded-lg p-4 mt-2 lg:mt-4">
-              <div className="grid grid-cols-2 gap-1 md:grid-cols-5">
-                {hiringNetwork.map((partner, index) =>
-                  hiringPartner(
-                    index,
-                    partner.title,
-                    partner.url,
-                    partner.logoSrc
-                  )
-                )}
-              </div>
-              <button
-                className="block mx-auto my-4 text-sm font-semibold text-secondary-600 px-3 py-2 bg-secondary-50 rounded-md"
-                onClick={() => setShowLess((prev) => !prev)}
-              >
-                {showLess ? "Show Less" : "Show more"}
-              </button>
-            </div>
-          </div>
-
-          <div>
-            <div className="text-white mt-20 w-full">
-              <div className="md:w-3/5">
-                <div className="flex items-end gap-4 -ml-8">
-                  <div className="w-4 h-0.5 bg-primary-700 mb-2"></div>
-                  <h2 className="text-indigo-500 font-semibold">
-                    Powerful Alumni Network
-                  </h2>
-                </div>
-                <p className="mt-2">
-                  Since 2016, 770 students have graduated from our programmes to
-                  work at leading startups and corporations.
-                </p>
-              </div>
-            </div>
-            <div className="bg-white rounded-lg p-4 mt-2 lg:mt-4">
+            <div className="md:w-4/5 mt-6 md:mt-12">
               <img
-                className="w-full h-full"
-                src="/alumni-network/alumni-network.png"
-                alt="Alumni Network Logos"
+                className="rounded-lg w-full "
+                src="successful-career/Shailesh-Anand.jpg"
+                alt="Freshwork Academy photo"
               />
+              <p className="text-white pt-2 md:text-lg italic">
+                Shailesh Anand from the Fellowship batch has completed the
+                curriculum and internship and got placed in Google at 28 lacs
+                CTC.
+              </p>
             </div>
+          </div>
+        </SectionWithHeading>
+        <SectionWithHeading heading="Growing Hiring Network">
+          <p className="text-white mt-4 md:text-lg w-full md:w-4/5">
+            69 companies are currently participating in the hiring network which
+            is being expanded every month.
+          </p>
+
+          <div className="bg-white rounded-lg p-4 mt-2 lg:mt-4">
+            <div className="grid grid-cols-2 gap-1 md:grid-cols-5">
+              {hiringNetwork.map((partner, index) =>
+                hiringPartner(
+                  index,
+                  partner.title,
+                  partner.url,
+                  partner.logoSrc
+                )
+              )}
+            </div>
+            <button
+              className="block mx-auto my-4 text-sm font-semibold text-secondary-600 px-3 py-2 bg-secondary-50 rounded-md"
+              onClick={() => setShowLess((prev) => !prev)}
+            >
+              {showLess ? "Show Less" : "Show more"}
+            </button>
+          </div>
+        </SectionWithHeading>
+        <SectionWithHeading
+          heading="Powerful Alumni Network"
+          darkBackground={true}
+        >
+          <p className="text-white mt-4 md:text-lg w-full md:w-4/5">
+            Since 2016, 770 students have graduated from our programmes to work
+            at leading startups and corporations.
+          </p>
+          <div className="bg-white rounded-lg p-4 mt-2 lg:mt-4">
+            <img
+              className="w-full h-full"
+              src="/alumni-network/alumni-network.png"
+              alt="Alumni Network Logos"
+            />
           </div>
         </SectionWithHeading>
 

@@ -160,20 +160,12 @@ let FacultyMember = ({ name, imgSrc, designation, institute }) => {
 
 export default function PersonalizedLearningExperiece() {
   return (
-    <div className="text-white mt-20 w-full">
-      <div className="md:w-3/5">
-        <div className="flex items-end gap-4 ml-0 md:-ml-8">
-          <div className="w-4 h-0.5 bg-primary-700 mb-2 hidden md:block"></div>
-          <h2 className="text-indigo-500 font-semibold text-2xl md:text-3xl">
-            Personalised Learning Experience
-          </h2>
-        </div>
-        <p className="mt-2">
-          As a beginner, we expect you to make many mistakes. Get personalised
-          guidance from LITE faculty members &amp; student teaching assistants
-          to find answers and confidently move ahead.
-        </p>
-      </div>
+    <SectionWithHeading heading="Personalised Learning Experience">
+      <p className="text-white mt-4 md:text-lg w-full md:w-4/5">
+        As a beginner, we expect you to make many mistakes. Get personalised
+        guidance from LITE faculty members &amp; student teaching assistants to
+        find answers and confidently move ahead.
+      </p>
 
       <div className="grid grid-cols-2 md:grid-cols-4 lg:grid-cols-5 gap-x-5 gap-y-10 py-16">
         {facultyMembers.map((facultyMember) => (
@@ -185,6 +177,6 @@ export default function PersonalizedLearningExperiece() {
           />
         ))}
       </div>
-    </div>
+    </SectionWithHeading>
   );
 }

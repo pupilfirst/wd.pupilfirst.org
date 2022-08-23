@@ -48,7 +48,7 @@ const Step = ({ stepNumber, stepHeading, stepImgSrc, children }) => {
   return (
     <div
       id={joinWordsWithHyphen(stepHeading)}
-      className="step bg-gray-900 flex gap-4 md:gap-8 flex-col sm:flex-row border-t border-gray-800 p-4 md:p-6"
+      className="step bg-gray-900 flex gap-4 md:gap-8 flex-col sm:flex-row p-4 md:p-6"
     >
       <div className="w-32 h-32 object-contain overflow-hidden rounded">
         <img src={stepImgSrc} />
@@ -107,7 +107,7 @@ export default function ProvenPathwaySection() {
   return (
     <div>
       <SectionWithHeading heading="Join a proven career pathway">
-        <p className="text-white mt-4 w-4/5">
+        <p className="text-white mt-4 md:text-lg w-full md:w-4/5">
           Approved by the “All India Council for Technical Education” as
           National Model Curriculum for Indian Universities
         </p>
@@ -128,7 +128,7 @@ export default function ProvenPathwaySection() {
               })}
             </div>
           </div>
-          <div className="col-span-5 rounded-xl overflow-hidden">
+          <div className="col-span-5 rounded-xl overflow-hidden bg-gray-800 divide-y-2 divide-gray-700">
             <Step
               stepNumber="1"
               stepHeading="Learn Web Development 101"
@@ -241,7 +241,7 @@ export default function ProvenPathwaySection() {
               </p>
             </Step>
             <div
-              className="step border-t border-gray-800 p-4 md:p-6 bg-gray-900"
+              className="step border-t border-gray-900 p-4 md:p-6"
               id={joinWordsWithHyphen("Join a growing Alumni Network")}
             >
               <div className="flex gap-8 flex-col sm:flex-row">
