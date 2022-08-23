@@ -85,6 +85,9 @@ export default function ProvenPathwaySection() {
           Approved by the “All India Council for Technical Education” as
           National Model Curriculum for Indian Universities
         </p>
+        <div className="mt-12">
+          <img src="/career-pathway/career-pathway.png" alt="" />
+        </div>
         <div className="block md:grid md:grid-cols-8 gap-4 mt-12">
           <div className="hidden md:block md:col-span-3">
             <div className="sticky top-0 py-8 space-y-2">
