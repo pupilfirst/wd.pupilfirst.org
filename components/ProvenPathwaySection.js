@@ -21,7 +21,7 @@ const Step = ({ stepNumber, stepHeading, stepImgSrc, children }) => {
   return (
     <div
       id={joinWordsWithHyphen(stepHeading)}
-      className="step bg-gray-900 flex gap-8 flex-col sm:flex-row border-t border-gray-800 p-4 md:p-6"
+      className="step bg-gray-900 flex gap-4 md:gap-8 flex-col sm:flex-row border-t border-gray-800 p-4 md:p-6"
     >
       <div className="w-32 h-32 object-contain overflow-hidden bg-gray-700 rounded">
         {/* <img src="/people/avishek_photo.jpeg" /> */}
@@ -85,8 +85,8 @@ export default function ProvenPathwaySection() {
           Approved by the “All India Council for Technical Education” as
           National Model Curriculum for Indian Universities
         </p>
-        <div className="grid grid-cols-8 gap-4 mt-12">
-          <div className="col-span-3">
+        <div className="block md:grid md:grid-cols-8 gap-4 mt-12">
+          <div className="hidden md:block md:col-span-3">
             <div className="sticky top-0 py-8 space-y-2">
               {headings.map((heading, index) => {
                 return <SectionLink key={index} heading={heading} />;

@@ -49,7 +49,7 @@ export default function LearnerShowcase() {
 	return (
 		<div>
 			<div className="p-6 bg-gray-600 rounded-lg">
-				<div className="flex items-center justify-between pb-4 text-white felx-wrap">
+				<div className="flex items-center justify-between pb-4 text-white flex-wrap">
 					<div className="flex gap-2 items-center">
 						<svg
 							width="24"
@@ -83,7 +83,7 @@ export default function LearnerShowcase() {
 
 						<p className="text-lg font-semibold">Learner showcase</p>
 					</div>
-					<div className="flex items-center gap-2">
+					<div className="hidden sm:flex items-center gap-2 ">
 						<p>
 							<a className="underline hover:text-indigo-200" href="">
 								See all learners
@@ -122,6 +122,35 @@ export default function LearnerShowcase() {
 						/>
 					))}
 				</div>
+				<div className="flex sm:hidden text-white items-center gap-2 mt-4 ">
+						<p>
+							<a className="underline hover:text-indigo-200" href="">
+								See all learners
+							</a>
+						</p>
+						<svg
+							width="24"
+							height="24"
+							viewBox="0 0 24 24"
+							fill="none"
+							xmlns="http://www.w3.org/2000/svg"
+						>
+							<path
+								d="M12 22C17.5228 22 22 17.5228 22 12C22 6.47715 17.5228 2 12 2C6.47715 2 2 6.47715 2 12C2 17.5228 6.47715 22 12 22Z"
+								stroke="white"
+								stroke-width="2"
+								stroke-linecap="round"
+								stroke-linejoin="round"
+							/>
+							<path
+								d="M12 16L16 12L12 8M8 12H16"
+								stroke="white"
+								stroke-width="2"
+								stroke-linecap="round"
+								stroke-linejoin="round"
+							/>
+						</svg>
+					</div>
 			</div>
 		</div>
 	);

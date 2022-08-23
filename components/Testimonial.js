@@ -2,9 +2,9 @@ import React from "react";
 
 export default function Testimonial({ name, batch, testimony, imageSrc }) {
 	return (
-		<div className="flex gap-3 bg-gray-700 p-6 rounded-lg w-5/6">
+		<div className="flex flex-col items-center md:items-start md:flex-row gap-3 bg-gray-700 p-6 rounded-lg w-full md:w-5/6">
 			<img
-				className="-ml-16 w-32 h-32 rounded-full object-contain border-8 border-gray-700 bg-gray-700"
+				className="ml-0 md:-ml-16 w-32 h-32 rounded-full object-contain border-8 border-gray-700 bg-gray-700"
 				src={imageSrc}
 				alt={"Photo of" + name}
 			/>

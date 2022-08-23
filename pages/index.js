@@ -13,7 +13,7 @@ import hiringNetworkData from "./../data/hiring-network.json";
 
 function ImageWithDescription({ name, githuburl, caption, role, imgSrc }) {
   return (
-    <div className="md:px-4">
+    <div className="md:px-4 mt-8 md:mt-0">
       <div className="relative rounded-lg bg-gradient-to-br from-primary-400 to-primary-500 w-auto shadow-md ">
         <img
           src={imgSrc}
@@ -283,9 +283,9 @@ export default function Home(props) {
           darkBackground="true"
         >
           <div className="text-white mt-10 w-full md:w-3/5">
-            <div className="flex items-end gap-4 -ml-8">
-              <div className="w-4 h-0.5 bg-primary-700 mb-2"></div>
-              <h2 className="text-indigo-500 font-semibold">
+            <div className="flex items-end gap-4 ml-0 md:-ml-8">
+              <div className="w-4 h-0.5 bg-primary-700 mb-2 hidden md:block"></div>
+              <h2 className="text-indigo-500 font-semibold text-2xl md:text-3xl">
                 Dynamic Curriculum by Industry Experts
               </h2>
             </div>
@@ -295,12 +295,12 @@ export default function Home(props) {
               engineering professionals.
             </p>
           </div>
-          <div className="gap-8 divide-x divide-gray-700 sm:grid sm:grid-cols-2 lg:grid-cols-4 py-12 lg:pb-16">
+          <div className="gap-8 md:divide-x divide-gray-700 sm:grid sm:grid-cols-2 lg:grid-cols-4 py-8 lg:pb-16">
             <ImageWithDescription
               name="Vignesh Rajendran"
               caption={<p> Principal Engineer, Oracle</p>}
               role={
-                <p className="font-mono tracking-tight leading-snug text-white mt-3">
+                <p className="text-sm md:text-base tracking-tight leading-snug text-white mt-3">
                   Vignesh is a seasoned UI Technology Evangelist with around 10
                   years of experience building and developing amazing User
                   Experiences across various platforms and domains. He works
@@ -318,7 +318,7 @@ export default function Home(props) {
               name="Melson J Zacharias"
               caption={<p> CTO, Perleybrook Labs LLC.</p>}
               role={
-                <p className="font-mono tracking-tight leading-snug text-white mt-3">
+                <p className="text-sm md:text-base tracking-tight leading-snug text-white mt-3">
                   Melson is CTO at Perleybrook Labs LLC, where he primarily
                   works with C++, Python, and Typescript. In his spare time, he
                   would be reading a book or can be seen answering questions in
@@ -337,7 +337,7 @@ export default function Home(props) {
                 </p>
               }
               role={
-                <p className="font-mono tracking-tight leading-snug text-white mt-3">
+                <p className="text-sm md:text-base tracking-tight leading-snug text-white mt-3">
                   Avishek is an Engineer, a full-stack developer and an
                   open-source contributor. Currently, he is working at GEOGO
                   Techsolutions as Principal Engineer. He started his
@@ -372,7 +372,7 @@ export default function Home(props) {
               }
               caption={<p>Chief Technology Officer, Pupilfirst</p>}
               role={
-                <p className="font-mono tracking-tight leading-snug text-white mt-3">
+                <p className="text-sm md:text-base tracking-tight leading-snug text-white mt-3">
                   Hari is a full-stack software engineer with 12 years of
                   experience and leads the development of Pupilfirst LMS, one of
                   the largest open-source projects that uses the ReScript
@@ -396,9 +396,9 @@ export default function Home(props) {
 
           <div className="text-white mt-20 w-full">
             <div className="md:w-4/5">
-              <div className="flex items-end gap-4 -ml-8">
-                <div className="w-4 h-0.5 bg-primary-700 mb-2"></div>
-                <h2 className="text-indigo-500 font-semibold">
+              <div className="flex items-end gap-4 md:-ml-8">
+                <div className="w-4 h-0.5 bg-primary-700 mb-2 hidden md:block"></div>
+                <h2 className="text-indigo-500 font-semibold text-2xl md:text-3xl">
                   Beginner to advanced courses
                 </h2>
               </div>
@@ -507,9 +507,9 @@ export default function Home(props) {
           </div>
 
           <div className="text-white mt-20 w-full md:w-3/5">
-            <div className="flex items-end gap-4 -ml-8">
-              <div className="w-4 h-0.5 bg-primary-700 mb-2"></div>
-              <h2 className="text-indigo-500 font-semibold">
+            <div className="flex items-end gap-4 ml-0 md:-ml-8">
+              <div className="w-4 h-0.5 bg-primary-700 mb-2 hidden md:block "></div>
+              <h2 className="text-indigo-500 font-semibold text-2xl md:text-3xl">
                 Learner-Centered Classrooms
               </h2>
             </div>
@@ -525,9 +525,9 @@ export default function Home(props) {
 
           <div className="text-white mt-20 w-full">
             <div className="md:w-3/5">
-              <div className="flex items-end gap-4 -ml-8">
-                <div className="w-4 h-0.5 bg-primary-700 mb-2"></div>
-                <h2 className="text-indigo-500 font-semibold">
+              <div className="flex items-end gap-4 ml-0 md:-ml-8">
+                <div className="w-4 h-0.5 bg-primary-700 mb-2 hidden md:block"></div>
+                <h2 className="text-indigo-500 font-semibold text-2xl md:text-3xl">
                   There is no speed limit for learning.
                 </h2>
               </div>
@@ -768,7 +768,7 @@ export default function Home(props) {
                     </p>
                     <div className="max-w-fullf flex-1 h-1 border-t-2 border-gray-200"></div>
                   </div>
-                  <div className="grid grid-cols-3 md:grid-cols-4 place-items-center px-4 py-10 gap-12">
+                  <div className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 place-items-center px-4 py-10 gap-12">
                     <img
                       className="h-16 object-contain"
                       src="/logos/Chaitanya_Bharathi_Institute_of_Technology_Hyderabad_ko1tbr.png"
@@ -840,7 +840,7 @@ export default function Home(props) {
                         register your interest here
                       </a>
                     </p>
-                    <p>
+                    <p className="mt-4 sm:mt-0">
                       More institutions are in the{" "}
                       <a
                         className="font-medium underline text-indigo-500 hover:text-indigo-700"
@@ -881,7 +881,7 @@ export default function Home(props) {
             </ul>
           </div>
           <div className="p-12 rounded-lg bg-indigo-500 flex flex-col items-center text-center gap-6 mt-12">
-            <h4 className="text-white text-3xl font-semibold mt-8 w-4/5">
+            <h4 className="text-white text-xl md:text-3xl font-semibold mt-8 w-full md:w-4/5">
               Admissions open for 10,000 Minor Degree Scholarships in Web
               Development.
             </h4>
