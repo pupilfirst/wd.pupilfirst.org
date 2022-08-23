@@ -665,6 +665,64 @@ export default function Home(props) {
           <div className="mt-16">
             <LearnerShowcase />
           </div>
+          <div>
+            <div className="text-white mt-20 w-full">
+              <div className="md:w-3/5">
+                <div className="flex items-end gap-4 -ml-8">
+                  <div className="w-4 h-0.5 bg-primary-700 mb-2"></div>
+                  <h2 className="text-indigo-500 font-semibold">
+                    Growing Hiring Network
+                  </h2>
+                </div>
+                <p className="mt-2">
+                  69 companies are currently participating in the hiring network
+                  which is being expanded every month.
+                </p>
+              </div>
+            </div>
+            <div className="bg-white rounded-lg p-4 mt-2 lg:mt-4">
+              <div className="grid grid-cols-2 gap-1 md:grid-cols-5">
+                {hiringNetwork.map((partner, index) =>
+                  hiringPartner(
+                    index,
+                    partner.title,
+                    partner.url,
+                    partner.logoSrc
+                  )
+                )}
+              </div>
+              <button
+                className="block mx-auto my-4 text-sm font-semibold text-secondary-600 px-3 py-2 bg-secondary-50 rounded-md"
+                onClick={() => setShowLess((prev) => !prev)}
+              >
+                {showLess ? "Show Less" : "Show more"}
+              </button>
+            </div>
+          </div>
+
+          <div>
+            <div className="text-white mt-20 w-full">
+              <div className="md:w-3/5">
+                <div className="flex items-end gap-4 -ml-8">
+                  <div className="w-4 h-0.5 bg-primary-700 mb-2"></div>
+                  <h2 className="text-indigo-500 font-semibold">
+                    Powerful Alumni Network
+                  </h2>
+                </div>
+                <p className="mt-2">
+                  Since 2016, 770 students have graduated from our programmes to
+                  work at leading startups and corporations.
+                </p>
+              </div>
+            </div>
+            <div className="bg-white rounded-lg p-4 mt-2 lg:mt-4">
+              <img
+                className="w-full h-full"
+                src="/alumni-network/alumni-network.png"
+                alt="Alumni Network Logos"
+              />
+            </div>
+          </div>
         </SectionWithHeading>
 
         <section className="bg-gray-900 border-t border-b border-gray-700 relative">
