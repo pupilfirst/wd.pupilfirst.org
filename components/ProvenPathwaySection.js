@@ -23,8 +23,8 @@ const Step = ({ stepNumber, stepHeading, stepImgSrc, children }) => {
       id={joinWordsWithHyphen(stepHeading)}
       className="step bg-gray-900 flex gap-4 md:gap-8 flex-col sm:flex-row border-t border-gray-800 p-4 md:p-6"
     >
-      <div className="w-32 h-32 object-contain overflow-hidden bg-gray-700 rounded">
-        {/* <img src="/people/avishek_photo.jpeg" /> */}
+      <div className="w-32 h-32 object-contain overflow-hidden rounded">
+        <img src={stepImgSrc} />
       </div>
       <div className="flex-1">
         <p className="font-semibold text-gray-400">Step {stepNumber}</p>
@@ -97,7 +97,7 @@ export default function ProvenPathwaySection() {
             </div>
           </div>
           <div className="col-span-5 rounded-xl overflow-hidden">
-            <Step stepNumber="1" stepHeading="Learn Web Development 101">
+            <Step stepNumber="1" stepHeading="Learn Web Development 101" stepImgSrc="/steps-illustrations/step-1.svg">
               <p>Duration: 15 hours / 1 Academic Credit</p>
               <p className="mt-2">
                 Learn to write code the way professionals do and build a simple
@@ -107,6 +107,7 @@ export default function ProvenPathwaySection() {
             <Step
               stepNumber="2"
               stepHeading="Apply for Admission to Minor Degree"
+              stepImgSrc="/steps-illustrations/step-2.svg"
             >
               <p>Duration: 300 hours/ 19 Academic Credits</p>
               <p className="mt-2">
@@ -117,6 +118,7 @@ export default function ProvenPathwaySection() {
             <Step
               stepNumber="3"
               stepHeading="Start Learning with peers from across the country"
+              stepImgSrc="/steps-illustrations/step-3.svg"
             >
               <p>
                 From all applicants, 300 students who demonstrate learning speed
@@ -129,7 +131,7 @@ export default function ProvenPathwaySection() {
                 Assistants.
               </p>
             </Step>
-            <Step stepNumber="4" stepHeading="Become a Teaching Assistant">
+            <Step stepNumber="4" stepHeading="Become a Teaching Assistant" stepImgSrc="/steps-illustrations/step-4.svg">
               <p>
                 From all applicants, 300 students who demonstrate learning speed
                 and impressive submissions in WD 101 shall get an Admission
@@ -144,6 +146,7 @@ export default function ProvenPathwaySection() {
             <Step
               stepNumber="5"
               stepHeading="Gain Internships through the Hiring Network"
+              stepImgSrc="/steps-illustrations/step-5.svg"
             >
               <p>
                 An increasing list of companies are participating to onboard
@@ -153,6 +156,7 @@ export default function ProvenPathwaySection() {
             <Step
               stepNumber="6"
               stepHeading="An Opportunity to Contribute to Digital Public Goods"
+              stepImgSrc="/steps-illustrations/step-6.svg"
             >
               <p>
                 Selected learners who demonstrate the application of skills
@@ -167,7 +171,7 @@ export default function ProvenPathwaySection() {
                 </a>
               </p>
             </Step>
-            <Step stepNumber="7" stepHeading="Become a Teaching Assistant -">
+            <Step stepNumber="7" stepHeading="Become a Teaching Assistant -" stepImgSrc="/steps-illustrations/step-4.svg">
               <p>
                 Be among the pioneers who graduate from University with a
                 B.Tech/BE in X with a Minor Degree in Advanced Web Development;
@@ -180,7 +184,7 @@ export default function ProvenPathwaySection() {
             >
               <div className="flex gap-8 flex-col sm:flex-row">
                 <div className="w-32 h-32 object-contain overflow-hidden ">
-                  {/* <img src="/people/avishek_photo.jpeg" /> */}
+                  <img src="/steps-illustrations/step-8.svg" />
                 </div>
                 <div className="flex-1">
                   <p className="font-semibold text-gray-400">Step 8</p>
@@ -196,6 +200,7 @@ export default function ProvenPathwaySection() {
             <Step
               stepNumber="9"
               stepHeading="Contribute as an Industry Teaching Fellow"
+              stepImgSrc="/steps-illustrations/step-9.svg"
             >
               <p>
                 Vamsi Krishna is a Teaching Fellow who graduated in this
