@@ -2,11 +2,18 @@
 
 import Head from "next/head";
 import React, { useState } from "react";
+import LearnerShowcase from "../components/LearnerShowcase";
+import PersonalizedLearningExperiece from "../components/PersonalizedLearningExperiece";
+import ProvenPathwaySection from "../components/ProvenPathwaySection";
+import SectionWithHeading from "../components/SectionWithHeading";
+import Testimonial from "../components/Testimonial";
+import Testimonials from "../components/Testimonials";
+import Timeline from "../components/Timeline";
 import hiringNetworkData from "./../data/hiring-network.json";
 
 function ImageWithDescription({ name, githuburl, caption, role, imgSrc }) {
   return (
-    <div className="md:px-4">
+    <div className="md:px-4 mt-8 md:mt-0">
       <div className="relative rounded-lg bg-gradient-to-br from-primary-400 to-primary-500 w-auto shadow-md ">
         <img
           src={imgSrc}
@@ -108,7 +115,7 @@ export default function Home(props) {
       </Head>
       <main className="bg-gradient-to-br from-gray-800 to-gray-900 mx-auto">
         <section className="hero__bg-pattern bg-gray-900 relative">
-          <div className="absolute inset-0 md:inset-x-0 md:top-8 2xl:inset-0">
+          <div className="absolute inset-0 md:inset-x-0 md:top-8 2xl:inset-0 -z-10">
             <img
               className="h-full w-full object-cover relative"
               src="hero/hero-bg.webp"
@@ -133,50 +140,125 @@ export default function Home(props) {
             </div>
           </header>
           <div className="relative pb-8 md:pb-16 px-4 xl:px-0">
-            <div className="max-w-6xl 2xl:max-w-7xl mx-auto">
-              <div className="z-10 flex flex-col items-center">
+            <div className="max-w-6xl 2xl:max-w-7xl mx-auto flex gap-8 xl:gap-20 items-center">
+              <div className="z-10 flex-1 flex flex-col items-center text-center md:text-left md:items-start">
                 <p className=" rounded bg-gray-800 py-1 px-1 md:px-2 mt-4 font-medium text-sm text-gray-400 max-w-max">
-                  All India Council for Technical Education.
+                  Leadership in Teaching Excellence Programme.
                 </p>
-                <h1 className="text-primary-500 text-center text-3xl md:text-3xl lg:text-5xl xl:text-6xl py-2 font-extrabold lg:leading-tight xl:leading-tight">
-                  Minor Degree in <br />
-                  Advanced Web Development
-                  <span className="text-indigo-500">.</span>
+                <h1 className="text-primary-500 text-3xl md:text-3xl lg:text-5xl py-2 font-extrabold lg:leading-tight xl:leading-tight">
+                  "There are 10 Crore Job Opportunities in the Global Web
+                  Development Industry”
                 </h1>
-                <p className="text-center max-w-3xl font-mono mx-auto pr-4 pt-4 text-base text-white">
-                  The Minor Degree in Advanced Web Development Curriculum is
-                  approved by All India Council for Technical Education (AICTE)
-                  under the National Educational Alliance for Technology (NEAT)
-                  programme of the Ministry of Education, Government of India.
-                  This can be opted for and pursued by students who are enrolled
-                  in the Institutes selected as part of the Batch 1 of LITE
-                  programme.
+                <p>
+                  <a
+                    className="text-sm underline text-gray-100 hover:text-primary-500"
+                    href="https://blogs.microsoft.com/wp-content/uploads/prod/prod/2020/06/4_The-Great-Lockdown.png"
+                    target="_blank no-referrer"
+                  >
+                    Read source
+                  </a>
                 </p>
-                <div className="pt-4 md:pt-8">
+                <p className=" mx-auto pr-4 pb-6 mt-8 text-xl text-white font-semibold">
+                  Admissions open for{" "}
+                  <span className="bg-yellow-300 text-gray-900">
+                    10,000 Minor Degree Scholarships
+                  </span>{" "}
+                  in Web Development.
+                </p>
+                <div className="flex gap-4 items-start">
                   <div>
                     <a
-                      href="https://docs.google.com/document/d/e/2PACX-1vQj8aeoRfOHYlOALcUt4mWmFefHAeGtKd5eu6SQDHOaDfckGkBDFz8JrtEiLZmGX-KyFyaDMLdCDkTL/pub"
+                      href="https://www.pupilfirst.school/courses/1802"
                       target="_blank"
-                      className="inline-flex space-x-3 p-3 lg:px-6 lg:py-3.5 text-white bg-indigo-600 rounded-md text-base lg:text-lg text-center font-semibold shadow-lg hover:shadow-xl focus:ring-2 focus:ring-indigo-400 focus:ring-offset-2 transition "
+                      className="inline-flex space-x-3 p-3 lg:px-6 lg:py-3.5 text-white bg-indigo-500 rounded-md text-base lg:text-lg text-center font-semibold shadow-lg hover:shadow-xl focus:ring-2 focus:ring-indigo-400 focus:ring-offset-2 transition "
                     >
-                      <svg
-                        xmlns="http://www.w3.org/2000/svg"
-                        width="16"
-                        height="16"
-                        fill="currentColor"
-                        className="w-6 h-6"
-                        viewBox="0 0 16 16"
-                      >
-                        <path d="M14 14V4.5L9.5 0H4a2 2 0 0 0-2 2v12a2 2 0 0 0 2 2h8a2 2 0 0 0 2-2zM9.5 3A1.5 1.5 0 0 0 11 4.5h2V9H3V2a1 1 0 0 1 1-1h5.5v2zM3 12v-2h2v2H3zm0 1h2v2H4a1 1 0 0 1-1-1v-1zm3 2v-2h7v1a1 1 0 0 1-1 1H6zm7-3H6v-2h7v2z" />
-                      </svg>
-                      <span>See list of institutions</span>
+                      Apply now
                     </a>
                   </div>
+                  <svg
+                    width="56"
+                    height="40"
+                    viewBox="0 0 56 40"
+                    fill="none"
+                    xmlns="http://www.w3.org/2000/svg"
+                  >
+                    <g clip-path="url(#clip0_160_5)">
+                      <path
+                        d="M54.9404 1.94461C55.1491 1.43327 54.9038 0.849574 54.3924 0.640897C53.8811 0.43222 53.2974 0.677579 53.0887 1.18892L54.9404 1.94461ZM53.0887 1.18892C50.0573 8.61712 45.8369 17.8705 38.0922 24.2444C30.4149 30.5627 19.1337 34.1583 1.71876 29.9693L1.25102 31.9139C19.1769 36.2258 31.1274 32.5666 39.3631 25.7886C47.5314 19.0662 51.9054 9.38168 54.9404 1.94461L53.0887 1.18892Z"
+                        fill="white"
+                      />
+                      <path
+                        d="M8.90294 25.1151L2.07899 30.4112C1.6531 30.7418 1.56588 31.3504 1.88179 31.7872L6.71798 38.4746"
+                        stroke="white"
+                        stroke-width="2"
+                        stroke-linecap="round"
+                      />
+                    </g>
+                    <defs>
+                      <clipPath id="clip0_160_5">
+                        <rect width="56" height="40" fill="white" />
+                      </clipPath>
+                    </defs>
+                  </svg>
                 </div>
+              </div>
+              <div className="flex-1 py-12 lg:pt-0 pb-12 hidden md:block">
+                <img
+                  className="w-full md:px-2 xl:px-16"
+                  src="hero/hero-student.svg"
+                  alt="Illustration of female graduate student."
+                />
               </div>
             </div>
           </div>
-          <div className="px-4 lg:px-0 pb-8 max-w-6xl 2xl:max-w-7xl mx-auto">
+          <section className="px-4 xl:mx-0 pb-10 md:pb-16 pt-6 md:pt-6 bg-gray-900">
+            <div className="max-w-6xl 2xl:max-w-7xl mx-auto px-16 pb-16 pt-10 bg-white rounded-lg flex items-center flex-col">
+              <p className="text-2xl font-bold">Scholarships supported by</p>
+              <div className="w-full flex flex-wrap gap-10 items-center lg:justify-between mt-12">
+                <img src="/logos/msdf-logo.png" alt="" />
+                <img src="/logos/schmidt-futures.png" alt="" />
+                <img src="/logos/ACT-Logo.png" alt="" />
+                <img src="/logos/sgf-logo.png" alt="" />
+                <img src="/logos/meta-logo.png" alt="" />
+              </div>
+            </div>
+          </section>
+          <svg
+            className="absolute right-0 top-1/4 object-center -z-10"
+            width="120"
+            height="400"
+            fill="none"
+            viewBox="0 0 120 400"
+          >
+            <defs>
+              <pattern
+                id="5d0dd344-b041-4d26-bec4-8d33ea57ec9b"
+                x="0"
+                y="0"
+                width="20"
+                height="20"
+                patternUnits="userSpaceOnUse"
+              >
+                <rect
+                  x="0"
+                  y="0"
+                  width="4"
+                  height="4"
+                  className="text-gray-700"
+                  fill="currentColor"
+                />
+              </pattern>
+            </defs>
+            <rect
+              width="120"
+              height="400"
+              fill="url(#5d0dd344-b041-4d26-bec4-8d33ea57ec9b)"
+            />
+          </svg>
+          <div className="px-4 lg:px-0 pb-12 max-w-6xl 2xl:max-w-7xl mx-auto">
+            <p className="text-lg font-semibold text-primary-500 pb-4">
+              Watch mini video
+            </p>
             <div style={{ padding: "52.73% 0 0 0", position: "relative" }}>
               <iframe
                 className="rounded-3xl shadow-2xl border-2 border-gray-900"
@@ -195,635 +277,682 @@ export default function Home(props) {
             </div>
           </div>
         </section>
-        <section className="px-4 xl:mx-0 py-10 md:py-16 bg-gray-900">
-          <div className="bg-gradient-to-br from-gray-800 to-gray-900 rounded-3xl border border-gray-700 relative shadow-lg max-w-6xl 2xl:max-w-7xl mx-auto">
-            <div className="flex space-y-4 md:space-y-0 flex-col md:flex-row justify-between text-white">
-              <div className="md:w-8/12 p-4 lg:p-10">
-                <h2 className="text-xl md:text-3xl text-primary-500">
-                  Co-created by Freshworks
-                </h2>
 
-                <p className="mt-4 font-mono text-sm md:text-base lg:text-lg">
-                  Pupilfirst along with Freshworks (
-                  <a
-                    className="font-semibold text-indigo-400 underline hover:bg-indigo-900 hover:bg-opacity-50 transition"
-                    href="https://www.freshworks.com/day-zero-for-freshworks-blog/"
-                    target="_blank"
-                  >
-                    NASDAQ:FRSH
-                  </a>
-                  ), India's leader in Software as a Service (SaaS) industry,
-                  designed the curriculum for a minor degree in web development.
-                </p>
-                <p className="mt-4 font-mono text-sm md:text-base lg:text-lg">
-                  This course was initially created based on Freshworks’
-                  internal training program for their new employees, and is
-                  continuously updated to meet student’s requirements and
-                  changing industry demands. The intent of this course is to
-                  create a pathway for students from all engineering disciplines
-                  to the global web development industry.
-                </p>
-                <p className="mt-4 text-sm md:text-base">
-                  Learn More at:{" "}
-                  <a
-                    className="text-indigo-400 font-semibold hover:underline hover:bg-indigo-900"
-                    target="_blank"
-                    href="https://pupilfirst.org/"
-                  >
-                    https://pupilfirst.org/
-                  </a>
-                </p>
-              </div>
-
-              <div className="md:w-4/12 flex flex-col items-center justify-between flex-shrink-0 border-l border-gray-700 rounded-b-lg md:rounded-bl-none md:rounded-r-lg">
-                <div className="w-full lg:h-1/2 flex items-center justify-center flex-shrink-0 rounded-t-3xl md:rounded-tl-none bg-gradient-to-br from-gray-50 to-gray-200">
-                  <div className="p-6 md:p-3">
-                    <img
-                      className="w-44 h-24 md:w-64 lg:w-72 object-contain"
-                      src="logos/freshworks-logo.svg"
-                      alt="Freshworks logo"
-                    />
-                  </div>
-                </div>
-                <div className="w-full lg:h-1/2 flex items-center justify-center flex-shrink-0 rounded-b-3xl md:rounded-bl-none bg-gradient-to-br from-purple-700 to-purple-900">
-                  <div className="p-6 md:p-3">
-                    <img
-                      className="w-36 h-24 md:w-48 lg:w-60 object-contain"
-                      src="logos/pupilfirst-logo-white.svg"
-                      alt="Pupilfirst logo"
-                    />
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-        </section>
-        <section className="w-full bg-white px-4 py-16 h-full">
-          <div className="max-w-6xl 2xl:max-w-7xl mx-auto">
-            <div className="max-w-3xl mx-auto text-center pb-4">
-              <h2 className="text-2xl lg:text-6xl text-gray-600 leading-snug">
-                Hiring Network
+        <SectionWithHeading
+          heading="Programme Highlights"
+          darkBackground="true"
+        >
+          <div className="text-white mt-10 w-full md:w-3/5">
+            <div className="flex items-end gap-4 ml-0 md:-ml-8">
+              <div className="w-4 h-0.5 bg-primary-700 mb-2 hidden md:block"></div>
+              <h2 className="text-indigo-500 font-semibold text-2xl md:text-3xl">
+                Dynamic Curriculum by Industry Experts
               </h2>
             </div>
-            <div className="mt-2 lg:mt-4 grid grid-cols-2 gap-1 md:grid-cols-5">
-              {hiringNetwork.map((partner, index) =>
-                hiringPartner(
-                  index,
-                  partner.title,
-                  partner.url,
-                  partner.logoSrc
-                )
-              )}
-            </div>
-            <button
-              className="block mx-auto my-4 text-sm font-semibold text-secondary-600 px-3 py-2 bg-secondary-50 rounded-md"
-              onClick={() => setShowLess((prev) => !prev)}
-            >
-              {showLess ? "Show Less" : "Show more"}
-            </button>
+            <p className="mt-2">
+              Confidently learn how to become a full-stack developer in a
+              curriculum designed and maintained by practising software
+              engineering professionals.
+            </p>
           </div>
-        </section>
+          <div className="gap-8 md:divide-x divide-gray-700 sm:grid sm:grid-cols-2 lg:grid-cols-4 py-8 lg:pb-16">
+            <ImageWithDescription
+              name="Vignesh Rajendran"
+              caption={<p> Principal Engineer, Oracle</p>}
+              role={
+                <p className="text-sm md:text-base tracking-tight leading-snug text-white mt-3">
+                  Vignesh is a seasoned UI Technology Evangelist with around 10
+                  years of experience building and developing amazing User
+                  Experiences across various platforms and domains. He works
+                  with Oracle as a Principal Engineer solving UI engineering use
+                  cases for their Cloud and Cloud-native products. The stack he
+                  works on covers everything UI, although now he mainly codes on
+                  Javascript and Typescript. In leisure, he writes a lot and
+                  read a lot more.
+                </p>
+              }
+              imgSrc="people/Vignesh_Profile.jpg"
+            />
 
-        <section className="relative bg-gray-900 border-t border-gray-700">
-          <div className="max-w-6xl 2xl:max-w-7xl mx-auto">
-            <div className="border-l border-gray-700 mx-4 xl:mx-0">
-              <div className="lg:grid lg:grid-cols-12 lg:gap-12 2xl:gap-5 px-0 pb-8">
-                <div className="lg:col-span-7 2xl:col-span-8">
-                  <div className="pt-10 lg:pt-20">
-                    <div className="heading-with-leftborder">
-                      <h2 className="max-w-5xl font-bold text-2xl lg:text-6xl text-primary-500 leading-snug lg:ml-8 xl:ml-11 2xl:ml-32 pl-4">
-                        Everything you
-                        <br /> need to know
-                      </h2>
-                    </div>
-                  </div>
-                  <div className="space-y-6 md:space-y-12 md:pr-12 pt-4 md:pt-10 text-white ml-2 md:ml-4 lg:ml-12 xl:ml-16 2xl:ml-36">
-                    <div>
-                      <h3 className="heading-with-underscore text-xl lg:text-2xl text-indigo-400 font-semibold">
-                        What is this program?
-                      </h3>
-                      <p className="ml-8 font-mono tracking-tight mt-2 pt-1 lg:text-lg ">
-                        Industry led Minor degree programme in Advanced Web
-                        Development that would enable you to become a skilled
-                        web developer in the global Software as a Service (SaaS)
-                        Industry.
-                      </p>
-                    </div>
-                    <div>
-                      <h3 className="heading-with-underscore text-xl lg:text-2xl text-indigo-400 font-semibold">
-                        Why?
-                      </h3>
-                      <p className="ml-8 font-mono tracking-tight mt-2 pt-1 lg:text-lg ">
-                        To learn the professional web development knowledge and
-                        practical skills used every day in the industry.
-                      </p>
-                    </div>
-                    <div>
-                      <h3 className="heading-with-underscore text-xl lg:text-2xl text-indigo-400 font-semibold">
-                        Who is this for?
-                      </h3>
-                      <p className="ml-8 font-mono tracking-tight mt-2 pt-1 lg:text-lg ">
-                        This programme is available for students from Institutes
-                        whose faculty coordinator has completed the faculty
-                        training requirements. These Institutes are amongst the
-                        first batch of{" "}
-                        <a
-                          className="font-semibold text-indigo-400 underline hover:bg-indigo-900 hover:bg-opacity-50 transition"
-                          href="https://lite.pupilfirst.org/ay-2021-22"
-                          target="_blank"
-                        >
-                          50 selected institutions
-                        </a>{" "}
-                        who have qualified for AICTE’s Leadership in Teaching
-                        Excellence (LITE) program.
-                      </p>
-                      <p className="ml-8 font-mono tracking-tight mt-2 pt-1 lg:text-lg ">
-                        Within these institutions, students can apply based on
-                        the Minor Degree format implemented in their respective
-                        Institute. Check with your LITE faculty coordinator for
-                        more information.
-                      </p>
-                    </div>
-                    {/*
-                    <div>
-                      <h3 className="heading-with-underscore text-xl lg:text-2xl text-indigo-400 font-semibold">
-                        When?
-                      </h3>
-                      <p className="ml-8 font-mono tracking-tight mt-2 pt-1 lg:text-lg ">
-                        The first batch of students is tentatively planned from March-July 2022. Contact
-                        the faculty coordinator from your Institute for further
-                        details.
-                      </p>
-                    </div>
-                    */}
-                    <div>
-                      <h3 className="heading-with-underscore text-xl lg:text-2xl text-indigo-400 font-semibold">
-                        Credits?
-                      </h3>
-                      <p className="ml-8 font-mono tracking-tight mt-2 pt-1 lg:text-lg ">
-                        The minor degree in advanced web development has 4
-                        courses adding upto 20 credits.
-                      </p>
-                    </div>
-                    <div>
-                      <h3 className="heading-with-underscore text-xl lg:text-2xl text-indigo-400 font-semibold">
-                        Format
-                      </h3>
-                      <p className="ml-8 font-mono tracking-tight mt-2 pt-1 lg:text-lg ">
-                        Self-paced learning with personalised feedback from
-                        industry coaches, LITE Faculty co-ordinators and
-                        teaching assistants.
-                      </p>
-                    </div>
-                    <div>
-                      <h3 className="heading-with-underscore text-xl lg:text-2xl text-indigo-400 font-semibold">
-                        Assignments &amp; assessments
-                      </h3>
-                      <p className="ml-8 font-mono tracking-tight mt-2 pt-1 lg:text-lg ">
-                        You'll work on lots of assignments in our courses, and
-                        it's possible to get a perfect score on each and every
-                        assignment. However, it's unlikely that you'll get a
-                        perfect score on your first try. We expect you to try to
-                        improve because that's how professionals work.{" "}
-                      </p>
-                      <p className="ml-8 font-mono tracking-tight mt-2 pt-1 lg:text-lg ">
-                        In a professional project, you rarely (if ever) get
-                        things right on the first try. Instead, you're expected
-                        to listen to user feedback, do some research of your
-                        own, and then iterate on your work. Our courses are
-                        designed by industry professionals to mimic this. You'll
-                        learn just enough to complete assignments, and we know
-                        from experience what kind of mistakes you'll make. So
-                        every time you submit, you'll get feedback prepared by
-                        pros to nudge your work closer to perfection.
-                      </p>
-                    </div>
-                    <div>
-                      <h3 className="heading-with-underscore text-xl lg:text-2xl text-indigo-400 font-semibold">
-                        Degree Certificate
-                      </h3>
-                      <p className="ml-8 font-mono tracking-tight pt-1 lg:text-lg ">
-                        Yes. Upon successful completion of the programme, you
-                        shall receive a Minor Degree in Advanced Web Development
-                        from your university along with the Major Degree you are
-                        pursuing (eg: B.Tech/BE in Electronics with Minor in
-                        Advanced Web Development). In addition you will also
-                        receive course completion certificates from Pupilfirst
-                        on completing respective courses in the minor track.
-                      </p>
-                    </div>
-                  </div>
+            <ImageWithDescription
+              name="Melson J Zacharias"
+              caption={<p> CTO, Perleybrook Labs LLC.</p>}
+              role={
+                <p className="text-sm md:text-base tracking-tight leading-snug text-white mt-3">
+                  Melson is CTO at Perleybrook Labs LLC, where he primarily
+                  works with C++, Python, and Typescript. In his spare time, he
+                  would be reading a book or can be seen answering questions in
+                  StackOverflow.
+                </p>
+              }
+              imgSrc="people/melson.jpeg"
+            />
+            <ImageWithDescription
+              name="Avishek Jana"
+              caption={
+                <p>
+                  {" "}
+                  Co-Founder &nbsp; Principal Engineer, GEOGO Techsolutions Pvt.
+                  Ltd.
+                </p>
+              }
+              role={
+                <p className="text-sm md:text-base tracking-tight leading-snug text-white mt-3">
+                  Avishek is an Engineer, a full-stack developer and an
+                  open-source contributor. Currently, he is working at GEOGO
+                  Techsolutions as Principal Engineer. He started his
+                  professional career in 2013 and worked on technologies like:
+                  Ruby on Rails, NodeJS, ReactJS, TypeScript etc. Apart from
+                  work, he loves to mentor and train fresh graduates to enhance
+                  their skills as per industry demands. Teaching is his way to
+                  contribute back to the society.
+                </p>
+              }
+              imgSrc="people/avishek_photo.jpeg"
+            />
+            <ImageWithDescription
+              name="Hari Gopal"
+              githuburl={
+                <a
+                  className="inline-flex text-gray-300 hover:text-indigo-400 transition"
+                  href="https://github.com/harigopal"
+                  target="_blank"
+                >
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    width="16"
+                    height="16"
+                    fill="currentColor"
+                    className="w-6 h-6"
+                    viewBox="0 0 16 16"
+                  >
+                    <path d="M8 0C3.58 0 0 3.58 0 8c0 3.54 2.29 6.53 5.47 7.59.4.07.55-.17.55-.38 0-.19-.01-.82-.01-1.49-2.01.37-2.53-.49-2.69-.94-.09-.23-.48-.94-.82-1.13-.28-.15-.68-.52-.01-.53.63-.01 1.08.58 1.23.82.72 1.21 1.87.87 2.33.66.07-.52.28-.87.51-1.07-1.78-.2-3.64-.89-3.64-3.95 0-.87.31-1.59.82-2.15-.08-.2-.36-1.02.08-2.12 0 0 .67-.21 2.2.82.64-.18 1.32-.27 2-.27.68 0 1.36.09 2 .27 1.53-1.04 2.2-.82 2.2-.82.44 1.1.16 1.92.08 2.12.51.56.82 1.27.82 2.15 0 3.07-1.87 3.75-3.65 3.95.29.25.54.73.54 1.48 0 1.07-.01 1.93-.01 2.2 0 .21.15.46.55.38A8.012 8.012 0 0 0 16 8c0-4.42-3.58-8-8-8z" />
+                  </svg>
+                </a>
+              }
+              caption={<p>Chief Technology Officer, Pupilfirst</p>}
+              role={
+                <p className="text-sm md:text-base tracking-tight leading-snug text-white mt-3">
+                  Hari is a full-stack software engineer with 12 years of
+                  experience and leads the development of Pupilfirst LMS, one of
+                  the largest open-source projects that uses the ReScript
+                  programming language.
+                </p>
+              }
+              imgSrc="people/hari-gopal.png"
+            />
+          </div>
+          <p className="text-lg text-white px-3 py-2 bg-gray-800 inline-block rounded-md">
+            The curriculum is{" "}
+            <a
+              target="_blank no-referrer"
+              className="text-indigo-400 underline"
+              href="https://lite.pupilfirst.org/dynamic-curriculum"
+            >
+              updated dynamically
+            </a>{" "}
+            based on student/faculty feedback and changes in the industry
+          </p>
+
+          <div className="text-white mt-20 w-full">
+            <div className="md:w-4/5">
+              <div className="flex items-end gap-4 md:-ml-8">
+                <div className="w-4 h-0.5 bg-primary-700 mb-2 hidden md:block"></div>
+                <h2 className="text-indigo-500 font-semibold text-2xl md:text-3xl">
+                  Beginner to advanced courses
+                </h2>
+              </div>
+              <p className="mt-2">
+                This programme is designed with 4 courses such that selected
+                institutions can offer a 18-20 credit “Minor Degree in Advanced
+                Web Development” through their trained faculty to students.
+              </p>
+            </div>
+            <div className="flex flex-col md:flex-row space-y-2 md:space-y-0 md:space-x-2 mt-8">
+              <div className="w-full md:flex-1 bg-gradient-to-br from-gray-700 to-gray-900 border border-primary-400 rounded-lg shadow-md p-3 md:p-4">
+                <p className="text-primary-400 text-xl md:text-2xl font-bold">
+                  WD 101
+                </p>
+                <p className="text-white leading-snug mt-1">
+                  <span className="font-semibold">Beginner</span> - Getting
+                  Started with Javascript
+                </p>
+              </div>
+              <div className="flex items-center justify-center w-full h-4 md:w-4 md:h-auto md:transform md:-rotate-90">
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  width="16"
+                  height="16"
+                  fill="currentColor"
+                  className="text-primary-700"
+                  viewBox="0 0 16 16"
+                >
+                  <path
+                    fillRule="evenodd"
+                    d="M8 4a.5.5 0 0 1 .5.5v5.793l2.146-2.147a.5.5 0 0 1 .708.708l-3 3a.5.5 0 0 1-.708 0l-3-3a.5.5 0 1 1 .708-.708L7.5 10.293V4.5A.5.5 0 0 1 8 4z"
+                  />
+                </svg>
+              </div>
+              <div className="w-full md:flex-1 bg-gradient-to-br from-gray-700 to-gray-900 border border-indigo-400 rounded-lg shadow-md p-3 md:p-4">
+                <p className="text-indigo-400 text-xl md:text-2xl font-bold">
+                  WD 201
+                </p>
+                <p className="text-white leading-snug mt-1">
+                  <span className="font-semibold">Intermediate</span> -
+                  Server-side programming with Node.js
+                </p>
+              </div>
+              <div className="flex items-center justify-center w-full h-4 md:w-4 md:h-auto md:transform md:-rotate-90">
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  width="16"
+                  height="16"
+                  fill="currentColor"
+                  className="text-indigo-700"
+                  viewBox="0 0 16 16"
+                >
+                  <path
+                    fillRule="evenodd"
+                    d="M8 4a.5.5 0 0 1 .5.5v5.793l2.146-2.147a.5.5 0 0 1 .708.708l-3 3a.5.5 0 0 1-.708 0l-3-3a.5.5 0 1 1 .708-.708L7.5 10.293V4.5A.5.5 0 0 1 8 4z"
+                  />
+                </svg>
+              </div>
+              <div className="w-full md:flex-1 bg-gradient-to-br from-gray-700 to-gray-900 border border-green-500 rounded-lg shadow-md p-3 md:p-4">
+                <p className="text-green-500 text-xl md:text-2xl font-bold">
+                  WD 301
+                </p>
+                <p className="text-white leading-snug mt-1">
+                  <span className="font-semibold">Advanced</span> - Front-end
+                  development with React &amp; Typescript
+                </p>
+              </div>
+              <div className="flex items-center justify-center w-full h-4 md:w-4 md:h-auto md:transform md:-rotate-90">
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  width="16"
+                  height="16"
+                  fill="currentColor"
+                  className="text-green-700"
+                  viewBox="0 0 16 16"
+                >
+                  <path
+                    fillRule="evenodd"
+                    d="M8 4a.5.5 0 0 1 .5.5v5.793l2.146-2.147a.5.5 0 0 1 .708.708l-3 3a.5.5 0 0 1-.708 0l-3-3a.5.5 0 1 1 .708-.708L7.5 10.293V4.5A.5.5 0 0 1 8 4z"
+                  />
+                </svg>
+              </div>
+
+              <div className="w-full md:flex-1 bg-gradient-to-br from-gray-700 to-gray-900 border border-red-500 rounded-lg shadow-md p-3 md:p-4">
+                <p className="text-red-400 text-xl md:text-2xl font-bold">
+                  WD 401
+                </p>
+                <p className="text-white leading-snug mt-1">
+                  <span className="font-semibold">Industry</span> - Getting
+                  ready for production deployment.
+                </p>
+              </div>
+            </div>
+
+            <p className="mt-4 text-sm text-white ">
+              More advanced courses would be added to give a broader choice of
+              specialisations.
+            </p>
+            <div className="pt-8 lg:pt-16">
+              <img
+                className="w-full h-full object-contain mix-blend-color-dodge"
+                src="course-path/course-pathway.png"
+                alt="Course pathway"
+              />
+            </div>
+          </div>
+
+          <div className="text-white mt-20 w-full md:w-3/5">
+            <div className="flex items-end gap-4 ml-0 md:-ml-8">
+              <div className="w-4 h-0.5 bg-primary-700 mb-2 hidden md:block "></div>
+              <h2 className="text-indigo-500 font-semibold text-2xl md:text-3xl">
+                Learner-Centered Classrooms
+              </h2>
+            </div>
+            <p className="mt-2">
+              You shall be part of the first batch of students across 6 states
+              in India to learn via Learner-Centered Classrooms under National
+              Educational Policy 2020 (NEP 2020){" "}
+            </p>
+          </div>
+          <img className="mt-12" src="/radical-shift.jpg" alt="" />
+
+          <PersonalizedLearningExperiece />
+
+          <div className="text-white mt-20 w-full">
+            <div className="md:w-3/5">
+              <div className="flex items-end gap-4 ml-0 md:-ml-8">
+                <div className="w-4 h-0.5 bg-primary-700 mb-2 hidden md:block"></div>
+                <h2 className="text-indigo-500 font-semibold text-2xl md:text-3xl">
+                  There is no speed limit for learning.
+                </h2>
+              </div>
+              <p className="mt-2">
+                As a beginner, we expect you to make many mistakes. Get
+                personalised guidance from LITE faculty members &amp; student
+                teaching assistants to find answers and confidently move ahead.
+              </p>
+            </div>
+          </div>
+
+          <div className="md:grid flex flex-col gap-12 items-center md:items-start md:grid-cols-8 mt-8">
+            <div className="col-span-3 md:pb-12">
+              <div className="relative w-64 gap-10 text-white p-4 bg-gray-700 rounded-2xl border-b md:border-b-0 md:border-r border-primary-600">
+                <p className="text">
+                  GDC batch students have completed this curriculum in
+                </p>
+                <p className="text-2xl font-semibold mt-2">12 Weeks</p>
+                <svg
+                  className="absolute right-1/2 md:-right-2 rotate-90 md:rotate-0 -bottom-5 md:bottom-auto md:top-1/2 transform -translate-y-1/2 md:-translate-y-1/2"
+                  width="8"
+                  height="16"
+                  viewBox="0 0 8 16"
+                  fill="none"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <g clip-path="url(#clip0_247_6)">
+                    <rect
+                      x="-8.48535"
+                      y="8.48535"
+                      width="12"
+                      height="12"
+                      rx="3"
+                      transform="rotate(-45 -8.48535 8.48535)"
+                      fill="#FFD761"
+                    />
+                  </g>
+                  <defs>
+                    <clipPath id="clip0_247_6">
+                      <rect width="8" height="16" fill="white" />
+                    </clipPath>
+                  </defs>
+                </svg>
+              </div>
+            </div>
+            <div className="col-span-5 pl-12 md:pl-0">
+              <div>
+                <div className="flex gap-3 -ml-5 items-center">
+                  <svg
+                    width="8"
+                    height="8"
+                    viewBox="0 0 8 8"
+                    fill="none"
+                    xmlns="http://www.w3.org/2000/svg"
+                  >
+                    <path
+                      fill-rule="evenodd"
+                      clip-rule="evenodd"
+                      d="M2.25008 0.5L6.75008 0.499999C7.02622 0.499999 7.25008 0.723857 7.25008 0.999999L7.25008 5.5C7.25008 5.77614 7.02622 6 6.75008 6C6.47393 6 6.25008 5.77614 6.25008 5.5L6.25008 2.20711L1.10363 7.35355C0.908367 7.54882 0.591784 7.54882 0.396522 7.35355C0.20126 7.15829 0.20126 6.84171 0.396522 6.64645L5.54297 1.5L2.25008 1.5C1.97393 1.5 1.75008 1.27614 1.75008 1C1.75008 0.723857 1.97393 0.5 2.25008 0.5Z"
+                      fill="#FFD761"
+                    />
+                  </svg>
+
+                  <p className="text-gray-500 font-semibold">
+                    Web Development 101:
+                  </p>
                 </div>
-                <div className="hidden lg:block lg:col-span-5 2xl:col-span-4">
-                  <div className="sticky top-0 pl-0 pt-10 lg:pt-20 -ml-px md:ml-0">
-                    <div className="bg-gradient-to-br from-gray-800 to-gray-900 text-white rounded-r md:rounded-lg border border-gray-700 relative shadow-lg">
-                      <div className="flex space-x-2 px-2 md:px-4 lg:px-5 2xl:px-6 py-4 border-b border-gray-700">
-                        <div className="w-3 h-3 bg-gray-700 rounded-full"></div>
-                        <div className="w-3 h-3 bg-gray-700 rounded-full"></div>
-                        <div className="w-3 h-3 bg-gray-700 rounded-full"></div>
-                      </div>
-                      <div className="p-2 md:p-4 lg:p-8">
-                        <h3 className="text-2xl lg:text-3xl font-semibold leading-tight text-primary-500">
-                          How to apply?
-                        </h3>
+                <p className="text-3xl text-white font-semibold">1 Day</p>
+              </div>
+              <div>
+                <div className="flex gap-3 -ml-5 items-center mt-8">
+                  <svg
+                    width="8"
+                    height="8"
+                    viewBox="0 0 8 8"
+                    fill="none"
+                    xmlns="http://www.w3.org/2000/svg"
+                  >
+                    <path
+                      fill-rule="evenodd"
+                      clip-rule="evenodd"
+                      d="M2.25008 0.5L6.75008 0.499999C7.02622 0.499999 7.25008 0.723857 7.25008 0.999999L7.25008 5.5C7.25008 5.77614 7.02622 6 6.75008 6C6.47393 6 6.25008 5.77614 6.25008 5.5L6.25008 2.20711L1.10363 7.35355C0.908367 7.54882 0.591784 7.54882 0.396522 7.35355C0.20126 7.15829 0.20126 6.84171 0.396522 6.64645L5.54297 1.5L2.25008 1.5C1.97393 1.5 1.75008 1.27614 1.75008 1C1.75008 0.723857 1.97393 0.5 2.25008 0.5Z"
+                      fill="#FFD761"
+                    />
+                  </svg>
 
-                        <p className="text-base md:text-lg font-mono tracking-tight mt-3 space-y-3">
-                          All students who wish to apply for the Minor Degree in
-                          Advanced Web Development may contact LITE Faculty
-                          Coordinator at their institution for details.
-                        </p>
-                        <div className="pt-4">
-                          <a
-                            href="https://docs.google.com/document/d/e/2PACX-1vSVFaCSJp9_NuHFBlMfQJxwa_S8Da1cxVbaQFfxOQ01PvoX8JVa86iAMn6p3ukGo4cGRNWFrFUdDoc1/pub"
-                            target="_blank"
-                            className="inline-flex items-center space-x-4 w-full py-3 text-indigo-400 rounded-md text-lg font-semibold hover:underline hover:shadow-xl transition "
-                          >
-                            <span>
-                              See list of institutions and Faculty Coordinators
-                            </span>
-                            <svg
-                              xmlns="http://www.w3.org/2000/svg"
-                              width="16"
-                              height="16"
-                              fill="currentColor"
-                              className="w-6 h-6"
-                              viewBox="0 0 16 16"
-                            >
-                              <path
-                                fillRule="evenodd"
-                                d="M1 8a.5.5 0 0 1 .5-.5h11.793l-3.147-3.146a.5.5 0 0 1 .708-.708l4 4a.5.5 0 0 1 0 .708l-4 4a.5.5 0 0 1-.708-.708L13.293 8.5H1.5A.5.5 0 0 1 1 8z"
-                              />
-                            </svg>
-                          </a>
-                        </div>
-                      </div>
-                    </div>
-                  </div>
+                  <p className="text-gray-500 font-semibold">
+                    Web Development 201::
+                  </p>
+                </div>
+                <p className="text-3xl text-white font-semibold">6 Weeks</p>
+              </div>
+              <div>
+                <div className="flex gap-3 -ml-5 items-center mt-8">
+                  <svg
+                    width="8"
+                    height="8"
+                    viewBox="0 0 8 8"
+                    fill="none"
+                    xmlns="http://www.w3.org/2000/svg"
+                  >
+                    <path
+                      fill-rule="evenodd"
+                      clip-rule="evenodd"
+                      d="M2.25008 0.5L6.75008 0.499999C7.02622 0.499999 7.25008 0.723857 7.25008 0.999999L7.25008 5.5C7.25008 5.77614 7.02622 6 6.75008 6C6.47393 6 6.25008 5.77614 6.25008 5.5L6.25008 2.20711L1.10363 7.35355C0.908367 7.54882 0.591784 7.54882 0.396522 7.35355C0.20126 7.15829 0.20126 6.84171 0.396522 6.64645L5.54297 1.5L2.25008 1.5C1.97393 1.5 1.75008 1.27614 1.75008 1C1.75008 0.723857 1.97393 0.5 2.25008 0.5Z"
+                      fill="#FFD761"
+                    />
+                  </svg>
+
+                  <p className="text-gray-500 font-semibold">
+                    Web Development 301:
+                  </p>
+                </div>
+                <p className="text-3xl text-white font-semibold">6 Weeks</p>
+              </div>
+              <div className="mt-12">
+                <p className="text-3xl text-indigo-600 w-4/5">
+                  Fast Learners would be onboard as Teaching Assistants
+                </p>
+                <div className="mt-6">
+                  <a
+                    href="https://www.pupilfirst.school/courses/1802"
+                    target="_blank"
+                    className="inline-flex space-x-3 p-3 lg:px-6 lg:py-3.5 text-white bg-indigo-500 rounded-md text-base lg:text-lg text-center font-semibold shadow-lg hover:shadow-xl focus:ring-2 focus:ring-indigo-400 focus:ring-offset-2 transition "
+                  >
+                    Apply now
+                  </a>
                 </div>
               </div>
             </div>
           </div>
-        </section>
+          <div className="mt-16">
+            <LearnerShowcase />
+          </div>
+          <div>
+            <div className="text-white mt-20 w-full">
+              <div className="md:w-3/5">
+                <div className="flex items-end gap-4 -ml-8">
+                  <div className="w-4 h-0.5 bg-primary-700 mb-2"></div>
+                  <h2 className="text-indigo-500 font-semibold">
+                    Growing Hiring Network
+                  </h2>
+                </div>
+                <p className="mt-2">
+                  69 companies are currently participating in the hiring network
+                  which is being expanded every month.
+                </p>
+              </div>
+            </div>
+            <div className="bg-white rounded-lg p-4 mt-2 lg:mt-4">
+              <div className="grid grid-cols-2 gap-1 md:grid-cols-5">
+                {hiringNetwork.map((partner, index) =>
+                  hiringPartner(
+                    index,
+                    partner.title,
+                    partner.url,
+                    partner.logoSrc
+                  )
+                )}
+              </div>
+              <button
+                className="block mx-auto my-4 text-sm font-semibold text-secondary-600 px-3 py-2 bg-secondary-50 rounded-md"
+                onClick={() => setShowLess((prev) => !prev)}
+              >
+                {showLess ? "Show Less" : "Show more"}
+              </button>
+            </div>
+          </div>
+          <div>
+            <div className="text-white mt-20 w-full">
+              <div className="md:w-3/5">
+                <div className="flex items-end gap-4 -ml-8">
+                  <div className="w-4 h-0.5 bg-primary-700 mb-2"></div>
+                  <h2 className="text-indigo-500 font-semibold">
+                    Successful Career
+                  </h2>
+                </div>
+              </div>
+              <div className="md:w-4/5 mt-4">
+                <img
+                  className="rounded-lg w-full "
+                  src="successful-career/Freshworks-Academy.jpg"
+                  alt="Freshwork Academy photo"
+                />
+                <p className="pt-2 md:text-lg italic">
+                  12th standard pass, non-english medium students have completed
+                  this curriculum and got placed as developers in Freshworks at
+                  5.5lacs CTC.
+                </p>
+              </div>
+              <div className="md:w-4/5 mt-6 md:mt-12 pt-6 md:pt-12 border-t border-gray-700">
+                <img
+                  className="rounded-lg w-full "
+                  src="successful-career/Shailesh-Anand.jpg"
+                  alt="Freshwork Academy photo"
+                />
+                <p className="pt-2 md:text-lg italic">
+                  GDC Students have completed this curriculum and got placed in
+                  Google at 28 lacs CTC.
+                </p>
+              </div>
+              <div className="mt-12 bg-gray-800 p-6 border border-indigo-500 rounded-lg">
+                <p className="text-xl">
+                  Irrespective of your social and economic background, Your
+                  learning efforts to complete this curriculum shall deliver a
+                  successful career.
+                </p>
+              </div>
+            </div>
+          </div>
 
-        <section className="bg-gray-800 border-t border-b border-gray-700 mx-auto relative">
+          <div>
+            <div className="text-white mt-20 w-full">
+              <div className="md:w-3/5">
+                <div className="flex items-end gap-4 -ml-8">
+                  <div className="w-4 h-0.5 bg-primary-700 mb-2"></div>
+                  <h2 className="text-indigo-500 font-semibold">
+                    Powerful Alumni Network
+                  </h2>
+                </div>
+                <p className="mt-2">
+                  Since 2016, 770 students have graduated from our programmes to
+                  work at leading startups and corporations.
+                </p>
+              </div>
+            </div>
+            <div className="bg-white rounded-lg p-4 mt-2 lg:mt-4">
+              <img
+                className="w-full h-full"
+                src="/alumni-network/alumni-network.png"
+                alt="Alumni Network Logos"
+              />
+            </div>
+          </div>
+        </SectionWithHeading>
+
+        <ProvenPathwaySection />
+        <SectionWithHeading heading="Key Timelines" darkBackground={true}>
+          <Timeline />
+        </SectionWithHeading>
+        <section className="bg-gray-900 border-t border-b border-gray-700 relative">
           <div className="max-w-6xl 2xl:max-w-7xl mx-auto">
             <div className="border-l border-gray-700 mx-4 xl:mx-0">
               <div className="pt-10 lg:pt-20">
                 <div className="heading-with-leftborder">
-                  <h2 className="max-w-5xl font-bold text-2xl lg:text-6xl text-primary-500 leading-tight ml-4 lg:mx-auto">
-                    Price
-                  </h2>
+                  <div className="ml-2 md:ml-4 lg:ml-12 xl:ml-16 2xl:ml-36 flex items-center justify-between">
+                    <h2 className="font-bold text-2xl lg:text-6xl text-primary-500 leading-tight ">
+                      How to apply?
+                    </h2>
+                    <div>
+                      <a
+                        href="https://www.pupilfirst.school/courses/1802"
+                        target="_blank"
+                        className="inline-flex space-x-3 p-3 lg:px-6 lg:py-3.5 text-white bg-indigo-500 rounded-md text-base lg:text-lg text-center font-semibold shadow-lg hover:shadow-xl focus:ring-2 focus:ring-indigo-400 focus:ring-offset-2 transition "
+                      >
+                        Apply now
+                      </a>
+                    </div>
+                  </div>
                 </div>
               </div>
 
               <div className="flex flex-col mt-4 pb-10 lg:pb-20 ml-2 md:ml-4 lg:ml-12 xl:ml-16 2xl:ml-36">
-                <div className="max-w-4xl font-mono text-white tracking-tight pt-1 lg:text-lg ">
+                <div className="max-w-4xl text-white tracking-tight pt-1 lg:text-lg ">
                   <p>
-                    The AICTE (NEAT) approved course fees are mentioned below.
-                    This amount is exclusive of the government taxes as
-                    applicable.
+                    Your admission to the minor degree programme is based only
+                    on a{" "}
+                    <span className="bg-gradient-to-b from-transparent via-transparent to-yellow-800">
+                      {" "}
+                      demonstration of learning interest by completing Web
+                      Development 101 course
+                    </span>{" "}
+                    and not any prior knowledge or marks.
                   </p>
                 </div>
 
-                <div className="sm:rounded-lg mt-8">
-                  <table className="table-auto w-full overflow-hidden border border-gray-800 shadow-lg">
-                    <thead className="bg-gradient-to-r from-primary-500 to-primary-600 text-gray-900 font-semibold">
-                      <tr className="border border-gray-500 text-xs">
-                        <th
-                          scope="col"
-                          className="p-2 md:px-6 md:py-3 text-left uppercase tracking-wider"
-                        >
-                          S. No
-                        </th>
-                        <th
-                          scope="col"
-                          className="p-2 md:px-6 md:py-3 text-left uppercase tracking-wider"
-                        >
-                          Course Name
-                        </th>
-                        <th
-                          scope="col"
-                          className="p-2 md:px-6 md:py-3 text-left uppercase tracking-wider"
-                        >
-                          <span className="hidden lg:block">
-                            AICTE approved course fee per student (in Rs.).
-                          </span>
-                          <span className="block lg:hidden">
-                            course fee per student (in Rs.)
-                          </span>
-                        </th>
-                      </tr>
-                    </thead>
-                    <tbody className="bg-gradient-to-r w-full from-gray-800 to-gray-900 text-gray-50">
-                      <tr className="font-mono bg-gray-700 bg-opacity-50 text-sm md:text-lg border border-gray-500">
-                        <td className="p-2 md:p-6 lg:whitespace-nowrap font-medium ">
-                          1
-                        </td>
-                        <td className="p-2 md:p-6 lg:whitespace-nowrap border-r border-gray-500">
-                          Web Development 101 (Getting Started with JavaScript)
-                        </td>
-                        <td
-                          className="p-2 md:p-6 lg:whitespace-nowrap border-r border-gray-500"
-                          rowSpan="2"
-                        >
-                          10,000
-                        </td>
-                      </tr>
-
-                      <tr className="font-mono bg-gray-700 bg-opacity-50 text-sm md:text-lg border border-gray-500">
-                        <td className="p-2 md:p-6 lg:whitespace-nowrap font-medium ">
-                          2
-                        </td>
-                        <td className="p-2 md:p-6 lg:whitespace-nowrap border-r border-gray-500">
-                          Web Development 201 (Server-side programming with Ruby
-                          on Rails)
-                        </td>
-                      </tr>
-
-                      <tr className="font-mono text-sm md:text-lg">
-                        <td className="p-2 md:p-6 lg:whitespace-nowrap font-medium">
-                          3
-                        </td>
-                        <td className="p-2 md:p-6 lg:whitespace-nowrap">
-                          Web Development 301 (Front-end development with React
-                          & TypeScript)
-                        </td>
-                        <td className="p-2 md:p-6 lg:whitespace-nowrap">
-                          10,000
-                        </td>
-                      </tr>
-                    </tbody>
-                  </table>
-                </div>
-              </div>
-            </div>
-          </div>
-        </section>
-
-        <section className="bg-gray-800 border-t border-b border-gray-700 mx-auto relative">
-          <div className="max-w-6xl 2xl:max-w-7xl mx-auto">
-            <div className="border-l border-gray-700 mx-4 xl:mx-0">
-              <div className="pt-10 lg:pt-20">
-                <div className="heading-with-leftborder">
-                  <h2 className="max-w-5xl font-bold text-2xl lg:text-6xl text-primary-500 leading-tight ml-4 lg:mx-auto">
-                    Course Authors and Coaches
-                  </h2>
-                </div>
-              </div>
-              <svg
-                className="absolute right-0 top-1/4 object-center"
-                width="120"
-                height="400"
-                fill="none"
-                viewBox="0 0 120 400"
-              >
-                <defs>
-                  <pattern
-                    id="5d0dd344-b041-4d26-bec4-8d33ea57ec9b"
-                    x="0"
-                    y="0"
-                    width="20"
-                    height="20"
-                    patternUnits="userSpaceOnUse"
-                  >
-                    <rect
-                      x="0"
-                      y="0"
-                      width="4"
-                      height="4"
-                      className="text-gray-700"
-                      fill="currentColor"
+                <div className="sm:rounded-lg mt-8 bg-white p-8">
+                  <div className="flex gap-4 items-center">
+                    <p className="text-lg font-semibold flex">
+                      Participating Institutions
+                    </p>
+                    <div className="max-w-fullf flex-1 h-1 border-t-2 border-gray-200"></div>
+                  </div>
+                  <div className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 place-items-center px-4 py-10 gap-12">
+                    <img
+                      className="h-16 object-contain"
+                      src="/logos/Chaitanya_Bharathi_Institute_of_Technology_Hyderabad_ko1tbr.png"
+                      alt=""
                     />
-                  </pattern>
-                </defs>
-                <rect
-                  width="120"
-                  height="400"
-                  fill="url(#5d0dd344-b041-4d26-bec4-8d33ea57ec9b)"
-                />
-              </svg>
-              <div className="max-w-5xl mx-auto relative z-10 pl-4 lg:pl-0">
-                <div className="md:divide-x divide-gray-700 space-y-12 gap-y-12 md:space-y-0 sm:grid sm:grid-cols-2 lg:grid-cols-4 py-12 lg:pb-16">
-                  {/*
-                  <ImageWithDescription
-                    name="Prashanth Reddy Koteru"
-                    githuburl={
+                    <img
+                      className="h-16 object-contain"
+                      src="/logos/G_H_Raisoni_College_of_Engineering_Nagpur_pydlgd.png"
+                      alt=""
+                    />
+                    <img
+                      className="h-16 object-contain"
+                      src="/logos/G.Narayanamma_Institute_of_Technology_and_Science_For_Women_JNTUH_Hyderabad_mw4dpi.png"
+                      alt=""
+                    />
+                    <img
+                      className="h-16 object-contain"
+                      src="/logos/Malla_Reddy_College_of_Engineering_and_Technology_Hyderabad_uhmeh3.png"
+                      alt=""
+                    />
+                    <img
+                      className="h-16 object-contain"
+                      src="/logos/Marwadi University.png"
+                      alt=""
+                    />
+                    <img
+                      className="h-16 object-contain"
+                      src="/logos/Institute_of_Aeronautical_Engineering_Hyderabad_yfvmpb.png"
+                      alt=""
+                    />
+                    <img
+                      className="h-16 object-contain"
+                      src="/logos/Pimpri_Chinchwad_College_of_Engineering_PCCoE_Pune_xsgv1f.webp"
+                      alt=""
+                    />
+                    <img
+                      className="h-16 object-contain"
+                      src="/logos/Vardhaman_College_of_Engineering_Shamshabad_rxs2mh.jpg"
+                      alt=""
+                    />
+                    <img
+                      className="h-16 object-contain"
+                      src="/logos/University of Engineering and Management, Jaipur.png"
+                      alt=""
+                    />
+                    <img
+                      className="h-16 object-contain"
+                      src="/logos/Sreyas_Institute_of_Engineering_and_Technology_lgccdo.png"
+                      alt=""
+                    />
+                    <img
+                      className="h-16 object-contain"
+                      src="/logos/Sankalchand_Patel_College_of_Engineering_Visnagar_bxsrst.png"
+                      alt=""
+                    />
+                    <img
+                      className="h-16 object-contain"
+                      src="/logos/Tula_s_Institute_Dehradun_wxryss.png"
+                      alt=""
+                    />
+                  </div>
+                  <div className="p-4 bg-gray-100 rounded-lg">
+                    <p>
+                      If your institution is not listed,{" "}
                       <a
-                        className="inline-flex text-gray-300 hover:text-indigo-400 transition"
-                        href="https://github.com/prashanth726"
-                        target="_blank"
+                        className="font-medium underline text-indigo-500 hover:text-indigo-700"
+                        href=""
                       >
-                        <svg
-                          xmlns="http://www.w3.org/2000/svg"
-                          width="16"
-                          height="16"
-                          fill="currentColor"
-                          className="w-6 h-6"
-                          viewBox="0 0 16 16"
-                        >
-                          <path d="M8 0C3.58 0 0 3.58 0 8c0 3.54 2.29 6.53 5.47 7.59.4.07.55-.17.55-.38 0-.19-.01-.82-.01-1.49-2.01.37-2.53-.49-2.69-.94-.09-.23-.48-.94-.82-1.13-.28-.15-.68-.52-.01-.53.63-.01 1.08.58 1.23.82.72 1.21 1.87.87 2.33.66.07-.52.28-.87.51-1.07-1.78-.2-3.64-.89-3.64-3.95 0-.87.31-1.59.82-2.15-.08-.2-.36-1.02.08-2.12 0 0 .67-.21 2.2.82.64-.18 1.32-.27 2-.27.68 0 1.36.09 2 .27 1.53-1.04 2.2-.82 2.2-.82.44 1.1.16 1.92.08 2.12.51.56.82 1.27.82 2.15 0 3.07-1.87 3.75-3.65 3.95.29.25.54.73.54 1.48 0 1.07-.01 1.93-.01 2.2 0 .21.15.46.55.38A8.012 8.012 0 0 0 16 8c0-4.42-3.58-8-8-8z" />
-                        </svg>
+                        register your interest here
                       </a>
-                    }
-                    caption={<p>Coach-Web Development, Pupilfirst</p>}
-                    role={
-                      <p className="font-mono tracking-tight leading-snug text-white mt-3">
-                        Prashanth is a full-stack web developer and product
-                        engineer with five years of experience and an active
-                        evangelist in the indian developer community.
-                      </p>
-                    }
-                    imgSrc="people/prashanth-reddy.png"
-                  />
-                  <ImageWithDescription
-                    name="Mahesh Krishna Kumar"
-                    githuburl={
+                    </p>
+                    <p className="mt-4 sm:mt-0">
+                      More institutions are in the{" "}
                       <a
-                        className="inline-flex text-gray-300 hover:text-indigo-400 transition"
-                        href="https://github.com/mahesh-krishnakumar"
-                        target="_blank"
+                        className="font-medium underline text-indigo-500 hover:text-indigo-700"
+                        href=""
                       >
-                        <svg
-                          xmlns="http://www.w3.org/2000/svg"
-                          width="16"
-                          height="16"
-                          fill="currentColor"
-                          className="w-6 h-6"
-                          viewBox="0 0 16 16"
-                        >
-                          <path d="M8 0C3.58 0 0 3.58 0 8c0 3.54 2.29 6.53 5.47 7.59.4.07.55-.17.55-.38 0-.19-.01-.82-.01-1.49-2.01.37-2.53-.49-2.69-.94-.09-.23-.48-.94-.82-1.13-.28-.15-.68-.52-.01-.53.63-.01 1.08.58 1.23.82.72 1.21 1.87.87 2.33.66.07-.52.28-.87.51-1.07-1.78-.2-3.64-.89-3.64-3.95 0-.87.31-1.59.82-2.15-.08-.2-.36-1.02.08-2.12 0 0 .67-.21 2.2.82.64-.18 1.32-.27 2-.27.68 0 1.36.09 2 .27 1.53-1.04 2.2-.82 2.2-.82.44 1.1.16 1.92.08 2.12.51.56.82 1.27.82 2.15 0 3.07-1.87 3.75-3.65 3.95.29.25.54.73.54 1.48 0 1.07-.01 1.93-.01 2.2 0 .21.15.46.55.38A8.012 8.012 0 0 0 16 8c0-4.42-3.58-8-8-8z" />
-                        </svg>
+                        approval process
                       </a>
-                    }
-                    caption={<p>Full-stack developer, Pupilfirst</p>}
-                    role={
-                      <p className="font-mono tracking-tight leading-snug text-white mt-3">
-                        Mahesh is currently a full-stack developer at Pupilfirst
-                        with close to five years experience in product building
-                        using Ruby on Rails, Javascript and ReScript.
-                      </p>
-                    }
-                    imgSrc="people/mahesh.jpg"
-                  />
-                  <ImageWithDescription
-                    name="Bodhish Thomas"
-                    githuburl={
-                      <a
-                        className="inline-flex text-gray-300 hover:text-indigo-400 transition"
-                        href="https://github.com/bodhish"
-                        target="_blank"
-                      >
-                        <svg
-                          xmlns="http://www.w3.org/2000/svg"
-                          width="16"
-                          height="16"
-                          fill="currentColor"
-                          className="w-6 h-6"
-                          viewBox="0 0 16 16"
-                        >
-                          <path d="M8 0C3.58 0 0 3.58 0 8c0 3.54 2.29 6.53 5.47 7.59.4.07.55-.17.55-.38 0-.19-.01-.82-.01-1.49-2.01.37-2.53-.49-2.69-.94-.09-.23-.48-.94-.82-1.13-.28-.15-.68-.52-.01-.53.63-.01 1.08.58 1.23.82.72 1.21 1.87.87 2.33.66.07-.52.28-.87.51-1.07-1.78-.2-3.64-.89-3.64-3.95 0-.87.31-1.59.82-2.15-.08-.2-.36-1.02.08-2.12 0 0 .67-.21 2.2.82.64-.18 1.32-.27 2-.27.68 0 1.36.09 2 .27 1.53-1.04 2.2-.82 2.2-.82.44 1.1.16 1.92.08 2.12.51.56.82 1.27.82 2.15 0 3.07-1.87 3.75-3.65 3.95.29.25.54.73.54 1.48 0 1.07-.01 1.93-.01 2.2 0 .21.15.46.55.38A8.012 8.012 0 0 0 16 8c0-4.42-3.58-8-8-8z" />
-                        </svg>
-                      </a>
-                    }
-                    caption={<>Full-stack developer, Pupilfirst</>}
-                    role={
-                      <p className="font-mono tracking-tight leading-snug text-white mt-3">
-                        Bodhish is a full-stack developer with about four years
-                        of experience in product development at Pupilfirst. He's
-                        very active in the developer community.
-                      </p>
-                    }
-                    imgSrc="people/bodhish.jpg"
-                  />
-                  <ImageWithDescription
-                    name="Bellam Vamsi Krishna"
-                    githuburl={
-                      <a
-                        className="inline-flex text-gray-300 hover:text-indigo-400 transition"
-                        href="https://github.com/vamsikri-hash"
-                        target="_blank"
-                      >
-                        <svg
-                          xmlns="http://www.w3.org/2000/svg"
-                          width="16"
-                          height="16"
-                          fill="currentColor"
-                          className="w-6 h-6"
-                          viewBox="0 0 16 16"
-                        >
-                          <path d="M8 0C3.58 0 0 3.58 0 8c0 3.54 2.29 6.53 5.47 7.59.4.07.55-.17.55-.38 0-.19-.01-.82-.01-1.49-2.01.37-2.53-.49-2.69-.94-.09-.23-.48-.94-.82-1.13-.28-.15-.68-.52-.01-.53.63-.01 1.08.58 1.23.82.72 1.21 1.87.87 2.33.66.07-.52.28-.87.51-1.07-1.78-.2-3.64-.89-3.64-3.95 0-.87.31-1.59.82-2.15-.08-.2-.36-1.02.08-2.12 0 0 .67-.21 2.2.82.64-.18 1.32-.27 2-.27.68 0 1.36.09 2 .27 1.53-1.04 2.2-.82 2.2-.82.44 1.1.16 1.92.08 2.12.51.56.82 1.27.82 2.15 0 3.07-1.87 3.75-3.65 3.95.29.25.54.73.54 1.48 0 1.07-.01 1.93-.01 2.2 0 .21.15.46.55.38A8.012 8.012 0 0 0 16 8c0-4.42-3.58-8-8-8z" />
-                        </svg>
-                      </a>
-                    }
-                    caption={<>Assistant Coach - Web Development, Pupilfirst</>}
-                    role={
-                      <p className="font-mono tracking-tight leading-snug text-white mt-3">
-                        Vamsi has been a Teaching Assistant for Web Development
-                        courses offered by Pupilfirst for over two years after
-                        completing the courses successfully as a student. He is
-                        currently working at Hottinger Brüel & Kjær (HBK) as an
-                        Engineering Trainee. His interest mostly lies in the
-                        area of full stack web development. He likes to learn
-                        and explore more parts of web development.
-                      </p>
-                    }
-                    imgSrc="people/vamsi_bellam-1.jpeg"
-                  />
-                  */}
-                  <ImageWithDescription
-                    name="Vignesh Rajendran"
-                    caption={<p> Principal Engineer, Oracle</p>}
-                    role={
-                      <p className="font-mono tracking-tight leading-snug text-white mt-3">
-                        Vignesh is a seasoned UI Technology Evangelist with
-                        around 10 years of experience building and developing
-                        amazing User Experiences across various platforms and
-                        domains. He works with Oracle as a Principal Engineer
-                        solving UI engineering use cases for their Cloud and
-                        Cloud-native products. The stack he works on covers
-                        everything UI, although now he mainly codes on
-                        Javascript and Typescript. In leisure, he writes a lot
-                        and read a lot more.
-                      </p>
-                    }
-                    imgSrc="people/Vignesh_Profile.jpg"
-                  />
-
-                  <ImageWithDescription
-                    name="Melson J Zacharias"
-                    caption={<p> CTO, Perleybrook Labs LLC.</p>}
-                    role={
-                      <p className="font-mono tracking-tight leading-snug text-white mt-3">
-                        Melson is CTO at Perleybrook Labs LLC, where he
-                        primarily works with C++, Python, and Typescript. In his
-                        spare time, he would be reading a book or can be seen
-                        answering questions in StackOverflow.
-                      </p>
-                    }
-                    imgSrc="people/melson.jpeg"
-                  />
-                  <ImageWithDescription
-                    name="Avishek Jana"
-                    caption={
-                      <p>
-                        {" "}
-                        Co-Founder & Principal Engineer, GEOGO Techsolutions
-                        Pvt. Ltd.
-                      </p>
-                    }
-                    role={
-                      <p className="font-mono tracking-tight leading-snug text-white mt-3">
-                        Avishek is an Engineer, a full-stack developer and an
-                        open-source contributor. Currently, he is working at
-                        GEOGO Techsolutions as Principal Engineer. He started
-                        his professional career in 2013 and worked on
-                        technologies like: Ruby on Rails, NodeJS, ReactJS,
-                        TypeScript etc. Apart from work, he loves to mentor and
-                        train fresh graduates to enhance their skills as per
-                        industry demands. Teaching is his way to contribute back
-                        to the society.
-                      </p>
-                    }
-                    imgSrc="people/avishek_photo.jpeg"
-                  />
-                  <ImageWithDescription
-                    name="Hari Gopal"
-                    githuburl={
-                      <a
-                        className="inline-flex text-gray-300 hover:text-indigo-400 transition"
-                        href="https://github.com/harigopal"
-                        target="_blank"
-                      >
-                        <svg
-                          xmlns="http://www.w3.org/2000/svg"
-                          width="16"
-                          height="16"
-                          fill="currentColor"
-                          className="w-6 h-6"
-                          viewBox="0 0 16 16"
-                        >
-                          <path d="M8 0C3.58 0 0 3.58 0 8c0 3.54 2.29 6.53 5.47 7.59.4.07.55-.17.55-.38 0-.19-.01-.82-.01-1.49-2.01.37-2.53-.49-2.69-.94-.09-.23-.48-.94-.82-1.13-.28-.15-.68-.52-.01-.53.63-.01 1.08.58 1.23.82.72 1.21 1.87.87 2.33.66.07-.52.28-.87.51-1.07-1.78-.2-3.64-.89-3.64-3.95 0-.87.31-1.59.82-2.15-.08-.2-.36-1.02.08-2.12 0 0 .67-.21 2.2.82.64-.18 1.32-.27 2-.27.68 0 1.36.09 2 .27 1.53-1.04 2.2-.82 2.2-.82.44 1.1.16 1.92.08 2.12.51.56.82 1.27.82 2.15 0 3.07-1.87 3.75-3.65 3.95.29.25.54.73.54 1.48 0 1.07-.01 1.93-.01 2.2 0 .21.15.46.55.38A8.012 8.012 0 0 0 16 8c0-4.42-3.58-8-8-8z" />
-                        </svg>
-                      </a>
-                    }
-                    caption={<p>Chief Technology Officer, Pupilfirst</p>}
-                    role={
-                      <p className="font-mono tracking-tight leading-snug text-white mt-3">
-                        Hari is a full-stack software engineer with 12 years of
-                        experience and leads the development of Pupilfirst LMS,
-                        one of the largest open-source projects that uses the
-                        ReScript programming language.
-                      </p>
-                    }
-                    imgSrc="people/hari-gopal.png"
-                  />
+                    </p>
+                  </div>
                 </div>
               </div>
             </div>
           </div>
         </section>
 
-        <section>
+        <Testimonials />
+        <div className="border-t border-gray-700 py-20">
+          <div className="max-w-7xl mx-auto">
+            <div className="text-white p-6 rounded-lg bg-gray-700">
+              <h4>Important</h4>
+              <ul className="list-disc ml-4">
+                <li className="mt-4">
+                  Students can apply and get onboarded to the WD101 course
+                  between 24 August 2022 to 16 September 2022. We recommend that
+                  you submit your application earlier, in order to give yourself
+                  more time to complete the WD101 course.
+                </li>
+                <li className="mt-4">
+                  Students who are not keeping up with the course work within
+                  the set timelines shall be dropped out from the course and
+                  lose their scholarship. This scholarship seat shall be
+                  restored to the overall pool, and a new student will be
+                  admitted from the wait-list.{" "}
+                </li>
+              </ul>
+            </div>
+            <div className="p-12 rounded-lg bg-indigo-500 flex flex-col items-center text-center gap-6 mt-12">
+              <h4 className="text-white text-xl md:text-3xl font-semibold mt-8 w-full md:w-4/5">
+                Admissions open for 10,000 Minor Degree Scholarships in Web
+                Development.
+              </h4>
+              <a
+                href="https://www.pupilfirst.school/courses/1802"
+                target="_blank"
+                className="inline-flex space-x-3 p-3 lg:px-6 lg:py-3.5 bg-primary-500 text-indigo-500 rounded-md text-base lg:text-lg text-center font-semibold shadow-lg hover:shadow-xl focus:ring-2 focus:ring-indigo-400 focus:ring-offset-2 transition "
+              >
+                Apply now
+              </a>
+            </div>
+            <div className="text-white mt-12">
+              <h4>Code of Conduct</h4>
+              <p>
+                Students shall adhere to the Code of Conduct and provide only
+                truthful information. Any discrepancies shall lead to withdrawal
+                of scholarship and being dropped from the course.
+              </p>
+              <h4 className="mt-6">Questions?</h4>
+              <p>
+                Please refer to the Frequently Asked Questions (FAQ) document,
+                as you may find the answer if another student has asked this
+                question. If you still need help, please email to "insert email
+                id" with your name, branch, semester, college, and university
+                along with your question, and we shall get back to you.{" "}
+              </p>
+            </div>
+          </div>
+        </div>
+
+        {/* <section>
           <div className="max-w-6xl 2xl:max-w-7xl mx-auto">
             <div className="border-l border-gray-700 mx-4 xl:mx-0 py-10 lg:py-16">
               <div className="heading-with-leftborder">
@@ -1184,7 +1313,7 @@ export default function Home(props) {
               <div className="max-w-5xl mx-auto pl-4 lg:pl-0">
                 <div className="max-w-3xl space-y-6 text-white ">
                   <p className="mt-4 font-mono tracking-tight lg:text-lg">
-                    Here’s what some of our students had to say
+                    Here's what some of our students had to say
                   </p>
                 </div>
                 <div className="divide-y space-y-12 lg:space-y-24 divide-gray-700 relative">
@@ -1548,7 +1677,7 @@ export default function Home(props) {
               LITE - Creating a Culture of Teaching Excellence
             </p>
           </div>
-        </section>
+        </section> */}
       </main>
     </div>
   );
