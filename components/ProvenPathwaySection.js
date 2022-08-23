@@ -5,16 +5,43 @@ let joinWordsWithHyphen = (string) => {
   return string.split(" ").join("-");
 };
 
-let headings = [
-  "Learn Web Development 101",
-  "Apply for Admission to Minor Degree",
-  "Start Learning with peers from across the country",
-  "Become a Teaching Assistant",
-  "Gain Internships through the Hiring Network",
-  "An Opportunity to Contribute to Digital Public Goods",
-  "Become a Teaching Assistant -",
-  "Join a growing Alumni Network",
-  "Contribute as an Industry Teaching Fellow",
+let sectionHeadings = [
+  {
+    heading: "Learn Web Development 101",
+    number: "1",
+  },
+  {
+    heading: "Apply for Admission to Minor Degree",
+    number: "2",
+  },
+  {
+    heading: "Start Learning with peers from across the country",
+    number: "3",
+  },
+  {
+    heading: "Become a Teaching Assistant",
+    number: "4",
+  },
+  {
+    heading: "Gain Internships through the Hiring Network",
+    number: "5",
+  },
+  {
+    heading: "An Opportunity to Contribute to Digital Public Goods",
+    number: "6",
+  },
+  {
+    heading:   "Become a Teaching Assistant -",
+    number: "7",
+  },
+  {
+    heading: "Join a growing Alumni Network",
+    number: "8",
+  },
+  {
+    heading: "Contribute as an Industry Teaching Fellow",
+    number: "9",
+  }, 
 ];
 
 const Step = ({ stepNumber, stepHeading, stepImgSrc, children }) => {
@@ -35,17 +62,16 @@ const Step = ({ stepNumber, stepHeading, stepImgSrc, children }) => {
   );
 };
 
-const SectionLink = ({ heading }) => {
+const SectionLink = ({ heading, number }) => {
   return (
     <div>
-      <p>
-        <a
-          className="p-2 rounded-md block text-gray-400 hover:bg-gray-700 hover:text-white"
-          href={"#" + joinWordsWithHyphen(heading)}
-        >
-          {heading}
-        </a>
-      </p>
+      <a
+        className="p-2 rounded-md flex gap-4 -ml-8 text-gray-400 hover:bg-gray-700 hover:text-white"
+        href={"#" + joinWordsWithHyphen(heading)}
+      >
+        <span className="block font-bold text-gray-600">{number}</span>
+        <span className="block ">{heading}</span>
+      </a>
     </div>
   );
 };
@@ -91,8 +117,8 @@ export default function ProvenPathwaySection() {
         <div className="block md:grid md:grid-cols-8 gap-4 mt-12">
           <div className="hidden md:block md:col-span-3">
             <div className="sticky top-0 py-8 space-y-2">
-              {headings.map((heading, index) => {
-                return <SectionLink key={index} heading={heading} />;
+              {sectionHeadings.map((section, index) => {
+                return <SectionLink key={index} heading={section.heading} number={section.number} />;
               })}
             </div>
           </div>
