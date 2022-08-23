@@ -189,13 +189,6 @@ export default function ProvenPathwaySection() {
                   </div>
                 </div>
               </div>
-              <div className="w-full mt-5">
-                <img
-                  className="w-full"
-                  src="/company-logos-on-white.png"
-                  alt="Alumni network Company Logos"
-                />
-              </div>
             </div>
             <Step
               stepNumber="9"
