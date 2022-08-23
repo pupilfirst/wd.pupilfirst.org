@@ -40,7 +40,7 @@ const SectionLink = ({ heading }) => {
     <div>
       <p>
         <a
-          className="p-2 rounded-md block text-gray-400 hover:bg-gray-800"
+          className="p-2 rounded-md block text-gray-400 hover:bg-gray-700 hover:text-white"
           href={"#" + joinWordsWithHyphen(heading)}
         >
           {heading}
@@ -93,7 +93,7 @@ export default function ProvenPathwaySection() {
               })}
             </div>
           </div>
-          <div className="col-span-5 p-5 bg-gray-800 rounded-lg">
+          <div className="col-span-5 rounded-xl overflow-hidden">
             <Step stepNumber="1" stepHeading="Learn Web Development 101">
               <p>Duration: 15 hours / 1 Academic Credit</p>
               <p className="mt-2">
@@ -172,7 +172,7 @@ export default function ProvenPathwaySection() {
               </p>
             </Step>
             <div
-              className="step border-t border-gray-800"
+              className="step border-t border-gray-800 p-4 md:p-6 bg-gray-900"
               id={joinWordsWithHyphen("Join a growing Alumni Network")}
             >
               <div className="flex gap-8 flex-col sm:flex-row">
