@@ -85,6 +85,9 @@ export default function ProvenPathwaySection() {
           Approved by the “All India Council for Technical Education” as
           National Model Curriculum for Indian Universities
         </p>
+        <div className="mt-12">
+          <img src="/career-pathway/career-pathway.png" alt="" />
+        </div>
         <div className="block md:grid md:grid-cols-8 gap-4 mt-12">
           <div className="hidden md:block md:col-span-3">
             <div className="sticky top-0 py-8 space-y-2">
@@ -188,13 +191,6 @@ export default function ProvenPathwaySection() {
                     <p>Graduating WD students can join over X alumni</p>
                   </div>
                 </div>
-              </div>
-              <div className="w-full mt-5">
-                <img
-                  className="w-full"
-                  src="/company-logos-on-white.png"
-                  alt="Alumni network Company Logos"
-                />
               </div>
             </div>
             <Step
