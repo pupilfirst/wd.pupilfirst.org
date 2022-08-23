@@ -15,7 +15,8 @@ const facultyMembers = [
   },
   {
     name: "Mrs. Manthena Deepthi",
-    imgSrc: "/faculty-members/Mrs._Manthena_Deepthi-Faculty_2_rwozck_ivbcn6.png",
+    imgSrc:
+      "/faculty-members/Mrs._Manthena_Deepthi-Faculty_2_rwozck_ivbcn6.png",
   },
   {
     name: "Dr. Padmaja B",
@@ -23,7 +24,8 @@ const facultyMembers = [
   },
   {
     name: "Mr. E Krishna Rao Patro",
-    imgSrc: "/faculty-members/Mr._E_Krishna_Rao_Patro-Faculty_2_ftogpf_o5jw7i.png",
+    imgSrc:
+      "/faculty-members/Mr._E_Krishna_Rao_Patro-Faculty_2_ftogpf_o5jw7i.png",
   },
   {
     name: "Dr. Roopa Chandrika",
@@ -59,11 +61,13 @@ const facultyMembers = [
   },
   {
     name: "Mr. Prajwal Maredukonda",
-    imgSrc: "/faculty-members/Mr._Prajwal_Maredukonda-Faculty_2_mmq7ly_a3adax.png",
+    imgSrc:
+      "/faculty-members/Mr._Prajwal_Maredukonda-Faculty_2_mmq7ly_a3adax.png",
   },
   {
     name: "Mrs. Savita Ajay Kumbhare",
-    imgSrc: "/faculty-members/Mrs._Savita_Ajay_Kumbhare-Faculty_1_aublwf_svvzbq.png",
+    imgSrc:
+      "/faculty-members/Mrs._Savita_Ajay_Kumbhare-Faculty_1_aublwf_svvzbq.png",
   },
   {
     name: "Mr. Shailesh Hule",
@@ -80,6 +84,14 @@ const facultyMembers = [
   {
     name: "Mr. Rakesh Kumar",
     imgSrc: "/faculty-members/Mr._Rakesh_Kumar_cqalr2.png",
+  },
+  {
+    name: "Dr. Damodharan Palaniappan",
+    imgSrc: "/faculty-members/Dr-Damodharan_Palaniappan.jpg",
+  },
+  {
+    name: "Mr. Patel Mehulkumar Shankarlal",
+    imgSrc: "/faculty-members/Mr._Patel_Mehulkumar_Shankarlal.png",
   },
 ];
 
