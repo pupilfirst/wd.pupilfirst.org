@@ -696,6 +696,48 @@ export default function Home(props) {
               </button>
             </div>
           </div>
+          <div>
+            <div className="text-white mt-20 w-full">
+              <div className="md:w-3/5">
+                <div className="flex items-end gap-4 -ml-8">
+                  <div className="w-4 h-0.5 bg-primary-700 mb-2"></div>
+                  <h2 className="text-indigo-500 font-semibold">
+                    Successful Career
+                  </h2>
+                </div>
+              </div>
+              <div className="md:w-4/5 mt-4">
+                <img
+                  className="rounded-lg w-full "
+                  src="successful-career/Freshworks-Academy.jpg"
+                  alt="Freshwork Academy photo"
+                />
+                <p className="pt-2 md:text-lg italic">
+                  12th standard pass, non-english medium students have completed
+                  this curriculum and got placed as developers in Freshworks at
+                  5.5lacs CTC.
+                </p>
+              </div>
+              <div className="md:w-4/5 mt-6 md:mt-12 pt-6 md:pt-12 border-t border-gray-700">
+                <img
+                  className="rounded-lg w-full "
+                  src="successful-career/Shailesh-Anand.jpg"
+                  alt="Freshwork Academy photo"
+                />
+                <p className="pt-2 md:text-lg italic">
+                  GDC Students have completed this curriculum and got placed in
+                  Google at 28 lacs CTC.
+                </p>
+              </div>
+              <div className="mt-12 bg-gray-800 p-6 border border-indigo-500 rounded-lg">
+                <p className="text-xl">
+                  Irrespective of your social and economic background, Your
+                  learning efforts to complete this curriculum shall deliver a
+                  successful career.
+                </p>
+              </div>
+            </div>
+          </div>
 
           <div>
             <div className="text-white mt-20 w-full">
