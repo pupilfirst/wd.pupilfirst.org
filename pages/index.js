@@ -168,7 +168,7 @@ export default function Home(props) {
                 <div className="flex gap-4 items-start">
                   <div>
                     <a
-                      href="#"
+                      href="https://www.pupilfirst.school/courses/1802"
                       target="_blank"
                       className="inline-flex space-x-3 p-3 lg:px-6 lg:py-3.5 text-white bg-indigo-500 rounded-md text-base lg:text-lg text-center font-semibold shadow-lg hover:shadow-xl focus:ring-2 focus:ring-indigo-400 focus:ring-offset-2 transition "
                     >
@@ -391,7 +391,7 @@ export default function Home(props) {
             >
               updated dynamically
             </a>{" "}
-            based on student/faculty feedback and changes in the industry>
+            based on student/faculty feedback and changes in the industry
           </p>
 
           <div className="text-white mt-20 w-full">
@@ -404,8 +404,8 @@ export default function Home(props) {
               </div>
               <p className="mt-2">
                 This programme is designed with 4 courses such that selected
-                institutions can offer a 20 credit “Minor Degree in Advanced Web
-                Development” through their trained faculty to students.
+                institutions can offer a 18-20 credit “Minor Degree in Advanced
+                Web Development” through their trained faculty to students.
               </p>
             </div>
             <div className="flex flex-col md:flex-row space-y-2 md:space-y-0 md:space-x-2 mt-8">
@@ -545,10 +545,7 @@ export default function Home(props) {
                 <p className="text">
                   GDC batch students have completed this curriculum in
                 </p>
-                <p className="text-2xl font-semibold mt-2">
-                  12 Weeks{" "}
-                  <span className="text-base font-medium">(3 Months)</span>
-                </p>
+                <p className="text-2xl font-semibold mt-2">12 Weeks</p>
                 <svg
                   className="absolute right-1/2 md:-right-2 rotate-90 md:rotate-0 -bottom-5 md:bottom-auto md:top-1/2 transform -translate-y-1/2 md:-translate-y-1/2"
                   width="8"
@@ -652,7 +649,7 @@ export default function Home(props) {
                 </p>
                 <div className="mt-6">
                   <a
-                    href="#"
+                    href="https://www.pupilfirst.school/courses/1802"
                     target="_blank"
                     className="inline-flex space-x-3 p-3 lg:px-6 lg:py-3.5 text-white bg-indigo-500 rounded-md text-base lg:text-lg text-center font-semibold shadow-lg hover:shadow-xl focus:ring-2 focus:ring-indigo-400 focus:ring-offset-2 transition "
                   >
@@ -736,7 +733,7 @@ export default function Home(props) {
                     </h2>
                     <div>
                       <a
-                        href="#"
+                        href="https://www.pupilfirst.school/courses/1802"
                         target="_blank"
                         className="inline-flex space-x-3 p-3 lg:px-6 lg:py-3.5 text-white bg-indigo-500 rounded-md text-base lg:text-lg text-center font-semibold shadow-lg hover:shadow-xl focus:ring-2 focus:ring-indigo-400 focus:ring-offset-2 transition "
                       >
@@ -886,7 +883,7 @@ export default function Home(props) {
               Development.
             </h4>
             <a
-              href="#"
+              href="https://www.pupilfirst.school/courses/1802"
               target="_blank"
               className="inline-flex space-x-3 p-3 lg:px-6 lg:py-3.5 bg-primary-500 text-indigo-500 rounded-md text-base lg:text-lg text-center font-semibold shadow-lg hover:shadow-xl focus:ring-2 focus:ring-indigo-400 focus:ring-offset-2 transition "
             >
