@@ -42,7 +42,7 @@ const Learner = ({ name, batch, url, imgSrc }) => {
     <a
       href={url}
       target="_blank"
-      className="flex gap-4 bg-gray-800 p-4 rounded-md text-white"
+      className="flex gap-4 bg-gray-800 p-4 rounded-md text-white hover:bg-gray-700"
     >
       <div className="w-14 h-14 object-contain overflow-hidden rounded-full">
         <img src={imgSrc} alt={"Photo of" + name} />

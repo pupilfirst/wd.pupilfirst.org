@@ -5,16 +5,43 @@ let joinWordsWithHyphen = (string) => {
   return string.split(" ").join("-");
 };
 
-let headings = [
-  "Learn Web Development 101",
-  "Apply for Admission to Minor Degree",
-  "Start Learning with peers from across the country",
-  "Become a Teaching Assistant",
-  "Gain Internships through the Hiring Network",
-  "An Opportunity to Contribute to Digital Public Goods",
-  "Get a Minor Degree in Advanced Web Development",
-  "Join a growing Alumni Network",
-  "Contribute as an Industry Teaching Fellow",
+let sectionHeadings = [
+  {
+    heading: "Learn Web Development 101",
+    number: "1",
+  },
+  {
+    heading: "Apply for Admission to Minor Degree",
+    number: "2",
+  },
+  {
+    heading: "Start Learning with peers from across the country",
+    number: "3",
+  },
+  {
+    heading: "Become a Teaching Assistant",
+    number: "4",
+  },
+  {
+    heading: "Gain Internships through the Hiring Network",
+    number: "5",
+  },
+  {
+    heading: "An Opportunity to Contribute to Digital Public Goods",
+    number: "6",
+  },
+  {
+    heading:   "Become a Teaching Assistant -",
+    number: "7",
+  },
+  {
+    heading: "Join a growing Alumni Network",
+    number: "8",
+  },
+  {
+    heading: "Contribute as an Industry Teaching Fellow",
+    number: "9",
+  }, 
 ];
 
 const Step = ({ stepNumber, stepHeading, stepImgSrc, children }) => {
@@ -35,17 +62,16 @@ const Step = ({ stepNumber, stepHeading, stepImgSrc, children }) => {
   );
 };
 
-const SectionLink = ({ heading }) => {
+const SectionLink = ({ heading, number }) => {
   return (
     <div>
-      <p>
-        <a
-          className="p-2 rounded-md block text-gray-400 hover:bg-gray-700 hover:text-white"
-          href={"#" + joinWordsWithHyphen(heading)}
-        >
-          {heading}
-        </a>
-      </p>
+      <a
+        className="p-2 rounded-md flex gap-4 -ml-8 text-gray-400 hover:bg-gray-700 hover:text-white"
+        href={"#" + joinWordsWithHyphen(heading)}
+      >
+        <span className="block font-bold text-gray-600">{number}</span>
+        <span className="block ">{heading}</span>
+      </a>
     </div>
   );
 };
@@ -91,17 +117,13 @@ export default function ProvenPathwaySection() {
         <div className="block md:grid md:grid-cols-8 gap-4 mt-12">
           <div className="hidden md:block md:col-span-3">
             <div className="sticky top-0 py-8 space-y-2">
-              {headings.map((heading, index) => {
-                return <SectionLink key={index} heading={heading} />;
+              {sectionHeadings.map((section, index) => {
+                return <SectionLink key={section.number} heading={section.heading} number={section.number} />;
               })}
             </div>
           </div>
           <div className="col-span-5 rounded-xl overflow-hidden">
-            <Step
-              stepNumber="1"
-              stepHeading="Learn Web Development 101"
-              stepImgSrc="/steps-illustrations/step-1.svg"
-            >
+            <Step stepNumber="1" stepHeading="Learn Web Development 101" stepImgSrc="/steps-illustrations/step-1.svg">
               <p>Duration: 15 hours / 1 Academic Credit</p>
               <p className="mt-2">
                 Learn to write code the way professionals do and build a simple
@@ -113,10 +135,10 @@ export default function ProvenPathwaySection() {
               stepHeading="Apply for Admission to Minor Degree"
               stepImgSrc="/steps-illustrations/step-2.svg"
             >
-              <p>Duration: 300 hours/ 18-20 Academic Credits</p>
+              <p>Duration: 300 hours/ 19 Academic Credits</p>
               <p className="mt-2">
-                If you liked writing code, then Register your interest by
-                filling in a form shared by faculty.
+                Register your interest by filling in a form your faculty shall
+                share.
               </p>
             </Step>
             <Step
@@ -125,25 +147,21 @@ export default function ProvenPathwaySection() {
               stepImgSrc="/steps-illustrations/step-3.svg"
             >
               <p>
-                All eligible students who apply, will be onboarded to the WD 101
-                course as part of the Minor Degree programme.
+                From all applicants, 300 students who demonstrate learning speed
+                and impressive submissions in WD 101 shall get an Admission
+                Letter to join the Minor Degree Programme as the first batch.
               </p>
               <p className="mt-2">
-                Upon successful completion of WD 101, as many students as
-                possible will be onboarded to WD 201 on a full scholarship
-                basis. All the other students shall be on a waitlist and will be
-                onboarded either in current or upcoming batches.
+                All other students shall be on a waitlist and get admission
+                letters as soon as the first batch of students become Teaching
+                Assistants.
               </p>
             </Step>
-            <Step
-              stepNumber="4"
-              stepHeading="Become a Teaching Assistant"
-              stepImgSrc="/steps-illustrations/step-4.svg"
-            >
+            <Step stepNumber="4" stepHeading="Become a Teaching Assistant" stepImgSrc="/steps-illustrations/step-4.svg">
               <p>
-                Learners who complete WD 201 shall be onboarded as teaching
-                assistants to pass on their knowledge to other students and
-                receive a stipend &amp; certificate.
+                From all applicants, 300 students who demonstrate learning speed
+                and impressive submissions in WD 101 shall get an Admission
+                Letter to join the Minor Degree Programme as the first batch.
               </p>
               <p className="mt-2 italic">
                 Web Development 301 is being upgraded and shall be available
@@ -197,11 +215,7 @@ export default function ProvenPathwaySection() {
                 </a>
               </p>
             </Step>
-            <Step
-              stepNumber="7"
-              stepHeading="Get a Minor Degree in Advanced Web Development"
-              stepImgSrc="/steps-illustrations/step-4.svg"
-            >
+            <Step stepNumber="7" stepHeading="Become a Teaching Assistant -" stepImgSrc="/steps-illustrations/step-4.svg">
               <p>
                 Be among the pioneers who graduate from University with a
                 B.Tech/BE in X with a Minor Degree in Advanced Web Development;
