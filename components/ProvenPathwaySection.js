@@ -209,16 +209,15 @@ export default function ProvenPathwaySection() {
         </div>
         <div className="p-10 flex gap-6 flex-wrap items-center justify-between bg-gray-700 rounded-lg mt-12">
           <div>
-            <h3 className="text-primary-500 text-4xl">
-            Interested?
-            </h3>
+            <h3 className="text-primary-500 text-4xl">Interested?</h3>
             <p className="text-white ">
-            Admissions open for 10,000 Minor Degree Scholarships in Web Development.
+              Admissions open for 10,000 Minor Degree Scholarships in Web
+              Development.
             </p>
           </div>
           <div>
             <a
-              href="https://docs.google.com/document/d/e/2PACX-1vQj8aeoRfOHYlOALcUt4mWmFefHAeGtKd5eu6SQDHOaDfckGkBDFz8JrtEiLZmGX-KyFyaDMLdCDkTL/pub"
+              href="https://www.pupilfirst.school/courses/1802"
               target="_blank"
               className="inline-flex space-x-3 p-3 lg:px-6 lg:py-3.5 text-white bg-indigo-500 rounded-md text-base lg:text-lg text-center font-semibold shadow-lg hover:shadow-xl focus:ring-2 focus:ring-indigo-400 focus:ring-offset-2 transition "
             >
