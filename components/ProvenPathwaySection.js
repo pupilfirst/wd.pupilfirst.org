@@ -118,7 +118,7 @@ export default function ProvenPathwaySection() {
           <div className="hidden md:block md:col-span-3">
             <div className="sticky top-0 py-8 space-y-2">
               {sectionHeadings.map((section, index) => {
-                return <SectionLink key={index} heading={section.heading} number={section.number} />;
+                return <SectionLink key={section.number} heading={section.heading} number={section.number} />;
               })}
             </div>
           </div>

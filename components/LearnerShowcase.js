@@ -2,33 +2,48 @@ const learners = [
   {
     name: "Rithvik Nishad",
     batch: "GDC Intern",
+    url: "https://contributors.coronasafe.network/contributors/rithviknishad",
     imgSrc: "https://github.com/rithviknishad.png",
   },
   {
     name: "Shivank Kacker",
     batch: "GDC Intern",
+    url: "https://contributors.coronasafe.network/contributors/skks1212",
     imgSrc: "https://github.com/skks1212.png",
   },
   {
     name: "Gokulram A",
     batch: "GDC Intern",
+    url: "https://contributors.coronasafe.network/contributors/GokulramGHV",
     imgSrc: "https://github.com/GokulramGHV.png",
   },
   {
     name: "Aryan Patel",
     batch: "GDC Intern",
+    url: "https://contributors.coronasafe.network/contributors/patelaryan7751",
     imgSrc: "https://github.com/patelaryan7751.png",
   },
   {
     name: "Ritesh Aggarwal",
     batch: "GDC Intern",
+    url: "https://contributors.coronasafe.network/contributors/Ritesh-Aggarwal",
     imgSrc: "https://github.com/Ritesh-Aggarwal.png",
+  },
+  {
+    name: "Abhiuday Gupta",
+    batch: "GDC Intern",
+    url: "https://contributors.coronasafe.network/contributors/cp-Coder",
+    imgSrc: "https://github.com/cp-Coder.png",
   },
 ];
 
-const Learner = ({ name, batch, imgSrc }) => {
+const Learner = ({ name, batch, url, imgSrc }) => {
   return (
-    <div className="flex gap-4 bg-gray-800 p-4 rounded-md text-white">
+    <a
+      href={url}
+      target="_blank"
+      className="flex gap-4 bg-gray-800 p-4 rounded-md text-white hover:bg-gray-700"
+    >
       <div className="w-14 h-14 object-contain overflow-hidden rounded-full">
         <img src={imgSrc} alt={"Photo of" + name} />
       </div>
@@ -36,7 +51,7 @@ const Learner = ({ name, batch, imgSrc }) => {
         <p className="font-semibold">{name}</p>
         <p className="text-sm text-gray-300">{batch}</p>
       </div>
-    </div>
+    </a>
   );
 };
 
@@ -117,6 +132,7 @@ export default function LearnerShowcase() {
             <Learner
               name={learner.name}
               batch={learner.batch}
+              url={learner.url}
               imgSrc={learner.imgSrc}
             />
           ))}
