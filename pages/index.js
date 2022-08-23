@@ -662,40 +662,7 @@ export default function Home(props) {
           <div className="mt-16">
             <LearnerShowcase />
           </div>
-          <div>
-            <div className="text-white mt-20 w-full">
-              <div className="md:w-3/5">
-                <div className="flex items-end gap-4 -ml-8">
-                  <div className="w-4 h-0.5 bg-primary-700 mb-2"></div>
-                  <h2 className="text-indigo-500 font-semibold">
-                    Growing Hiring Network
-                  </h2>
-                </div>
-                <p className="mt-2">
-                  69 companies are currently participating in the hiring network
-                  which is being expanded every month.
-                </p>
-              </div>
-            </div>
-            <div className="bg-white rounded-lg p-4 mt-2 lg:mt-4">
-              <div className="grid grid-cols-2 gap-1 md:grid-cols-5">
-                {hiringNetwork.map((partner, index) =>
-                  hiringPartner(
-                    index,
-                    partner.title,
-                    partner.url,
-                    partner.logoSrc
-                  )
-                )}
-              </div>
-              <button
-                className="block mx-auto my-4 text-sm font-semibold text-secondary-600 px-3 py-2 bg-secondary-50 rounded-md"
-                onClick={() => setShowLess((prev) => !prev)}
-              >
-                {showLess ? "Show Less" : "Show more"}
-              </button>
-            </div>
-          </div>
+
           <div>
             <div className="text-white mt-20 w-full">
               <div className="md:w-3/5">
@@ -736,6 +703,40 @@ export default function Home(props) {
                   successful career.
                 </p>
               </div>
+            </div>
+          </div>
+          <div>
+            <div className="text-white mt-20 w-full">
+              <div className="md:w-3/5">
+                <div className="flex items-end gap-4 -ml-8">
+                  <div className="w-4 h-0.5 bg-primary-700 mb-2"></div>
+                  <h2 className="text-indigo-500 font-semibold">
+                    Growing Hiring Network
+                  </h2>
+                </div>
+                <p className="mt-2">
+                  69 companies are currently participating in the hiring network
+                  which is being expanded every month.
+                </p>
+              </div>
+            </div>
+            <div className="bg-white rounded-lg p-4 mt-2 lg:mt-4">
+              <div className="grid grid-cols-2 gap-1 md:grid-cols-5">
+                {hiringNetwork.map((partner, index) =>
+                  hiringPartner(
+                    index,
+                    partner.title,
+                    partner.url,
+                    partner.logoSrc
+                  )
+                )}
+              </div>
+              <button
+                className="block mx-auto my-4 text-sm font-semibold text-secondary-600 px-3 py-2 bg-secondary-50 rounded-md"
+                onClick={() => setShowLess((prev) => !prev)}
+              >
+                {showLess ? "Show Less" : "Show more"}
+              </button>
             </div>
           </div>
 
@@ -793,10 +794,9 @@ export default function Home(props) {
               <div className="flex flex-col mt-4 pb-10 lg:pb-20 ml-2 md:ml-4 lg:ml-12 xl:ml-16 2xl:ml-36">
                 <div className="max-w-4xl text-white tracking-tight pt-1 lg:text-lg ">
                   <p>
-                    Your admission to the minor degree programme is based only
-                    on a{" "}
-                    <span className="bg-gradient-to-b from-transparent via-transparent to-yellow-800">
-                      {" "}
+                    Your admission to the minor degree programme is based solely
+                    on{" "}
+                    <span className="bg-yellow-300 text-gray-900">
                       demonstration of learning interest by completing Web
                       Development 101 course
                     </span>{" "}
@@ -807,10 +807,14 @@ export default function Home(props) {
                 <div className="sm:rounded-lg mt-8 bg-white p-8">
                   <div className="flex gap-4 items-center">
                     <p className="text-lg font-semibold flex">
-                      Participating Institutions
+                      LITE Batch#02 Institutions
                     </p>
                     <div className="max-w-fullf flex-1 h-1 border-t-2 border-gray-200"></div>
                   </div>
+                  <p className="pt-2 text-gray-600">
+                    To start with, students from the following institutions are
+                    eligible to apply for minor degree scholarships.{" "}
+                  </p>
                   <div className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 place-items-center px-4 py-10 gap-12">
                     <img
                       className="h-16 object-contain"
@@ -877,17 +881,17 @@ export default function Home(props) {
                     <p>
                       If your institution is not listed,{" "}
                       <a
+                        target="_blank"
                         className="font-medium underline text-indigo-500 hover:text-indigo-700"
-                        href=""
+                        href="https://pupilfirst.typeform.com/to/emhYCQeU"
                       >
                         register your interest here
-                      </a>
-                    </p>
-                    <p className="mt-4 sm:mt-0">
-                      More institutions are in the{" "}
+                      </a>{" "}
+                      Many institutions are in the{" "}
                       <a
+                        target="_blank"
                         className="font-medium underline text-indigo-500 hover:text-indigo-700"
-                        href=""
+                        href="https://learn.pupilfirst.org/approval_status"
                       >
                         approval process
                       </a>
