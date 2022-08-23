@@ -1,33 +1,28 @@
 const learners = [
   {
-    name: "Peeyush",
-    batch: "(CEF Batch #1)",
-    imgSrc: "/people/avishek_photo.jpeg",
+    name: "Rithvik Nishad",
+    batch: "GDC Intern",
+    imgSrc: "https://github.com/rithviknishad.png",
   },
   {
-    name: "Abhinandan",
-    batch: "(CEF Batch #1)",
-    imgSrc: "/people/avishek_photo.jpeg",
+    name: "Shivank Kacker",
+    batch: "GDC Intern",
+    imgSrc: "https://github.com/skks1212.png",
   },
   {
-    name: "Peeyush",
-    batch: "(CEF Batch #1)",
-    imgSrc: "/people/avishek_photo.jpeg",
+    name: "Gokulram A",
+    batch: "GDC Intern",
+    imgSrc: "https://github.com/GokulramGHV.png",
   },
   {
-    name: "Abhinandan",
-    batch: "(CEF Batch #1)",
-    imgSrc: "/people/avishek_photo.jpeg",
+    name: "Aryan Patel",
+    batch: "GDC Intern",
+    imgSrc: "https://github.com/patelaryan7751.png",
   },
   {
-    name: "Peeyush",
-    batch: "(CEF Batch #1)",
-    imgSrc: "/people/avishek_photo.jpeg",
-  },
-  {
-    name: "Abhinandan",
-    batch: "(CEF Batch #1)",
-    imgSrc: "/people/avishek_photo.jpeg",
+    name: "Ritesh Aggarwal",
+    batch: "GDC Intern",
+    imgSrc: "https://github.com/Ritesh-Aggarwal.png",
   },
 ];
 
