@@ -12,7 +12,7 @@ let headings = [
   "Become a Teaching Assistant",
   "Gain Internships through the Hiring Network",
   "An Opportunity to Contribute to Digital Public Goods",
-  "Become a Teaching Assistant -",
+  "Get a Minor Degree in Advanced Web Development",
   "Join a growing Alumni Network",
   "Contribute as an Industry Teaching Fellow",
 ];
@@ -97,7 +97,11 @@ export default function ProvenPathwaySection() {
             </div>
           </div>
           <div className="col-span-5 rounded-xl overflow-hidden">
-            <Step stepNumber="1" stepHeading="Learn Web Development 101" stepImgSrc="/steps-illustrations/step-1.svg">
+            <Step
+              stepNumber="1"
+              stepHeading="Learn Web Development 101"
+              stepImgSrc="/steps-illustrations/step-1.svg"
+            >
               <p>Duration: 15 hours / 1 Academic Credit</p>
               <p className="mt-2">
                 Learn to write code the way professionals do and build a simple
@@ -131,7 +135,11 @@ export default function ProvenPathwaySection() {
                 onboarded either in current or upcoming batches.
               </p>
             </Step>
-            <Step stepNumber="4" stepHeading="Become a Teaching Assistant" stepImgSrc="/steps-illustrations/step-4.svg">
+            <Step
+              stepNumber="4"
+              stepHeading="Become a Teaching Assistant"
+              stepImgSrc="/steps-illustrations/step-4.svg"
+            >
               <p>
                 Learners who complete WD 201 shall be onboarded as teaching
                 assistants to pass on their knowledge to other students and
@@ -171,7 +179,11 @@ export default function ProvenPathwaySection() {
                 </a>
               </p>
             </Step>
-            <Step stepNumber="7" stepHeading="Become a Teaching Assistant -" stepImgSrc="/steps-illustrations/step-4.svg">
+            <Step
+              stepNumber="7"
+              stepHeading="Get a Minor Degree in Advanced Web Development"
+              stepImgSrc="/steps-illustrations/step-4.svg"
+            >
               <p>
                 Be among the pioneers who graduate from University with a
                 B.Tech/BE in X with a Minor Degree in Advanced Web Development;
