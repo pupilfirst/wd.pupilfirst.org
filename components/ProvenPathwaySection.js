@@ -108,10 +108,10 @@ export default function ProvenPathwaySection() {
               stepNumber="2"
               stepHeading="Apply for Admission to Minor Degree"
             >
-              <p>Duration: 300 hours/ 19 Academic Credits</p>
+              <p>Duration: 300 hours/ 18-20 Academic Credits</p>
               <p className="mt-2">
-                Register your interest by filling in a form your faculty shall
-                share.
+                If you liked writing code, then Register your interest by
+                filling in a form shared by faculty.
               </p>
             </Step>
             <Step
@@ -119,21 +119,21 @@ export default function ProvenPathwaySection() {
               stepHeading="Start Learning with peers from across the country"
             >
               <p>
-                From all applicants, 300 students who demonstrate learning speed
-                and impressive submissions in WD 101 shall get an Admission
-                Letter to join the Minor Degree Programme as the first batch.
+                All eligible students who apply, will be onboarded to the WD 101
+                course as part of the Minor Degree programme.
               </p>
               <p className="mt-2">
-                All other students shall be on a waitlist and get admission
-                letters as soon as the first batch of students become Teaching
-                Assistants.
+                Upon successful completion of WD 101, as many students as
+                possible will be onboarded to WD 201 on a full scholarship
+                basis. All the other students shall be on a waitlist and will be
+                onboarded either in current or upcoming batches.
               </p>
             </Step>
             <Step stepNumber="4" stepHeading="Become a Teaching Assistant">
               <p>
-                From all applicants, 300 students who demonstrate learning speed
-                and impressive submissions in WD 101 shall get an Admission
-                Letter to join the Minor Degree Programme as the first batch.
+                Learners who complete WD 201 shall be onboarded as teaching
+                assistants to pass on their knowledge to other students and
+                receive a stipend &amp; certificate.
               </p>
               <p className="mt-2">
                 All other students shall be on a waitlist and get admission

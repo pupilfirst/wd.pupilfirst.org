@@ -516,7 +516,7 @@ export default function Home(props) {
             <p className="mt-2">
               You shall be part of the first batch of students across 6 states
               in India to learn via Learner-Centered Classrooms under National
-              Educational Policy 2020 (NEP 2020){" "}
+              Educational Policy 2020 (NEP 2020)
             </p>
           </div>
           <img className="mt-12" src="/radical-shift.jpg" alt="" />
@@ -643,20 +643,6 @@ export default function Home(props) {
                 </div>
                 <p className="text-3xl text-white font-semibold">6 Weeks</p>
               </div>
-              <div className="mt-12">
-                <p className="text-3xl text-indigo-600 w-4/5">
-                  Fast Learners would be onboard as Teaching Assistants
-                </p>
-                <div className="mt-6">
-                  <a
-                    href="https://www.pupilfirst.school/courses/1802"
-                    target="_blank"
-                    className="inline-flex space-x-3 p-3 lg:px-6 lg:py-3.5 text-white bg-indigo-500 rounded-md text-base lg:text-lg text-center font-semibold shadow-lg hover:shadow-xl focus:ring-2 focus:ring-indigo-400 focus:ring-offset-2 transition "
-                  >
-                    Apply now
-                  </a>
-                </div>
-              </div>
             </div>
           </div>
           <div className="mt-16">
@@ -669,9 +655,14 @@ export default function Home(props) {
                 <div className="flex items-end gap-4 -ml-8">
                   <div className="w-4 h-0.5 bg-primary-700 mb-2"></div>
                   <h2 className="text-indigo-500 font-semibold">
-                    Successful Career
+                    Build a Successful Career
                   </h2>
                 </div>
+                <p className="mt-2">
+                  Irrespective of your social and economic background, Your
+                  learning efforts to complete this curriculum shall deliver a
+                  successful career.
+                </p>
               </div>
               <div className="md:w-4/5 mt-4">
                 <img
@@ -694,13 +685,6 @@ export default function Home(props) {
                 <p className="pt-2 md:text-lg italic">
                   GDC Students have completed this curriculum and got placed in
                   Google at 28 lacs CTC.
-                </p>
-              </div>
-              <div className="mt-12 bg-gray-800 p-6 border border-indigo-500 rounded-lg">
-                <p className="text-xl">
-                  Irrespective of your social and economic background, Your
-                  learning efforts to complete this curriculum shall deliver a
-                  successful career.
                 </p>
               </div>
             </div>
@@ -879,7 +863,7 @@ export default function Home(props) {
                   </div>
                   <div className="p-4 bg-gray-100 rounded-lg">
                     <p>
-                      If your institution is not listed,{" "}
+                      If your institution is not listed,
                       <a
                         target="_blank"
                         className="font-medium underline text-indigo-500 hover:text-indigo-700"
