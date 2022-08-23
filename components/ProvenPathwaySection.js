@@ -171,7 +171,22 @@ export default function ProvenPathwaySection() {
                 and contribute towards building Digital Public Goods along with
                 the title of National Software Engineering Fellow.
               </p>
-              <p className="mt-2">
+              <p className="mt-6 font-semibold">Programme Partners:</p>
+              <div className="bg-white flex space-x-8 p-4 mt-2 rounded-lg">
+                <div className="w-1/2 flex items-center justify-center">
+                  <img
+                    className="w-24"
+                    src="/programme-partners/e-gov-foun-logo.png"
+                  />
+                </div>
+                <div className="w-1/2 flex items-center justify-center">
+                  <img
+                    className="w-36"
+                    src="/programme-partners/beckn_foundation_logo.svg"
+                  />
+                </div>
+              </div>
+              <p className="mt-4">
                 <a
                   className="text-indigo-400 font-semibold"
                   target="_blank"
