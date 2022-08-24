@@ -11,7 +11,7 @@ let sectionHeadings = [
     number: "1",
   },
   {
-    heading: "Apply for Admission to Minor Degree",
+    heading: "Admission to Web Development 201",
     number: "2",
   },
   {
