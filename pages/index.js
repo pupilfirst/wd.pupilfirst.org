@@ -639,9 +639,9 @@ export default function Home(props) {
                 alt="Freshwork Academy photo"
               />
               <p className="text-white pt-2 md:text-lg italic">
-                Shailesh Anand from the Fellowship batch has completed the
-                curriculum and internship and got placed in Google at 28 lacs
-                CTC.
+                Shailesh Anand from the GDC Fellowship batch has completed the
+                curriculum as well as the internship and got placed in Google at
+                28 lacs CTC.
               </p>
             </div>
           </div>

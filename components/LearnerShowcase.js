@@ -58,8 +58,12 @@ const Learner = ({ name, batch, url, imgSrc }) => {
 
 export default function LearnerShowcase() {
   return (
-    <SectionWithHeading heading="Internship Showcase">
+    <SectionWithHeading heading="Student Internship Showcase">
       <div>
+        <p className="text-white mt-4 md:text-lg w-full md:w-4/5">
+          Click on any student below to see the live software engineering work
+          being done by GDC Interns
+        </p>
         <div className="grid gap-4 grid-cols-1 sm:grid-cols-2 md:grid-cols-3 mt-8">
           {learners.map((learner) => (
             <Learner
@@ -76,7 +80,7 @@ export default function LearnerShowcase() {
               className="flex space-x-2 items-center underline px-2 py-1 rounded-md hover:bg-gray-900 hover:text-indigo-200"
               href=""
             >
-              <span>See all learners</span>
+              <span>See All Students</span>
               <svg
                 width="24"
                 height="24"

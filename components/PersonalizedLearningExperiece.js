@@ -160,7 +160,7 @@ let FacultyMember = ({ name, imgSrc, designation, institute }) => {
 
 export default function PersonalizedLearningExperiece() {
   return (
-    <SectionWithHeading heading="Personalised Learning Experience">
+    <SectionWithHeading heading="Get Personalised Guidance">
       <p className="text-white mt-4 md:text-lg w-full md:w-4/5">
         As a beginner, we expect you to make many mistakes. Get personalised
         guidance from LITE faculty members &amp; student teaching assistants to
