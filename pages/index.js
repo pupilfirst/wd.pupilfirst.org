@@ -840,10 +840,11 @@ export default function Home(props) {
                 </li>
                 <li className="mt-4">
                   Students who are not keeping up with the course work within
-                  the set timelines shall be dropped out from the course and
-                  lose their scholarship. This scholarship seat shall be
-                  restored to the overall pool, and a new student will be
-                  admitted from the wait-list.{" "}
+                  the set timelines and if you have not submitted any work in
+                  WD201 course for a consecutive period of three weeks shall be
+                  dropped out from the course and will lose their scholarship.
+                  This scholarship seat shall be restored to the overall pool,
+                  and a new student will be admitted from the wait-list.
                 </li>
               </ul>
             </div>
@@ -863,17 +864,26 @@ export default function Home(props) {
             <div className="text-white mt-12">
               <h4>Code of Conduct</h4>
               <p>
-                Students shall adhere to the Code of Conduct and provide only
-                truthful information. Any discrepancies shall lead to withdrawal
-                of scholarship and being dropped from the course.
+                Students shall adhere to the{" "}
+                <a target="_blank" href="https://coc.pupilfirst.school/">
+                  Code of Conduct
+                </a>{" "}
+                and provide only truthful information. Any discrepancies shall
+                lead to withdrawal of scholarship and being dropped from the
+                course.
               </p>
               <h4 className="mt-6">Questions?</h4>
               <p>
-                Please refer to the Frequently Asked Questions (FAQ) document,
-                as you may find the answer if another student has asked this
-                question. If you still need help, please email to "insert email
-                id" with your name, branch, semester, college, and university
-                along with your question, and we shall get back to you.{" "}
+                Please refer to the{" "}
+                <a
+                  target="_blank"
+                  href="https://docs.google.com/document/d/e/2PACX-1vQ2Jmh0NlPAxF9BUcwTd5ICairSO88IwwzL0VOWhCDyCFQYYo6W1rvOq4YH84KH7ltSV9e8Oo80L3FJ/pub"
+                >
+                  Frequently Asked Questions (FAQ) document,
+                </a>{" "}
+                as you will find the answers to the questions most commonly
+                asked by students. . If you still need help, please get in touch
+                with your faculty, who shall reach out to us.
               </p>
             </div>
           </div>

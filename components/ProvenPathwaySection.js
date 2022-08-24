@@ -145,10 +145,11 @@ export default function ProvenPathwaySection() {
               stepHeading="Apply for Admission to Minor Degree"
               stepImgSrc="/steps-illustrations/step-2.svg"
             >
-              <p>Duration: 300 hours/ 19 Academic Credits</p>
+              <p>Duration: 300 hours/ 18-20 Academic Credits</p>
               <p className="mt-2">
-                Register your interest by filling in a form your faculty shall
-                share.
+                If you like writing code and are interested in the minor degree,
+                then you can start by applying to the WD101 course from this
+                website.
               </p>
             </Step>
             <Step
@@ -157,14 +158,14 @@ export default function ProvenPathwaySection() {
               stepImgSrc="/steps-illustrations/step-3.svg"
             >
               <p>
-                From all applicants, 300 students who demonstrate learning speed
-                and impressive submissions in WD 101 shall get an Admission
-                Letter to join the Minor Degree Programme as the first batch.
+                All eligible students, who apply, will be onboarded to the WD
+                101 course as part of the Minor Degree programme.
               </p>
               <p className="mt-2">
-                All other students shall be on a waitlist and get admission
-                letters as soon as the first batch of students become Teaching
-                Assistants.
+                Upon successful completion of WD 101, as many students as
+                possible will be onboarded to WD 201 on a full scholarship
+                basis. All the other students shall be on a waitlist and will be
+                onboarded either in current or upcoming batches.
               </p>
             </Step>
             <Step
@@ -173,9 +174,9 @@ export default function ProvenPathwaySection() {
               stepImgSrc="/steps-illustrations/step-4.svg"
             >
               <p>
-                From all applicants, 300 students who demonstrate learning speed
-                and impressive submissions in WD 101 shall get an Admission
-                Letter to join the Minor Degree Programme as the first batch.
+                Learners who complete WD 201 shall be onboarded as teaching
+                assistants to pass on their knowledge to other students and
+                receive a stipend &amp; certificate.
               </p>
               <p className="mt-2 italic">
                 Web Development 301 is being upgraded and shall be available
@@ -189,7 +190,7 @@ export default function ProvenPathwaySection() {
             >
               <p>
                 An increasing list of companies are participating to onboard
-                full stack developer interns as you finish your courses.
+                full-stack developer interns as you finish your courses.
               </p>
             </Step>
             <Step
@@ -241,7 +242,7 @@ export default function ProvenPathwaySection() {
               </p>
             </Step>
             <div
-              className="step border-t border-gray-900 p-4 md:p-6"
+              className="step border-t border-gray-900 p-4 md:p-6 bg-gray-900"
               id={joinWordsWithHyphen("Join a growing Alumni Network")}
             >
               <div className="flex gap-8 flex-col sm:flex-row">
@@ -291,7 +292,7 @@ export default function ProvenPathwaySection() {
               target="_blank"
               className="inline-flex space-x-3 p-3 lg:px-6 lg:py-3.5 text-white bg-indigo-500 rounded-md text-base lg:text-lg text-center font-semibold shadow-lg hover:shadow-xl focus:ring-2 focus:ring-indigo-400 focus:ring-offset-2 transition "
             >
-              Apply now
+              Start by applying to WD101 now
             </a>
           </div>
         </div>
