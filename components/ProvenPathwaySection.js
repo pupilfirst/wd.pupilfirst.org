@@ -150,14 +150,15 @@ export default function ProvenPathwaySection() {
             </Step>
             <Step
               stepNumber="2"
-              stepHeading="Apply for Admission to Minor Degree"
+              stepHeading="Admission to Web Development 201"
               stepImgSrc="/steps-illustrations/step-2.svg"
             >
-              <p>Duration: 300 hours/ 18-20 Academic Credits</p>
+              <p>Duration: 300 hours/ 18-20 Academic Credits.</p>
               <p className="mt-2">
-                If you like writing code and are interested in the minor degree,
-                then you can start by applying to the WD101 course from this
-                website.
+                Once you complete WD 101 course successfully, you shall be
+                admitted to Web Development 201 course with a full scholarship
+                and if you are in the wait-list, you will be on-boarded
+                subsequently.
               </p>
             </Step>
             <Step
