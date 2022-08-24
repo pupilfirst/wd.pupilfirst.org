@@ -514,13 +514,15 @@ export default function Home(props) {
             to find answers and confidently move ahead.
           </p>
 
-          <div className="md:grid flex flex-col gap-24 items-center md:items-start md:grid-cols-12 mt-8 z-10">
+          <div className="md:grid flex flex-col gap-12 md:gap-24 items-center md:items-start md:grid-cols-12 mt-8 z-10">
             <div className="col-span-6 md:pb-12">
               <div className="relative w-full gap-24 text-white px-4 md:px-12 py-8 md:py-20 bg-gray-800 rounded-2xl border-b md:border-b-0 md:border-r border-primary-600 z-10">
-                <p className="text-2xl">
+                <p className="text-lg md:text-2xl">
                   GDC batch students have completed this curriculum in
                 </p>
-                <p className="text-6xl font-semibold mt-4">12 Weeks</p>
+                <p className="text-4xl md:text-6xl font-semibold mt-4">
+                  12 Weeks
+                </p>
                 <svg
                   className="absolute right-1/2 md:-right-2 rotate-90 md:rotate-0 -bottom-5 md:bottom-auto md:top-1/2 transform -translate-y-1/2 md:-translate-y-1/2"
                   width="8"
@@ -548,7 +550,7 @@ export default function Home(props) {
                 </svg>
               </div>
             </div>
-            <div className="col-span-6 pl-12 md:pl-0 md:pt-4">
+            <div className="col-span-6 md:pt-4">
               <div>
                 <div className="flex gap-3 items-center">
                   <svg
@@ -570,7 +572,9 @@ export default function Home(props) {
                     Web Development 101:
                   </p>
                 </div>
-                <p className="text-4xl text-white font-semibold pl-5">1 Day</p>
+                <p className="text-2xl md:text-4xl text-white font-semibold pl-5">
+                  1 Day
+                </p>
               </div>
               <div>
                 <div className="flex gap-3 items-center mt-8">
@@ -590,10 +594,10 @@ export default function Home(props) {
                   </svg>
 
                   <p className="text-gray-500 text-lg font-semibold">
-                    Web Development 201::
+                    Web Development 201:
                   </p>
                 </div>
-                <p className="text-4xl text-white font-semibold pl-5">
+                <p className="text-2xl md:text-4xl text-white font-semibold pl-5">
                   6 Weeks
                 </p>
               </div>
@@ -618,7 +622,7 @@ export default function Home(props) {
                     Web Development 301:
                   </p>
                 </div>
-                <p className="text-4xl text-white font-semibold pl-5">
+                <p className="text-2xl md:text-4xl text-white font-semibold pl-5">
                   6 Weeks
                 </p>
               </div>
