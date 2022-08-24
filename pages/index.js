@@ -161,26 +161,25 @@ export default function Home(props) {
                 <p className="pr-2 pb-6 mt-8 text-xl text-white leading-relaxed font-semibold">
                   Admissions open for{" "}
                   <span className="bg-yellow-300 text-gray-900">
-                    10,000 Scholarships for <br />
-                    Minor Degree
+                    10,000 Scholarships for Minor Degree
                   </span>{" "}
                   in Advanced Web Development.
                 </p>
-                <div className="flex gap-4 items-start">
-                  <div>
-                    <a
-                      href="https://www.pupilfirst.school/courses/1802"
-                      target="_blank"
-                      className="inline-flex space-x-3 p-3 lg:px-6 lg:py-3.5 text-white bg-indigo-500 rounded-md text-base lg:text-lg text-center font-semibold shadow hover:bg-indigo-600 hover:text-indigo-100 hover:shadow-2xl focus:ring-2 focus:ring-indigo-400 focus:ring-offset-2 transition"
-                    >
-                      Start by applying to WD101 now
-                    </a>
-                  </div>
+                <div className="flex gap-4 items-start w-full md:w-auto">
+                  <a
+                    href="https://www.pupilfirst.school/courses/1802"
+                    target="_blank"
+                    className="flex justify-center w-full md:w-auto space-x-3 p-3 lg:px-6 lg:py-3.5 text-white bg-indigo-500 rounded-md text-base lg:text-lg text-center font-semibold shadow hover:bg-indigo-600 hover:text-indigo-100 hover:shadow-2xl focus:ring-2 focus:ring-indigo-400 focus:ring-offset-2 transition"
+                  >
+                    Start by applying to WD101 now
+                  </a>
+
                   <svg
                     width="56"
                     height="40"
                     viewBox="0 0 56 40"
                     fill="none"
+                    className="hidden md:block"
                     xmlns="http://www.w3.org/2000/svg"
                   >
                     <g clip-path="url(#clip0_160_5)">
@@ -225,7 +224,7 @@ export default function Home(props) {
             </div>
           </section>
           <svg
-            className="absolute right-0 top-1/4 object-center -z-10"
+            className="hidden md:block absolute right-0 top-1/4 object-center z-1"
             width="120"
             height="400"
             fill="none"
@@ -626,7 +625,7 @@ export default function Home(props) {
             </div>
           </div>
           <svg
-            className="absolute right-0 top-1/4 object-center -z-10"
+            className="hidden md:block absolute right-0 top-1/4 object-center z-1"
             width="120"
             height="400"
             fill="none"
