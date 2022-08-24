@@ -98,20 +98,6 @@ export default function Home(props) {
           content="Minor Degree in Advanced Web Development"
         />
         <meta name="The Minor Degree in Advanced Web Development Curriculum is approved by All India Council for Technical Education (AICTE) under the National Educational Alliance for Technology (NEAT) programme of the Ministry of Education, Government of India. This degree can be opted for and pursued by students who are enrolled in the Institutes selected as part of the Batch 1 of LITE programme." />
-        <script
-          async
-          src="https://www.googletagmanager.com/gtag/js?id=G-6H1NS1GQNW"
-        ></script>
-        <script
-          dangerouslySetInnerHTML={{
-            __html: `
-                window.dataLayer = window.dataLayer || [];
-                function gtag(){dataLayer.push(arguments);}
-                gtag('js', new Date());
-                gtag('config', 'G-6H1NS1GQNW');
-              `,
-          }}
-        />
       </Head>
       <main className="bg-gradient-to-br from-gray-800 to-gray-900 mx-auto">
         <section className="hero__bg-pattern bg-gray-900 relative">
@@ -752,6 +738,7 @@ export default function Home(props) {
                     </h2>
                     <div>
                       <a
+                        id="apply-button-below-video"
                         href="https://www.pupilfirst.school/courses/1802"
                         target="_blank"
                         className="inline-flex space-x-3 p-3 lg:px-6 lg:py-3.5 text-white bg-indigo-500 rounded-md text-base lg:text-lg text-center font-semibold shadow hover:bg-indigo-600 hover:text-indigo-100 hover:shadow-2xl focus:ring-2 focus:ring-indigo-400 focus:ring-offset-2 transition"

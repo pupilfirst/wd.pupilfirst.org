@@ -48,21 +48,6 @@ export default function Home() {
           content="Leadership in Teaching Excellence (LITE)"
         />
         <meta name="AICTE’s Leadership in Teaching Excellence (LITE) is a national programme to equip 50 colleges and 50 schools with leadership in teaching excellence." />
-        <script
-          async
-          src="https://www.googletagmanager.com/gtag/js?id=G-6H1NS1GQNW"
-        ></script>
-
-        <script
-          dangerouslySetInnerHTML={{
-            __html: `
-                window.dataLayer = window.dataLayer || [];
-                function gtag(){dataLayer.push(arguments);}
-                gtag('js', new Date());
-                gtag('config', 'G-6H1NS1GQNW');
-              `,
-          }}
-        />
       </Head>
       <main className="bg-primary-50 mx-auto">
         <section className="hero__bg-pattern relative">
