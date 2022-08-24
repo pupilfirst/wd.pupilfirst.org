@@ -8,7 +8,7 @@ const facultyMembers = [
     institute: "Chaitanya Bharathi Institute of Technology, Hyderabad",
   },
   {
-    name: "Mrs. S Durga Devi F",
+    name: "Mrs. S Durga Devi",
     imgSrc: "/faculty-members/Mrs._S._Durga_Devi-Faculty_1_vvoyw4_gupiyj.png",
     designation: "Assistant Professor",
     institute: "Chaitanya Bharathi Institute of Technology, Hyderabad",
