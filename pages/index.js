@@ -676,8 +676,8 @@ export default function Home(props) {
           darkBackground={true}
         >
           <p className="text-white mt-4 md:text-lg w-full md:w-4/5">
-            Since 2016, 770 students have graduated from our programmes to work
-            at leading startups and corporations.
+            Since 2016, 770 students have graduated from our courses/programmes
+            to work at leading startups and corporations.
           </p>
           <div className="bg-white rounded-lg p-4 mt-2 lg:mt-4">
             <img
