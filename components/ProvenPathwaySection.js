@@ -54,9 +54,15 @@ const Step = ({ stepNumber, stepHeading, stepImgSrc, children }) => {
         <img src={stepImgSrc} />
       </div>
       <div className="flex-1">
-        <p className="font-semibold text-gray-400">Step {stepNumber}</p>
-        <p className="font-semibold text-lg text-white">{stepHeading}</p>
-        <div className="mt-4 text-gray-200 text-sm">{children}</div>
+        <p className="font-semibold text-gray-400 text-sm uppercase tracking-wide">
+          Step {stepNumber}
+        </p>
+        <p className="font-semibold text-lg md:text-xl text-white">
+          {stepHeading}
+        </p>
+        <div className="mt-3 text-gray-300 text-sm md:text-base">
+          {children}
+        </div>
       </div>
     </div>
   );
@@ -66,10 +72,10 @@ const SectionLink = ({ heading, number }) => {
   return (
     <div>
       <a
-        className="p-2 rounded-md flex gap-4 -ml-8 text-gray-400 hover:bg-gray-700 hover:text-white"
+        className="p-2 rounded-md flex gap-4 -ml-8 text-gray-400 hover:bg-gray-700 hover:text-white transition"
         href={"#" + joinWordsWithHyphen(heading)}
       >
-        <span className="block font-bold text-gray-600">{number}</span>
+        <span className="block font-semibold">{number}</span>
         <span className="block ">{heading}</span>
       </a>
     </div>
@@ -84,12 +90,14 @@ export default function ProvenPathwaySection() {
           if (entry.isIntersecting) {
             let id = entry.target.id;
             let link = document.querySelector(`a[href="#${id}"]`);
-            link.classList.add("text-indigo-200");
+            link.classList.add("text-indigo-50");
+            link.classList.add("font-medium");
             link.classList.add("bg-indigo-900");
           } else {
             let id = entry.target.id;
             let link = document.querySelector(`a[href="#${id}"]`);
-            link.classList.remove("text-indigo-200");
+            link.classList.remove("text-indigo-50");
+            link.classList.remove("font-medium");
             link.classList.remove("bg-indigo-900");
           }
         });
@@ -241,28 +249,17 @@ export default function ProvenPathwaySection() {
                 where X = your current branch of study.
               </p>
             </Step>
-            <div
-              className="step border-t border-gray-900 p-4 md:p-6 bg-gray-900"
-              id={joinWordsWithHyphen("Join a growing Alumni Network")}
+            <Step
+              stepNumber="8"
+              stepHeading="Join a growing Alumni Network"
+              stepImgSrc="/steps-illustrations/step-8.svg"
             >
-              <div className="flex gap-8 flex-col sm:flex-row">
-                <div className="w-32 h-32 object-contain overflow-hidden ">
-                  <img src="/steps-illustrations/step-8.svg" />
-                </div>
-                <div className="flex-1">
-                  <p className="font-semibold text-gray-400">Step 8</p>
-                  <p className="font-semibold text-lg text-white">
-                    Join a growing Alumni Network
-                  </p>
-                  <div className="mt-4 text-gray-200 text-sm">
-                    <p>
-                      Graduating WD students can join over 770 alumni working in
-                      companies.
-                    </p>
-                  </div>
-                </div>
-              </div>
-            </div>
+              <p>
+                Graduating WD students can join over 770 alumni working in
+                companies.
+              </p>
+            </Step>
+
             <Step
               stepNumber="9"
               stepHeading="Contribute as an Industry Teaching Fellow"
@@ -290,7 +287,7 @@ export default function ProvenPathwaySection() {
             <a
               href="https://www.pupilfirst.school/courses/1802"
               target="_blank"
-              className="inline-flex space-x-3 p-3 lg:px-6 lg:py-3.5 text-white bg-indigo-500 rounded-md text-base lg:text-lg text-center font-semibold shadow-lg hover:shadow-xl focus:ring-2 focus:ring-indigo-400 focus:ring-offset-2 transition "
+              className="inline-flex space-x-3 p-3 lg:px-6 lg:py-3.5 text-white bg-indigo-500 rounded-md text-base lg:text-lg text-center font-semibold shadow hover:bg-indigo-600 hover:text-indigo-100 hover:shadow-2xl focus:ring-2 focus:ring-indigo-400 focus:ring-offset-2 transition"
             >
               Start by applying to WD101 now
             </a>
