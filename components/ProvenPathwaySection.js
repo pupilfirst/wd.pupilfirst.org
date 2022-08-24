@@ -286,6 +286,7 @@ export default function ProvenPathwaySection() {
           </div>
           <div>
             <a
+              id="apply-button-proven-pathway"
               href="https://www.pupilfirst.school/courses/1802"
               target="_blank"
               className="inline-flex space-x-3 p-3 lg:px-6 lg:py-3.5 text-white bg-indigo-500 rounded-md text-base lg:text-lg text-center font-semibold shadow hover:bg-indigo-600 hover:text-indigo-100 hover:shadow-2xl focus:ring-2 focus:ring-indigo-400 focus:ring-offset-2 transition"
