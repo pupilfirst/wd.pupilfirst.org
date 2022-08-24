@@ -865,7 +865,11 @@ export default function Home(props) {
               <h4>Code of Conduct</h4>
               <p>
                 Students shall adhere to the{" "}
-                <a target="_blank" href="https://coc.pupilfirst.school/">
+                <a
+                  className="text-indigo-400 underline hover:text-indigo-500"
+                  target="_blank"
+                  href="https://coc.pupilfirst.school/"
+                >
                   Code of Conduct
                 </a>{" "}
                 and provide only truthful information. Any discrepancies shall
@@ -876,13 +880,14 @@ export default function Home(props) {
               <p>
                 Please refer to the{" "}
                 <a
+                  className="text-indigo-400 underline hover:text-indigo-500"
                   target="_blank"
                   href="https://docs.google.com/document/d/e/2PACX-1vQ2Jmh0NlPAxF9BUcwTd5ICairSO88IwwzL0VOWhCDyCFQYYo6W1rvOq4YH84KH7ltSV9e8Oo80L3FJ/pub"
                 >
                   Frequently Asked Questions (FAQ) document,
                 </a>{" "}
                 as you will find the answers to the questions most commonly
-                asked by students. . If you still need help, please get in touch
+                asked by students. If you still need help, please get in touch
                 with your faculty, who shall reach out to us.
               </p>
             </div>
