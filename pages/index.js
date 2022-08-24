@@ -115,7 +115,7 @@ export default function Home(props) {
       </Head>
       <main className="bg-gradient-to-br from-gray-800 to-gray-900 mx-auto">
         <section className="hero__bg-pattern bg-gray-900 relative">
-          <div className="absolute inset-0 md:inset-x-0 md:top-8 2xl:inset-0 -z-10">
+          <div className="absolute inset-0 md:inset-x-0 md:top-8 2xl:inset-0 z-0">
             <img
               className="h-full w-full object-cover relative"
               src="hero/hero-bg.webp"
@@ -139,7 +139,7 @@ export default function Home(props) {
               />
             </div>
           </header>
-          <div className="relative pb-8 md:pb-16 px-4 xl:px-0">
+          <div className="relative pb-4 px-4 xl:px-0">
             <div className="max-w-6xl 2xl:max-w-7xl mx-auto flex gap-8 xl:gap-12 items-center">
               <div className="z-10 flex-1 flex flex-col items-center text-center md:text-left md:items-start">
                 <p className="rounded bg-gray-800 py-1 px-1 md:px-2 mt-4 font-medium text-sm text-gray-400 max-w-max">
@@ -158,14 +158,14 @@ export default function Home(props) {
                     Read source
                   </a>
                 </p>
-                <p className="pr-2 pb-6 mt-8 text-xl text-white leading-relaxed font-semibold">
+                <p className="pr-2 mt-8 text-xl text-white leading-relaxed font-semibold">
                   Admissions open for{" "}
                   <span className="bg-yellow-300 text-gray-900">
                     10,000 Scholarships for Minor Degree
                   </span>{" "}
                   in Advanced Web Development.
                 </p>
-                <div className="flex gap-4 items-start w-full md:w-auto">
+                {/* <div className="flex gap-4 items-start w-full md:w-auto">
                   <a
                     href="https://www.pupilfirst.school/courses/1802"
                     target="_blank"
@@ -200,7 +200,7 @@ export default function Home(props) {
                       </clipPath>
                     </defs>
                   </svg>
-                </div>
+                </div> */}
               </div>
               <div className="flex-1 py-12 lg:pt-0 pb-12 hidden md:block">
                 <img
@@ -211,7 +211,7 @@ export default function Home(props) {
               </div>
             </div>
           </div>
-          <section className="px-4 xl:mx-0 pb-10 md:pb-16 pt-6 md:pt-6 bg-gray-900">
+          <section className="px-4 xl:mx-0 pb-10 md:pb-16 pt-6  bg-gray-900">
             <div className="max-w-6xl 2xl:max-w-7xl mx-auto px-16 pb-16 pt-10 bg-white rounded-lg flex items-center flex-col">
               <p className="text-2xl font-bold">Scholarships supported by</p>
               <div className="w-full flex flex-wrap gap-10 items-center lg:justify-between mt-12">
@@ -255,7 +255,7 @@ export default function Home(props) {
               fill="url(#5d0dd344-b041-4d26-bec4-8d33ea57ec9b)"
             />
           </svg>
-          <div className="px-4 lg:px-0 pb-12 max-w-6xl 2xl:max-w-7xl mx-auto">
+          <div className="px-4 lg:px-0 pb-12 max-w-6xl 2xl:max-w-7xl mx-auto relative">
             <p className="text-lg font-semibold text-primary-500 pb-4">
               Watch mini video
             </p>
@@ -274,6 +274,15 @@ export default function Home(props) {
                 }}
                 title="Web Development @ Pupilfirst"
               ></iframe>
+            </div>
+            <div className="px-4 lg:px-0 py-1 max-w-6xl 2xl:max-w-7xl mx-auto text-center mt-6 md:mt-12">
+              <a
+                href="https://www.pupilfirst.school/courses/1802"
+                target="_blank"
+                className="inline-flex justify-center space-x-3 p-3 lg:px-6 lg:py-3.5 text-gray-900 bg-yellow-400 rounded-md text-base lg:text-lg text-center font-semibold shadow hover:bg-indigo-600 hover:text-indigo-100 hover:shadow-2xl focus:ring-2 focus:ring-indigo-400 focus:ring-offset-2 transition"
+              >
+                Start by applying to WD101 now
+              </a>
             </div>
           </div>
         </section>
