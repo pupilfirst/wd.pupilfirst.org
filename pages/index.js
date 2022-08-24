@@ -403,8 +403,8 @@ export default function Home(props) {
             Development” through their trained faculty to students.
           </p>
           <div className="flex flex-col md:flex-row space-y-2 md:space-y-0 md:space-x-2 mt-8">
-            <div className="w-full md:flex-1 bg-gradient-to-br from-gray-700 to-gray-900 border border-primary-400 rounded-lg shadow-md p-3 md:p-4">
-              <p className="text-primary-400 text-xl md:text-2xl font-bold">
+            <div className="w-full md:flex-1 bg-gradient-to-br from-gray-700 to-gray-900 border border-indigo-400 rounded-lg shadow-md p-3 md:p-4">
+              <p className="text-indigo-400 text-xl md:text-2xl font-bold">
                 WD 101
               </p>
               <p className="text-white leading-snug mt-1">
@@ -427,8 +427,8 @@ export default function Home(props) {
                 />
               </svg>
             </div>
-            <div className="w-full md:flex-1 bg-gradient-to-br from-gray-700 to-gray-900 border border-indigo-400 rounded-lg shadow-md p-3 md:p-4">
-              <p className="text-indigo-400 text-xl md:text-2xl font-bold">
+            <div className="w-full md:flex-1 bg-gradient-to-br from-gray-700 to-gray-900 border border-green-400 rounded-lg shadow-md p-3 md:p-4">
+              <p className="text-green-400 text-xl md:text-2xl font-bold">
                 WD 201
               </p>
               <p className="text-white leading-snug mt-1">
@@ -451,8 +451,8 @@ export default function Home(props) {
                 />
               </svg>
             </div>
-            <div className="w-full md:flex-1 bg-gradient-to-br from-gray-700 to-gray-900 border border-green-500 rounded-lg shadow-md p-3 md:p-4">
-              <p className="text-green-500 text-xl md:text-2xl font-bold">
+            <div className="w-full md:flex-1 bg-gradient-to-br from-gray-700 to-gray-900 border border-red-500 rounded-lg shadow-md p-3 md:p-4">
+              <p className="text-red-400 text-xl md:text-2xl font-bold">
                 WD 301
               </p>
               <p className="text-white leading-snug mt-1">
@@ -476,8 +476,8 @@ export default function Home(props) {
               </svg>
             </div>
 
-            <div className="w-full md:flex-1 bg-gradient-to-br from-gray-700 to-gray-900 border border-red-500 rounded-lg shadow-md p-3 md:p-4">
-              <p className="text-red-400 text-xl md:text-2xl font-bold">
+            <div className="w-full md:flex-1 bg-gradient-to-br from-gray-700 to-gray-900 border border-cyan-400 rounded-lg shadow-md p-3 md:p-4">
+              <p className="text-cyan-400 text-xl md:text-2xl font-bold">
                 WD 401
               </p>
               <p className="text-white leading-snug mt-1">
