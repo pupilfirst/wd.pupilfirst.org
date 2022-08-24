@@ -140,7 +140,7 @@ export default function Home(props) {
             </div>
           </header>
           <div className="relative pb-8 md:pb-16 px-4 xl:px-0">
-            <div className="max-w-6xl 2xl:max-w-7xl mx-auto flex gap-8 xl:gap-20 items-center">
+            <div className="max-w-6xl 2xl:max-w-7xl mx-auto flex gap-8 xl:gap-12 items-center">
               <div className="z-10 flex-1 flex flex-col items-center text-center md:text-left md:items-start">
                 <p className="rounded bg-gray-800 py-1 px-1 md:px-2 mt-4 font-medium text-sm text-gray-400 max-w-max">
                   Leadership in Teaching Excellence Programme.
@@ -158,12 +158,13 @@ export default function Home(props) {
                     Read source
                   </a>
                 </p>
-                <p className=" mx-auto pr-4 pb-6 mt-8 text-xl text-white font-semibold">
+                <p className="pr-2 pb-6 mt-8 text-xl text-white leading-relaxed font-semibold">
                   Admissions open for{" "}
                   <span className="bg-yellow-300 text-gray-900">
-                    10,000 Minor Degree Scholarships
+                    10,000 Scholarships for <br />
+                    Minor Degree
                   </span>{" "}
-                  in Web Development.
+                  in Advanced Web Development.
                 </p>
                 <div className="flex gap-4 items-start">
                   <div>
