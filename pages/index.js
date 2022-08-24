@@ -514,13 +514,13 @@ export default function Home(props) {
             to find answers and confidently move ahead.
           </p>
 
-          <div className="md:grid flex flex-col gap-12 items-center md:items-start md:grid-cols-8 mt-8">
-            <div className="col-span-3 md:pb-12">
-              <div className="relative w-64 gap-10 text-white p-4 bg-gray-700 rounded-2xl border-b md:border-b-0 md:border-r border-primary-600">
-                <p className="text">
+          <div className="md:grid flex flex-col gap-24 items-center md:items-start md:grid-cols-12 mt-8 z-10">
+            <div className="col-span-6 md:pb-12">
+              <div className="relative w-full gap-24 text-white px-4 md:px-12 py-8 md:py-20 bg-gray-800 rounded-2xl border-b md:border-b-0 md:border-r border-primary-600 z-10">
+                <p className="text-2xl">
                   GDC batch students have completed this curriculum in
                 </p>
-                <p className="text-2xl font-semibold mt-2">12 Weeks</p>
+                <p className="text-6xl font-semibold mt-4">12 Weeks</p>
                 <svg
                   className="absolute right-1/2 md:-right-2 rotate-90 md:rotate-0 -bottom-5 md:bottom-auto md:top-1/2 transform -translate-y-1/2 md:-translate-y-1/2"
                   width="8"
@@ -548,9 +548,9 @@ export default function Home(props) {
                 </svg>
               </div>
             </div>
-            <div className="col-span-5 pl-12 md:pl-0">
+            <div className="col-span-6 pl-12 md:pl-0 md:pt-4">
               <div>
-                <div className="flex gap-3 -ml-5 items-center">
+                <div className="flex gap-3 items-center">
                   <svg
                     width="8"
                     height="8"
@@ -566,14 +566,14 @@ export default function Home(props) {
                     />
                   </svg>
 
-                  <p className="text-gray-500 font-semibold">
+                  <p className="text-gray-500 text-lg font-semibold">
                     Web Development 101:
                   </p>
                 </div>
-                <p className="text-3xl text-white font-semibold">1 Day</p>
+                <p className="text-4xl text-white font-semibold pl-5">1 Day</p>
               </div>
               <div>
-                <div className="flex gap-3 -ml-5 items-center mt-8">
+                <div className="flex gap-3 items-center mt-8">
                   <svg
                     width="8"
                     height="8"
@@ -589,14 +589,16 @@ export default function Home(props) {
                     />
                   </svg>
 
-                  <p className="text-gray-500 font-semibold">
+                  <p className="text-gray-500 text-lg font-semibold">
                     Web Development 201::
                   </p>
                 </div>
-                <p className="text-3xl text-white font-semibold">6 Weeks</p>
+                <p className="text-4xl text-white font-semibold pl-5">
+                  6 Weeks
+                </p>
               </div>
               <div>
-                <div className="flex gap-3 -ml-5 items-center mt-8">
+                <div className="flex gap-3 items-center mt-8">
                   <svg
                     width="8"
                     height="8"
@@ -612,14 +614,48 @@ export default function Home(props) {
                     />
                   </svg>
 
-                  <p className="text-gray-500 font-semibold">
+                  <p className="text-gray-500 text-lg font-semibold">
                     Web Development 301:
                   </p>
                 </div>
-                <p className="text-3xl text-white font-semibold">6 Weeks</p>
+                <p className="text-4xl text-white font-semibold pl-5">
+                  6 Weeks
+                </p>
               </div>
             </div>
           </div>
+          <svg
+            className="absolute right-0 top-1/4 object-center -z-10"
+            width="120"
+            height="400"
+            fill="none"
+            viewBox="0 0 120 400"
+          >
+            <defs>
+              <pattern
+                id="5d0dd344-b041-4d26-bec4-8d33ea57ec9b"
+                x="0"
+                y="0"
+                width="20"
+                height="20"
+                patternUnits="userSpaceOnUse"
+              >
+                <rect
+                  x="0"
+                  y="0"
+                  width="4"
+                  height="4"
+                  className="text-gray-700"
+                  fill="currentColor"
+                />
+              </pattern>
+            </defs>
+            <rect
+              width="120"
+              height="400"
+              fill="url(#5d0dd344-b041-4d26-bec4-8d33ea57ec9b)"
+            />
+          </svg>
         </SectionWithHeading>
         <LearnerShowcase />
         <SectionWithHeading
