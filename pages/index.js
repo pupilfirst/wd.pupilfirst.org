@@ -6,7 +6,6 @@ import LearnerShowcase from "../components/LearnerShowcase";
 import PersonalizedLearningExperiece from "../components/PersonalizedLearningExperiece";
 import ProvenPathwaySection from "../components/ProvenPathwaySection";
 import SectionWithHeading from "../components/SectionWithHeading";
-import Testimonial from "../components/Testimonial";
 import Testimonials from "../components/Testimonials";
 import Timeline from "../components/Timeline";
 import hiringNetworkData from "./../data/hiring-network.json";
@@ -864,6 +863,7 @@ export default function Home(props) {
         </section>
 
         <Testimonials />
+
         <div className="border-t border-gray-700 py-20">
           <div className="max-w-7xl mx-auto">
             <div className="text-white p-6 rounded-lg bg-gray-700">

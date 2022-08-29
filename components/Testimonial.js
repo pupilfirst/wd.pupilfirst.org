@@ -2,9 +2,9 @@ import React from "react";
 
 export default function Testimonial({ name, batch, testimony, imageSrc }) {
   return (
-    <div className="flex flex-col items-center md:items-start md:flex-row gap-3 bg-gray-700 p-6 rounded-lg w-full md:w-5/6">
+    <div className="flex flex-col items-center md:items-start md:flex-row gap-3 bg-gray-800 p-6 rounded-lg w-full md:w-5/6">
       <img
-        className="ml-0 md:-ml-16 w-32 h-32 rounded-full object-contain border-8 border-gray-700 bg-gray-700"
+        className="ml-0 md:-ml-16 w-32 h-32 rounded-full object-contain border-8 border-gray-800 bg-gray-700"
         src={imageSrc}
         alt={"Photo of" + name}
       />
@@ -25,9 +25,9 @@ export default function Testimonial({ name, batch, testimony, imageSrc }) {
         </svg>
 
         <div className="text-white">
-          <p>{testimony}</p>
-          <p className="font-semibold mt-4">{name}</p>
-          <p className="text-sm text-gray-200">{batch}</p>
+          <p className="text-lg md:text-xl text-gray-300">{testimony}</p>
+          <p className="font-semibold mt-4 text-gray-200">{name}</p>
+          <p className="text-sm text-gray-400">{batch}</p>
         </div>
       </div>
     </div>
