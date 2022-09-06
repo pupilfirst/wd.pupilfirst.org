@@ -57,11 +57,11 @@ const P = [
 
 const ProfessionalSkill = ({ title, heading, description, id, imgSrc }) => {
   return (
-    <div className="flex flex-col items-center md:block">
+    <div className="flex flex-col items-center min-h-screen md:block">
       <div className="block md:hidden mt-20">
         <img src={imgSrc} alt={title + "" + heading} />
       </div>
-      <div className="text-white pt-8 md:pt-24" id={id}>
+      <div className="text-white pt-8 md:pt-4" id={id}>
         <p className="text-gray-400 font-semibold">{title}</p>
         <h3 className="text-4xl lg:text-5xl text-indigo-500 lg:-ml-7">
           <span className="text-primary-500">_</span>
@@ -103,7 +103,7 @@ export default function ProfessionalSkills(props) {
           }
         });
       },
-      { rootMargin: "-8px 0px -98% 0px" }
+      { rootMargin: "-8px 0px -60% 0px" }
     );
     illustrations.forEach((illustration) => {
       observer.observe(document.getElementById(illustration.id));
@@ -190,8 +190,8 @@ export default function ProfessionalSkills(props) {
                   })}
                 </div>
                 <div className="col-span-6 pt-12 lg:pt-0 text-white hidden md:block">
-                  <div className="sticky top-0">
-                    <div className="relative p-8">
+                  <div className="sticky top-[15%]">
+                    <div className="relative">
                       {illustrations.map((illustration) => {
                         return (
                           <ProfessionalSkillIllustration
@@ -212,7 +212,7 @@ export default function ProfessionalSkills(props) {
       </section>
 
       <section className="mx-auto relative">
-        <div className="bg-gray-800 p-4 lg:p-10 border-t border-gray-700">
+        <div className="bg-gray-800 p-4 lg:p-10 border-t border-gray-700 mt-8">
           <p className="max-w-5xl font-bold text-indigo-500 text-center text-xl lg:text-3xl lg:leading-tight lg:mx-auto">
             LITE - Creating a Culture of Teaching Excellence
           </p>
