@@ -78,7 +78,8 @@ export default function LearnerShowcase() {
           <p>
             <a
               className="flex space-x-2 items-center underline px-2 py-1 rounded-md hover:bg-gray-900 hover:text-indigo-200"
-              href=""
+              href="https://contributors.coronasafe.network/"
+              target="_blank"
             >
               <span>See All Students</span>
               <svg
