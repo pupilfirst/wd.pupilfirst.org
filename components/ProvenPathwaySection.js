@@ -276,7 +276,7 @@ export default function ProvenPathwaySection() {
             </Step>
           </div>
         </div>
-        <div className="p-10 flex gap-6 flex-wrap items-center justify-between bg-gray-700 rounded-lg mt-12">
+        {/* <div className="p-10 flex gap-6 flex-wrap items-center justify-between bg-gray-700 rounded-lg mt-12">
           <div>
             <h3 className="text-primary-500 text-4xl">Interested?</h3>
             <p className="text-white ">
@@ -294,7 +294,7 @@ export default function ProvenPathwaySection() {
               Start by applying to WD101 now
             </a>
           </div>
-        </div>
+        </div> */}
       </SectionWithHeading>
     </div>
   );

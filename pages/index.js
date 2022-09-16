@@ -144,11 +144,13 @@ export default function Home(props) {
                   </a>
                 </p>
                 <p className="pr-2 mt-8 text-xl text-white leading-relaxed font-semibold">
-                  Admissions open for{" "}
                   <span className="bg-yellow-300 text-gray-900">
                     10,000 Scholarships for Minor Degree
                   </span>{" "}
                   in Advanced Web Development.
+                </p>
+                <p className="text-lg text-gray-400 italic mt-8">
+                  Application closed for WD 101
                 </p>
                 {/* <div className="flex gap-4 items-start w-full md:w-auto">
                   <a
@@ -261,14 +263,17 @@ export default function Home(props) {
               ></iframe>
             </div>
             <div className="px-4 lg:px-0 py-1 max-w-6xl 2xl:max-w-7xl mx-auto text-center mt-6 md:mt-12">
-              <a
+              {/* <a
                 id="apply-button-below-video"
                 href="https://www.pupilfirst.school/courses/1802"
                 target="_blank"
                 className="inline-flex justify-center space-x-3 p-3 lg:px-6 lg:py-3.5 text-gray-900 bg-yellow-400 rounded-md text-base lg:text-lg text-center font-semibold shadow hover:bg-indigo-600 hover:text-indigo-100 hover:shadow-2xl focus:ring-2 focus:ring-indigo-400 focus:ring-offset-2 transition"
               >
                 Start by applying to WD101 now
-              </a>
+              </a> */}
+              <p className="text-lg text-gray-400 italic mt-8">
+                Application closed for WD 101
+              </p>
             </div>
           </div>
         </section>
@@ -737,14 +742,17 @@ export default function Home(props) {
                       How to apply?
                     </h2>
                     <div>
-                      <a
+                      {/* <a
                         id="apply-button-how-to-apply"
                         href="https://www.pupilfirst.school/courses/1802"
                         target="_blank"
                         className="inline-flex space-x-3 p-3 lg:px-6 lg:py-3.5 text-white bg-indigo-500 rounded-md text-base lg:text-lg text-center font-semibold shadow hover:bg-indigo-600 hover:text-indigo-100 hover:shadow-2xl focus:ring-2 focus:ring-indigo-400 focus:ring-offset-2 transition"
                       >
                         Start by applying to WD101 now
-                      </a>
+                      </a> */}
+                      <p className="text-lg text-gray-400 italic mt-8 bg-gray-800 px-3 py-2 bg-opacity-50">
+                        Application closed for WD 101
+                      </p>
                     </div>
                   </div>
                 </div>
@@ -885,7 +893,7 @@ export default function Home(props) {
                 </li>
               </ul>
             </div>
-            <div className="p-12 rounded-lg bg-indigo-500 flex flex-col items-center text-center gap-6 mt-12">
+            {/* <div className="p-12 rounded-lg bg-indigo-500 flex flex-col items-center text-center gap-6 mt-12">
               <h4 className="text-white text-xl md:text-3xl font-semibold mt-8 w-full md:w-4/5">
                 Admissions open for 10,000 Minor Degree Scholarships in Web
                 Development.
@@ -898,7 +906,7 @@ export default function Home(props) {
               >
                 Start by applying to WD101 now
               </a>
-            </div>
+            </div> */}
             <div className="text-white mt-12">
               <h4>Code of Conduct</h4>
               <p>
