@@ -61,9 +61,9 @@ export default function Home() {
                 />
               </a>
               <img
-                className="w-16 md:w-24"
-                src="logos/aicte-logo.png"
-                alt="Logo of All India Council for Technical Education (AICTE)"
+                className="w-16 p-2 bg-white rounded-full md:w-24"
+								src="logos/atal.png"
+								alt="Logo of All India Council for Technical Education (AICTE)Training And Learning"
               />
             </div>
           </header>
