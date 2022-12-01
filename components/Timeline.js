@@ -20,12 +20,12 @@ let timelineList = [
       "Deadline until which students from the waiting list will be onboarded to WD 201",
   },
   {
-    date: "03 January 2023",
+    date: "09 January 2023",
     event:
       "Deadline for students to share the first draft of WD201 capstone project",
   },
   {
-    date: "17 January 2023",
+    date: "23 January 2023",
     event: "Deadline for students to complete WD 201 course",
   },
 ];
