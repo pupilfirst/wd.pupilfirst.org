@@ -133,7 +133,7 @@ export default function Home(props) {
                 <h1 className="text-primary-500 text-3xl md:text-3xl lg:text-4xl 2xl:text-5xl py-2 font-extrabold lg:leading-tight xl:leading-tight">
                   "70 companies are a part of our network to give internship and
                   placement opportunities to students skilled in Advanced Web
-                  development.”
+                  Development.”
                 </h1>
                 <p>
                   <a
@@ -158,8 +158,7 @@ export default function Home(props) {
                     LITE Advanced Web Development.
                   </a>{" "}
                   Students from 12 Institutes have already availed scholarships
-                  and are pursuing the courses as part of minor degree. 10,000
-                  Scholarships for Minor Degree
+                  and are pursuing the courses as part of minor degree
                 </p>
                 {/* <p className="text-lg text-gray-400 italic mt-8">
                   Application closed for WD 101
@@ -401,9 +400,8 @@ export default function Home(props) {
         </SectionWithHeading>
         <SectionWithHeading heading="Beginner to advanced courses">
           <p className="text-white mt-4 md:text-lg w-full md:w-4/5">
-            This programme is designed with 4 courses such that selected
-            institutions can offer a 18-20 credit “Minor Degree in Advanced Web
-            Development” through their trained faculty to students.
+            The LITE Advanced Web Development curriculum is offered to students
+            with four courses that has weightage of 18-20 credits
           </p>
           <div className="flex flex-col md:flex-row space-y-2 md:space-y-0 md:space-x-2 mt-8">
             <div className="w-full md:flex-1 bg-gradient-to-br from-gray-700 to-gray-900 border border-indigo-400 rounded-lg shadow-md p-3 md:p-4">
@@ -973,7 +971,7 @@ export default function Home(props) {
               <ul className="list-disc ml-4">
                 <li className="mt-4">
                   Students can apply and get onboarded to the WD101 course
-                  between 30 January 2023 to 15 February 2023. We recommend that
+                  between 30 January 2023 to 10 February 2023. We recommend that
                   you submit your application earlier in order to give yourself
                   more time to complete the WD101 course.
                 </li>
@@ -985,7 +983,8 @@ export default function Home(props) {
                 <li className="mt-4">
                   Students who already availed scholarship for WD 201 in Minor
                   Degree Batch 2 2022 can avail the course on a paid basis in
-                  Batch 1 of 2023.
+                  Batch 2 of 2023. Please inform your faculty member about your
+                  interest to reapply.
                 </li>
               </ul>
             </div>
