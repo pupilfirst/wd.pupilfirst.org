@@ -135,7 +135,7 @@ export default function Home(props) {
                   placement opportunities to students skilled in Advanced Web
                   Development.”
                 </h1>
-                <p>
+                {/* <p>
                   <a
                     className="text-sm underline text-gray-100 hover:text-primary-500"
                     href="https://blogs.microsoft.com/wp-content/uploads/prod/prod/2020/06/4_The-Great-Lockdown.png"
@@ -143,7 +143,7 @@ export default function Home(props) {
                   >
                     Read source
                   </a>
-                </p>
+                </p> */}
                 <p className="pr-2 mt-8 text-lg text-white leading-relaxed font-semibold">
                   Admissions now open for the remaining{" "}
                   <span className="bg-yellow-300 text-gray-900">
@@ -163,9 +163,9 @@ export default function Home(props) {
                 {/* <p className="text-lg text-gray-400 italic mt-8">
                   Application closed for WD 101
                 </p> */}
-                {/* <div className="flex gap-4 items-start w-full md:w-auto mt-6">
+                <div className="flex gap-4 items-start w-full md:w-auto mt-6">
                   <a
-                    href="https://www.pupilfirst.school/courses/1802"
+                    href="https://docs.google.com/forms/d/e/1FAIpQLSegZMBGsoc53BiesjjxAXcLVsWSU5OLKHQ-4L8Cq5dcElojkA/viewform"
                     target="_blank"
                     className="flex justify-center w-full md:w-auto space-x-3 p-3 lg:px-6 lg:py-3.5 text-white bg-indigo-500 rounded-md text-base lg:text-lg text-center font-semibold shadow hover:bg-indigo-600 hover:text-indigo-100 hover:shadow-2xl focus:ring-2 focus:ring-indigo-400 focus:ring-offset-2 transition"
                   >
@@ -198,7 +198,7 @@ export default function Home(props) {
                       </clipPath>
                     </defs>
                   </svg>
-                </div> */}
+                </div>
               </div>
               <div className="flex-1 py-12 lg:pt-0 pb-12 hidden md:block">
                 <img
@@ -273,14 +273,14 @@ export default function Home(props) {
               ></iframe>
             </div>
             <div className="px-4 lg:px-0 py-1 max-w-6xl 2xl:max-w-7xl mx-auto text-center mt-6 md:mt-12">
-              {/* <a
+              <a
                 id="apply-button-below-video"
-                href="https://www.pupilfirst.school/courses/1802"
+                href="https://docs.google.com/forms/d/e/1FAIpQLSegZMBGsoc53BiesjjxAXcLVsWSU5OLKHQ-4L8Cq5dcElojkA/viewform"
                 target="_blank"
                 className="inline-flex justify-center space-x-3 p-3 lg:px-6 lg:py-3.5 text-gray-900 bg-yellow-400 rounded-md text-base lg:text-lg text-center font-semibold shadow hover:bg-indigo-600 hover:text-indigo-100 hover:shadow-2xl focus:ring-2 focus:ring-indigo-400 focus:ring-offset-2 transition"
               >
                 Start by applying to WD101 now
-              </a> */}
+              </a>
               {/* <p className="text-lg text-gray-400 italic mt-8">
                 Application closed for WD 101
               </p> */}
@@ -808,14 +808,14 @@ export default function Home(props) {
                       How to apply?
                     </h2>
                     <div>
-                      {/* <a
+                      <a
                         id="apply-button-how-to-apply"
-                        href="https://www.pupilfirst.school/courses/1802"
+                        href="https://docs.google.com/forms/d/e/1FAIpQLSegZMBGsoc53BiesjjxAXcLVsWSU5OLKHQ-4L8Cq5dcElojkA/viewform"
                         target="_blank"
                         className="inline-flex space-x-3 p-3 lg:px-6 lg:py-3.5 text-white bg-indigo-500 rounded-md text-base lg:text-lg text-center font-semibold shadow hover:bg-indigo-600 hover:text-indigo-100 hover:shadow-2xl focus:ring-2 focus:ring-indigo-400 focus:ring-offset-2 transition"
                       >
                         Start by applying to WD101 now
-                      </a> */}
+                      </a>
                       {/* <p className="text-lg text-gray-400 italic mt-8 bg-gray-800 px-3 py-2 bg-opacity-50">
                         Application closed for WD 101
                       </p> */}
@@ -987,20 +987,20 @@ export default function Home(props) {
                 </li>
               </ul>
             </div>
-            {/* <div className="p-12 rounded-lg bg-indigo-500 flex flex-col items-center text-center gap-6 mt-12">
+            <div className="p-12 rounded-lg bg-indigo-500 flex flex-col items-center text-center gap-6 mt-12">
               <h4 className="text-white text-xl md:text-3xl font-semibold mt-8 w-full md:w-4/5">
-                Admissions open for 10,000 Minor Degree Scholarships in Web
-                Development.
+                Admissions now open for the Minor Degree and Open Elective in
+                LITE Advanced Web Development.
               </h4>
               <a
                 id="apply-button-footer-cta"
-                href="https://www.pupilfirst.school/courses/1802"
+                href="https://docs.google.com/forms/d/e/1FAIpQLSegZMBGsoc53BiesjjxAXcLVsWSU5OLKHQ-4L8Cq5dcElojkA/viewform"
                 target="_blank"
                 className="inline-flex space-x-3 p-3 lg:px-6 lg:py-3.5 bg-primary-500 text-indigo-600 rounded-md text-base lg:text-lg text-center font-semibold shadow-lg hover:bg-primary-400 hover:text-indigo-700 hover:shadow-2xl focus:ring-2 focus:ring-indigo-400 focus:ring-offset-2 transition"
               >
                 Start by applying to WD101 now
               </a>
-            </div> */}
+            </div>
             <div className="text-white mt-12">
               <h4>Code of Conduct</h4>
               <p>
