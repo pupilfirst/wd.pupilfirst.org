@@ -153,6 +153,7 @@ export default function Home(props) {
                   <a
                     className="text-secondary-400 underline hover:text-secondary-300"
                     href="https://drive.google.com/file/d/1dFt2KwXXONdFmKXXAjPU2_xlCbVDIRBB/view"
+                    target="_blank"
                   >
                     LITE Advanced Web Development.
                   </a>{" "}
