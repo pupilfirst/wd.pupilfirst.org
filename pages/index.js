@@ -130,9 +130,10 @@ export default function Home(props) {
                 <p className="rounded bg-gray-800 py-1 px-1 md:px-2 mt-4 font-medium text-sm text-gray-400 max-w-max">
                   Leadership in Teaching Excellence Programme.
                 </p>
-                <h1 className="text-primary-500 text-3xl md:text-3xl lg:text-5xl py-2 font-extrabold lg:leading-tight xl:leading-tight">
-                  "There are 10 Crore Job Opportunities in the Global Web
-                  Development Industry”
+                <h1 className="text-primary-500 text-3xl md:text-3xl lg:text-4xl 2xl:text-5xl py-2 font-extrabold lg:leading-tight xl:leading-tight">
+                  "70 companies are a part of our network to give internship and
+                  placement opportunities to students skilled in Advanced Web
+                  development.”
                 </h1>
                 <p>
                   <a
@@ -143,16 +144,26 @@ export default function Home(props) {
                     Read source
                   </a>
                 </p>
-                <p className="pr-2 mt-8 text-xl text-white leading-relaxed font-semibold">
+                <p className="pr-2 mt-8 text-lg text-white leading-relaxed font-semibold">
+                  Admissions now open for the remaining{" "}
                   <span className="bg-yellow-300 text-gray-900">
-                    10,000 Scholarships for Minor Degree
+                    8527 Scholarships for Minor Degree and Open Elective
                   </span>{" "}
-                  in Advanced Web Development.
+                  in{" "}
+                  <a
+                    className="text-secondary-400 underline hover:text-secondary-300"
+                    href="https://drive.google.com/file/d/1dFt2KwXXONdFmKXXAjPU2_xlCbVDIRBB/view"
+                  >
+                    LITE Advanced Web Development.
+                  </a>{" "}
+                  Students from 12 Institutes have already availed scholarships
+                  and are pursuing the courses as part of minor degree. 10,000
+                  Scholarships for Minor Degree
                 </p>
-                <p className="text-lg text-gray-400 italic mt-8">
+                {/* <p className="text-lg text-gray-400 italic mt-8">
                   Application closed for WD 101
-                </p>
-                {/* <div className="flex gap-4 items-start w-full md:w-auto">
+                </p> */}
+                {/* <div className="flex gap-4 items-start w-full md:w-auto mt-6">
                   <a
                     href="https://www.pupilfirst.school/courses/1802"
                     target="_blank"
@@ -271,9 +282,9 @@ export default function Home(props) {
               >
                 Start by applying to WD101 now
               </a> */}
-              <p className="text-lg text-gray-400 italic mt-8">
+              {/* <p className="text-lg text-gray-400 italic mt-8">
                 Application closed for WD 101
-              </p>
+              </p> */}
             </div>
           </div>
         </section>
@@ -495,7 +506,7 @@ export default function Home(props) {
           darkBackground="true"
         >
           <p className="text-white mt-4 md:text-lg w-full md:w-4/5">
-            You shall be a part of a batch having students across 6 states in
+            You shall be a part of a batch having students across 7 states in
             India to learn via Learner-Centered Classrooms under National
             Educational Policy 2020 (NEP 2020)
           </p>
@@ -575,7 +586,7 @@ export default function Home(props) {
             <div className="col-span-6 md:pb-12">
               <div className="relative w-full gap-24 text-white px-4 md:px-12 py-8 md:py-20 bg-gray-800 rounded-2xl border-b md:border-b-0 md:border-r border-primary-600 z-10">
                 <p className="text-lg md:text-2xl">
-                  GDC batch students have completed this curriculum in
+                  GDC batch students have completed a WD curriculum in
                 </p>
                 <p className="text-4xl md:text-6xl font-semibold mt-4">
                   12 Weeks
@@ -745,7 +756,7 @@ export default function Home(props) {
         </SectionWithHeading>
         <SectionWithHeading heading="Growing Hiring Network">
           <p className="text-white mt-4 md:text-lg w-full md:w-4/5">
-            69 companies are currently participating in the hiring network which
+            70 companies are currently participating in the hiring network which
             is being expanded every month.
           </p>
 
@@ -807,9 +818,9 @@ export default function Home(props) {
                       >
                         Start by applying to WD101 now
                       </a> */}
-                      <p className="text-lg text-gray-400 italic mt-8 bg-gray-800 px-3 py-2 bg-opacity-50">
+                      {/* <p className="text-lg text-gray-400 italic mt-8 bg-gray-800 px-3 py-2 bg-opacity-50">
                         Application closed for WD 101
-                      </p>
+                      </p> */}
                     </div>
                   </div>
                 </div>
@@ -818,11 +829,11 @@ export default function Home(props) {
               <div className="flex flex-col mt-4 pb-10 lg:pb-20 ml-2 md:ml-4 lg:ml-12 xl:ml-16 2xl:ml-36">
                 <div className="max-w-4xl text-white tracking-tight pt-1 lg:text-lg ">
                   <p>
-                    Your admission to the minor degree programme is based solely
-                    on{" "}
+                    Your admission to the courses as a part of the minor degree
+                    or as open elective is based solely on a{" "}
                     <span className="bg-yellow-300 text-gray-900">
-                      demonstration of learning interest by completing Web
-                      Development 101 course
+                      demonstration of learning interest and by completing the
+                      Web Development 101 course
                     </span>{" "}
                     and not any prior knowledge or marks.
                   </p>
@@ -831,73 +842,98 @@ export default function Home(props) {
                 <div className="sm:rounded-lg mt-8 bg-white p-8">
                   <div className="flex gap-4 items-center">
                     <p className="text-lg font-semibold flex">
-                      LITE Batch#02 Institutions
+                      Participating Institutions
                     </p>
                     <div className="max-w-fullf flex-1 h-1 border-t-2 border-gray-200"></div>
                   </div>
                   <p className="pt-2 text-gray-600">
-                    To start with, students from the following institutions are
-                    eligible to apply for minor degree scholarships.{" "}
+                    To start with, students from the following LITE Institutions
+                    are eligible to apply.
                   </p>
                   <div className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 place-items-center px-4 py-10 gap-12">
                     <img
                       className="h-16 object-contain"
-                      src="/logos/Chaitanya_Bharathi_Institute_of_Technology_Hyderabad_ko1tbr.png"
+                      src="/logos/Chaitanya_Bharathi_Institute_of_Technology_Hyderabad.png"
+                      alt=""
+                    />
+                    <img
+                      className="h-20 object-contain"
+                      src="/logos/G_H_Raisoni_College_of_Engineering_Nagpur.png"
+                      alt=""
+                    />
+                    <img
+                      className="h-20 object-contain"
+                      src="/logos/G_Narayanamma_Institute_of_Technology_and_Science_For_Women_JNTUH_Hyderabad.png"
                       alt=""
                     />
                     <img
                       className="h-16 object-contain"
-                      src="/logos/G_H_Raisoni_College_of_Engineering_Nagpur_pydlgd.png"
+                      src="/logos/Malla_Reddy_College_of_Engineering_and_Technology_Hyderabad.png"
+                      alt=""
+                    />
+                    <img
+                      className="h-12 object-contain"
+                      src="/logos/Marwadi_University.png"
+                      alt=""
+                    />
+                    <img
+                      className="h-24 object-contain"
+                      src="/logos/Institute_of_Aeronautical_Engineering_Hyderabad.png"
+                      alt=""
+                    />
+                    <img
+                      className="h-24 object-contain"
+                      src="/logos/Pimpri_Chinchwad_College_of_Engineering_PCCoE_Pune.webp"
                       alt=""
                     />
                     <img
                       className="h-16 object-contain"
-                      src="/logos/G.Narayanamma_Institute_of_Technology_and_Science_For_Women_JNTUH_Hyderabad_mw4dpi.png"
+                      src="/logos/Vardhaman_College_of_Engineering_Shamshabad.jpg"
                       alt=""
                     />
                     <img
                       className="h-16 object-contain"
-                      src="/logos/Malla_Reddy_College_of_Engineering_and_Technology_Hyderabad_uhmeh3.png"
+                      src="/logos/University_of_Engineering_and_Management_Jaipur.png"
                       alt=""
                     />
                     <img
-                      className="h-16 object-contain"
-                      src="/logos/Marwadi University.png"
+                      className="h-28 object-contain"
+                      src="/logos/Sreyas_Institute_of_Engineering_and_Technology.png"
                       alt=""
                     />
                     <img
-                      className="h-16 object-contain"
-                      src="/logos/Institute_of_Aeronautical_Engineering_Hyderabad_yfvmpb.png"
+                      className="h-20 object-contain"
+                      src="/logos/Sankalchand_Patel_College_of_Engineering_Visnagar.png"
                       alt=""
                     />
                     <img
-                      className="h-16 object-contain"
-                      src="/logos/Pimpri_Chinchwad_College_of_Engineering_PCCoE_Pune_xsgv1f.webp"
+                      className="h-24 object-contain"
+                      src="/logos/Tula_s_Institute_Dehradun.png"
                       alt=""
                     />
                     <img
-                      className="h-16 object-contain"
-                      src="/logos/Vardhaman_College_of_Engineering_Shamshabad_rxs2mh.jpg"
+                      className="h-24 object-contain"
+                      src="/logos/ACE_Engineering_College.jpg"
                       alt=""
                     />
                     <img
-                      className="h-16 object-contain"
-                      src="/logos/University of Engineering and Management, Jaipur.png"
+                      className="h-20 object-contain"
+                      src="/logos/KIT_s_College_of_Engineering.png"
                       alt=""
                     />
                     <img
-                      className="h-16 object-contain"
-                      src="/logos/Sreyas_Institute_of_Engineering_and_Technology_lgccdo.png"
+                      className="h-20 object-contain"
+                      src="/logos/Raghu_Engineering_College.jpg"
                       alt=""
                     />
                     <img
-                      className="h-16 object-contain"
-                      src="/logos/Sankalchand_Patel_College_of_Engineering_Visnagar_bxsrst.png"
+                      className="h-24 object-contain"
+                      src="/logos/Gujarat_Vidyapith__emblem.png"
                       alt=""
                     />
                     <img
-                      className="h-16 object-contain"
-                      src="/logos/Tula_s_Institute_Dehradun_wxryss.png"
+                      className="h-24 object-contain"
+                      src="/logos/Hindusthan_College_of_Engineering_and_Technology_Coimbatore.jpg"
                       alt=""
                     />
                   </div>
@@ -936,17 +972,19 @@ export default function Home(props) {
               <ul className="list-disc ml-4">
                 <li className="mt-4">
                   Students can apply and get onboarded to the WD101 course
-                  between 24 August 2022 to 16 September 2022. We recommend that
-                  you submit your application earlier, in order to give yourself
+                  between 30 January 2023 to 15 February 2023. We recommend that
+                  you submit your application earlier in order to give yourself
                   more time to complete the WD101 course.
                 </li>
                 <li className="mt-4">
                   Students who are not keeping up with the course work within
-                  the set timelines and if you have not submitted any work in
-                  WD201 course for a consecutive period of three weeks shall be
-                  dropped out from the course and will lose their scholarship.
-                  This scholarship seat shall be restored to the overall pool,
-                  and a new student will be admitted from the wait-list.
+                  the set timelines shall be dropped out of the course and will
+                  lose their scholarship.
+                </li>
+                <li className="mt-4">
+                  Students who already availed scholarship for WD 201 in Minor
+                  Degree Batch 2 2022 can avail the course on a paid basis in
+                  Batch 1 of 2023.
                 </li>
               </ul>
             </div>

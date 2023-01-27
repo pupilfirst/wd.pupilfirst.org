@@ -2,31 +2,26 @@ import React from "react";
 
 let timelineList = [
   {
-    date: "24 August 2022",
-    event: "Application Open for LITE Minor Degree Batch 2 2022",
+    date: "30 January 2023",
+    event:
+      "Application Open for LITE Minor Degree and Open Elective Batch 1 2023",
   },
   {
-    date: "13 September 2022",
-    event: "Commencement of WD201 course for students who complete WD101",
-  },
-  {
-    date: "16 September 2022",
+    date: "10 February 2023",
     event:
       "Deadline for submission of application and completion of WD101 course",
   },
   {
-    date: "12 December 2022",
-    event:
-      "Deadline until which students from the waiting list will be onboarded to WD 201",
+    date: "15 February 2023",
+    event: "Commencement of WD201 course for students who complete WD101",
   },
   {
-    date: "09 January 2023",
-    event:
-      "Deadline for students to share the first draft of WD201 capstone project",
-  },
-  {
-    date: "23 January 2023",
+    date: "26 April 2023",
     event: "Deadline for students to complete WD 201 course",
+  },
+  {
+    date: "17 May 2023",
+    event: "Deadline for students to submit the WD201 final capstone project",
   },
 ];
 

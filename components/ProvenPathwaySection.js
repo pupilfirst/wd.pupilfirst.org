@@ -156,9 +156,8 @@ export default function ProvenPathwaySection() {
               <p>Duration: 300 hours/ 18-20 Academic Credits.</p>
               <p className="mt-2">
                 Once you complete WD 101 course successfully, you shall be
-                admitted to Web Development 201 course with a full scholarship
-                and if you are in the wait-list, you will be on-boarded
-                subsequently.
+                admitted to Web Development 201 course with a full scholarship.
+                <span className="italic">(first come, first served basis)</span>
               </p>
             </Step>
             <Step
@@ -168,13 +167,13 @@ export default function ProvenPathwaySection() {
             >
               <p>
                 All eligible students, who apply, will be onboarded to the WD
-                101 course as part of the Minor Degree programme.
+                101 course as part of the Minor Degree or as an Open Elective,
+                based on the Institute approval.
               </p>
               <p className="mt-2">
-                Upon successful completion of WD 101, as many students as
-                possible will be onboarded to WD 201 on a full scholarship
-                basis. All the other students shall be on a waitlist and will be
-                onboarded either in current or upcoming batches.
+                Upon successful completion of WD 101, students will be onboarded
+                to WD 201 on a full scholarship basis. (until the available
+                scholarships gets exhausted)
               </p>
             </Step>
             <Step
@@ -247,7 +246,9 @@ export default function ProvenPathwaySection() {
               <p>
                 Be among the pioneers who graduate from University with a
                 B.Tech/BE in X with a Minor Degree in Advanced Web Development;
-                where X = your current branch of study.
+                where X = your current branch of study. If you have opted as
+                Open Electives, this will contribute towards your graduating
+                degree.
               </p>
             </Step>
             <Step

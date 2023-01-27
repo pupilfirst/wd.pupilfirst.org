@@ -139,6 +139,49 @@ const facultyMembers = [
     designation: "Assistant Professor",
     institute: "Sankalchand Patel College of Engineering, Visnagar",
   },
+  {
+    name: "Mr. Sameer B.Patil",
+    imgSrc: "/faculty-members/Mr.Sameer_B.Patil.jpg",
+    designation: "Assistant Professor",
+    institute: "KIT's College of Engineering, Kolhapur",
+  },
+  {
+    name: "Dr. Bhavani Sankar Panda",
+    imgSrc: "/faculty-members/Dr._Bhavani_Sankar_Panda.jpg",
+    designation: "Professor",
+    institute: "Raghu Engineering College, Visakhapatnam",
+  },
+  {
+    name: "Dr. Meena Bhagavathula",
+    imgSrc: "/faculty-members/Dr._Meena_Bhagavathula.jpg",
+    designation: "Assistant Professor",
+    institute: "Raghu Engineering College, Visakhapatnam",
+  },
+  {
+    name: "Dr. Kamble Shiva Kumar",
+    imgSrc: "/faculty-members/LITE-avatar.svg",
+    designation: "Assistant Professor",
+    institute: "ACE Engineering College, Hyderabad",
+  },
+  {
+    name: "Prof. Gyara Monika",
+    imgSrc: "/faculty-members/LITE-avatar.svg",
+    designation: "Assistant Professor",
+    institute: "ACE Engineering College, Hyderabad",
+  },
+  {
+    name: "Prof. P. Anitha",
+    imgSrc: "/faculty-members/Prof._P._Anitha_p.jpg",
+    designation: "Assistant Professor",
+    institute: "Hindusthan College of Engineering and Technology, Coimbatore",
+  },
+  {
+    name: "Prof. Ruchita Shah",
+    imgSrc: "/faculty-members/Prof._Ruchita_D._Shah.jpg",
+    designation: "Assistant Professor",
+    institute:
+      "Department Of Computer Science Faculty Of Management And Technology Gujarat Vidyapith Ahmedabad",
+  },
 ];
 
 let FacultyMember = ({ name, imgSrc, designation, institute }) => {
