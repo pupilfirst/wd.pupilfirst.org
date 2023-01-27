@@ -158,7 +158,7 @@ export default function Home(props) {
                     LITE Advanced Web Development.
                   </a>{" "}
                   Students from 12 Institutes have already availed scholarships
-                  and are pursuing the courses as part of minor degree
+                  and are pursuing the courses as part of minor degree.
                 </p>
                 {/* <p className="text-lg text-gray-400 italic mt-8">
                   Application closed for WD 101
@@ -259,9 +259,8 @@ export default function Home(props) {
             </p>
             <div style={{ padding: "52.73% 0 0 0", position: "relative" }}>
               <iframe
-                className="rounded-3xl shadow-2xl border-2 border-gray-900"
+                className="rounded-xl shadow-2xl border-2 border-gray-900"
                 src="https://player.vimeo.com/video/733554719?h=c8851152f3&amp;badge=0&amp;autopause=0&amp;player_id=0&amp;app_id=58479"
-                frameBorder="0"
                 allow="autoplay; fullscreen; picture-in-picture"
                 style={{
                   position: "absolute",
