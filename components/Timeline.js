@@ -2,14 +2,22 @@ import React from "react";
 
 let timelineList = [
   {
-    date: "30 January 2023",
+    date: "27 January 2023",
     event:
       "Application Open for LITE Minor Degree and Open Elective Batch 1 2023",
   },
   {
+    date: "From 30 January 2023 onwards",
+    event: "Student onboarding for Batch 1 2023",
+  },
+  {
     date: "10 February 2023",
+    event: "Deadline for submission of application for B01Y23",
+  },
+  {
+    date: "15 February 2023",
     event:
-      "Deadline for submission of application and completion of WD101 course",
+      "Deadline for students to complete WD 101 course to get onboarded for WD 201 course",
   },
   {
     date: "15 February 2023",
