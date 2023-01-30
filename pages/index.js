@@ -255,7 +255,7 @@ export default function Home(props) {
           </svg>
           <div className="px-4 lg:px-0 pb-12 max-w-6xl 2xl:max-w-7xl mx-auto relative">
             <p className="text-lg font-semibold text-primary-500 pb-4">
-              Watch video
+              Watch video to see the new teaching-learning experience
             </p>
             <div style={{ padding: "56.25% 0 0 0", position: "relative" }}>
               <iframe
