@@ -255,12 +255,12 @@ export default function Home(props) {
           </svg>
           <div className="px-4 lg:px-0 pb-12 max-w-6xl 2xl:max-w-7xl mx-auto relative">
             <p className="text-lg font-semibold text-primary-500 pb-4">
-              Watch mini video
+              Watch video
             </p>
-            <div style={{ padding: "52.73% 0 0 0", position: "relative" }}>
+            <div style={{ padding: "56.25% 0 0 0", position: "relative" }}>
               <iframe
                 className="rounded-xl shadow-2xl border-2 border-gray-900"
-                src="https://player.vimeo.com/video/733554719?h=c8851152f3&amp;badge=0&amp;autopause=0&amp;player_id=0&amp;app_id=58479"
+                src="https://player.vimeo.com/video/793992206?h=72be05d25d&amp;badge=0&amp;autopause=0&amp;player_id=0&amp;app_id=58479"
                 allow="autoplay; fullscreen; picture-in-picture"
                 style={{
                   position: "absolute",
@@ -269,7 +269,7 @@ export default function Home(props) {
                   width: "100%",
                   height: "100%",
                 }}
-                title="Web Development @ Pupilfirst"
+                title="Pupilfirst Teaching Learning Cycle"
               ></iframe>
             </div>
             <div className="px-4 lg:px-0 py-1 max-w-6xl 2xl:max-w-7xl mx-auto text-center mt-6 md:mt-12">
