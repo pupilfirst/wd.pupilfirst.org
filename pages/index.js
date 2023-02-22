@@ -157,8 +157,8 @@ export default function Home(props) {
                   >
                     LITE Advanced Web Development.
                   </a>{" "}
-                  Students from 13 Institutes have already availed scholarships
-                  and are pursuing the courses as part of minor degree.
+                  Students from 13 Institutes have already availed of
+                  scholarships in previous batches.
                 </p>
                 {/* <p className="text-lg text-gray-400 italic mt-8">
                   Application Opens on 23<sup>rd</sup> February 2023
