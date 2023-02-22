@@ -186,10 +186,6 @@ export default function ProvenPathwaySection() {
                 assistants to pass on their knowledge to other students and
                 receive a stipend &amp; certificate.
               </p>
-              <p className="mt-2 italic">
-                Web Development 301 is being upgraded and shall be available
-                from Jan 2023 onwards.
-              </p>
             </Step>
             <Step
               stepNumber="5"
