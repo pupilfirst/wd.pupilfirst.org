@@ -858,87 +858,120 @@ export default function Home(props) {
                     <img
                       className="h-16 object-contain"
                       src="/logos/Chaitanya_Bharathi_Institute_of_Technology_Hyderabad.png"
-                      alt=""
+                      alt="Logo of Chaitanya Bharathi Institute of Technology Hyderabad"
+                      title="Chaitanya Bharathi Institute of Technology Hyderabad"
                     />
                     <img
                       className="h-20 object-contain"
                       src="/logos/G_H_Raisoni_College_of_Engineering_Nagpur.png"
-                      alt=""
+                      alt="Logo of G H Raisoni College of Engineering Nagpur"
+                      title="G H Raisoni College of Engineering Nagpur"
                     />
                     <img
                       className="h-20 object-contain"
                       src="/logos/G_Narayanamma_Institute_of_Technology_and_Science_For_Women_JNTUH_Hyderabad.png"
-                      alt=""
+                      alt="Logo of G Narayanamma Institute of Technology and Science For Women JNTUH Hyderabad"
+                      title="G Narayanamma Institute of Technology and Science For Women JNTUH Hyderabad"
                     />
                     <img
                       className="h-16 object-contain"
                       src="/logos/Malla_Reddy_College_of_Engineering_and_Technology_Hyderabad.png"
-                      alt=""
+                      alt="Logo of Malla Reddy College of Engineering and Technology Hyderabad"
+                      title="Malla Reddy College of Engineering and Technology Hyderabad"
                     />
                     <img
                       className="h-12 object-contain"
                       src="/logos/Marwadi_University.png"
-                      alt=""
+                      alt="Logo of Marwadi University"
+                      title="Marwadi University"
                     />
                     <img
                       className="h-24 object-contain"
                       src="/logos/Institute_of_Aeronautical_Engineering_Hyderabad.png"
-                      alt=""
+                      alt="Logo of Institute of Aeronautical Engineering Hyderabad"
+                      title="Institute of Aeronautical Engineering Hyderabad"
                     />
                     <img
                       className="h-24 object-contain"
                       src="/logos/Pimpri_Chinchwad_College_of_Engineering_PCCoE_Pune.webp"
-                      alt=""
+                      alt="Logo of Pimpri Chinchwad College of Engineering PCCoE Pune"
+                      title="Pimpri Chinchwad College of Engineering PCCoE Pune"
                     />
                     <img
                       className="h-16 object-contain"
                       src="/logos/Vardhaman_College_of_Engineering_Shamshabad.jpg"
-                      alt=""
+                      alt="Logo of Vardhaman College of Engineering Shamshabad"
+                      title="Vardhaman College of Engineering Shamshabad"
                     />
                     <img
                       className="h-16 object-contain"
                       src="/logos/University_of_Engineering_and_Management_Jaipur.png"
-                      alt=""
+                      alt="Logo of University of Engineering and Management Jaipur"
+                      title="University of Engineering and Management Jaipur"
                     />
                     <img
                       className="h-28 object-contain"
                       src="/logos/Sreyas_Institute_of_Engineering_and_Technology.png"
-                      alt=""
+                      alt="Logo of Sreyas Institute of Engineering and Technology"
+                      title="Sreyas Institute of Engineering and Technology"
                     />
                     <img
                       className="h-20 object-contain"
                       src="/logos/Sankalchand_Patel_College_of_Engineering_Visnagar.png"
-                      alt=""
+                      alt="Logo of Sankalchand Patel College of Engineering Visnagar"
+                      title="Sankalchand Patel College of Engineering Visnagar"
                     />
                     <img
                       className="h-24 object-contain"
                       src="/logos/Tula_s_Institute_Dehradun.png"
-                      alt=""
+                      alt="Logo of Tula's Institute Dehradun"
+                      title="Tula's Institute Dehradun"
                     />
                     <img
                       className="h-24 object-contain"
                       src="/logos/ACE_Engineering_College.jpg"
-                      alt=""
+                      alt="Logo of ACE Engineering College"
+                      title="ACE Engineering College"
                     />
                     <img
                       className="h-20 object-contain"
                       src="/logos/KIT_s_College_of_Engineering.png"
-                      alt=""
+                      alt="Logo of KIT's College of Engineering"
+                      title="KIT's College of Engineering"
                     />
                     <img
                       className="h-20 object-contain"
                       src="/logos/Raghu_Engineering_College.jpg"
-                      alt=""
+                      alt="Logo of Engineering College"
+                      title="Raghu Engineering College"
                     />
                     <img
                       className="h-24 object-contain"
                       src="/logos/Gujarat_Vidyapith__emblem.png"
-                      alt=""
+                      alt="Emblem of Gujarat Vidyapith"
+                      title="Gujarat Vidyapith"
                     />
                     <img
                       className="h-24 object-contain"
                       src="/logos/Hindusthan_College_of_Engineering_and_Technology_Coimbatore.jpg"
-                      alt=""
+                      alt="Logo of Hindusthan College of Engineering and Technology, Coimbatore"
+                      title="Hindusthan College of Engineering and Technology, Coimbatore"
+                    />
+                    <img
+                      className="h-24 object-contain"
+                      src="/logos/BATU_logo.png"
+                      alt="Dr. Babasaheb Ambedkar Technological University, Lonere"
+                    />
+                    <img
+                      className="h-24 object-contain"
+                      src="/logos/JIS_School_Of_Polytechnic.jpg"
+                      alt="JIS School Of Polytechnic, Kalyani"
+                    />
+                    <img
+                      className="h-24 object-contain"
+                      src="/logos/Goa_College_of_Engineering_logo.png"
+                      alt="Goa College of Engineering, Ponda, Goa"
+                      title="Goa College of Engineering, Ponda, Goa"
                     />
                   </div>
                   <div className="p-4 bg-gray-100 rounded-lg">
