@@ -229,8 +229,9 @@ export default function PersonalizedLearningExperiece() {
       </p>
 
       <div className="grid grid-cols-2 md:grid-cols-4 lg:grid-cols-5 gap-x-5 gap-y-10 py-16">
-        {facultyMembers.map((facultyMember) => (
+        {facultyMembers.map((facultyMember, index) => (
           <FacultyMember
+            key={index}
             name={facultyMember.name}
             imgSrc={facultyMember.imgSrc}
             designation={facultyMember.designation}

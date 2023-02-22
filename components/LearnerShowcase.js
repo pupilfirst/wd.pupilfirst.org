@@ -65,8 +65,9 @@ export default function LearnerShowcase() {
           being done by GDC Interns
         </p>
         <div className="grid gap-4 grid-cols-1 sm:grid-cols-2 md:grid-cols-3 mt-8">
-          {learners.map((learner) => (
+          {learners.map((learner, index) => (
             <Learner
+              key={index}
               name={learner.name}
               batch={learner.batch}
               url={learner.url}
@@ -92,16 +93,16 @@ export default function LearnerShowcase() {
                 <path
                   d="M12 22C17.5228 22 22 17.5228 22 12C22 6.47715 17.5228 2 12 2C6.47715 2 2 6.47715 2 12C2 17.5228 6.47715 22 12 22Z"
                   stroke="white"
-                  stroke-width="2"
-                  stroke-linecap="round"
-                  stroke-linejoin="round"
+                  strokeWidth="1"
+                  strokeLinecap="round"
+                  strokeLinejoin="round"
                 />
                 <path
                   d="M12 16L16 12L12 8M8 12H16"
                   stroke="white"
-                  stroke-width="2"
-                  stroke-linecap="round"
-                  stroke-linejoin="round"
+                  strokeWidth="1"
+                  strokeLinecap="round"
+                  strokeLinejoin="round"
                 />
               </svg>
             </a>
