@@ -182,6 +182,24 @@ const facultyMembers = [
     institute:
       "Department Of Computer Science Faculty Of Management And Technology Gujarat Vidyapith Ahmedabad",
   },
+  {
+    name: "Dr. Sanjay Nalbalwar",
+    imgSrc: "/faculty-members/Dr._SL_Nalbalwar.jpg",
+    designation: "Professor & Head (E&TE)",
+    institute: "Dr. Babasaheb Ambedkar Technological University, Lonere",
+  },
+  {
+    name: "Prof. Ria Bandyopadhyay",
+    imgSrc: "/faculty-members/LITE-avatar.svg",
+    designation: "HOD (CST)",
+    institute: "JIS School Of Polytechnic, Kalyani",
+  },
+  {
+    name: "Dr. Nilesh B. Fal Dessai",
+    imgSrc: "/faculty-members/Dr._Nilesh_B._Fal_Dessai.png",
+    designation: "Associate Professor and HOD",
+    institute: "Goa College of Engineering, Ponda, Goa",
+  },
 ];
 
 let FacultyMember = ({ name, imgSrc, designation, institute }) => {

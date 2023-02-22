@@ -3,7 +3,7 @@
 import Head from "next/head";
 import React, { useState } from "react";
 import LearnerShowcase from "../components/LearnerShowcase";
-import PersonalizedLearningExperiece from "../components/PersonalizedLearningExperiece";
+import PersonalizedLearningExperiece from "../components/PersonalizedLearningExperience";
 import ProvenPathwaySection from "../components/ProvenPathwaySection";
 import SectionWithHeading from "../components/SectionWithHeading";
 import Testimonials from "../components/Testimonials";
