@@ -182,6 +182,24 @@ const facultyMembers = [
     institute:
       "Department Of Computer Science Faculty Of Management And Technology Gujarat Vidyapith Ahmedabad",
   },
+  {
+    name: "Dr. Sanjay Nalbalwar",
+    imgSrc: "/faculty-members/Dr._SL_Nalbalwar.jpg",
+    designation: "Professor & Head (E&TE)",
+    institute: "Dr. Babasaheb Ambedkar Technological University, Lonere",
+  },
+  {
+    name: "Prof. Ria Bandyopadhyay",
+    imgSrc: "/faculty-members/LITE-avatar.svg",
+    designation: "HOD (CST)",
+    institute: "JIS School Of Polytechnic, Kalyani",
+  },
+  {
+    name: "Dr. Nilesh B. Fal Dessai",
+    imgSrc: "/faculty-members/Dr._Nilesh_B._Fal_Dessai.png",
+    designation: "Associate Professor and HOD",
+    institute: "Goa College of Engineering, Ponda, Goa",
+  },
 ];
 
 let FacultyMember = ({ name, imgSrc, designation, institute }) => {
@@ -211,8 +229,9 @@ export default function PersonalizedLearningExperiece() {
       </p>
 
       <div className="grid grid-cols-2 md:grid-cols-4 lg:grid-cols-5 gap-x-5 gap-y-10 py-16">
-        {facultyMembers.map((facultyMember) => (
+        {facultyMembers.map((facultyMember, index) => (
           <FacultyMember
+            key={index}
             name={facultyMember.name}
             imgSrc={facultyMember.imgSrc}
             designation={facultyMember.designation}

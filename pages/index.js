@@ -3,7 +3,7 @@
 import Head from "next/head";
 import React, { useState } from "react";
 import LearnerShowcase from "../components/LearnerShowcase";
-import PersonalizedLearningExperiece from "../components/PersonalizedLearningExperiece";
+import PersonalizedLearningExperiece from "../components/PersonalizedLearningExperience";
 import ProvenPathwaySection from "../components/ProvenPathwaySection";
 import SectionWithHeading from "../components/SectionWithHeading";
 import Testimonials from "../components/Testimonials";
@@ -180,7 +180,7 @@ export default function Home(props) {
                     className="hidden md:block"
                     xmlns="http://www.w3.org/2000/svg"
                   >
-                    <g clip-path="url(#clip0_160_5)">
+                    <g clipPath="url(#clip0_160_5)">
                       <path
                         d="M54.9404 1.94461C55.1491 1.43327 54.9038 0.849574 54.3924 0.640897C53.8811 0.43222 53.2974 0.677579 53.0887 1.18892L54.9404 1.94461ZM53.0887 1.18892C50.0573 8.61712 45.8369 17.8705 38.0922 24.2444C30.4149 30.5627 19.1337 34.1583 1.71876 29.9693L1.25102 31.9139C19.1769 36.2258 31.1274 32.5666 39.3631 25.7886C47.5314 19.0662 51.9054 9.38168 54.9404 1.94461L53.0887 1.18892Z"
                         fill="white"
@@ -546,10 +546,7 @@ export default function Home(props) {
             </div>
           </div>
           <div className="mt-2 shadow-2xl rounded-xl">
-            <div
-              rounded-xl
-              style={{ padding: "42.58% 0 0 0", position: "relative" }}
-            >
+            <div style={{ padding: "42.58% 0 0 0", position: "relative" }}>
               <iframe
                 className="rounded-xl"
                 src="https://player.vimeo.com/video/760206777?h=0b708633d6&amp;badge=0&amp;autopause=0&amp;player_id=0&amp;app_id=58479"
@@ -597,7 +594,7 @@ export default function Home(props) {
                   fill="none"
                   xmlns="http://www.w3.org/2000/svg"
                 >
-                  <g clip-path="url(#clip0_247_6)">
+                  <g clipPath="url(#clip0_247_6)">
                     <rect
                       x="-8.48535"
                       y="8.48535"
@@ -627,8 +624,8 @@ export default function Home(props) {
                     xmlns="http://www.w3.org/2000/svg"
                   >
                     <path
-                      fill-rule="evenodd"
-                      clip-rule="evenodd"
+                      fillRule="evenodd"
+                      clipRule="evenodd"
                       d="M2.25008 0.5L6.75008 0.499999C7.02622 0.499999 7.25008 0.723857 7.25008 0.999999L7.25008 5.5C7.25008 5.77614 7.02622 6 6.75008 6C6.47393 6 6.25008 5.77614 6.25008 5.5L6.25008 2.20711L1.10363 7.35355C0.908367 7.54882 0.591784 7.54882 0.396522 7.35355C0.20126 7.15829 0.20126 6.84171 0.396522 6.64645L5.54297 1.5L2.25008 1.5C1.97393 1.5 1.75008 1.27614 1.75008 1C1.75008 0.723857 1.97393 0.5 2.25008 0.5Z"
                       fill="#FFD761"
                     />
@@ -652,8 +649,8 @@ export default function Home(props) {
                     xmlns="http://www.w3.org/2000/svg"
                   >
                     <path
-                      fill-rule="evenodd"
-                      clip-rule="evenodd"
+                      fillRule="evenodd"
+                      clipRule="evenodd"
                       d="M2.25008 0.5L6.75008 0.499999C7.02622 0.499999 7.25008 0.723857 7.25008 0.999999L7.25008 5.5C7.25008 5.77614 7.02622 6 6.75008 6C6.47393 6 6.25008 5.77614 6.25008 5.5L6.25008 2.20711L1.10363 7.35355C0.908367 7.54882 0.591784 7.54882 0.396522 7.35355C0.20126 7.15829 0.20126 6.84171 0.396522 6.64645L5.54297 1.5L2.25008 1.5C1.97393 1.5 1.75008 1.27614 1.75008 1C1.75008 0.723857 1.97393 0.5 2.25008 0.5Z"
                       fill="#FFD761"
                     />
@@ -677,8 +674,8 @@ export default function Home(props) {
                     xmlns="http://www.w3.org/2000/svg"
                   >
                     <path
-                      fill-rule="evenodd"
-                      clip-rule="evenodd"
+                      fillRule="evenodd"
+                      clipRule="evenodd"
                       d="M2.25008 0.5L6.75008 0.499999C7.02622 0.499999 7.25008 0.723857 7.25008 0.999999L7.25008 5.5C7.25008 5.77614 7.02622 6 6.75008 6C6.47393 6 6.25008 5.77614 6.25008 5.5L6.25008 2.20711L1.10363 7.35355C0.908367 7.54882 0.591784 7.54882 0.396522 7.35355C0.20126 7.15829 0.20126 6.84171 0.396522 6.64645L5.54297 1.5L2.25008 1.5C1.97393 1.5 1.75008 1.27614 1.75008 1C1.75008 0.723857 1.97393 0.5 2.25008 0.5Z"
                       fill="#FFD761"
                     />
@@ -858,87 +855,120 @@ export default function Home(props) {
                     <img
                       className="h-16 object-contain"
                       src="/logos/Chaitanya_Bharathi_Institute_of_Technology_Hyderabad.png"
-                      alt=""
+                      alt="Logo of Chaitanya Bharathi Institute of Technology Hyderabad"
+                      title="Chaitanya Bharathi Institute of Technology Hyderabad"
                     />
                     <img
                       className="h-20 object-contain"
                       src="/logos/G_H_Raisoni_College_of_Engineering_Nagpur.png"
-                      alt=""
+                      alt="Logo of G H Raisoni College of Engineering Nagpur"
+                      title="G H Raisoni College of Engineering Nagpur"
                     />
                     <img
                       className="h-20 object-contain"
                       src="/logos/G_Narayanamma_Institute_of_Technology_and_Science_For_Women_JNTUH_Hyderabad.png"
-                      alt=""
+                      alt="Logo of G Narayanamma Institute of Technology and Science For Women JNTUH Hyderabad"
+                      title="G Narayanamma Institute of Technology and Science For Women JNTUH Hyderabad"
                     />
                     <img
                       className="h-16 object-contain"
                       src="/logos/Malla_Reddy_College_of_Engineering_and_Technology_Hyderabad.png"
-                      alt=""
+                      alt="Logo of Malla Reddy College of Engineering and Technology Hyderabad"
+                      title="Malla Reddy College of Engineering and Technology Hyderabad"
                     />
                     <img
                       className="h-12 object-contain"
                       src="/logos/Marwadi_University.png"
-                      alt=""
+                      alt="Logo of Marwadi University"
+                      title="Marwadi University"
                     />
                     <img
                       className="h-24 object-contain"
                       src="/logos/Institute_of_Aeronautical_Engineering_Hyderabad.png"
-                      alt=""
+                      alt="Logo of Institute of Aeronautical Engineering Hyderabad"
+                      title="Institute of Aeronautical Engineering Hyderabad"
                     />
                     <img
                       className="h-24 object-contain"
                       src="/logos/Pimpri_Chinchwad_College_of_Engineering_PCCoE_Pune.webp"
-                      alt=""
+                      alt="Logo of Pimpri Chinchwad College of Engineering PCCoE Pune"
+                      title="Pimpri Chinchwad College of Engineering PCCoE Pune"
                     />
                     <img
                       className="h-16 object-contain"
                       src="/logos/Vardhaman_College_of_Engineering_Shamshabad.jpg"
-                      alt=""
+                      alt="Logo of Vardhaman College of Engineering Shamshabad"
+                      title="Vardhaman College of Engineering Shamshabad"
                     />
                     <img
                       className="h-16 object-contain"
                       src="/logos/University_of_Engineering_and_Management_Jaipur.png"
-                      alt=""
+                      alt="Logo of University of Engineering and Management Jaipur"
+                      title="University of Engineering and Management Jaipur"
                     />
                     <img
                       className="h-28 object-contain"
                       src="/logos/Sreyas_Institute_of_Engineering_and_Technology.png"
-                      alt=""
+                      alt="Logo of Sreyas Institute of Engineering and Technology"
+                      title="Sreyas Institute of Engineering and Technology"
                     />
                     <img
                       className="h-20 object-contain"
                       src="/logos/Sankalchand_Patel_College_of_Engineering_Visnagar.png"
-                      alt=""
+                      alt="Logo of Sankalchand Patel College of Engineering Visnagar"
+                      title="Sankalchand Patel College of Engineering Visnagar"
                     />
                     <img
                       className="h-24 object-contain"
                       src="/logos/Tula_s_Institute_Dehradun.png"
-                      alt=""
+                      alt="Logo of Tula's Institute Dehradun"
+                      title="Tula's Institute Dehradun"
                     />
                     <img
                       className="h-24 object-contain"
                       src="/logos/ACE_Engineering_College.jpg"
-                      alt=""
+                      alt="Logo of ACE Engineering College"
+                      title="ACE Engineering College"
                     />
                     <img
                       className="h-20 object-contain"
                       src="/logos/KIT_s_College_of_Engineering.png"
-                      alt=""
+                      alt="Logo of KIT's College of Engineering"
+                      title="KIT's College of Engineering"
                     />
                     <img
                       className="h-20 object-contain"
                       src="/logos/Raghu_Engineering_College.jpg"
-                      alt=""
+                      alt="Logo of Engineering College"
+                      title="Raghu Engineering College"
                     />
                     <img
                       className="h-24 object-contain"
                       src="/logos/Gujarat_Vidyapith__emblem.png"
-                      alt=""
+                      alt="Emblem of Gujarat Vidyapith"
+                      title="Gujarat Vidyapith"
                     />
                     <img
                       className="h-24 object-contain"
                       src="/logos/Hindusthan_College_of_Engineering_and_Technology_Coimbatore.jpg"
-                      alt=""
+                      alt="Logo of Hindusthan College of Engineering and Technology, Coimbatore"
+                      title="Hindusthan College of Engineering and Technology, Coimbatore"
+                    />
+                    <img
+                      className="h-24 object-contain"
+                      src="/logos/BATU_logo.png"
+                      alt="Dr. Babasaheb Ambedkar Technological University, Lonere"
+                    />
+                    <img
+                      className="h-24 object-contain"
+                      src="/logos/JIS_School_Of_Polytechnic.jpg"
+                      alt="JIS School Of Polytechnic, Kalyani"
+                    />
+                    <img
+                      className="h-24 object-contain"
+                      src="/logos/Goa_College_of_Engineering_logo.png"
+                      alt="Goa College of Engineering, Ponda, Goa"
+                      title="Goa College of Engineering, Ponda, Goa"
                     />
                   </div>
                   <div className="p-4 bg-gray-100 rounded-lg">
