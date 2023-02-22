@@ -2,33 +2,33 @@ import React from "react";
 
 let timelineList = [
   {
-    date: "27 January 2023",
+    date: "23 February 2023",
     event:
-      "Application Open for LITE Minor Degree and Open Elective Batch 1 2023",
+      "Application Open for LITE Minor Degree and Open Elective Batch 2 2023",
   },
   {
-    date: "From 30 January 2023 onwards",
-    event: "Student onboarding for Batch 1 2023",
+    date: "From 23 February 2023 onwards",
+    event: "Student onboarding for Batch 2 2023",
   },
   {
-    date: "10 February 2023",
-    event: "Deadline for submission of application for B01Y23",
+    date: "9 March 2023",
+    event: "Deadline for submission of application for WD02Y23",
   },
   {
-    date: "15 February 2023",
+    date: "14 March 2023",
     event:
       "Deadline for students to complete WD 101 course to get onboarded for WD 201 course",
   },
   {
-    date: "15 February 2023",
-    event: "Commencement of WD201 course for students who complete WD101",
+    date: "15 March 2023",
+    event: "Final onboarding to WD201 course for students who complete WD101",
   },
   {
-    date: "26 April 2023",
+    date: "24 May 2023",
     event: "Deadline for students to complete WD 201 course",
   },
   {
-    date: "17 May 2023",
+    date: "14 June 2023",
     event: "Deadline for students to submit the WD201 final capstone project",
   },
 ];

@@ -147,7 +147,7 @@ export default function Home(props) {
                 <p className="pr-2 mt-8 text-lg text-white leading-relaxed font-semibold">
                   Admissions now open for the remaining{" "}
                   <span className="bg-yellow-300 text-gray-900">
-                    8527 Scholarships for Minor Degree and Open Elective
+                    8285 Scholarships for Minor Degree and Open Elective
                   </span>{" "}
                   in{" "}
                   <a
@@ -157,11 +157,11 @@ export default function Home(props) {
                   >
                     LITE Advanced Web Development.
                   </a>{" "}
-                  Students from 12 Institutes have already availed scholarships
+                  Students from 13 Institutes have already availed scholarships
                   and are pursuing the courses as part of minor degree.
                 </p>
                 <p className="text-lg text-gray-400 italic mt-8">
-                  Application closed for WD 101
+                  Application Opens on 23<sup>rd</sup> February 2023
                 </p>
                 {/* <div className="flex gap-4 items-start w-full md:w-auto mt-6">
                   <a
@@ -282,7 +282,7 @@ export default function Home(props) {
                 Start by applying to WD101 now
               </a> */}
               <p className="text-lg text-gray-400 italic mt-8">
-                Application closed for WD 101
+                Application Opens on 23<sup>rd</sup> February 2023
               </p>
             </div>
           </div>
@@ -797,6 +797,12 @@ export default function Home(props) {
         <ProvenPathwaySection />
         <SectionWithHeading heading="Key Timelines" darkBackground={true}>
           <Timeline />
+          <p className="text-lg font-medium text-gray-900">
+            <span className="bg-yellow-300 px-2 py-1">
+              Note: Students who complete WD 101 will be onboarded to WD 201
+              course within 24 hours of completion.
+            </span>
+          </p>
         </SectionWithHeading>
         <section className="bg-gray-900 border-t border-b border-gray-700 relative">
           <div className="max-w-6xl 2xl:max-w-7xl mx-auto">
@@ -817,7 +823,7 @@ export default function Home(props) {
                         Start by applying to WD101 now
                       </a> */}
                       <p className="text-lg text-gray-400 italic mt-8 bg-gray-800 px-3 py-2 bg-opacity-50">
-                        Application closed for WD 101
+                        Application Opens on 23<sup>rd</sup> February 2023
                       </p>
                     </div>
                   </div>
@@ -970,7 +976,7 @@ export default function Home(props) {
               <ul className="list-disc ml-4">
                 <li className="mt-4">
                   Students can apply and get onboarded to the WD101 course
-                  between 30 January 2023 to 10 February 2023. We recommend that
+                  between 23 February 2023 to 9 March 2023. We recommend that
                   you submit your application earlier in order to give yourself
                   more time to complete the WD101 course.
                 </li>
@@ -982,8 +988,8 @@ export default function Home(props) {
                 <li className="mt-4">
                   Students who already availed scholarship for WD 201 in Minor
                   Degree Batch 2 2022 can avail the course on a paid basis in
-                  Batch 2 of 2023. Please inform your faculty member about your
-                  interest to reapply.
+                  Batch 2 of 2023. The application link has been already shared
+                  with all B02Y22 students over email.
                 </li>
               </ul>
             </div>
@@ -1002,7 +1008,7 @@ export default function Home(props) {
               </a>
             </div> */}
             <p className="text-lg text-gray-400 italic text-center mt-8 bg-gray-800 px-3 py-2 bg-opacity-50">
-              Application closed for WD 101
+              Application Opens on 23<sup>rd</sup> February 2023
             </p>
             <div className="text-white mt-12">
               <h4>Code of Conduct</h4>
