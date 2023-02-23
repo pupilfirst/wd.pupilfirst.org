@@ -190,7 +190,7 @@ const facultyMembers = [
   },
   {
     name: "Prof. Ria Bandyopadhyay",
-    imgSrc: "/faculty-members/LITE-avatar.svg",
+    imgSrc: "/faculty-members/Prof.-Ria-JIS-School-of-Polytechnic.jpg",
     designation: "HOD (CST)",
     institute: "JIS School Of Polytechnic, Kalyani",
   },
