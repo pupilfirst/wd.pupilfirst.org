@@ -147,27 +147,26 @@ export default function Home(props) {
           <div className="relative pb-4 px-4 xl:px-0">
             <div className="max-w-6xl 2xl:max-w-7xl mx-auto flex gap-8 xl:gap-12 items-center">
               <div className="z-10 flex-1 flex flex-col items-center text-center md:text-left md:items-start">
-                <p className="rounded bg-gray-800 py-1 px-1 md:px-2 mt-4 font-medium text-sm text-gray-400 max-w-max">
-                  Leadership in Teaching Excellence Programme.
-                </p>
                 <h1 className="text-primary-500 text-3xl md:text-3xl lg:text-4xl 2xl:text-5xl py-2 font-extrabold lg:leading-tight xl:leading-tight">
-                  4.5 Million Jobs in GCC industry by 2030. Join the LITE
-                  Advanced Web Development Program, that opens the gateway for
-                  new opportunities!
+                  <span className="block text-lg md:text-xl pb-2">
+                    4.5 Million Jobs in GCC industry by 2030.<sup>*</sup>
+                  </span>{" "}
+                  Join the LITE Advanced Web Development Program, that opens the
+                  gateway for new opportunities!
                 </h1>
-                {/* <p>
+                <p>
                   <a
-                    className="text-sm underline text-gray-100 hover:text-primary-500"
-                    href="https://blogs.microsoft.com/wp-content/uploads/prod/prod/2020/06/4_The-Great-Lockdown.png"
+                    className="italic text-sm underline text-gray-300 hover:text-primary-500"
+                    href="https://assets.ey.com/content/dam/ey-sites/ey-com/en_in/topics/consulting/gcc/2023/06/ey-future-of-gccs-in-india-a-vision-2030.pdf"
                     target="_blank no-referrer"
                   >
-                    Read source
+                    *Source
                   </a>
-                </p> */}
-                <p className="pr-2 mt-8 text-lg text-white leading-relaxed font-semibold">
+                </p>
+                <p className="pr-2 mt-4 text-lg text-white leading-relaxed font-semibold">
                   Admissions now open for the 10th cohort of LITE Advanced Web
                   Development program (WD10Y23). 7637 scholarships are available
-                  for taking the courses as
+                  for taking the courses as{" "}
                   <span className="bg-yellow-300 text-gray-900">
                     Minor Degree or as Open Electives
                   </span>{" "}
@@ -275,11 +274,14 @@ export default function Home(props) {
             <p className="text-lg font-semibold text-primary-500 pb-4">
               Watch video to see the new teaching-learning experience
             </p>
+
             <div style={{ padding: "56.25% 0 0 0", position: "relative" }}>
               <iframe
                 className="rounded-xl shadow-2xl border-2 border-gray-900"
-                src="https://player.vimeo.com/video/793992206?h=72be05d25d&amp;badge=0&amp;autopause=0&amp;player_id=0&amp;app_id=58479"
+                src="https://player.vimeo.com/video/814873471?badge=0&amp;autopause=0&amp;player_id=0&amp;app_id=58479"
+                frameborder="0"
                 allow="autoplay; fullscreen; picture-in-picture"
+                allowfullscreen
                 style={{
                   position: "absolute",
                   top: 0,
@@ -287,9 +289,10 @@ export default function Home(props) {
                   width: "100%",
                   height: "100%",
                 }}
-                title="Pupilfirst Teaching Learning Cycle"
+                title="Pupilfirst Adhyayana (Teaching-Learning Cycle)"
               ></iframe>
             </div>
+            <script src="https://player.vimeo.com/api/player.js"></script>
             <div className="px-4 lg:px-0 py-1 max-w-6xl 2xl:max-w-7xl mx-auto text-center mt-6 md:mt-12">
               <a
                 id="apply-button-below-video"
@@ -519,9 +522,9 @@ export default function Home(props) {
           darkBackground="true"
         >
           <p className="text-white mt-4 md:text-lg w-full md:w-4/5">
-            You shall be a part of a batch having students across 7 states in
-            India to learn via Learner-Centered Classrooms under National
-            Educational Policy 2020 (NEP 2020)
+            You will be a part of a batch having students across 9 states in
+            India to learn via Learner-centred Classrooms under National
+            Educational Policy 2020 (NEP 2020).
           </p>
           <div className="relative">
             <p className="pt-4 md:text-lg text-white">
@@ -758,9 +761,9 @@ export default function Home(props) {
                 alt="Freshwork Academy photo"
               />
               <p className="text-white pt-2 md:text-lg italic">
-                Shailesh Anand from the GDC Fellowship batch has completed the
-                curriculum as well as the internship and got placed in Google at
-                28 lacs CTC.
+                Shailesh Anand from WD03Y21 Cohort has completed the curriculum
+                as well as the internship and got placed in Google at 28 lacs
+                CTC.
               </p>
             </div>
           </div>
@@ -843,13 +846,14 @@ export default function Home(props) {
               <div className="flex flex-col mt-4 pb-10 lg:pb-20 ml-2 md:ml-4 lg:ml-12 xl:ml-16 2xl:ml-36">
                 <div className="max-w-4xl text-white tracking-tight pt-1 lg:text-lg ">
                   <p>
-                    Your admission to the courses as a part of the minor degree
-                    or as open elective is based solely on a{" "}
-                    <span className="bg-yellow-300 text-gray-900">
+                    Your admission to WD201 as a part of the minor degree or as
+                    an open elective is based solely on a{" "}
+                    <span className="bg-yellow-300 font-medium text-gray-900">
                       demonstration of learning interest and by completing the
-                      Web Development 101 course
+                      Web Development 101 course as an interest-based admission
+                      test (IBAT)
                     </span>{" "}
-                    and not any prior knowledge or marks.
+                    and not submitting any prior knowledge or marks.
                   </p>
                 </div>
 
@@ -858,149 +862,234 @@ export default function Home(props) {
                     <p className="text-lg font-semibold flex">
                       Participating Institutions
                     </p>
-                    <div className="max-w-fullf flex-1 h-1 border-t-2 border-gray-200"></div>
+                    <div className="max-w-full flex-1 h-1 border-t-2 border-gray-200"></div>
                   </div>
                   <p className="pt-2 text-gray-600">
                     To start with, students from the following LITE Institutions
                     are eligible to apply.
                   </p>
-                  <div className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 place-items-center px-4 py-10 gap-12">
-                    <img
-                      className="h-16 object-contain"
-                      src="/logos/Chaitanya_Bharathi_Institute_of_Technology_Hyderabad.png"
-                      alt="Logo of Chaitanya Bharathi Institute of Technology Hyderabad"
-                      title="Chaitanya Bharathi Institute of Technology Hyderabad"
-                    />
-                    <img
-                      className="h-20 object-contain"
-                      src="/logos/G_H_Raisoni_College_of_Engineering_Nagpur.png"
-                      alt="Logo of G H Raisoni College of Engineering Nagpur"
-                      title="G H Raisoni College of Engineering Nagpur"
-                    />
-                    <img
-                      className="h-20 object-contain"
-                      src="/logos/G_Narayanamma_Institute_of_Technology_and_Science_For_Women_JNTUH_Hyderabad.png"
-                      alt="Logo of G Narayanamma Institute of Technology and Science For Women JNTUH Hyderabad"
-                      title="G Narayanamma Institute of Technology and Science For Women JNTUH Hyderabad"
-                    />
-                    <img
-                      className="h-16 object-contain"
-                      src="/logos/Malla_Reddy_College_of_Engineering_and_Technology_Hyderabad.png"
-                      alt="Logo of Malla Reddy College of Engineering and Technology Hyderabad"
-                      title="Malla Reddy College of Engineering and Technology Hyderabad"
-                    />
-                    <img
-                      className="h-12 object-contain"
-                      src="/logos/Marwadi_University.png"
-                      alt="Logo of Marwadi University"
-                      title="Marwadi University"
-                    />
-                    <img
-                      className="h-24 object-contain"
-                      src="/logos/Institute_of_Aeronautical_Engineering_Hyderabad.png"
-                      alt="Logo of Institute of Aeronautical Engineering Hyderabad"
-                      title="Institute of Aeronautical Engineering Hyderabad"
-                    />
-                    <img
-                      className="h-24 object-contain"
-                      src="/logos/Pimpri_Chinchwad_College_of_Engineering_PCCoE_Pune.webp"
-                      alt="Logo of Pimpri Chinchwad College of Engineering PCCoE Pune"
-                      title="Pimpri Chinchwad College of Engineering PCCoE Pune"
-                    />
-                    <img
-                      className="h-16 object-contain"
-                      src="/logos/Vardhaman_College_of_Engineering_Shamshabad.jpg"
-                      alt="Logo of Vardhaman College of Engineering Shamshabad"
-                      title="Vardhaman College of Engineering Shamshabad"
-                    />
-                    <img
-                      className="h-16 object-contain"
-                      src="/logos/University_of_Engineering_and_Management_Jaipur.png"
-                      alt="Logo of University of Engineering and Management Jaipur"
-                      title="University of Engineering and Management Jaipur"
-                    />
-                    <img
-                      className="h-28 object-contain"
-                      src="/logos/Sreyas_Institute_of_Engineering_and_Technology.png"
-                      alt="Logo of Sreyas Institute of Engineering and Technology"
-                      title="Sreyas Institute of Engineering and Technology"
-                    />
-                    <img
-                      className="h-20 object-contain"
-                      src="/logos/Sankalchand_Patel_College_of_Engineering_Visnagar.png"
-                      alt="Logo of Sankalchand Patel College of Engineering Visnagar"
-                      title="Sankalchand Patel College of Engineering Visnagar"
-                    />
-                    <img
-                      className="h-24 object-contain"
-                      src="/logos/Tula_s_Institute_Dehradun.png"
-                      alt="Logo of Tula's Institute Dehradun"
-                      title="Tula's Institute Dehradun"
-                    />
-                    <img
-                      className="h-24 object-contain"
-                      src="/logos/ACE_Engineering_College.jpg"
-                      alt="Logo of ACE Engineering College"
-                      title="ACE Engineering College"
-                    />
-                    <img
-                      className="h-20 object-contain"
-                      src="/logos/KIT_s_College_of_Engineering.png"
-                      alt="Logo of KIT's College of Engineering"
-                      title="KIT's College of Engineering"
-                    />
-                    <img
-                      className="h-20 object-contain"
-                      src="/logos/Raghu_Engineering_College.jpg"
-                      alt="Logo of Engineering College"
-                      title="Raghu Engineering College"
-                    />
-                    <img
-                      className="h-24 object-contain"
-                      src="/logos/Gujarat_Vidyapith__emblem.png"
-                      alt="Emblem of Gujarat Vidyapith"
-                      title="Gujarat Vidyapith"
-                    />
-                    <img
-                      className="h-24 object-contain"
-                      src="/logos/Hindusthan_College_of_Engineering_and_Technology_Coimbatore.jpg"
-                      alt="Logo of Hindusthan College of Engineering and Technology, Coimbatore"
-                      title="Hindusthan College of Engineering and Technology, Coimbatore"
-                    />
-                    <img
-                      className="h-24 object-contain"
-                      src="/logos/BATU_logo.png"
-                      alt="Dr. Babasaheb Ambedkar Technological University, Lonere"
-                    />
-                    <img
-                      className="h-24 object-contain"
-                      src="/logos/JIS_School_Of_Polytechnic.jpg"
-                      alt="JIS School Of Polytechnic, Kalyani"
-                    />
-                    <img
-                      className="h-24 object-contain"
-                      src="/logos/Goa_College_of_Engineering_logo.png"
-                      alt="Goa College of Engineering, Ponda, Goa"
-                      title="Goa College of Engineering, Ponda, Goa"
-                    />
+                  <div className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 place-items-center text-center px-4 py-10 gap-12">
+                    <figure className="flex h-full flex-col items-center justify-between">
+                      <img
+                        className="h-24 object-contain"
+                        src="/logos/ACE_Engineering_College.jpg"
+                        alt="Logo of ACE Engineering College"
+                        title="ACE Engineering College"
+                      />
+                      <figcaption className="text-center font-medium pt-2 text-xs text-gray-500">
+                        ACE Engineering College
+                      </figcaption>
+                    </figure>
+                    <figure className="flex h-full flex-col items-center justify-between">
+                      <img
+                        className="h-16 flex-1 object-contain object-center justify-center"
+                        src="/logos/Chaitanya_Bharathi_Institute_of_Technology_Hyderabad.png"
+                        alt="Logo of Chaitanya Bharathi Institute of Technology Hyderabad"
+                        title="Chaitanya Bharathi Institute of Technology Hyderabad"
+                      />
+                      <figcaption className="text-center font-medium pt-2 text-xs text-gray-500">
+                        Chaitanya Bharathi Institute of Technology, Hyderabad
+                      </figcaption>
+                    </figure>
+                    <figure className="flex h-full flex-col items-center justify-between">
+                      <img
+                        className="h-20 object-contain"
+                        src="/logos/G_H_Raisoni_College_of_Engineering_Nagpur.png"
+                        alt="Logo of G H Raisoni College of Engineering Nagpur"
+                        title="G H Raisoni College of Engineering Nagpur"
+                      />
+                      <figcaption className="text-center font-medium pt-2 text-xs text-gray-500">
+                        G H Raisoni College of Engineering, Nagpur
+                      </figcaption>
+                    </figure>
+                    <figure className="flex h-full flex-col items-center justify-between">
+                      <img
+                        className="h-20 object-contain"
+                        src="/logos/G_Narayanamma_Institute_of_Technology_and_Science_For_Women_JNTUH_Hyderabad.png"
+                        alt="Logo of G Narayanamma Institute of Technology and Science For Women JNTUH Hyderabad"
+                        title="G Narayanamma Institute of Technology and Science For Women JNTUH Hyderabad"
+                      />
+                      <figcaption className="text-center font-medium pt-2 text-xs text-gray-500">
+                        G.Narayanamma Institute of Technology and Science For
+                        Women, JNTUH, Hyderabad
+                      </figcaption>
+                    </figure>
+                    <figure className="flex h-full flex-col items-center justify-between">
+                      <img
+                        className="h-24 object-contain"
+                        src="/logos/Hindusthan_College_of_Engineering_and_Technology_Coimbatore.jpg"
+                        alt="Logo of Hindusthan College of Engineering and Technology, Coimbatore"
+                        title="Hindusthan College of Engineering and Technology, Coimbatore"
+                      />
+                      <figcaption className="text-center font-medium pt-2 text-xs text-gray-500">
+                        Hindusthan College of Engineering and Technology,
+                        Coimbatore
+                      </figcaption>
+                    </figure>
+                    <figure className="flex h-full flex-col items-center justify-between">
+                      <img
+                        className="h-24 object-contain"
+                        src="/logos/Institute_of_Aeronautical_Engineering_Hyderabad.png"
+                        alt="Logo of Institute of Aeronautical Engineering Hyderabad"
+                        title="Institute of Aeronautical Engineering Hyderabad"
+                      />
+                      <figcaption className="text-center font-medium pt-2 text-xs text-gray-500">
+                        Institute of Aeronautical Engineering, Hyderabad
+                      </figcaption>
+                    </figure>
+                    <figure className="flex h-full flex-col items-center justify-between">
+                      <img
+                        className="h-20 flex-1 object-contain"
+                        src="/logos/KIT_s_College_of_Engineering.png"
+                        alt="Logo of KIT's College of Engineering"
+                        title="KIT's College of Engineering"
+                      />
+                      <figcaption className="text-center font-medium pt-2 text-xs text-gray-500">
+                        KIT's College of Engineering
+                      </figcaption>
+                    </figure>
+                    <figure className="flex h-full flex-col items-center justify-between">
+                      <img
+                        className="h-16 md:flex-1 object-contain"
+                        src="/logos/Malla_Reddy_College_of_Engineering_and_Technology_Hyderabad.png"
+                        alt="Logo of Malla Reddy College of Engineering and Technology Hyderabad"
+                        title="Malla Reddy College of Engineering and Technology Hyderabad"
+                      />
+                      <figcaption className="text-center font-medium pt-2 text-xs text-gray-500">
+                        Malla Reddy College of Engineering and Technology,
+                        Hyderabad
+                      </figcaption>
+                    </figure>
+                    <figure className="flex h-full flex-col items-center justify-between">
+                      <img
+                        className="h-24 object-contain"
+                        src="/logos/Pimpri_Chinchwad_College_of_Engineering_PCCoE_Pune.webp"
+                        alt="Logo of Pimpri Chinchwad College of Engineering PCCoE Pune"
+                        title="Pimpri Chinchwad College of Engineering PCCoE Pune"
+                      />
+                      <figcaption className="text-center font-medium pt-2 text-xs text-gray-500">
+                        Pimpri Chinchwad College of Engineering (PCCoE), Pune
+                      </figcaption>
+                    </figure>
+                    <figure className="flex h-full flex-col items-center justify-between">
+                      <img
+                        className="h-28 object-contain"
+                        src="/logos/Sreyas_Institute_of_Engineering_and_Technology.png"
+                        alt="Logo of Sreyas Institute of Engineering and Technology"
+                        title="Sreyas Institute of Engineering and Technology"
+                      />
+                      <figcaption className="text-center font-medium pt-2 text-xs text-gray-500">
+                        Sreyas Institute of Engineering and Technology
+                      </figcaption>
+                    </figure>
+                    <figure className="flex h-full flex-col items-center justify-between">
+                      <img
+                        className="h-16 object-contain"
+                        src="/logos/Vardhaman_College_of_Engineering_Shamshabad.jpg"
+                        alt="Logo of Vardhaman College of Engineering Shamshabad"
+                        title="Vardhaman College of Engineering Shamshabad"
+                      />
+                      <figcaption className="text-center font-medium pt-2 text-xs text-gray-500">
+                        Vardhaman College of Engineering, Shamshabad
+                      </figcaption>
+                    </figure>
+                    <figure className="flex h-full flex-col items-center justify-between">
+                      <img
+                        className="h-20 object-contain"
+                        src="/logos/Sankalchand_Patel_College_of_Engineering_Visnagar.png"
+                        alt="Logo of Sankalchand Patel College of Engineering Visnagar"
+                        title="Sankalchand Patel College of Engineering Visnagar"
+                      />
+                      <figcaption className="text-center font-medium pt-2 text-xs text-gray-500">
+                        Sankalchand Patel College of Engineering, Visnagar
+                      </figcaption>
+                    </figure>
+                    <figure className="flex h-full flex-col items-center justify-between">
+                      <img
+                        className="h-24 object-contain"
+                        src="/logos/Tula_s_Institute_Dehradun.png"
+                        alt="Logo of Tula's Institute Dehradun"
+                        title="Tula's Institute Dehradun"
+                      />
+                      <figcaption className="text-center font-medium pt-2 text-xs text-gray-500">
+                        Tula's Institute, Dehradun
+                      </figcaption>
+                    </figure>
+                    <figure className="flex h-full flex-col items-center justify-between">
+                      <img
+                        className="h-24 object-contain"
+                        src="/logos/BATU_logo.png"
+                        alt="Dr. Babasaheb Ambedkar Technological University, Lonere"
+                      />
+                      <figcaption className="text-center font-medium pt-2 text-xs text-gray-500">
+                        Dr. Babasaheb Ambedkar Technological University
+                      </figcaption>
+                    </figure>
+                    <figure className="flex h-full flex-col items-center justify-between">
+                      <img
+                        className="h-16 object-contain"
+                        src="/logos/University_of_Engineering_and_Management_Jaipur.png"
+                        alt="Logo of University of Engineering and Management Jaipur"
+                        title="University of Engineering and Management Jaipur"
+                      />
+                      <figcaption className="text-center font-medium pt-2 text-xs text-gray-500">
+                        University of Engineering and Management, Jaipur
+                      </figcaption>
+                    </figure>
+                    <figure className="flex h-full flex-col items-center justify-between">
+                      <img
+                        className="h-12 flex-1 object-contain"
+                        src="/logos/Marwadi_University.png"
+                        alt="Logo of Marwadi University"
+                        title="Marwadi University"
+                      />
+                      <figcaption className="text-center font-medium pt-2 text-xs text-gray-500">
+                        Marwadi University
+                      </figcaption>
+                    </figure>
+                    <figure className="flex h-full flex-col items-center justify-between">
+                      <img
+                        className="h-24 object-contain"
+                        src="/logos/JIS_School_Of_Polytechnic.jpg"
+                        alt="JIS School Of Polytechnic, Kalyani"
+                      />
+                      <figcaption className="text-center font-medium pt-2 text-xs text-gray-500">
+                        JIS School Of Polytechnic
+                      </figcaption>
+                    </figure>
+                    <figure className="flex h-full flex-col items-center justify-between">
+                      <img
+                        className="h-24 object-contain"
+                        src="/logos/Goa_College_of_Engineering_logo.png"
+                        alt="Goa College of Engineering, Ponda, Goa"
+                        title="Goa College of Engineering, Ponda, Goa"
+                      />
+                      <figcaption className="text-center font-medium pt-2 text-xs text-gray-500">
+                        Goa College of Engineering, Ponda, Goa
+                      </figcaption>
+                    </figure>
+                    <figure className="flex h-full flex-col items-center justify-between">
+                      <img
+                        className="h-20 object-contain"
+                        src="/logos/Deogiri_Institute_of_Engineering_and_Management_Studies.jpg"
+                        alt="Logo of Deogiri Institute of Engineering and Management Studies, Aurangabad"
+                        title="Deogiri Institute of Engineering and Management Studies, Aurangabad"
+                      />
+                      <figcaption className="text-center font-medium pt-2 text-xs text-gray-500">
+                        Deogiri Institute of Engineering and Management Studies,
+                        Aurangabad
+                      </figcaption>
+                    </figure>
                   </div>
                   <div className="p-4 bg-gray-100 rounded-lg">
                     <p>
-                      If your institution is not listed,
+                      If your institution is not listed,{" "}
                       <a
                         target="_blank"
                         className="font-medium underline text-indigo-500 hover:text-indigo-700"
-                        href="https://pupilfirst.typeform.com/to/emhYCQeU"
+                        href="https://pupilfirst.typeform.com/to/mdtFRb1y"
                       >
-                        register your interest here
-                      </a>{" "}
-                      Many institutions are in the{" "}
-                      <a
-                        target="_blank"
-                        className="font-medium underline text-indigo-500 hover:text-indigo-700"
-                        href="https://learn.pupilfirst.org/approval_status"
-                      >
-                        approval process
+                        register your interest here.
                       </a>
                     </p>
                   </div>

@@ -121,8 +121,14 @@ export default function ProvenPathwaySection() {
     <div>
       <SectionWithHeading heading="Join a proven career pathway">
         <p className="text-white mt-4 md:text-lg w-full md:w-4/5">
-          Approved by the “All India Council for Technical Education” as
-          National Model Curriculum for Indian Universities
+          Approved by the “All India Council for Technical Education” as{" "}
+          <a
+            className="font-medium underline text-indigo-500 hover:text-indigo-700"
+            href="https://drive.google.com/file/d/1di0o5i8ZmI03j4bicWlKSMSeYHpeFjvA/view"
+          >
+            National Model Curriculum
+          </a>{" "}
+          for Indian Universities
         </p>
         <div className="mt-2">
           <img src="/career-pathway/career-pathway.jpg" alt="" />
@@ -183,8 +189,11 @@ export default function ProvenPathwaySection() {
             >
               <p>
                 All eligible students, who apply, will be onboarded to the web
-                development courses as part of the Minor Degree or as Open
-                Electives, based on the Institute approval.
+                development courses as part of the{" "}
+                <span className="bg-yellow-300 font-medium text-gray-900">
+                  Minor Degree or as Open Electives,
+                </span>{" "}
+                based on the Institute approval.
               </p>
               <p className="mt-2">
                 You will be learning with students from 20 institutes and 8
@@ -268,8 +277,11 @@ export default function ProvenPathwaySection() {
               stepImgSrc="/steps-illustrations/step-8.svg"
             >
               <p>
-                Be among the pioneers who graduate from University with a
-                B.Tech/BE in X with a Minor Degree in Advanced Web Development;
+                Be among the pioneers who graduate from University with a{" "}
+                <span className="bg-yellow-300 font-medium text-gray-900">
+                  B.Tech/BE in X with a Minor Degree in Advanced Web
+                  Development;
+                </span>{" "}
                 where X = your current branch of study. If you have opted as
                 Open Electives, this will contribute towards your graduating
                 degree.
