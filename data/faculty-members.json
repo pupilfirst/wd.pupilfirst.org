@@ -1,11 +1,5 @@
 [
   {
-    "name": "Dr. Srikanth R",
-    "imgSrc": "/faculty-members/Dr._Srikanth_R-Faculty_2_rfnguv_e6ecqi.png",
-    "designation": "Assistant Professor",
-    "institute": "Chaitanya Bharathi Institute of Technology, Hyderabad"
-  },
-  {
     "name": "Mrs. S Durga Devi",
     "imgSrc": "/faculty-members/Mrs._S._Durga_Devi-Faculty_1_vvoyw4_gupiyj.png",
     "designation": "Assistant Professor",
@@ -90,18 +84,6 @@
     "institute": "Vardhaman College of Engineering, Shamshabad"
   },
   {
-    "name": "Mrs. Savita Ajay Kumbhare",
-    "imgSrc": "/faculty-members/Mrs._Savita_Ajay_Kumbhare-Faculty_1_aublwf_svvzbq.png",
-    "designation": "Assistant Professor",
-    "institute": "Pimpri Chinchwad College of Engineering (PCCoE), Pune"
-  },
-  {
-    "name": "Mr. Shailesh Hule",
-    "imgSrc": "/faculty-members/Mr._Shailesh_Hule-Faculty_2_ehmnqd_xrjtep.png",
-    "designation": "Assistant Professor",
-    "institute": "Pimpri Chinchwad College of Engineering (PCCoE), Pune"
-  },
-  {
     "name": "Joshi Padma Narasimhachari",
     "imgSrc": "/faculty-members/Mrs._Joshi_Padma_Narasimhachari_ppguz7.jpg",
     "designation": "Assistant Professor",
@@ -120,12 +102,6 @@
     "institute": "Tula's Institute, Dehradun"
   },
   {
-    "name": "Dr. Damodharan Palaniappan",
-    "imgSrc": "/faculty-members/Dr-Damodharan_Palaniappan.jpg",
-    "designation": "Sr.Assistant Professor",
-    "institute": "Marwadi University"
-  },
-  {
     "name": "Mr. Patel Mehulkumar Shankarlal",
     "imgSrc": "/faculty-members/Mr._Patel_Mehulkumar_Shankarlal.png",
     "designation": "Assistant Professor",
@@ -137,18 +113,7 @@
     "designation": "Assistant Professor",
     "institute": "KIT's College of Engineering, Kolhapur"
   },
-  {
-    "name": "Dr. Bhavani Sankar Panda",
-    "imgSrc": "/faculty-members/Dr._Bhavani_Sankar_Panda.jpg",
-    "designation": "Professor",
-    "institute": "Raghu Engineering College, Visakhapatnam"
-  },
-  {
-    "name": "Dr. Meena Bhagavathula",
-    "imgSrc": "/faculty-members/Dr._Meena_Bhagavathula.jpg",
-    "designation": "Assistant Professor",
-    "institute": "Raghu Engineering College, Visakhapatnam"
-  },
+
   {
     "name": "Dr. Kamble Shiva Kumar",
     "imgSrc": "/faculty-members/LITE-avatar.svg",
@@ -168,12 +133,6 @@
     "institute": "Hindusthan College of Engineering and Technology, Coimbatore"
   },
   {
-    "name": "Prof. Ruchita Shah",
-    "imgSrc": "/faculty-members/Prof._Ruchita_D._Shah.jpg",
-    "designation": "Assistant Professor",
-    "institute": "Department Of Computer Science Faculty Of Management And Technology Gujarat Vidyapith Ahmedabad"
-  },
-  {
     "name": "Dr. Sanjay Nalbalwar",
     "imgSrc": "/faculty-members/Dr._SL_Nalbalwar.jpg",
     "designation": "Professor & Head (E&TE)",
@@ -190,5 +149,23 @@
     "imgSrc": "/faculty-members/Dr._Nilesh_B._Fal_Dessai.png",
     "designation": "Associate Professor and HOD",
     "institute": "Goa College of Engineering, Ponda, Goa"
+  },
+  {
+    "name": "Prof. Atiya Khan",
+    "imgSrc": "/faculty-members/Prof._Atiya_Khan_GHRCE.jpg",
+    "designation": "Assistant Professor",
+    "institute": "G H Raisoni College of Engineering, Nagpur"
+  },
+  {
+    "name": "Prof. Shailesh Galande",
+    "imgSrc": "/faculty-members/Prof._Shailesh_Galande_PCCOE.png",
+    "designation": "Assistant Professor",
+    "institute": "Pimpri Chinchwad College of Engineering (PCCoE), Pune"
+  },
+  {
+    "name": "Mr. Sanjay Kalyankar",
+    "imgSrc": "/faculty-members/Dr.sanjay_kalyankar.png",
+    "designation": "Associate Professor",
+    "institute": "Deogiri Institute of Engineering and Management Studies, Aurangabad"
   }
 ]

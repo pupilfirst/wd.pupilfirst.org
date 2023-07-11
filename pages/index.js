@@ -180,12 +180,10 @@ export default function Home(props) {
                     LITE Advanced Web Development.
                   </a>{" "}
                 </p>
-                <p className="text-lg text-gray-400 italic mt-8">
-                  Application Closed.
-                </p>
-                {/* <div className="flex gap-4 items-start w-full md:w-auto mt-6">
+
+                <div className="flex gap-4 items-start w-full md:w-auto mt-6">
                   <a
-                    href="https://apply.pupilfirst.org/apply/forms/3"
+                    href="https://www.pupilfirst.school/courses/1802"
                     target="_blank"
                     className="flex justify-center w-full md:w-auto space-x-3 p-3 lg:px-6 lg:py-3.5 text-white bg-indigo-500 rounded-md text-base lg:text-lg text-center font-semibold shadow hover:bg-indigo-600 hover:text-indigo-100 hover:shadow-2xl focus:ring-2 focus:ring-indigo-400 focus:ring-offset-2 transition"
                   >
@@ -218,7 +216,7 @@ export default function Home(props) {
                       </clipPath>
                     </defs>
                   </svg>
-                </div> */}
+                </div>
               </div>
               <div className="flex-1 py-12 lg:pt-0 pb-12 hidden md:block">
                 <img
@@ -293,17 +291,14 @@ export default function Home(props) {
               ></iframe>
             </div>
             <div className="px-4 lg:px-0 py-1 max-w-6xl 2xl:max-w-7xl mx-auto text-center mt-6 md:mt-12">
-              {/* <a
+              <a
                 id="apply-button-below-video"
-                href="https://apply.pupilfirst.org/apply/forms/3"
+                href="https://www.pupilfirst.school/courses/1802"
                 target="_blank"
                 className="inline-flex justify-center space-x-3 p-3 lg:px-6 lg:py-3.5 text-gray-900 bg-yellow-400 rounded-md text-base lg:text-lg text-center font-semibold shadow hover:bg-indigo-600 hover:text-indigo-100 hover:shadow-2xl focus:ring-2 focus:ring-indigo-400 focus:ring-offset-2 transition"
               >
                 Start by applying to WD101 now
-              </a> */}
-              <p className="text-lg text-gray-400 italic mt-8">
-                Application Closed.
-              </p>
+              </a>
             </div>
           </div>
         </section>
@@ -772,7 +767,7 @@ export default function Home(props) {
         </SectionWithHeading>
         <SectionWithHeading heading="Growing Hiring Network">
           <p className="text-white mt-4 md:text-lg w-full md:w-4/5">
-            70 companies are currently participating in the hiring network which
+            71 companies are currently participating in the hiring network which
             is being expanded every month.
           </p>
 
@@ -832,17 +827,14 @@ export default function Home(props) {
                       How to apply?
                     </h2>
                     <div>
-                      {/* <a
+                      <a
                         id="apply-button-how-to-apply"
-                        href="https://apply.pupilfirst.org/apply/forms/3"
+                        href="https://www.pupilfirst.school/courses/1802"
                         target="_blank"
                         className="inline-flex space-x-3 p-3 lg:px-6 lg:py-3.5 text-white bg-indigo-500 rounded-md text-base lg:text-lg text-center font-semibold shadow hover:bg-indigo-600 hover:text-indigo-100 hover:shadow-2xl focus:ring-2 focus:ring-indigo-400 focus:ring-offset-2 transition"
                       >
                         Start by applying to WD101 now
-                      </a> */}
-                      <p className="text-lg text-gray-400 italic mt-8 bg-gray-800 px-3 py-2 bg-opacity-50">
-                        Application Closed.
-                      </p>
+                      </a>
                     </div>
                   </div>
                 </div>
@@ -1027,40 +1019,39 @@ export default function Home(props) {
               <ul className="list-disc ml-4">
                 <li className="mt-4">
                   Students can apply and get onboarded to the WD101 course
-                  between 23 February 2023 to 9 March 2023. We recommend that
-                  you submit your application earlier in order to give yourself
-                  more time to complete the WD101 course.
+                  between 20 July 2023 to 03 August 2023. We recommend that you
+                  submit your application earlier in order to give yourself more
+                  time to complete the WD101 course.
                 </li>
                 <li className="mt-4">
-                  Students who are not keeping up with the course work within
-                  the set timelines shall be dropped out of the course and will
-                  lose their scholarship.
+                  Upon completion of WD 101, students get onboarded to WD 201.
+                  Students who are not keeping up with the WD 201 course work
+                  within the set timelines shall be moved to the audit track and
+                  will lose their scholarship.
                 </li>
                 <li className="mt-4">
-                  Students who already availed scholarship for WD 201 in Minor
-                  Degree Batch 2 2022 can avail the course on a paid basis in
-                  Batch 2 of 2023. The application link has been already shared
-                  with all B02Y22 students over email.
+                  Students who already availed scholarship for WD 201 in any of
+                  the previous LITE cohorts can avail the course on a paid basis
+                  in the WD10Y23 cohort. Please follow the instruction shared
+                  with you from Pupilfirst over registered email ID.
                 </li>
               </ul>
             </div>
-            {/* <div className="p-12 rounded-lg bg-indigo-500 flex flex-col items-center text-center gap-6 mt-12">
+            <div className="p-12 rounded-lg bg-indigo-500 flex flex-col items-center text-center gap-6 mt-12">
               <h4 className="text-white text-xl md:text-3xl font-semibold mt-8 w-full md:w-4/5">
                 Application Open for LITE Minor Degree and
-                <br /> Open Elective Batch 2 2023
+                <br /> Open Elective Batch __ 2023
               </h4>
               <a
                 id="apply-button-footer-cta"
-                href="https://apply.pupilfirst.org/apply/forms/3"
+                href="https://www.pupilfirst.school/courses/1802"
                 target="_blank"
                 className="inline-flex space-x-3 p-3 lg:px-6 lg:py-3.5 bg-primary-500 text-indigo-600 rounded-md text-base lg:text-lg text-center font-semibold shadow-lg hover:bg-primary-400 hover:text-indigo-700 hover:shadow-2xl focus:ring-2 focus:ring-indigo-400 focus:ring-offset-2 transition"
               >
                 Start by applying to WD101 now
               </a>
-            </div> */}
-            <p className="text-lg text-gray-400 italic text-center mt-8 bg-gray-800 px-3 py-2 bg-opacity-50">
-              Application Closed.
-            </p>
+            </div>
+
             <div className="text-white mt-12">
               <h4>Code of Conduct</h4>
               <p>
@@ -1082,7 +1073,7 @@ export default function Home(props) {
                 <a
                   className="text-indigo-400 underline hover:text-indigo-500"
                   target="_blank"
-                  href="https://docs.google.com/document/d/e/2PACX-1vQ2Jmh0NlPAxF9BUcwTd5ICairSO88IwwzL0VOWhCDyCFQYYo6W1rvOq4YH84KH7ltSV9e8Oo80L3FJ/pub"
+                  href="https://docs.google.com/document/d/1f9E82Q2Et-kwtBmbG-1NxQA6xHtg2N-RZX1FyzLsTOM/edit"
                 >
                   Frequently Asked Questions (FAQ) document,
                 </a>{" "}

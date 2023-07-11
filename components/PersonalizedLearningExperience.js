@@ -21,7 +21,6 @@ let facultyMember = (index, name, imgSrc, designation, institute) => {
 export default function PersonalizedLearningExperiece({ members }) {
   const [showFacultyLess, setShowFacultyLess] = useState(false);
   const facultyMembers = showFacultyLess ? members : members.slice(0, 10);
-  console.log(facultyMembers, "facultyMembers");
 
   return (
     <SectionWithHeading heading="Get Personalised Guidance">
@@ -31,7 +30,7 @@ export default function PersonalizedLearningExperiece({ members }) {
         find answers and confidently move ahead.
       </p>
 
-      <div className="grid grid-cols-2 md:grid-cols-4 lg:grid-cols-5 gap-x-5 gap-y-10 py-16">
+      <div className="grid grid-cols-2 md:grid-cols-4 lg:grid-cols-5 gap-x-5 gap-y-10 pt-16 pb-10">
         {facultyMembers.map((faculty, index) =>
           facultyMember(
             index,
@@ -41,13 +40,13 @@ export default function PersonalizedLearningExperiece({ members }) {
             faculty.institute
           )
         )}
-        <button
-          className="block mx-auto my-4 text-sm font-semibold text-secondary-600 px-3 py-2 bg-secondary-50 rounded-md"
-          onClick={() => setShowFacultyLess((prev) => !prev)}
-        >
-          {showFacultyLess ? "Show Less" : "Show more"}
-        </button>
       </div>
+      <button
+        className="block mx-auto my-4 text-sm font-semibold text-gray-400 px-3 py-2 bg-gray-700 rounded-md"
+        onClick={() => setShowFacultyLess((prev) => !prev)}
+      >
+        {showFacultyLess ? "Show Less" : "Show more"}
+      </button>
     </SectionWithHeading>
   );
 }
