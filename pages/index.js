@@ -89,7 +89,11 @@ export default function Home(props) {
         <link rel="shortcut icon" href="/favicon.ico" type="image/x-icon" />
         <link rel="icon" href="/favicon.ico" type="image/x-icon" />
         <link rel="preconnect" href="https://fonts.googleapis.com" />
-        <link rel="preconnect" href="https://fonts.gstatic.com" crossOrigin />
+        <link
+          rel="preconnect"
+          href="https://fonts.gstatic.com"
+          crossOrigin="true"
+        />
         <link
           href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700;800&family=Source+Code+Pro&display=swap"
           rel="stylesheet"
@@ -205,8 +209,8 @@ export default function Home(props) {
                       <path
                         d="M8.90294 25.1151L2.07899 30.4112C1.6531 30.7418 1.56588 31.3504 1.88179 31.7872L6.71798 38.4746"
                         stroke="white"
-                        stroke-width="2"
-                        stroke-linecap="round"
+                        strokeWidth="2"
+                        strokeLinecap="round"
                       />
                     </g>
                     <defs>
@@ -228,7 +232,9 @@ export default function Home(props) {
           </div>
           <section className="px-4 xl:mx-0 pb-10 md:pb-16 pt-6  bg-gray-900">
             <div className="max-w-6xl 2xl:max-w-7xl mx-auto px-16 pb-16 pt-10 bg-white rounded-lg flex items-center flex-col">
-              <p className="text-2xl font-bold">Scholarships supported by</p>
+              <p className="text-lg md:text-2xl text-center font-bold">
+                Scholarships supported by
+              </p>
               <div className="w-full flex flex-wrap gap-10 items-center lg:justify-between mt-12">
                 <img src="/logos/msdf-logo.png" alt="" />
                 <img src="/logos/schmidt-futures.png" alt="" />
@@ -236,6 +242,19 @@ export default function Home(props) {
                 <img src="/logos/sgf-logo.png" alt="" />
                 <img src="/logos/meta-logo.png" alt="" />
               </div>
+            </div>
+          </section>
+          <section className="px-4">
+            <div className="max-w-6xl 2xl:max-w-7xl mx-auto text-center p-4 bg-gray-100 rounded-lg flex items-center flex-col">
+              <h2 className="text-lg md:text-2xl font-bold pt-4">
+                Students from 18 Institutes have already availed scholarships in
+                previous cohorts.
+              </h2>
+              <img
+                className="object-cover w-full h-full"
+                src="/map/Map-LITE-institutes-AY-2022-23.webp"
+                alt=""
+              />
             </div>
           </section>
           <svg
@@ -270,7 +289,7 @@ export default function Home(props) {
               fill="url(#5d0dd344-b041-4d26-bec4-8d33ea57ec9b)"
             />
           </svg>
-          <div className="px-4 lg:px-0 pb-12 max-w-6xl 2xl:max-w-7xl mx-auto relative">
+          <div className="px-4 lg:px-0 pb-12 max-w-6xl 2xl:max-w-7xl mx-auto relative pt-16">
             <p className="text-lg font-semibold text-primary-500 pb-4">
               Watch video to see the new teaching-learning experience
             </p>
@@ -279,9 +298,9 @@ export default function Home(props) {
               <iframe
                 className="rounded-xl shadow-2xl border-2 border-gray-900"
                 src="https://player.vimeo.com/video/814873471?badge=0&amp;autopause=0&amp;player_id=0&amp;app_id=58479"
-                frameborder="0"
+                frameBorder="0"
                 allow="autoplay; fullscreen; picture-in-picture"
-                allowfullscreen
+                allowFullScreen
                 style={{
                   position: "absolute",
                   top: 0,
