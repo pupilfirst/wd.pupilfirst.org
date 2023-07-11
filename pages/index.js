@@ -148,7 +148,7 @@ export default function Home(props) {
               />
             </div>
           </header>
-          <div className="relative pb-4 px-4 xl:px-0">
+          <div className=" pb-4 px-4 xl:px-0">
             <div className="max-w-6xl 2xl:max-w-7xl mx-auto flex gap-8 xl:gap-12 items-center">
               <div className="z-10 flex-1 flex flex-col items-center text-center md:text-left md:items-start">
                 <h1 className="text-primary-500 text-3xl md:text-3xl lg:text-4xl 2xl:text-5xl py-2 font-extrabold lg:leading-tight xl:leading-tight">
@@ -184,7 +184,7 @@ export default function Home(props) {
                   </a>{" "}
                 </p>
 
-                <div className="flex gap-4 items-start w-full md:w-auto mt-6">
+                <div className="flex gap-4 items-start w-full md:w-auto mt-6 md:mt-12">
                   <a
                     href="https://www.pupilfirst.school/courses/1802"
                     target="_blank"
@@ -223,14 +223,14 @@ export default function Home(props) {
               </div>
               <div className="flex-1 py-12 lg:pt-0 pb-12 hidden md:block">
                 <img
-                  className="w-full md:px-2 xl:px-16"
-                  src="hero/hero-student.svg"
+                  className="absolute object-contain max-w-xl lg:max-w-3xl 2xl:max-w-4xl pl-12 right-0 top-0 z-0"
+                  src="hero/hero.webp"
                   alt="Illustration of female graduate student."
                 />
               </div>
             </div>
           </div>
-          <section className="px-4 xl:mx-0 pb-10 md:pb-16 pt-6  bg-gray-900">
+          <section className="px-4 xl:mx-0 pb-10 md:pb-16 pt-16 relative z-10">
             <div className="max-w-6xl 2xl:max-w-7xl mx-auto px-16 pb-16 pt-10 bg-white rounded-lg flex items-center flex-col">
               <p className="text-lg md:text-2xl text-center font-bold">
                 Scholarships supported by
