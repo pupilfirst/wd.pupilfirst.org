@@ -1,6 +1,12 @@
 import React from "react";
 
-export default function Testimonial({ name, batch, testimony, imageSrc }) {
+export default function Testimonial({
+  name,
+  batch,
+  university,
+  testimony,
+  imageSrc,
+}) {
   return (
     <div className="flex flex-col items-center md:items-start md:flex-row gap-3 bg-gray-800 p-6 rounded-lg w-full md:w-5/6">
       <img
@@ -27,7 +33,8 @@ export default function Testimonial({ name, batch, testimony, imageSrc }) {
         <div className="text-white">
           <p className="text-lg md:text-xl text-gray-300">{testimony}</p>
           <p className="font-semibold mt-4 text-gray-200">{name}</p>
-          <p className="text-sm text-gray-400">{batch}</p>
+          <p className="text-sm text-gray-400">{batch},</p>
+          <p className="text-sm text-gray-400">{university}</p>
         </div>
       </div>
     </div>

@@ -4,24 +4,27 @@ import Testimonial from "./Testimonial";
 
 let testimonialList = [
   {
-    name: "Shailesh Aanand",
-    batch: "(CEF Batch #1)",
+    name: "Frehiwot Abebie Haile",
+    batch: "WD06Y22 Cohort",
+    university: "Marwadi University",
     testimony:
-      "I came to know about the fellowship opportunity from my professors. The course seemed promising as I had some knowledge about Frontend Development, but this seemed like a good chance to dive deeper. Apart from the interesting and well-paced course, what's really inspiring is the constant help and support from the mentors round the clock. After the course, I felt much more confident as a Full Stack Web Developer. The course was followed by a 6 month internship. I had the chance to work on industry-level projects and contributed to various Covid-19 related projects that helped the government of Kerala and 4 other states to combat the ongoing pandemic. Thus, apart from the fact that it helped me gain experience, it filled me with immense satisfaction for helping out others in times of need. It was an inspiring and encouraging push for my career and I feel grateful for it.",
+      "Having the opportunity to learn from Pupilfirst professionals has been extremely beneficial to me. I didn't have a well-structured knowledge of NodeJs as I'm a self-taught programmer. However, the courses taught me the fundamentals of code structure and accepted project methods. The capstone project's challenges have improved my problem-solving abilities. This has piqued my interest in learning and exploring more. Furthermore, I'll be honored to serve as a TA. In the process, I'll improve my skills by assisting others. I'm excited to work with the Pupilfirst team!",
     imageSrc: "/people/Shailesh-Aanand_profile.jpeg",
   },
   {
-    name: "Swapnil Jagtap",
-    batch: "(CEF Batch #1)",
+    name: "Sai Mallik Rameshwaram",
+    batch: "WD06Y23 Cohort",
+    university: "Vardhaman College of Engineering",
     testimony:
-      "I began my software engineer journey during the covid pandemic. I discovered an interest in Web improvement. I learned concepts of Javascript, React environment, MongoDb and NodeJs. However, I want to get my hands dirty, and I want to work on real-world projects. I got an email from the school about the CoronaSafe Network and I quickly applied. After finishing the assignment I got chosen for the interview. As it was my first interview I was very nervous. Jasim took my interview and he was excessively amicable to the point that I forgot It was the interview. On 14 Jan, the selected student list was announced and I was stunned! I got chosen for the fellowship. Out of 50,000+applicants, only 24 students were selected and I was one of them. After smooth onboarding, we began to work on the ARIKE project. Sharing your ideas with team members and understanding other's opinions is only possible if you work in a team environment. I learned the software development process, how to organize your code, got real-world experience of Typescript and React projects. I learned to optimize code and much more. The main thing I like about fellowship is you don't have to compromise your academics. This is what I was expecting from the fellowship. Coronsafe Fellowship was above my expectations. Coronasafe Engineering Fellowship is one of the best things that happened to my software developer journey. Smooth onboarding, friendly mentors, everything is just perfect. It was a nice experience working with industry experts.",
+      "II would like to thank Pupilfirst Team for giving me the opportunity to learn about new technologies besides guiding me to gain real-time work experience in completing project. I also thank all the TAs and Coaches who guided me to resolve my issues while working on the project. I would be very excited to work with this organization in the future.",
     imageSrc: "/people/swapnil_jagtap.jpg",
   },
   {
-    name: "Samyuktha Ganeshkumar",
-    batch: "(CEF Batch #1)",
+    name: "Aryan Patel",
+    batch: "WD04Y22",
+    university: "Veer Surendra Sai University Of Technology",
     testimony:
-      "Before joining the fellowship, all I knew was to code in a few languages but if asked to develop an entire web app on my own, I would have probably passed on the opportunity. Even with so many tutorials online, I often get confused about where to start and what topics are worth learning. That is when I chanced upon this fellowship and decided to give it a shot. I saw the coding assignment given to us as an opportunity to build a project for my Github profile and I even took the risk of coding in a language that I had only learnt for three months then. One thing led to the other and I am super grateful to have been selected for this fellowship! The 10-week training that we had, opened me up to the world of web development which I probably would not have explored without the motivation and sense of community I experienced from my mentors and peers. With a well-defined curriculum, we were encouraged to ask doubts no matter how small they were and I loved how we were pushed to explore concepts beyond the material given. Pointers on how programming in the tech industry should be done were immensely helpful and have changed the way I think while writing code. My first ever web app and first-ever pull request for an open-source project are only a few of many opportunities that this fellowship has created for me and I couldn't have asked for more!",
+      "I applied for the first batch of the GDC Fellowship program but got rejected. I applied for the second batch, and luckily I got selected. We got dedicated 3 months of training in React JS, Typescript and Django by PupilFirst. Before doing the course, I had very little knowledge of Full Stack Development, but after going through the course, I was quite confident in building web apps. After doing the courses, I got an opportunity to contribute to a digital public good named CARE. Getting exposure to contribute to an industrial and scalable project boosted my skills. The curriculum is designed in such a way that in a short period of time a person with less knowledge can become a pro in building web apps. The skills I acquired and the projects I built helped me a lot during my placements. GDC Fellowship was the best thing which happened to me in my life till date.",
     imageSrc: "/people/Samyukyha.png",
   },
 ];
@@ -36,6 +39,7 @@ export default function Testimonials() {
               key={index}
               name={testimonial.name}
               batch={testimonial.batch}
+              university={testimonial.university}
               testimony={testimonial.testimony}
               imageSrc={testimonial.imageSrc}
             />

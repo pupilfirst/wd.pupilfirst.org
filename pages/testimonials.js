@@ -133,12 +133,156 @@ export default function Home() {
                         <div className="bg-gray-500 border-2 border-red-500 rounded-lg w-16 h-16 lg:w-24 lg:h-24 flex-shrink-0">
                           <img
                             className="object-cover rounded-lg"
+                            src="/people/Shailesh-Aanand_profile.jpeg"
+                          />
+                        </div>
+                        <div className="pt-3">
+                          <p className="font-bold">Shailesh Aanand</p>
+                          <p className="text-sm pt-1 text-gray-400">
+                            WD03Y21 Cohort
+                          </p>
+                          <p className="text-sm">
+                            Birsa Institute of Technology
+                          </p>
+                        </div>
+                      </div>
+                    </div>
+                    <div className="col-span-8 relative lg:text-xl lg:leading-relaxed space-y-8 pt-8 lg:pt-16">
+                      <blockquote>
+                        Having the opportunity to learn from Pupilfirst
+                        professionals has been extremely beneficial to me. I
+                        didn't have a well-structured knowledge of NodeJs as I'm
+                        a self-taught programmer. However, the courses taught me
+                        the fundamentals of code structure and accepted project
+                        methods. The capstone project's challenges have improved
+                        my problem-solving abilities. This has piqued my
+                        interest in learning and exploring more. Furthermore,
+                        I'll be honored to serve as a TA. In the process, I'll
+                        improve my skills by assisting others. I'm excited to
+                        work with the Pupilfirst team!
+                      </blockquote>
+                    </div>
+                  </div>
+                  <div className="lg:grid lg:grid-cols-12 gap-16 text-white font-medium px-4">
+                    <div className="col-span-4 lg:text-right pt-2">
+                      <div className="lg:sticky top-0 flex flex-col lg:items-end lg:text-right pt-4 lg:pt-16">
+                        <div className="bg-gray-500 border-2 border-red-500 rounded-lg w-16 h-16 lg:w-24 lg:h-24 flex-shrink-0">
+                          <img
+                            className="object-cover rounded-lg"
+                            src="/people/swapnil_jagtap.jpg"
+                          />
+                        </div>
+                        <div className="pt-3">
+                          <p className="font-bold">Swapnil Jagtap</p>
+                          <p className="text-sm pt-1 text-gray-400">
+                            WD03Y21 Cohort
+                          </p>
+                          <p className="text-sm">
+                            Pune Institute of Computer Technology
+                          </p>
+                        </div>
+                      </div>
+                    </div>
+                    <div className="col-span-8 relative lg:text-xl lg:leading-relaxed space-y-8 pt-8 lg:pt-16">
+                      <blockquote>
+                        I began my software engineer journey during the covid
+                        pandemic. I discovered an interest in Web improvement. I
+                        learned concepts of Javascript, React environment,
+                        MongoDb and NodeJs. However, I want to get my hands
+                        dirty, and I want to work on real-world projects. I got
+                        an email from the school about the CoronaSafe Network
+                        and I quickly applied. After finishing the assignment I
+                        got chosen for the interview. As it was my first
+                        interview I was very nervous. Jasim took my interview
+                        and he was excessively amicable to the point that I
+                        forgot It was the interview. On 14 Jan, the selected
+                        student list was announced and I was stunned! I got
+                        chosen for the fellowship. Out of 50,000+applicants,
+                        only 24 students were selected and I was one of them.
+                        After smooth onboarding, we began to work on the ARIKE
+                        project. Sharing your ideas with team members and
+                        understanding other's opinions is only possible if you
+                        work in a team environment. I learned the software
+                        development process, how to organize your code, got
+                        real-world experience of Typescript and React projects.
+                        I learned to optimize code and much more. The main thing
+                        I like about fellowship is you don't have to compromise
+                        your academics. This is what I was expecting from the
+                        fellowship. Coronsafe Fellowship was above my
+                        expectations. Coronasafe Engineering Fellowship is one
+                        of the best things that happened to my software
+                        developer journey. Smooth onboarding, friendly mentors,
+                        everything is just perfect. It was a nice experience
+                        working with industry experts.
+                      </blockquote>
+                    </div>
+                  </div>
+                  <div className="lg:grid lg:grid-cols-12 gap-16 text-white font-medium px-4">
+                    <div className="col-span-4 lg:text-right pt-2">
+                      <div className="lg:sticky top-0 flex flex-col lg:items-end lg:text-right pt-4 lg:pt-16">
+                        <div className="bg-gray-500 border-2 border-red-500 rounded-lg w-16 h-16 lg:w-24 lg:h-24 flex-shrink-0">
+                          <img
+                            className="object-cover rounded-lg"
+                            src="/people/Samyukyha.png"
+                          />
+                        </div>
+                        <div className="pt-3">
+                          <p className="font-bold">Samyuktha Ganeshkumar</p>
+                          <p className="text-sm pt-1 text-gray-400">
+                            WD03Y21 Cohort
+                          </p>
+                          <p className="text-sm">
+                            Sri Sivasubramaniya Nadar College of Engineering
+                          </p>
+                        </div>
+                      </div>
+                    </div>
+                    <div className="col-span-8 relative lg:text-xl lg:leading-relaxed space-y-8 pt-8 lg:pt-16">
+                      <blockquote>
+                        Before joining the fellowship, all I knew was to code in
+                        a few languages but if asked to develop an entire web
+                        app on my own, I would have probably passed on the
+                        opportunity. Even with so many tutorials online, I often
+                        get confused about where to start and what topics are
+                        worth learning. That is when I chanced upon this
+                        fellowship and decided to give it a shot. I saw the
+                        coding assignment given to us as an opportunity to build
+                        a project for my Github profile and I even took the risk
+                        of coding in a language that I had only learnt for three
+                        months then. One thing led to the other and I am super
+                        grateful to have been selected for this fellowship! The
+                        10-week training that we had, opened me up to the world
+                        of web development which I probably would not have
+                        explored without the motivation and sense of community I
+                        experienced from my mentors and peers. With a
+                        well-defined curriculum, we were encouraged to ask
+                        doubts no matter how small they were and I loved how we
+                        were pushed to explore concepts beyond the material
+                        given. Pointers on how programming in the tech industry
+                        should be done were immensely helpful and have changed
+                        the way I think while writing code. My first ever web
+                        app and first-ever pull request for an open-source
+                        project are only a few of many opportunities that this
+                        fellowship has created for me and I couldn't have asked
+                        for more!
+                      </blockquote>
+                    </div>
+                  </div>
+                  <div className="lg:grid lg:grid-cols-12 gap-16 text-white font-medium px-4">
+                    <div className="col-span-4 lg:text-right pt-2">
+                      <div className="lg:sticky top-0 flex flex-col lg:items-end lg:text-right pt-4 lg:pt-16">
+                        <div className="bg-gray-500 border-2 border-red-500 rounded-lg w-16 h-16 lg:w-24 lg:h-24 flex-shrink-0">
+                          <img
+                            className="object-cover rounded-lg"
                             src="testimonials/Shri-Hari-L.png"
                           />
                         </div>
                         <div className="pt-3">
                           <p className="font-bold">Shri Hari L</p>
-                          <p className="text-sm">
+                          <p className="text-sm text-gray-400">
+                            WD03Y21 Cohort,{" "}
+                          </p>
+                          <p className="text-sm text-gray-400">
                             Bannari Amman Institute of Technology
                           </p>
                           <p className="text-sm italic text-gray-200 pt-2 mt-3 border-t border-gray-700">
@@ -205,7 +349,10 @@ export default function Home() {
                         </div>
                         <div className="pt-3">
                           <p className="font-bold">Apurva Nagar</p>
-                          <p className="text-sm">
+                          <p className="text-sm text-gray-400">
+                            WD03Y21 Cohort,
+                          </p>
+                          <p className="text-sm text-gray-400">
                             New Horizon College Of Engineering
                           </p>
                           <p className="text-sm italic text-gray-200 pt-2 mt-3 border-t border-gray-700">
@@ -244,7 +391,12 @@ export default function Home() {
                         </div>
                         <div className="pt-3">
                           <p className="font-bold">Arpan Abhishek</p>
-                          <p className="text-sm">CMR Institute of Technology</p>
+                          <p className="text-sm text-gray-400">
+                            WD03Y21 Cohort,
+                          </p>
+                          <p className="text-sm text-gray-400">
+                            CMR Institute of Technology
+                          </p>
                           <p className="text-sm italic text-gray-200 pt-2 mt-3 border-t border-gray-700">
                             Visvesvaraya Technological University
                           </p>
@@ -285,7 +437,12 @@ export default function Home() {
                         </div>
                         <div className="pt-3">
                           <p className="font-bold">Karan Sanjeev</p>
-                          <p className="text-sm">KCG College of Technology</p>
+                          <p className="text-sm text-gray-400">
+                            WD03Y21 Cohort,
+                          </p>
+                          <p className="text-sm text-gray-400">
+                            KCG College of Technology
+                          </p>
                           <p className="text-sm italic text-gray-200 pt-2 mt-3 border-t border-gray-700">
                             Anna University
                           </p>
@@ -316,7 +473,10 @@ export default function Home() {
                         </div>
                         <div className="pt-3">
                           <p className="font-bold">Khavin Shankar G</p>
-                          <p className="text-sm">
+                          <p className="text-sm text-gray-400">
+                            WD03Y21 Cohort,
+                          </p>
+                          <p className="text-sm text-gray-400">
                             SRM Institute of Science and Technology
                           </p>
                           <p className="text-sm italic text-gray-200 pt-2 mt-3 border-t border-gray-700">
@@ -373,7 +533,10 @@ export default function Home() {
                           <p className="font-bold">
                             Sandra Kakkarayil Jayakumar
                           </p>
-                          <p className="text-sm">
+                          <p className="text-sm text-gray-400">
+                            WD03Y21 Cohort,
+                          </p>
+                          <p className="text-sm text-gray-400">
                             College of Engineering Trivandrum
                           </p>
                           <p className="text-sm italic text-gray-200 pt-2 mt-3 border-t border-gray-700">
@@ -406,7 +569,10 @@ export default function Home() {
                         </div>
                         <div className="pt-3">
                           <p className="font-bold">Abhinandan Arya</p>
-                          <p className="text-sm">
+                          <p className="text-sm text-gray-400">
+                            WD03Y21 Cohort,
+                          </p>
+                          <p className="text-sm text-gray-400">
                             Deen Dayal Upadhyaya College
                           </p>
                           <p className="text-sm italic text-gray-200 pt-2 mt-3 border-t border-gray-700">
@@ -451,7 +617,10 @@ export default function Home() {
                         </div>
                         <div className="pt-3">
                           <p className="font-bold">Peeyush Goyal</p>
-                          <p className="text-sm">
+                          <p className="text-sm text-gray-400">
+                            WD03Y21 Cohort,
+                          </p>
+                          <p className="text-sm text-gray-400">
                             University Insititute of Engineering and Technology
                           </p>
                           <p className="text-sm italic text-gray-200 pt-2 mt-3 border-t border-gray-700">
@@ -491,7 +660,12 @@ export default function Home() {
                         </div>
                         <div className="pt-3">
                           <p className="font-bold">Divya Garg</p>
-                          <p className="text-sm">University Maharani College</p>
+                          <p className="text-sm text-gray-400">
+                            WD03Y21 Cohort,
+                          </p>
+                          <p className="text-sm text-gray-400">
+                            University Maharani College
+                          </p>
                           <p className="text-sm italic text-gray-200 pt-2 mt-3 border-t border-gray-700">
                             University of Rajasthan
                           </p>
@@ -522,7 +696,10 @@ export default function Home() {
                         </div>
                         <div className="pt-3">
                           <p className="font-bold">Amith Kumar</p>
-                          <p className="text-sm">
+                          <p className="text-sm text-gray-400">
+                            WD03Y21 Cohort,
+                          </p>
+                          <p className="text-sm text-gray-400">
                             National Institute of Engineering
                           </p>
                           <p className="text-sm italic text-gray-200 pt-2 mt-3 border-t border-gray-700">
@@ -552,7 +729,10 @@ export default function Home() {
                         </div>
                         <div className="pt-3">
                           <p className="font-bold">Pradipta Ghoshal</p>
-                          <p className="text-sm">
+                          <p className="text-sm text-gray-400">
+                            WD03Y21 Cohort,
+                          </p>
+                          <p className="text-sm text-gray-400">
                             College of Engineering and Management
                           </p>
                           <p className="text-sm italic text-gray-200 pt-2 mt-3 border-t border-gray-700">
