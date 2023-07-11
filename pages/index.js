@@ -32,6 +32,23 @@ function ImageWithDescription({ name, githuburl, caption, role, imgSrc }) {
   );
 }
 
+// let facultyMember = (index, name, imgSrc, designation, institute) => {
+//   return (
+//     <div key={index} className="flex flex-col items-center text-center">
+//       <div className="w-32 h-32 rounded-full object-cover overflow-hidden">
+//         <img
+//           className="w-32 h-32 rounded-full object-cover overflow-hidden"
+//           src={imgSrc}
+//           alt={"Photo of" + name}
+//         />
+//       </div>
+//       <p className="mt-4 font-semibold text-white">{name} </p>
+//       <p className="text-gray-200 pt-1.5">{designation}</p>
+//       <p className="text-gray-400 text-xs">{institute}</p>
+//     </div>
+//   );
+// };
+
 let hiringPartner = (index, title, url, logoSrc) => {
   return (
     <a
@@ -46,8 +63,8 @@ let hiringPartner = (index, title, url, logoSrc) => {
 };
 
 export default function Home(props) {
-  const [showLess, setShowLess] = useState(false);
-  const hiringNetwork = showLess ? props.data : props.data.slice(0, 10);
+  const [showHiringLess, setShowHiringLess] = useState(false);
+  const hiringNetwork = showHiringLess ? props.data : props.data.slice(0, 10);
 
   return (
     <div className={""}>
@@ -131,9 +148,9 @@ export default function Home(props) {
                   Leadership in Teaching Excellence Programme.
                 </p>
                 <h1 className="text-primary-500 text-3xl md:text-3xl lg:text-4xl 2xl:text-5xl py-2 font-extrabold lg:leading-tight xl:leading-tight">
-                  "70 companies are a part of our network to give internship and
-                  placement opportunities to students skilled in Advanced Web
-                  Development.”
+                  4.5 Million Jobs in GCC industry by 2030. Join the LITE
+                  Advanced Web Development Program, that opens the gateway for
+                  new opportunities!
                 </h1>
                 {/* <p>
                   <a
@@ -145,20 +162,20 @@ export default function Home(props) {
                   </a>
                 </p> */}
                 <p className="pr-2 mt-8 text-lg text-white leading-relaxed font-semibold">
-                  Admissions now open for the remaining{" "}
+                  Admissions now open for the 10th cohort of LITE Advanced Web
+                  Development program (WD10Y23). 7637 scholarships are available
+                  for taking the courses as
                   <span className="bg-yellow-300 text-gray-900">
-                    8285 Scholarships for Minor Degree and Open Elective
+                    Minor Degree or as Open Electives
                   </span>{" "}
                   in{" "}
                   <a
                     className="text-secondary-400 underline hover:text-secondary-300"
-                    href="https://drive.google.com/file/d/1dFt2KwXXONdFmKXXAjPU2_xlCbVDIRBB/view"
+                    href="https://drive.google.com/file/d/1di0o5i8ZmI03j4bicWlKSMSeYHpeFjvA/view"
                     target="_blank"
                   >
                     LITE Advanced Web Development.
                   </a>{" "}
-                  Students from 13 Institutes have already availed of
-                  scholarships in previous batches.
                 </p>
                 <p className="text-lg text-gray-400 italic mt-8">
                   Application Closed.
@@ -566,7 +583,8 @@ export default function Home(props) {
           </div>
         </SectionWithHeading>
 
-        <PersonalizedLearningExperiece />
+        <PersonalizedLearningExperiece {...props} />
+
         <SectionWithHeading
           heading="There is no speed limit for learning."
           darkBackground="true"
@@ -768,9 +786,9 @@ export default function Home(props) {
             </div>
             <button
               className="block mx-auto my-4 text-sm font-semibold text-secondary-600 px-3 py-2 bg-secondary-50 rounded-md"
-              onClick={() => setShowLess((prev) => !prev)}
+              onClick={() => setShowHiringLess((prev) => !prev)}
             >
-              {showLess ? "Show Less" : "Show more"}
+              {showHiringLess ? "Show Less" : "Show more"}
             </button>
           </div>
         </SectionWithHeading>
