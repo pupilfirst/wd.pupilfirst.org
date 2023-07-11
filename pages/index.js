@@ -9,6 +9,7 @@ import SectionWithHeading from "../components/SectionWithHeading";
 import Testimonials from "../components/Testimonials";
 import Timeline from "../components/Timeline";
 import hiringNetworkData from "./../data/hiring-network.json";
+import facultyMembersData from "./../data/faculty-members.json";
 
 function ImageWithDescription({ name, githuburl, caption, role, imgSrc }) {
   return (
@@ -64,7 +65,9 @@ let hiringPartner = (index, title, url, logoSrc) => {
 
 export default function Home(props) {
   const [showHiringLess, setShowHiringLess] = useState(false);
-  const hiringNetwork = showHiringLess ? props.data : props.data.slice(0, 10);
+  const hiringNetwork = showHiringLess
+    ? props.hiringNetwork
+    : props.hiringNetwork.slice(0, 10);
 
   return (
     <div className={""}>
@@ -583,7 +586,7 @@ export default function Home(props) {
           </div>
         </SectionWithHeading>
 
-        <PersonalizedLearningExperiece {...props} />
+        <PersonalizedLearningExperiece members={props.facultyMembers} />
 
         <SectionWithHeading
           heading="There is no speed limit for learning."
@@ -1097,7 +1100,8 @@ export default function Home(props) {
 export async function getStaticProps() {
   return {
     props: {
-      data: hiringNetworkData,
+      hiringNetwork: hiringNetworkData,
+      facultyMembers: facultyMembersData,
     },
   };
 }

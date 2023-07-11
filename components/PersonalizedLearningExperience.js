@@ -1,6 +1,5 @@
 import React, { useState } from "react";
 import SectionWithHeading from "./SectionWithHeading";
-import facultyMembersData from "./../data/faculty-members.json";
 
 let facultyMember = (index, name, imgSrc, designation, institute) => {
   return (
@@ -19,9 +18,10 @@ let facultyMember = (index, name, imgSrc, designation, institute) => {
   );
 };
 
-export default function PersonalizedLearningExperiece(props) {
+export default function PersonalizedLearningExperiece({ members }) {
   const [showFacultyLess, setShowFacultyLess] = useState(false);
-  const facultyMembers = showFacultyLess ? props.data : props.data.slice(0, 10);
+  const facultyMembers = showFacultyLess ? members : members.slice(0, 10);
+  console.log(facultyMembers, "facultyMembers");
 
   return (
     <SectionWithHeading heading="Get Personalised Guidance">
@@ -50,12 +50,4 @@ export default function PersonalizedLearningExperiece(props) {
       </div>
     </SectionWithHeading>
   );
-}
-
-export async function getStaticProps() {
-  return {
-    props: {
-      data: facultyMembersData,
-    },
-  };
 }
