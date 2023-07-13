@@ -609,12 +609,6 @@ export default function Home(props) {
           heading="There is no speed limit for learning."
           darkBackground="true"
         >
-          <p className="text-white mt-4 md:text-lg w-full md:w-4/5">
-            As a beginner, we expect you to make many mistakes. Get personalised
-            guidance from LITE faculty members &amp; student teaching assistants
-            to find answers and confidently move ahead.
-          </p>
-
           <div className="md:grid flex flex-col gap-12 md:gap-24 items-center md:items-start md:grid-cols-12 mt-8 z-10">
             <div className="col-span-6 md:pb-12">
               <div className="relative w-full gap-24 text-white px-4 md:px-12 py-8 md:py-20 bg-gray-800 rounded-2xl border-b md:border-b-0 md:border-r border-primary-600 z-10">
