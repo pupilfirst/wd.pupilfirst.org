@@ -25,9 +25,10 @@ export default function PersonalizedLearningExperiece({ members }) {
   return (
     <SectionWithHeading heading="Get Personalised Guidance">
       <p className="text-white mt-4 md:text-lg w-full md:w-4/5">
-        As a beginner, we expect you to make many mistakes. Get personalised
-        guidance from LITE faculty members &amp; student teaching assistants to
-        find answers and confidently move ahead.
+        As a beginner, we expect you to make many mistakes and learn from your
+        mistakes. Get personalised guidance from LITE faculty members, industry
+        experts and teaching assistants to find answers and confidently move
+        ahead.
       </p>
 
       <div className="grid grid-cols-2 md:grid-cols-4 lg:grid-cols-5 gap-x-5 gap-y-10 pt-16 pb-10">

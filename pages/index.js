@@ -247,7 +247,7 @@ export default function Home(props) {
           <section className="px-4">
             <div className="max-w-6xl 2xl:max-w-7xl mx-auto text-center p-4 bg-gray-100 rounded-lg flex items-center flex-col">
               <h2 className="text-lg md:text-2xl font-bold pt-4">
-                Students from 18 Institutes have already availed scholarships in
+                Students from 17 Institutes have already availed scholarships in
                 previous cohorts.
               </h2>
               <img

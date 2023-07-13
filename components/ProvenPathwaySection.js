@@ -239,11 +239,13 @@ export default function ProvenPathwaySection() {
               stepImgSrc="/steps-illustrations/step-4.svg"
             >
               <p>
-                After WD 201 course, selected learners who demonstrate the
+                After WD 301 course, selected learners who demonstrate the
                 application of skills ahead of peers shall be invited to join
                 the GDC Batch of 2023 and contribute towards building Digital
-                Public Goods along with the title of National Software
-                Engineering Fellow.
+                Public Goods along with the title of{" "}
+                <span className="italic">
+                  National Software Engineering Fellow.
+                </span>
               </p>
               <p className="mt-6 font-semibold">Programme Partners:</p>
               <div className="bg-white flex space-x-8 p-4 mt-2 rounded-lg">
@@ -318,8 +320,8 @@ export default function ProvenPathwaySection() {
           <div>
             <h3 className="text-primary-500 text-4xl">Interested?</h3>
             <p className="text-white ">
-              Admissions open for 10,000 Minor Degree Scholarships in Web
-              Development.
+              Admissions open for LITE Advanced Web Development program on a
+              scholarship basis.
             </p>
           </div>
           <div>
