@@ -168,9 +168,9 @@ export default function Home(props) {
                   </a>
                 </p>
                 <p className="pr-2 mt-4 text-lg text-white leading-relaxed font-semibold">
-                  Admissions now open for the 10th cohort of LITE Advanced Web
-                  Development program (WD10Y23). 7637 scholarships are available
-                  for taking the courses as{" "}
+                  Admissions now open for the 10<sup>th</sup> cohort of LITE
+                  Advanced Web Development program (WD10Y23). 7637 scholarships
+                  are available for taking the courses as{" "}
                   <span className="bg-yellow-300 text-gray-900">
                     Minor Degree or as Open Electives
                   </span>{" "}
@@ -1142,7 +1142,7 @@ export default function Home(props) {
             <div className="p-12 rounded-lg bg-indigo-500 flex flex-col items-center text-center gap-6 mt-12">
               <h4 className="text-white text-xl md:text-3xl font-semibold mt-8 w-full md:w-4/5">
                 Application Open for LITE Minor Degree and
-                <br /> Open Elective Batch __ 2023
+                <br /> Open Elective WD10Y23 Cohort.
               </h4>
               <a
                 id="apply-button-footer-cta"
