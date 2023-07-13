@@ -223,7 +223,7 @@ export default function Home(props) {
               </div>
               <div className="flex-1 py-12 lg:pt-0 pb-12 hidden md:block">
                 <img
-                  className="absolute object-contain max-w-xl lg:max-w-3xl 2xl:max-w-4xl pl-12 left-1/2 top-0 z-0"
+                  className="absolute object-contain max-w-xl lg:max-w-3xl 2xl:max-w-4xl pl-12 right-0 top-0 z-0"
                   src="hero/hero.webp"
                   alt="Illustration of female graduate student."
                 />

@@ -9,7 +9,7 @@ let testimonialList = [
     university: "Marwadi University",
     testimony:
       "Having the opportunity to learn from Pupilfirst professionals has been extremely beneficial to me. I didn't have a well-structured knowledge of NodeJs as I'm a self-taught programmer. However, the courses taught me the fundamentals of code structure and accepted project methods. The capstone project's challenges have improved my problem-solving abilities. This has piqued my interest in learning and exploring more. Furthermore, I'll be honored to serve as a TA. In the process, I'll improve my skills by assisting others. I'm excited to work with the Pupilfirst team!",
-    imageSrc: "/people/Shailesh-Aanand_profile.jpeg",
+    imageSrc: "/people/Frehiwot-Abebie-Haile.jpg",
   },
   {
     name: "Sai Mallik Rameshwaram",
@@ -17,7 +17,7 @@ let testimonialList = [
     university: "Vardhaman College of Engineering",
     testimony:
       "II would like to thank Pupilfirst Team for giving me the opportunity to learn about new technologies besides guiding me to gain real-time work experience in completing project. I also thank all the TAs and Coaches who guided me to resolve my issues while working on the project. I would be very excited to work with this organization in the future.",
-    imageSrc: "/people/swapnil_jagtap.jpg",
+    imageSrc: "/people/Sai-Mallik.png",
   },
   {
     name: "Aryan Patel",
@@ -25,7 +25,7 @@ let testimonialList = [
     university: "Veer Surendra Sai University Of Technology",
     testimony:
       "I applied for the first batch of the GDC Fellowship program but got rejected. I applied for the second batch, and luckily I got selected. We got dedicated 3 months of training in React JS, Typescript and Django by PupilFirst. Before doing the course, I had very little knowledge of Full Stack Development, but after going through the course, I was quite confident in building web apps. After doing the courses, I got an opportunity to contribute to a digital public good named CARE. Getting exposure to contribute to an industrial and scalable project boosted my skills. The curriculum is designed in such a way that in a short period of time a person with less knowledge can become a pro in building web apps. The skills I acquired and the projects I built helped me a lot during my placements. GDC Fellowship was the best thing which happened to me in my life till date.",
-    imageSrc: "/people/Samyukyha.png",
+    imageSrc: "/people/Aryan-Patel.png",
   },
 ];
 
