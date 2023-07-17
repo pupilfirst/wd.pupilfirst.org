@@ -122,7 +122,7 @@ export default function Home(props) {
         />
         <meta name="The Minor Degree in Advanced Web Development Curriculum is approved by All India Council for Technical Education (AICTE) under the National Educational Alliance for Technology (NEAT) programme of the Ministry of Education, Government of India. This degree can be opted for and pursued by students who are enrolled in the Institutes selected as part of the Batch 1 of LITE programme." />
       </Head>
-      <main className="bg-gradient-to-br from-gray-800 to-gray-900 mx-auto">
+      <main className="bg-gradient-to-br from-gray-800 to-gray-900 mx-auto overflow-x-hidden">
         <section className="hero__bg-pattern bg-gray-900 relative">
           <div className="absolute inset-0 md:inset-x-0 md:top-8 2xl:inset-0 z-0">
             <img
@@ -223,7 +223,7 @@ export default function Home(props) {
               </div>
               <div className="flex-1 py-12 lg:pt-0 pb-12 hidden md:block">
                 <img
-                  className="absolute object-contain max-w-xl lg:max-w-3xl 2xl:max-w-4xl pl-12 right-0 top-0 z-0"
+                  className="absolute object-contain max-w-xl xl:max-w-3xl 2xl:max-w-4xl left-1/2 right-0 top-0 z-0"
                   src="hero/hero.webp"
                   alt="Illustration of female graduate student."
                 />
@@ -324,6 +324,109 @@ export default function Home(props) {
             </div>
           </div>
         </section>
+
+        <SectionWithHeading heading="Beginner to advanced courses">
+          <p className="text-white mt-4 md:text-lg w-full md:w-4/5">
+            The LITE Advanced Web Development curriculum is offered to students
+            with four courses that has weightage of 18-20 credits
+          </p>
+          <div className="flex flex-col md:flex-row space-y-2 md:space-y-0 md:space-x-2 mt-8">
+            <div className="w-full md:flex-1 bg-gradient-to-br from-gray-700 to-gray-900 border border-indigo-400 rounded-lg shadow-md p-3 md:p-4">
+              <p className="text-indigo-400 text-xl md:text-2xl font-bold">
+                WD 101
+              </p>
+              <p className="text-white leading-snug mt-1">
+                <span className="font-semibold">Beginner</span> - Getting
+                Started with Javascript
+              </p>
+            </div>
+            <div className="flex items-center justify-center w-full h-4 md:w-4 md:h-auto md:transform md:-rotate-90">
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                width="16"
+                height="16"
+                fill="currentColor"
+                className="text-primary-700"
+                viewBox="0 0 16 16"
+              >
+                <path
+                  fillRule="evenodd"
+                  d="M8 4a.5.5 0 0 1 .5.5v5.793l2.146-2.147a.5.5 0 0 1 .708.708l-3 3a.5.5 0 0 1-.708 0l-3-3a.5.5 0 1 1 .708-.708L7.5 10.293V4.5A.5.5 0 0 1 8 4z"
+                />
+              </svg>
+            </div>
+            <div className="w-full md:flex-1 bg-gradient-to-br from-gray-700 to-gray-900 border border-green-400 rounded-lg shadow-md p-3 md:p-4">
+              <p className="text-green-400 text-xl md:text-2xl font-bold">
+                WD 201
+              </p>
+              <p className="text-white leading-snug mt-1">
+                <span className="font-semibold">Intermediate</span> -
+                Server-side programming with Node.js
+              </p>
+            </div>
+            <div className="flex items-center justify-center w-full h-4 md:w-4 md:h-auto md:transform md:-rotate-90">
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                width="16"
+                height="16"
+                fill="currentColor"
+                className="text-indigo-700"
+                viewBox="0 0 16 16"
+              >
+                <path
+                  fillRule="evenodd"
+                  d="M8 4a.5.5 0 0 1 .5.5v5.793l2.146-2.147a.5.5 0 0 1 .708.708l-3 3a.5.5 0 0 1-.708 0l-3-3a.5.5 0 1 1 .708-.708L7.5 10.293V4.5A.5.5 0 0 1 8 4z"
+                />
+              </svg>
+            </div>
+            <div className="w-full md:flex-1 bg-gradient-to-br from-gray-700 to-gray-900 border border-red-500 rounded-lg shadow-md p-3 md:p-4">
+              <p className="text-red-400 text-xl md:text-2xl font-bold">
+                WD 301
+              </p>
+              <p className="text-white leading-snug mt-1">
+                <span className="font-semibold">Advanced</span> - Front-end
+                development with React &amp; Typescript
+              </p>
+            </div>
+            <div className="flex items-center justify-center w-full h-4 md:w-4 md:h-auto md:transform md:-rotate-90">
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                width="16"
+                height="16"
+                fill="currentColor"
+                className="text-green-700"
+                viewBox="0 0 16 16"
+              >
+                <path
+                  fillRule="evenodd"
+                  d="M8 4a.5.5 0 0 1 .5.5v5.793l2.146-2.147a.5.5 0 0 1 .708.708l-3 3a.5.5 0 0 1-.708 0l-3-3a.5.5 0 1 1 .708-.708L7.5 10.293V4.5A.5.5 0 0 1 8 4z"
+                />
+              </svg>
+            </div>
+
+            <div className="w-full md:flex-1 bg-gradient-to-br from-gray-700 to-gray-900 border border-cyan-400 rounded-lg shadow-md p-3 md:p-4">
+              <p className="text-cyan-400 text-xl md:text-2xl font-bold">
+                WD 401
+              </p>
+              <p className="text-white leading-snug mt-1">
+                <span className="font-semibold">Industry</span> - Getting ready
+                for production deployment.
+              </p>
+            </div>
+          </div>
+
+          <p className="mt-4 text-sm text-white ">
+            More advanced courses would be added to give a broader choice of
+            specialisations.
+          </p>
+          <div className="pt-8 lg:pt-16">
+            <img
+              className="w-full h-full object-contain mix-blend-color-dodge"
+              src="course-path/course-pathway.png"
+              alt="Course pathway"
+            />
+          </div>
+        </SectionWithHeading>
 
         <SectionWithHeading
           heading="Dynamic Curriculum by Industry Experts"
@@ -434,108 +537,7 @@ export default function Home(props) {
             based on student/faculty feedback and changes in the industry
           </p>
         </SectionWithHeading>
-        <SectionWithHeading heading="Beginner to advanced courses">
-          <p className="text-white mt-4 md:text-lg w-full md:w-4/5">
-            The LITE Advanced Web Development curriculum is offered to students
-            with four courses that has weightage of 18-20 credits
-          </p>
-          <div className="flex flex-col md:flex-row space-y-2 md:space-y-0 md:space-x-2 mt-8">
-            <div className="w-full md:flex-1 bg-gradient-to-br from-gray-700 to-gray-900 border border-indigo-400 rounded-lg shadow-md p-3 md:p-4">
-              <p className="text-indigo-400 text-xl md:text-2xl font-bold">
-                WD 101
-              </p>
-              <p className="text-white leading-snug mt-1">
-                <span className="font-semibold">Beginner</span> - Getting
-                Started with Javascript
-              </p>
-            </div>
-            <div className="flex items-center justify-center w-full h-4 md:w-4 md:h-auto md:transform md:-rotate-90">
-              <svg
-                xmlns="http://www.w3.org/2000/svg"
-                width="16"
-                height="16"
-                fill="currentColor"
-                className="text-primary-700"
-                viewBox="0 0 16 16"
-              >
-                <path
-                  fillRule="evenodd"
-                  d="M8 4a.5.5 0 0 1 .5.5v5.793l2.146-2.147a.5.5 0 0 1 .708.708l-3 3a.5.5 0 0 1-.708 0l-3-3a.5.5 0 1 1 .708-.708L7.5 10.293V4.5A.5.5 0 0 1 8 4z"
-                />
-              </svg>
-            </div>
-            <div className="w-full md:flex-1 bg-gradient-to-br from-gray-700 to-gray-900 border border-green-400 rounded-lg shadow-md p-3 md:p-4">
-              <p className="text-green-400 text-xl md:text-2xl font-bold">
-                WD 201
-              </p>
-              <p className="text-white leading-snug mt-1">
-                <span className="font-semibold">Intermediate</span> -
-                Server-side programming with Node.js
-              </p>
-            </div>
-            <div className="flex items-center justify-center w-full h-4 md:w-4 md:h-auto md:transform md:-rotate-90">
-              <svg
-                xmlns="http://www.w3.org/2000/svg"
-                width="16"
-                height="16"
-                fill="currentColor"
-                className="text-indigo-700"
-                viewBox="0 0 16 16"
-              >
-                <path
-                  fillRule="evenodd"
-                  d="M8 4a.5.5 0 0 1 .5.5v5.793l2.146-2.147a.5.5 0 0 1 .708.708l-3 3a.5.5 0 0 1-.708 0l-3-3a.5.5 0 1 1 .708-.708L7.5 10.293V4.5A.5.5 0 0 1 8 4z"
-                />
-              </svg>
-            </div>
-            <div className="w-full md:flex-1 bg-gradient-to-br from-gray-700 to-gray-900 border border-red-500 rounded-lg shadow-md p-3 md:p-4">
-              <p className="text-red-400 text-xl md:text-2xl font-bold">
-                WD 301
-              </p>
-              <p className="text-white leading-snug mt-1">
-                <span className="font-semibold">Advanced</span> - Front-end
-                development with React &amp; Typescript
-              </p>
-            </div>
-            <div className="flex items-center justify-center w-full h-4 md:w-4 md:h-auto md:transform md:-rotate-90">
-              <svg
-                xmlns="http://www.w3.org/2000/svg"
-                width="16"
-                height="16"
-                fill="currentColor"
-                className="text-green-700"
-                viewBox="0 0 16 16"
-              >
-                <path
-                  fillRule="evenodd"
-                  d="M8 4a.5.5 0 0 1 .5.5v5.793l2.146-2.147a.5.5 0 0 1 .708.708l-3 3a.5.5 0 0 1-.708 0l-3-3a.5.5 0 1 1 .708-.708L7.5 10.293V4.5A.5.5 0 0 1 8 4z"
-                />
-              </svg>
-            </div>
 
-            <div className="w-full md:flex-1 bg-gradient-to-br from-gray-700 to-gray-900 border border-cyan-400 rounded-lg shadow-md p-3 md:p-4">
-              <p className="text-cyan-400 text-xl md:text-2xl font-bold">
-                WD 401
-              </p>
-              <p className="text-white leading-snug mt-1">
-                <span className="font-semibold">Industry</span> - Getting ready
-                for production deployment.
-              </p>
-            </div>
-          </div>
-
-          <p className="mt-4 text-sm text-white ">
-            More advanced courses would be added to give a broader choice of
-            specialisations.
-          </p>
-          <div className="pt-8 lg:pt-16">
-            <img
-              className="w-full h-full object-contain mix-blend-color-dodge"
-              src="course-path/course-pathway.png"
-              alt="Course pathway"
-            />
-          </div>
-        </SectionWithHeading>
         <SectionWithHeading
           heading="Learner-Centered Classrooms"
           darkBackground="true"
