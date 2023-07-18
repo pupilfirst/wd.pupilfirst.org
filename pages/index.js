@@ -426,7 +426,7 @@ export default function Home(props) {
           <div className="pt-8 lg:pt-16">
             <img
               className="w-full h-full object-contain mix-blend-color-dodge"
-              src="course-path/course-pathway.png"
+              src="course-path/course-pathway.webp"
               alt="Course pathway"
             />
           </div>
