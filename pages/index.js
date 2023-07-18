@@ -548,7 +548,7 @@ export default function Home(props) {
           darkBackground="true"
         >
           <p className="text-white mt-4 md:text-lg w-full md:w-4/5">
-            You will be a part of this cohort having students across 9 states in
+            You will be a part of this cohort having students across 8 states in
             India to learn via Learner-centred Classrooms following National
             Educational Policy 2020 guidelines (NEP 2020).
           </p>
