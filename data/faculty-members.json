@@ -1,11 +1,5 @@
 [
   {
-    "name": "Mrs. S Durga Devi",
-    "imgSrc": "/faculty-members/Mrs._S._Durga_Devi-Faculty_1_vvoyw4_gupiyj.png",
-    "designation": "Assistant Professor",
-    "institute": "Chaitanya Bharathi Institute of Technology, Hyderabad"
-  },
-  {
     "name": "Mrs. M Lalitha",
     "imgSrc": "/faculty-members/Mrs._M._Lalitha-Faculty_1_cdx2nq_vakqu5.png",
     "designation": "Assistant Professor",
@@ -16,18 +10,6 @@
     "imgSrc": "/faculty-members/Mrs._Manthena_Deepthi-Faculty_2_rwozck_ivbcn6.png",
     "designation": "Assistant Professor",
     "institute": "G.Narayanamma Institute of Technology and Science For Women,Hyderabad"
-  },
-  {
-    "name": "Dr. Padmaja B",
-    "imgSrc": "/faculty-members/Dr._B_Padmaja-Faculty_1_fnjkym_u4vrst.png",
-    "designation": "Associate Professor & Head",
-    "institute": "Institute of Aeronautical Engineering, Hyderabad"
-  },
-  {
-    "name": "Mr. E Krishna Rao Patro",
-    "imgSrc": "/faculty-members/Mr._E_Krishna_Rao_Patro-Faculty_2_ftogpf_o5jw7i.png",
-    "designation": "Assistant Professor",
-    "institute": "Institute of Aeronautical Engineering, Hyderabad"
   },
   {
     "name": "Dr. Roopa Chandrika",
@@ -72,30 +54,6 @@
     "institute": "Sankalchand Patel College of Engineering, Visnagar"
   },
   {
-    "name": "Mr. Ganesh Deshmukh",
-    "imgSrc": "/faculty-members/Mr._Ganesh_Deshmukh-Faculty_1_akbvpz_fqjcly.png",
-    "designation": "Assistant Professor",
-    "institute": "Vardhaman College of Engineering, Shamshabad"
-  },
-  {
-    "name": "Mr. Prajwal Maredukonda",
-    "imgSrc": "/faculty-members/Mr._Prajwal_Maredukonda-Faculty_2_mmq7ly_a3adax.png",
-    "designation": "Assistant Professor",
-    "institute": "Vardhaman College of Engineering, Shamshabad"
-  },
-  {
-    "name": "Joshi Padma Narasimhachari",
-    "imgSrc": "/faculty-members/Mrs._Joshi_Padma_Narasimhachari_ppguz7.jpg",
-    "designation": "Assistant Professor",
-    "institute": "Sreyas Institute of Engineering and Technology"
-  },
-  {
-    "name": "N. Santhosh Ramchander",
-    "imgSrc": "/faculty-members/Mr._N._Santhosh_Ramchander_xd56fp.jpg",
-    "designation": "Assistant Professor",
-    "institute": "Sreyas Institute of Engineering and Technology"
-  },
-  {
     "name": "Mr. Rakesh Kumar",
     "imgSrc": "/faculty-members/Mr._Rakesh_Kumar_cqalr2.png",
     "designation": "Assistant Professor",
@@ -112,19 +70,6 @@
     "imgSrc": "/faculty-members/Mr.Sameer_B.Patil.jpg",
     "designation": "Assistant Professor",
     "institute": "KIT's College of Engineering, Kolhapur"
-  },
-
-  {
-    "name": "Dr. Kamble Shiva Kumar",
-    "imgSrc": "/faculty-members/LITE-avatar.svg",
-    "designation": "Assistant Professor",
-    "institute": "ACE Engineering College, Hyderabad"
-  },
-  {
-    "name": "Prof. Gyara Monika",
-    "imgSrc": "/faculty-members/LITE-avatar.svg",
-    "designation": "Assistant Professor",
-    "institute": "ACE Engineering College, Hyderabad"
   },
   {
     "name": "Prof. P. Anitha",
@@ -161,11 +106,5 @@
     "imgSrc": "/faculty-members/Prof._Shailesh_Galande_PCCOE.png",
     "designation": "Assistant Professor",
     "institute": "Pimpri Chinchwad College of Engineering (PCCoE), Pune"
-  },
-  {
-    "name": "Mr. Sanjay Kalyankar",
-    "imgSrc": "/faculty-members/LITE-avatar.svg",
-    "designation": "Associate Professor",
-    "institute": "Deogiri Institute of Engineering and Management Studies, Aurangabad"
   }
 ]

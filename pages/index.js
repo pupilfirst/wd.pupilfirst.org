@@ -892,7 +892,7 @@ export default function Home(props) {
                     are eligible to apply.
                   </p>
                   <div className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 place-items-center text-center px-4 py-10 gap-12">
-                    <figure className="flex h-full flex-col items-center justify-between">
+                    {/* <figure className="flex h-full flex-col items-center justify-between">
                       <img
                         className="h-24 object-contain"
                         src="/logos/ACE_Engineering_College.jpg"
@@ -902,8 +902,8 @@ export default function Home(props) {
                       <figcaption className="text-center font-medium pt-2 text-xs text-gray-500">
                         ACE Engineering College
                       </figcaption>
-                    </figure>
-                    <figure className="flex h-full flex-col items-center justify-between">
+                    </figure> */}
+                    {/* <figure className="flex h-full flex-col items-center justify-between">
                       <img
                         className="h-16 flex-1 object-contain object-center justify-center"
                         src="/logos/Chaitanya_Bharathi_Institute_of_Technology_Hyderabad.png"
@@ -913,7 +913,7 @@ export default function Home(props) {
                       <figcaption className="text-center font-medium pt-2 text-xs text-gray-500">
                         Chaitanya Bharathi Institute of Technology, Hyderabad
                       </figcaption>
-                    </figure>
+                    </figure> */}
                     <figure className="flex h-full flex-col items-center justify-between">
                       <img
                         className="h-20 object-contain"
@@ -949,7 +949,7 @@ export default function Home(props) {
                         Coimbatore
                       </figcaption>
                     </figure>
-                    <figure className="flex h-full flex-col items-center justify-between">
+                    {/* <figure className="flex h-full flex-col items-center justify-between">
                       <img
                         className="h-24 object-contain"
                         src="/logos/Institute_of_Aeronautical_Engineering_Hyderabad.png"
@@ -959,7 +959,7 @@ export default function Home(props) {
                       <figcaption className="text-center font-medium pt-2 text-xs text-gray-500">
                         Institute of Aeronautical Engineering, Hyderabad
                       </figcaption>
-                    </figure>
+                    </figure> */}
                     <figure className="flex h-full flex-col items-center justify-between">
                       <img
                         className="h-20 flex-1 object-contain"
@@ -994,7 +994,7 @@ export default function Home(props) {
                         Pimpri Chinchwad College of Engineering (PCCoE), Pune
                       </figcaption>
                     </figure>
-                    <figure className="flex h-full flex-col items-center justify-between">
+                    {/* <figure className="flex h-full flex-col items-center justify-between">
                       <img
                         className="h-28 object-contain"
                         src="/logos/Sreyas_Institute_of_Engineering_and_Technology.png"
@@ -1004,8 +1004,8 @@ export default function Home(props) {
                       <figcaption className="text-center font-medium pt-2 text-xs text-gray-500">
                         Sreyas Institute of Engineering and Technology
                       </figcaption>
-                    </figure>
-                    <figure className="flex h-full flex-col items-center justify-between">
+                    </figure> */}
+                    {/* <figure className="flex h-full flex-col items-center justify-between">
                       <img
                         className="h-16 object-contain"
                         src="/logos/Vardhaman_College_of_Engineering_Shamshabad.jpg"
@@ -1015,7 +1015,7 @@ export default function Home(props) {
                       <figcaption className="text-center font-medium pt-2 text-xs text-gray-500">
                         Vardhaman College of Engineering, Shamshabad
                       </figcaption>
-                    </figure>
+                    </figure> */}
                     <figure className="flex h-full flex-col items-center justify-between">
                       <img
                         className="h-20 object-contain"
@@ -1091,7 +1091,7 @@ export default function Home(props) {
                         Goa College of Engineering, Ponda, Goa
                       </figcaption>
                     </figure>
-                    <figure className="flex h-full flex-col items-center justify-between">
+                    {/* <figure className="flex h-full flex-col items-center justify-between">
                       <img
                         className="h-20 object-contain"
                         src="/logos/Deogiri_Institute_of_Engineering_and_Management_Studies.jpg"
@@ -1102,7 +1102,7 @@ export default function Home(props) {
                         Deogiri Institute of Engineering and Management Studies,
                         Aurangabad
                       </figcaption>
-                    </figure>
+                    </figure> */}
                   </div>
                   <div className="p-4 bg-gray-100 rounded-lg">
                     <p>
