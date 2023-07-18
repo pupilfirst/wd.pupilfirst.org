@@ -36,7 +36,7 @@ let sectionHeadings = [
   },
   {
     heading:
-      "Get a Minor Degree in Advanced Web Development or get credits for completing the courses as Open Electives, as applicable",
+      "Get a Minor Degree in Advanced Web Development or get credits for completing the courses as Open Electives, as applicable.",
     number: "8",
   },
   {
@@ -165,14 +165,16 @@ export default function ProvenPathwaySection() {
               stepImgSrc="/steps-illustrations/step-2.svg"
             >
               <p>
-                300 hour learning journey begins towards becoming a full-stack
+                300-hour learning journey begins towards becoming a full-stack
                 developer.
               </p>
               <p className="mt-2">
-                Once you complete WD 101 course successfully adhering to
-                academic standards, you shall be admitted to Web Development 201
-                course with a full scholarship.
-                <span className="italic">(first come, first served basis)</span>
+                Once you complete the WD 101 course successfully adhering to
+                academic standards, you shall be admitted to the Web Development
+                201 course with a full scholarship.{" "}
+                <span className="italic">
+                  (first come, first served basis).
+                </span>
               </p>
               <p className="mt-2">
                 At Pupilfirst we believe in the importance of submitting
@@ -196,7 +198,7 @@ export default function ProvenPathwaySection() {
                 based on the Institute approval.
               </p>
               <p className="mt-2">
-                You will be learning with students from 20 institutes and 8
+                You will be learning with students from 14 institutes and 8
                 states across the country.
               </p>
             </Step>
@@ -206,7 +208,7 @@ export default function ProvenPathwaySection() {
               stepImgSrc="/steps-illustrations/step-4.svg"
             >
               <p>
-                Upon completion of WD 201, you shall be onboarded to WD 301 an
+                Upon completion of WD 201, you shall be onboarded to WD 301, an
                 advanced course designed to empower you with the skills and
                 knowledge needed to become a proficient full-stack web
                 developer.
@@ -230,7 +232,8 @@ export default function ProvenPathwaySection() {
             >
               <p>
                 As you finish your courses, we will connect you to the companies
-                in our hiring network.
+                in our hiring network who are looking to provide internship
+                opportunities.
               </p>
             </Step>
             <Step
@@ -275,16 +278,17 @@ export default function ProvenPathwaySection() {
             </Step>
             <Step
               stepNumber="8"
-              stepHeading="Get a Minor Degree in Advanced Web Development or get credits for completing the courses as Open Electives, as applicable"
+              stepHeading="Get a Minor Degree in Advanced Web Development or get credits for completing the courses as Open Electives, as applicable."
               stepImgSrc="/steps-illustrations/step-8.svg"
             >
               <p>
-                Be among the pioneers who graduate from University with a{" "}
+                You can be among the pioneers who graduate from University with
+                a{" "}
                 <span className="bg-yellow-300 font-medium text-gray-900">
                   B.Tech/BE in X with a Minor Degree in Advanced Web
                   Development;
                 </span>{" "}
-                where X = your current branch of study. If you have opted as
+                where X = your current branch of study. If you have opted for
                 Open Electives, this will contribute towards your graduating
                 degree.
               </p>
@@ -311,7 +315,8 @@ export default function ProvenPathwaySection() {
                 a Software Engineer. In WD06Y22 cohort, with the knowledge he
                 gained from industry, he contributed towards upgrading the
                 curriculum for new learners and helped them in their learning
-                journey.
+                journey. Vamsi is now pursuing MS in Computer Science and
+                Engineering from the University of Buffalo, New York.
               </p>
             </Step>
           </div>

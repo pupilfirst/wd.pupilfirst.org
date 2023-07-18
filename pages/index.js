@@ -164,13 +164,13 @@ export default function Home(props) {
                     href="https://assets.ey.com/content/dam/ey-sites/ey-com/en_in/topics/consulting/gcc/2023/06/ey-future-of-gccs-in-india-a-vision-2030.pdf"
                     target="_blank no-referrer"
                   >
-                    *Source
+                    *Source: Future of GCCs in India - A vision 2030
                   </a>
                 </p>
                 <p className="pr-2 mt-4 text-lg text-white leading-relaxed font-semibold">
                   Admissions now open for the 10<sup>th</sup> cohort of LITE
                   Advanced Web Development program (WD10Y23). 7637 scholarships
-                  are available for taking the courses as{" "}
+                  are available for taking the course(s) as a{" "}
                   <span className="bg-yellow-300 text-gray-900">
                     Minor Degree or as Open Electives
                   </span>{" "}
@@ -190,7 +190,7 @@ export default function Home(props) {
                     target="_blank"
                     className="flex justify-center w-full md:w-auto space-x-3 p-3 lg:px-6 lg:py-3.5 text-white bg-indigo-500 rounded-md text-base lg:text-lg text-center font-semibold shadow hover:bg-indigo-600 hover:text-indigo-100 hover:shadow-2xl focus:ring-2 focus:ring-indigo-400 focus:ring-offset-2 transition"
                   >
-                    Start by applying to WD101 now
+                    Apply now for learning JavaScript (WD 101)
                   </a>
 
                   <svg
@@ -248,7 +248,7 @@ export default function Home(props) {
             <div className="max-w-6xl 2xl:max-w-7xl mx-auto text-center p-4 bg-gray-100 rounded-lg flex items-center flex-col">
               <h2 className="text-lg md:text-2xl font-bold pt-4">
                 Students from 17 Institutes have already availed scholarships in
-                previous cohorts.
+                our previous cohorts and are taking the course(s) successfully.
               </h2>
               <img
                 className="object-cover w-full h-full"
@@ -290,9 +290,11 @@ export default function Home(props) {
             />
           </svg>
           <div className="px-4 lg:px-0 pb-12 max-w-6xl 2xl:max-w-7xl mx-auto relative pt-16">
-            <p className="text-lg font-semibold text-primary-500 pb-4">
-              Watch video to see the new teaching-learning experience
-            </p>
+            <h2 className="text-lg md:text-2xl font-bold text-white py-4">
+              <span className="text-primary-500">Watch the video</span> to see
+              the new teaching-learning experience using a learner-centred model
+              following the NEP 2020 guidelines.
+            </h2>
 
             <div style={{ padding: "56.25% 0 0 0", position: "relative" }}>
               <iframe
@@ -319,7 +321,7 @@ export default function Home(props) {
                 target="_blank"
                 className="inline-flex justify-center space-x-3 p-3 lg:px-6 lg:py-3.5 text-gray-900 bg-yellow-400 rounded-md text-base lg:text-lg text-center font-semibold shadow hover:bg-indigo-600 hover:text-indigo-100 hover:shadow-2xl focus:ring-2 focus:ring-indigo-400 focus:ring-offset-2 transition"
               >
-                Start by applying to WD101 now
+                Apply now for learning JavaScript (WD 101)
               </a>
             </div>
           </div>
@@ -328,7 +330,9 @@ export default function Home(props) {
         <SectionWithHeading heading="Beginner to advanced courses">
           <p className="text-white mt-4 md:text-lg w-full md:w-4/5">
             The LITE Advanced Web Development curriculum is offered to students
-            with four courses that has weightage of 18-20 credits
+            as four courses that have weightage of 18-20 credits. These courses
+            will impart skill competencies to students to become a full-stack
+            web developer.
           </p>
           <div className="flex flex-col md:flex-row space-y-2 md:space-y-0 md:space-x-2 mt-8">
             <div className="w-full md:flex-1 bg-gradient-to-br from-gray-700 to-gray-900 border border-indigo-400 rounded-lg shadow-md p-3 md:p-4">
@@ -433,8 +437,9 @@ export default function Home(props) {
           darkBackground="true"
         >
           <p className="text-white mt-4 md:text-lg w-full md:w-4/5">
-            Confidently, learn how to become a full-stack developer by learning
-            from a curriculum designed and maintained by practising software
+            Through the course journey, you will confidently, gain skill
+            competencies to become a full-stack developer by learning from a
+            curriculum designed and maintained by practising software
             engineering professionals.
           </p>
 
@@ -543,9 +548,9 @@ export default function Home(props) {
           darkBackground="true"
         >
           <p className="text-white mt-4 md:text-lg w-full md:w-4/5">
-            You will be a part of a batch having students across 9 states in
-            India to learn via Learner-centred Classrooms under National
-            Educational Policy 2020 (NEP 2020).
+            You will be a part of this cohort having students across 9 states in
+            India to learn via Learner-centred Classrooms following National
+            Educational Policy 2020 guidelines (NEP 2020).
           </p>
           <div className="relative">
             <p className="pt-4 md:text-lg text-white">
@@ -611,14 +616,14 @@ export default function Home(props) {
           heading="There is no speed limit for learning."
           darkBackground="true"
         >
-          <div className="md:grid flex flex-col gap-12 md:gap-24 items-center md:items-start md:grid-cols-12 mt-8 z-10">
-            <div className="col-span-6 md:pb-12">
+          <div className="md:grid flex flex-col gap-12 md:gap-24 items-center md:grid-cols-12 mt-8 z-10">
+            <div className="col-span-6">
               <div className="relative w-full gap-24 text-white px-4 md:px-12 py-8 md:py-20 bg-gray-800 rounded-2xl border-b md:border-b-0 md:border-r border-primary-600 z-10">
                 <p className="text-lg md:text-2xl">
-                  GDC batch students have completed a WD curriculum in
+                  One student from WD08Y23 completed up to WD 201 in
                 </p>
                 <p className="text-4xl md:text-6xl font-semibold mt-4">
-                  12 Weeks
+                  11 weeks.
                 </p>
                 <svg
                   className="absolute right-1/2 md:-right-2 rotate-90 md:rotate-0 -bottom-5 md:bottom-auto md:top-1/2 transform -translate-y-1/2 md:-translate-y-1/2"
@@ -647,7 +652,7 @@ export default function Home(props) {
                 </svg>
               </div>
             </div>
-            <div className="col-span-6 md:pt-4">
+            <div className="col-span-6">
               <div>
                 <div className="flex gap-3 items-center">
                   <svg
@@ -666,11 +671,11 @@ export default function Home(props) {
                   </svg>
 
                   <p className="text-gray-500 text-lg font-semibold">
-                    Web Development 101:
+                    WD 101 : Getting Started with JavaScript.
                   </p>
                 </div>
                 <p className="text-2xl md:text-4xl text-white font-semibold pl-5">
-                  1 Day
+                  2 weeks
                 </p>
               </div>
               <div>
@@ -691,36 +696,11 @@ export default function Home(props) {
                   </svg>
 
                   <p className="text-gray-500 text-lg font-semibold">
-                    Web Development 201:
+                    WD 201 : Server-side programming with Node.js
                   </p>
                 </div>
                 <p className="text-2xl md:text-4xl text-white font-semibold pl-5">
-                  6 Weeks
-                </p>
-              </div>
-              <div>
-                <div className="flex gap-3 items-center mt-8">
-                  <svg
-                    width="8"
-                    height="8"
-                    viewBox="0 0 8 8"
-                    fill="none"
-                    xmlns="http://www.w3.org/2000/svg"
-                  >
-                    <path
-                      fillRule="evenodd"
-                      clipRule="evenodd"
-                      d="M2.25008 0.5L6.75008 0.499999C7.02622 0.499999 7.25008 0.723857 7.25008 0.999999L7.25008 5.5C7.25008 5.77614 7.02622 6 6.75008 6C6.47393 6 6.25008 5.77614 6.25008 5.5L6.25008 2.20711L1.10363 7.35355C0.908367 7.54882 0.591784 7.54882 0.396522 7.35355C0.20126 7.15829 0.20126 6.84171 0.396522 6.64645L5.54297 1.5L2.25008 1.5C1.97393 1.5 1.75008 1.27614 1.75008 1C1.75008 0.723857 1.97393 0.5 2.25008 0.5Z"
-                      fill="#FFD761"
-                    />
-                  </svg>
-
-                  <p className="text-gray-500 text-lg font-semibold">
-                    Web Development 301:
-                  </p>
-                </div>
-                <p className="text-2xl md:text-4xl text-white font-semibold pl-5">
-                  6 Weeks
+                  9 Weeks
                 </p>
               </div>
             </div>
@@ -765,28 +745,55 @@ export default function Home(props) {
         >
           <div>
             <p className="text-white mt-4 md:text-lg w-full md:w-4/5">
-              Your learning efforts to complete the curriculum shall deliver a
-              successful career.
+              Your efforts to complete the curriculum to gain industry - ready
+              skill competencies shall deliver a successful career.
             </p>
+            <div className="grid grid-cols-2 gap-6 md:gap-12 mt-8">
+              <div className="col-span-1">
+                <img
+                  className="rounded-lg w-full "
+                  src="successful-career/Arnab-Sen.jpg"
+                  alt="Freshwork Academy photo"
+                />
+                <p className="text-white pt-2 font-semibold md:text-xl">
+                  Arnab Sen
+                </p>
+                <p className="text-gray-400 pt-0.5 md:text-lg">
+                  Cohort : WD04Y22
+                </p>
+                <p className="text-gray-400 pt-0.5 md:text-lg">
+                  Role : Software Engineer
+                </p>
+                <p className="text-gray-400 pt-0.5 md:text-lg">
+                  Company : Google
+                </p>
+              </div>
 
-            <div className="md:w-4/5 mt-6 md:mt-12">
-              <img
-                className="rounded-lg w-full "
-                src="successful-career/Shailesh-Anand.jpg"
-                alt="Freshwork Academy photo"
-              />
-              <p className="text-white pt-2 md:text-lg italic">
-                Shailesh Anand from WD03Y21 Cohort has completed the curriculum
-                as well as the internship and got placed in Google at 28 lacs
-                CTC.
-              </p>
+              <div className="col-span-1">
+                <img
+                  className="rounded-lg w-full "
+                  src="successful-career/Shailesh-Anand.jpg"
+                  alt="Freshwork Academy photo"
+                />
+                <p className="text-white pt-2 font-semibold md:text-xl">
+                  Shailesh Anand
+                </p>
+                <p className="text-gray-400 pt-0.5 md:text-lg">
+                  Cohort : WD03Y21
+                </p>
+                <p className="text-gray-400 pt-0.5 md:text-lg">
+                  Role : Technical Solutions Engineer
+                </p>
+                <p className="text-gray-400 pt-0.5 md:text-lg">
+                  Company : Google
+                </p>
+              </div>
             </div>
           </div>
         </SectionWithHeading>
         <SectionWithHeading heading="Growing Hiring Network">
           <p className="text-white mt-4 md:text-lg w-full md:w-4/5">
-            71 companies are currently participating in the hiring network which
-            is being expanded every month.
+            71 companies are currently enrolled in the hiring network.
           </p>
 
           <div className="bg-white rounded-lg p-4 mt-2 lg:mt-4">
@@ -813,7 +820,7 @@ export default function Home(props) {
           darkBackground={true}
         >
           <p className="text-white mt-4 md:text-lg w-full md:w-4/5">
-            Since 2016, 770 students have graduated from our courses/programmes
+            Since 2016, 819 students have graduated from our courses/programmes
             to work at leading startups and corporations.
           </p>
           <div className="bg-white rounded-lg p-4 mt-2 lg:mt-4">
@@ -851,7 +858,7 @@ export default function Home(props) {
                         target="_blank"
                         className="inline-flex space-x-3 p-3 lg:px-6 lg:py-3.5 text-white bg-indigo-500 rounded-md text-base lg:text-lg text-center font-semibold shadow hover:bg-indigo-600 hover:text-indigo-100 hover:shadow-2xl focus:ring-2 focus:ring-indigo-400 focus:ring-offset-2 transition"
                       >
-                        Start by applying to WD101 now
+                        Apply now for learning JavaScript (WD 101)
                       </a>
                     </div>
                   </div>
@@ -868,7 +875,8 @@ export default function Home(props) {
                       Web Development 101 course as an interest-based admission
                       test (IBAT)
                     </span>{" "}
-                    and not submitting any prior knowledge or marks.
+                    and not required of submitting any prior knowledge proof or
+                    marksheets.
                   </p>
                 </div>
 
@@ -1128,14 +1136,14 @@ export default function Home(props) {
                   time to complete the WD101 course.
                 </li>
                 <li className="mt-4">
-                  Upon completion of WD 101, students get onboarded to WD 201.
-                  Students who are not keeping up with the WD 201 course work
-                  within the set timelines shall be moved to the audit track and
-                  will lose their scholarship.
+                  Upon completion of WD 101 successfully, students get onboarded
+                  to WD 201. Students who are not keeping up with the WD 201
+                  course work within the set timelines shall be moved to the
+                  audit track and will lose their scholarship.
                 </li>
                 <li className="mt-4">
                   Students who already availed scholarship for WD 201 in any of
-                  the previous LITE cohorts can avail the course on a paid basis
+                  the previous LITE cohorts can take the course on a paid basis
                   in the WD10Y23 cohort. Please follow the instruction shared
                   with you from Pupilfirst over registered email ID.
                 </li>
@@ -1152,7 +1160,7 @@ export default function Home(props) {
                 target="_blank"
                 className="inline-flex space-x-3 p-3 lg:px-6 lg:py-3.5 bg-primary-500 text-indigo-600 rounded-md text-base lg:text-lg text-center font-semibold shadow-lg hover:bg-primary-400 hover:text-indigo-700 hover:shadow-2xl focus:ring-2 focus:ring-indigo-400 focus:ring-offset-2 transition"
               >
-                Start by applying to WD101 now
+                Apply now for learning JavaScript (WD 101)
               </a>
             </div>
 

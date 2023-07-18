@@ -61,8 +61,8 @@ export default function LearnerShowcase() {
     <SectionWithHeading heading="Student Internship Showcase">
       <div>
         <p className="text-white mt-4 md:text-lg w-full md:w-4/5">
-          Click on any student below to see the live software engineering work
-          being done by GDC Interns
+          Click on any student below to see their work done and contributions to
+          the CARE project as a part of their internship.
         </p>
         <div className="grid gap-4 grid-cols-1 sm:grid-cols-2 md:grid-cols-3 mt-8">
           {learners.map((learner, index) => (
