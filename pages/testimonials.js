@@ -756,24 +756,24 @@ export default function Home() {
             </div>
           </div>
         </section>
-        {/* <section className="border-t border-gray-600">
+        <section className="border-t border-gray-600">
           <div className="max-w-6xl mx-auto py-10 px-4">
             <div className="p-12 rounded-lg bg-indigo-500 flex flex-col items-center text-center gap-6">
               <h4 className="text-white text-xl md:text-3xl font-semibold mt-8 w-full md:w-4/5">
-                Admissions open for 10,000 Minor Degree Scholarships in Web
-                Development.
+                Admissions open for LITE Advanced Web Development program on a
+                scholarship basis.
               </h4>
               <a
                 id="apply-button-footer-cta"
-                href="https://docs.google.com/forms/d/e/1FAIpQLSegZMBGsoc53BiesjjxAXcLVsWSU5OLKHQ-4L8Cq5dcElojkA/viewform"
+                href="https://apply.pupilfirst.org/apply/forms/6"
                 target="_blank"
                 className="inline-flex space-x-3 p-3 lg:px-6 lg:py-3.5 bg-primary-500 text-indigo-600 rounded-md text-base lg:text-lg text-center font-semibold shadow-lg hover:bg-primary-400 hover:text-indigo-700 hover:shadow-2xl focus:ring-2 focus:ring-indigo-400 focus:ring-offset-2 transition"
               >
-                Start by applying to WD101 now
+                Apply now for learning JavaScript (WD 101)
               </a>
             </div>
           </div>
-        </section> */}
+        </section>
       </main>
     </div>
   );

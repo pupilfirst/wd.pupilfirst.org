@@ -321,22 +321,22 @@ export default function ProvenPathwaySection() {
             </Step>
           </div>
         </div>
-        <div className="p-10 flex gap-6 flex-wrap items-center justify-between bg-gray-700 rounded-lg mt-12">
-          <div>
+        <div className="p-4 md:p-10 grid md:grid-cols-2 gap-6 bg-gray-700 rounded-lg mt-12">
+          <div className="col-span-1">
             <h3 className="text-primary-500 text-4xl">Interested?</h3>
             <p className="text-white ">
               Admissions open for LITE Advanced Web Development program on a
               scholarship basis.
             </p>
           </div>
-          <div>
+          <div className="col-span-1 flex items-center justify-end">
             <a
               id="apply-button-proven-pathway"
-              href="https://www.pupilfirst.school/courses/1802"
+              href="https://apply.pupilfirst.org/apply/forms/6"
               target="_blank"
               className="inline-flex space-x-3 p-3 lg:px-6 lg:py-3.5 text-white bg-indigo-500 rounded-md text-base lg:text-lg text-center font-semibold shadow hover:bg-indigo-600 hover:text-indigo-100 hover:shadow-2xl focus:ring-2 focus:ring-indigo-400 focus:ring-offset-2 transition"
             >
-              Start by applying to WD101 now
+              Apply now for learning JavaScript (WD 101)
             </a>
           </div>
         </div>

@@ -186,7 +186,7 @@ export default function Home(props) {
 
                 <div className="flex gap-4 items-start w-full md:w-auto mt-6 md:mt-12">
                   <a
-                    href="https://www.pupilfirst.school/courses/1802"
+                    href="https://apply.pupilfirst.org/apply/forms/6"
                     target="_blank"
                     className="flex justify-center w-full md:w-auto space-x-3 p-3 lg:px-6 lg:py-3.5 text-white bg-indigo-500 rounded-md text-base lg:text-lg text-center font-semibold shadow hover:bg-indigo-600 hover:text-indigo-100 hover:shadow-2xl focus:ring-2 focus:ring-indigo-400 focus:ring-offset-2 transition"
                   >
@@ -317,7 +317,7 @@ export default function Home(props) {
             <div className="px-4 lg:px-0 py-1 max-w-6xl 2xl:max-w-7xl mx-auto text-center mt-6 md:mt-12">
               <a
                 id="apply-button-below-video"
-                href="https://www.pupilfirst.school/courses/1802"
+                href="https://apply.pupilfirst.org/apply/forms/6"
                 target="_blank"
                 className="inline-flex justify-center space-x-3 p-3 lg:px-6 lg:py-3.5 text-gray-900 bg-yellow-400 rounded-md text-base lg:text-lg text-center font-semibold shadow hover:bg-indigo-600 hover:text-indigo-100 hover:shadow-2xl focus:ring-2 focus:ring-indigo-400 focus:ring-offset-2 transition"
               >
@@ -854,7 +854,7 @@ export default function Home(props) {
                     <div>
                       <a
                         id="apply-button-how-to-apply"
-                        href="https://www.pupilfirst.school/courses/1802"
+                        href="https://apply.pupilfirst.org/apply/forms/6"
                         target="_blank"
                         className="inline-flex space-x-3 p-3 lg:px-6 lg:py-3.5 text-white bg-indigo-500 rounded-md text-base lg:text-lg text-center font-semibold shadow hover:bg-indigo-600 hover:text-indigo-100 hover:shadow-2xl focus:ring-2 focus:ring-indigo-400 focus:ring-offset-2 transition"
                       >
@@ -1156,7 +1156,7 @@ export default function Home(props) {
               </h4>
               <a
                 id="apply-button-footer-cta"
-                href="https://www.pupilfirst.school/courses/1802"
+                href="https://apply.pupilfirst.org/apply/forms/6"
                 target="_blank"
                 className="inline-flex space-x-3 p-3 lg:px-6 lg:py-3.5 bg-primary-500 text-indigo-600 rounded-md text-base lg:text-lg text-center font-semibold shadow-lg hover:bg-primary-400 hover:text-indigo-700 hover:shadow-2xl focus:ring-2 focus:ring-indigo-400 focus:ring-offset-2 transition"
               >
