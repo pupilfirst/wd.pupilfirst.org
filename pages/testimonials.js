@@ -756,7 +756,7 @@ export default function Home() {
             </div>
           </div>
         </section>
-        <section className="border-t border-gray-600">
+        {/* <section className="border-t border-gray-600">
           <div className="max-w-6xl mx-auto py-10 px-4">
             <div className="p-12 rounded-lg bg-indigo-500 flex flex-col items-center text-center gap-6">
               <h4 className="text-white text-xl md:text-3xl font-semibold mt-8 w-full md:w-4/5">
@@ -773,7 +773,7 @@ export default function Home() {
               </a>
             </div>
           </div>
-        </section>
+        </section> */}
       </main>
     </div>
   );
