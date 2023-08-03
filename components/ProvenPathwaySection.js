@@ -330,14 +330,15 @@ export default function ProvenPathwaySection() {
             </p>
           </div>
           <div className="col-span-1 flex items-center justify-end">
-            <a
+            {/* <a
               id="apply-button-proven-pathway"
               href="https://apply.pupilfirst.org/apply/forms/6"
               target="_blank"
               className="inline-flex space-x-3 p-3 lg:px-6 lg:py-3.5 text-white bg-indigo-500 rounded-md text-base lg:text-lg text-center font-semibold shadow hover:bg-indigo-600 hover:text-indigo-100 hover:shadow-2xl focus:ring-2 focus:ring-indigo-400 focus:ring-offset-2 transition"
             >
               Apply now for learning JavaScript (WD 101)
-            </a>
+            </a> */}
+            <p className="text-lg italic text-gray-300">Application closed!</p>
           </div>
         </div>
       </SectionWithHeading>
