@@ -119,7 +119,7 @@ export default function ProvenPathwaySection() {
 
   return (
     <div>
-      <SectionWithHeading heading="Join a proven career pathway">
+      <SectionWithHeading heading="Why wait? Join the proven career pathway">
         <p className="text-white mt-4 md:text-lg w-full md:w-4/5">
           Approved by the “All India Council for Technical Education” as{" "}
           <a
@@ -330,15 +330,14 @@ export default function ProvenPathwaySection() {
             </p>
           </div>
           <div className="col-span-1 flex items-center justify-end">
-            {/* <a
+            <a
               id="apply-button-proven-pathway"
-              href="https://apply.pupilfirst.org/apply/forms/6"
+              href="https://apply.pupilfirst.org/apply/forms/9"
               target="_blank"
               className="inline-flex space-x-3 p-3 lg:px-6 lg:py-3.5 text-white bg-indigo-500 rounded-md text-base lg:text-lg text-center font-semibold shadow hover:bg-indigo-600 hover:text-indigo-100 hover:shadow-2xl focus:ring-2 focus:ring-indigo-400 focus:ring-offset-2 transition"
             >
-              Apply now for learning JavaScript (WD 101)
-            </a> */}
-            <p className="text-lg italic text-gray-300">Application closed!</p>
+              Start by applying to WD101 now
+            </a>
           </div>
         </div>
       </SectionWithHeading>

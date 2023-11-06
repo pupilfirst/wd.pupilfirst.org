@@ -1,57 +1,9 @@
 [
   {
-    "name": "Mrs. M Lalitha",
-    "imgSrc": "/faculty-members/Mrs._M._Lalitha-Faculty_1_cdx2nq_vakqu5.png",
-    "designation": "Assistant Professor",
-    "institute": "G.Narayanamma Institute of Technology and Science For Women,Hyderabad"
-  },
-  {
-    "name": "Mrs. Manthena Deepthi",
-    "imgSrc": "/faculty-members/Mrs._Manthena_Deepthi-Faculty_2_rwozck_ivbcn6.png",
-    "designation": "Assistant Professor",
-    "institute": "G.Narayanamma Institute of Technology and Science For Women,Hyderabad"
-  },
-  {
-    "name": "Dr. Roopa Chandrika",
-    "imgSrc": "/faculty-members/Dr._Roopa_Chandrika_wjygte.jpg",
-    "designation": "Professor",
-    "institute": "Malla Reddy College of Engineering and Technology, Hyderabad"
-  },
-  {
-    "name": "Dr. S. Shanthi",
-    "imgSrc": "/faculty-members/Dr._S._Shanthi_kc6wqn.jpg",
-    "designation": "Head of the Department CSE",
-    "institute": "Malla Reddy College of Engineering and Technology, Hyderabad"
-  },
-  {
     "name": "Dr. Ahmad Jamal",
     "imgSrc": "/faculty-members/Dr._Ahmad_Jamal_iwtzao.jpg",
     "designation": "Assistant Professor",
     "institute": "Tula's Institute, Dehradun"
-  },
-  {
-    "name": "Mr. Tejas Chauhan",
-    "imgSrc": "/faculty-members/Mr._Tejas_Chauhan-_Faculty_1_xreey3_lckpot.png",
-    "designation": "Assistant Professor",
-    "institute": "Marwadi University"
-  },
-  {
-    "name": "Ms. Dipti Theng",
-    "imgSrc": "/faculty-members/Ms._Dipti_Theng-Faculty_1_v5s6j9_nwzw5k.png",
-    "designation": "Assistant Professor",
-    "institute": "G H Raisoni College of Engineering, Nagpur"
-  },
-  {
-    "name": "Ms. Jyoti Anand",
-    "imgSrc": "/faculty-members/Ms._Jyoti_Anand_rpupvp.png",
-    "designation": "Assistant Professor",
-    "institute": "University of Engineering and Management, Jaipur"
-  },
-  {
-    "name": "Ms. Hiral M. Patel",
-    "imgSrc": "/faculty-members/Prof._Hiral_M._Patel_mil4tw.jpg",
-    "designation": "Assistant Professor",
-    "institute": "Sankalchand Patel College of Engineering, Visnagar"
   },
   {
     "name": "Mr. Rakesh Kumar",
@@ -60,51 +12,57 @@
     "institute": "Tula's Institute, Dehradun"
   },
   {
-    "name": "Mr. Patel Mehulkumar Shankarlal",
-    "imgSrc": "/faculty-members/Mr._Patel_Mehulkumar_Shankarlal.png",
-    "designation": "Assistant Professor",
-    "institute": "Sankalchand Patel College of Engineering, Visnagar"
-  },
-  {
     "name": "Mr. Sameer B.Patil",
     "imgSrc": "/faculty-members/Mr.Sameer_B.Patil.jpg",
     "designation": "Assistant Professor",
     "institute": "KIT's College of Engineering, Kolhapur"
   },
   {
-    "name": "Prof. P. Anitha",
-    "imgSrc": "/faculty-members/Prof._P._Anitha_p.jpg",
-    "designation": "Assistant Professor",
-    "institute": "Hindusthan College of Engineering and Technology, Coimbatore"
-  },
-  {
-    "name": "Dr. Sanjay Nalbalwar",
-    "imgSrc": "/faculty-members/Dr._SL_Nalbalwar.jpg",
-    "designation": "Professor & Head (E&TE)",
-    "institute": "Dr. Babasaheb Ambedkar Technological University, Lonere"
-  },
-  {
-    "name": "Prof. Ria Bandyopadhyay",
-    "imgSrc": "/faculty-members/Prof.-Ria-JIS-School-of-Polytechnic.jpg",
-    "designation": "HOD (CST)",
-    "institute": "JIS School Of Polytechnic, Kalyani"
-  },
-  {
-    "name": "Dr. Nilesh B. Fal Dessai",
-    "imgSrc": "/faculty-members/Dr._Nilesh_B._Fal_Dessai.png",
-    "designation": "Associate Professor and HOD",
-    "institute": "Goa College of Engineering, Ponda, Goa"
-  },
-  {
-    "name": "Prof. Atiya Khan",
-    "imgSrc": "/faculty-members/Prof._Atiya_Khan_GHRCE.jpg",
-    "designation": "Assistant Professor",
-    "institute": "G H Raisoni College of Engineering, Nagpur"
-  },
-  {
     "name": "Prof. Shailesh Galande",
     "imgSrc": "/faculty-members/Prof._Shailesh_Galande_PCCOE.png",
     "designation": "Assistant Professor",
     "institute": "Pimpri Chinchwad College of Engineering (PCCoE), Pune"
+  },
+  {
+    "name": "Prof. Durga Devi",
+    "imgSrc": "/faculty-members/LITE-avatar.svg",
+    "designation": "Assistant Professor",
+    "institute": "Chaitanya Bharathi Institute of Technology, Hyderabad"
+  },
+  {
+    "name": "Dr. Padmaja",
+    "imgSrc": "/faculty-members/LITE-avatar.svg",
+    "designation": "Associate Professor",
+    "institute": "Institute of Aeronautical Engineering, Hyderabad"
+  },
+  {
+    "name": "Mr. Krishna Rao Patro",
+    "imgSrc": "/faculty-members/LITE-avatar.svg",
+    "designation": "Associate Professor",
+    "institute": " Institute of Aeronautical Engineering, Hyderabad"
+  },
+  {
+    "name": "Mr. Prajwal Maredukonda",
+    "imgSrc": "/faculty-members/LITE-avatar.svg",
+    "designation": "Assistant Professor",
+    "institute": "Vardhaman College of Engineering, Shamshabad"
+  },
+  {
+    "name": "Prof. Ganesh Deshmukh",
+    "imgSrc": "/faculty-members/LITE-avatar.svg",
+    "designation": "Assistant Professor",
+    "institute": "Vardhaman College of Engineering, Shamshabad"
+  },
+  {
+    "name": "Prof. Joshi Padma Narasimhachari",
+    "imgSrc": "/faculty-members/LITE-avatar.svg",
+    "designation": "Associate Professor",
+    "institute": "Sreyas Institute of Engineering and Technology"
+  },
+  {
+    "name": "Prof. Santhosh Ramchander",
+    "imgSrc": "/faculty-members/LITE-avatar.svg",
+    "designation": "Assistant Professor",
+    "institute": "Sreyas Institute of Engineering and Technology"
   }
 ]

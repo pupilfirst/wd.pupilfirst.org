@@ -4,6 +4,14 @@ import Testimonial from "./Testimonial";
 
 let testimonialList = [
   {
+    name: "Arepelly Shylesh",
+    batch: "WD06Y22 Cohort",
+    university: "Vardhaman College of Engineering, Shamshabad, Telangana",
+    testimony:
+      "Feedback on Capstone Project in course: Before starting this course, I built websites using HTML for frontend which were not very attractive for the user , but after learning this course, now I am confident that I can build the frontend interface more beautifully and more attractive for the users. This capstone project helped me to build my skills and understand deeply about the core concepts of React, Redux. I faced challenges mainly on Redux operations, so I searched the forums, YouTube and asked on Pupilfirst Discord learning community to understand clearly.",
+    imageSrc: "/people/LITE-avatar.svg",
+  },
+  {
     name: "Frehiwot Abebie Haile",
     batch: "WD06Y22 Cohort",
     university: "Marwadi University",
@@ -13,11 +21,27 @@ let testimonialList = [
   },
   {
     name: "Sai Mallik Rameshwaram",
-    batch: "WD06Y23 Cohort",
+    batch: "WD06Y22 Cohort",
     university: "Vardhaman College of Engineering",
     testimony:
-      "II would like to thank Pupilfirst Team for giving me the opportunity to learn about new technologies besides guiding me to gain real-time work experience in completing project. I also thank all the TAs and Coaches who guided me to resolve my issues while working on the project. I would be very excited to work with this organization in the future.",
+      "Feedback on Course Management by Pupilfirst Team: The way the Pupilfirst team managed the course was impressive. The content was well-organized, and the guidance offered was really helpful in my learning journey. The platform itself was easy to navigate, which made the whole experience much smoother. Overall, I'm quite satisfied with how the course was handled, and I want to acknowledge the team's efforts",
     imageSrc: "/people/Sai-Mallik.png",
+  },
+  {
+    name: "Javid Sumra",
+    batch: "WD06Y22 Cohort",
+    university: "Feedback on Pupilfirst LMS",
+    testimony:
+      "The Pupilfirst LMS is an impressive learning platform. I particularly appreciate the auto-grading feature powered by VTA, as well as the user-friendly interface (UI).",
+    imageSrc: "/people/LITE-avatar.svg",
+  },
+  {
+    name: "Ankit Rawat",
+    batch: "B02Y22 Cohort",
+    university: "TulTula's Institute, Dehradun, Uttarakhand",
+    testimony:
+      "The course content is crisp and precise which makes it easy to follow along. Adding more video content to the course will definitely help students like me understand the topics easily. Also, I feel like the Typescript content is very few in the course, adding more resources for Typescript will surely help.",
+    imageSrc: "/people/LITE-avatar.svg",
   },
   {
     name: "Aryan Patel",

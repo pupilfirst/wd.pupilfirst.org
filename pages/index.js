@@ -148,15 +148,16 @@ export default function Home(props) {
               />
             </div>
           </header>
-          <div className=" pb-4 px-4 xl:px-0">
+          <div className="pb-4 px-4 xl:px-0">
             <div className="max-w-6xl 2xl:max-w-7xl mx-auto flex gap-8 xl:gap-12 items-center">
               <div className="z-10 flex-1 flex flex-col items-center text-center md:text-left md:items-start">
                 <h1 className="text-primary-500 text-3xl md:text-3xl lg:text-4xl 2xl:text-5xl py-2 font-extrabold lg:leading-tight xl:leading-tight">
                   <span className="block text-lg md:text-xl pb-2">
                     4.5 Million Jobs in GCC industry by 2030.<sup>*</sup>
                   </span>{" "}
-                  Join the LITE Advanced Web Development Program, that opens the
-                  gateway for new opportunities!
+                  Join the last scholarship batch of LITE Advanced Web
+                  Development Program, that opens the gateway for new
+                  opportunities!
                 </h1>
                 <p>
                   <a
@@ -184,13 +185,13 @@ export default function Home(props) {
                   </a>{" "}
                 </p>
 
-                {/* <div className="flex gap-4 items-start w-full md:w-auto mt-6 md:mt-12">
+                <div className="flex gap-4 items-start w-full md:w-auto mt-6 md:mt-12">
                   <a
-                    href="https://apply.pupilfirst.org/apply/forms/6"
+                    href="https://apply.pupilfirst.org/apply/forms/9"
                     target="_blank"
                     className="flex justify-center w-full md:w-auto space-x-3 p-3 lg:px-6 lg:py-3.5 text-white bg-indigo-500 rounded-md text-base lg:text-lg text-center font-semibold shadow hover:bg-indigo-600 hover:text-indigo-100 hover:shadow-2xl focus:ring-2 focus:ring-indigo-400 focus:ring-offset-2 transition"
                   >
-                    Apply now for learning JavaScript (WD 101)
+                    Start by applying to WD101 now
                   </a>
 
                   <svg
@@ -219,10 +220,7 @@ export default function Home(props) {
                       </clipPath>
                     </defs>
                   </svg>
-                </div> */}
-                <p className="text-xl italic text-gray-300 mt-8">
-                  Application closed!
-                </p>
+                </div>
               </div>
               <div className="flex-1 py-12 lg:pt-0 pb-12 hidden md:block">
                 <img
@@ -247,7 +245,7 @@ export default function Home(props) {
               </div>
             </div>
           </section>
-          <section className="px-4">
+          <section className="px-4 pb-24">
             <div className="max-w-6xl 2xl:max-w-7xl mx-auto text-center p-4 bg-gray-100 rounded-lg flex items-center flex-col">
               <h2 className="text-lg md:text-2xl font-bold pt-4">
                 Students from 17 Institutes have already availed scholarships in
@@ -292,45 +290,9 @@ export default function Home(props) {
               fill="url(#5d0dd344-b041-4d26-bec4-8d33ea57ec9b)"
             />
           </svg>
-          <div className="px-4 lg:px-0 pb-12 max-w-6xl 2xl:max-w-7xl mx-auto relative pt-16">
-            <h2 className="text-lg md:text-2xl font-bold text-white py-4">
-              <span className="text-primary-500">Watch the video</span> to see
-              the new teaching-learning experience using a learner-centred model
-              following the NEP 2020 guidelines.
-            </h2>
-
-            <div style={{ padding: "56.25% 0 0 0", position: "relative" }}>
-              <iframe
-                className="rounded-xl shadow-2xl border-2 border-gray-900"
-                src="https://player.vimeo.com/video/814873471?badge=0&amp;autopause=0&amp;player_id=0&amp;app_id=58479"
-                frameBorder="0"
-                allow="autoplay; fullscreen; picture-in-picture"
-                allowFullScreen
-                style={{
-                  position: "absolute",
-                  top: 0,
-                  left: 0,
-                  width: "100%",
-                  height: "100%",
-                }}
-                title="Pupilfirst Adhyayana (Teaching-Learning Cycle)"
-              ></iframe>
-            </div>
-            <script src="https://player.vimeo.com/api/player.js"></script>
-            {/* <div className="px-4 lg:px-0 py-1 max-w-6xl 2xl:max-w-7xl mx-auto text-center mt-6 md:mt-12">
-              <a
-                id="apply-button-below-video"
-                href="https://apply.pupilfirst.org/apply/forms/6"
-                target="_blank"
-                className="inline-flex justify-center space-x-3 p-3 lg:px-6 lg:py-3.5 text-gray-900 bg-yellow-400 rounded-md text-base lg:text-lg text-center font-semibold shadow hover:bg-indigo-600 hover:text-indigo-100 hover:shadow-2xl focus:ring-2 focus:ring-indigo-400 focus:ring-offset-2 transition"
-              >
-                Apply now for learning JavaScript (WD 101)
-              </a>
-            </div> */}
-          </div>
         </section>
 
-        <SectionWithHeading heading="Beginner to advanced courses">
+        <SectionWithHeading heading="Web Development courses">
           <p className="text-white mt-4 md:text-lg w-full md:w-4/5">
             The LITE Advanced Web Development curriculum is offered to students
             as four courses that have weightage of 18-20 credits. These courses
@@ -432,6 +394,61 @@ export default function Home(props) {
               src="course-path/course-pathway.webp"
               alt="Course pathway"
             />
+          </div>
+          <div className="px-4 lg:px-0 py-1 max-w-6xl 2xl:max-w-7xl mx-auto text-center mt-6 md:mt-12">
+            <a
+              id="apply-button-below-video"
+              href="https://apply.pupilfirst.org/apply/forms/9"
+              target="_blank"
+              className="inline-flex justify-center space-x-3 p-3 lg:px-6 lg:py-3.5 text-gray-900 bg-yellow-400 rounded-md text-base lg:text-lg text-center font-semibold shadow hover:bg-indigo-600 hover:text-indigo-100 hover:shadow-2xl focus:ring-2 focus:ring-indigo-400 focus:ring-offset-2 transition"
+            >
+              Start your journey of becoming a Full Stack developer
+            </a>
+          </div>
+        </SectionWithHeading>
+
+        <SectionWithHeading heading="Gain the skills to become industry ready">
+          <div className="mt-12">
+            <img
+              className="rounded-lg w-full "
+              src="Comptency-based-knowleldge-spectrum/Comptency_based_Knowleldge_Spectrum-WD-201.png"
+              alt="Comptency based knowleldge spectrum WD 201"
+            />
+          </div>
+          <div className="mt-12">
+            <img
+              className="rounded-lg w-full "
+              src="Comptency-based-knowleldge-spectrum/Comptency_based_Knowleldge_Spectrum-WD-301.png"
+              alt="Comptency based knowleldge spectrum WD 301"
+            />
+          </div>
+        </SectionWithHeading>
+
+        <SectionWithHeading heading="Teaching learning experience">
+          <div className="px-4 lg:px-0 pb-12 max-w-6xl 2xl:max-w-7xl mx-auto relative pt-4">
+            <h2 className="text-lg md:text-2xl font-bold text-white py-4">
+              <span className="text-primary-500">Watch the video</span> to see
+              the new teaching-learning experience using a learner-centred model
+              following the NEP 2020 guidelines.
+            </h2>
+
+            <div style={{ padding: "56.25% 0 0 0", position: "relative" }}>
+              <iframe
+                className="rounded-xl shadow-2xl border-2 border-gray-900"
+                src="https://player.vimeo.com/video/814873471?badge=0&amp;autopause=0&amp;player_id=0&amp;app_id=58479"
+                frameBorder="0"
+                allow="autoplay; fullscreen; picture-in-picture"
+                allowFullScreen
+                style={{
+                  position: "absolute",
+                  top: 0,
+                  left: 0,
+                  width: "100%",
+                  height: "100%",
+                }}
+                title="Pupilfirst Adhyayana (Teaching-Learning Cycle)"
+              ></iframe>
+            </div>
           </div>
         </SectionWithHeading>
 
@@ -616,7 +633,7 @@ export default function Home(props) {
         <PersonalizedLearningExperiece members={props.facultyMembers} />
 
         <SectionWithHeading
-          heading="There is no speed limit for learning."
+          heading="The students completed the courses well before the deadlines"
           darkBackground="true"
         >
           <div className="md:grid flex flex-col gap-12 md:gap-24 items-center md:grid-cols-12 mt-8 z-10">
@@ -740,8 +757,11 @@ export default function Home(props) {
               fill="url(#5d0dd344-b041-4d26-bec4-8d33ea57ec9b)"
             />
           </svg>
+          <p className="text-primary-500 text-center text-3xl mt-8 bg-gray-800 py-4 rounded-xl">
+            If they can, you can too!
+          </p>
         </SectionWithHeading>
-        <LearnerShowcase />
+
         <SectionWithHeading
           heading="Build a Successful Career"
           darkBackground="true"
@@ -794,6 +814,7 @@ export default function Home(props) {
             </div>
           </div>
         </SectionWithHeading>
+        <LearnerShowcase />
         <SectionWithHeading heading="Growing Hiring Network">
           <p className="text-white mt-4 md:text-lg w-full md:w-4/5">
             71 companies are currently enrolled in the hiring network.
@@ -854,19 +875,16 @@ export default function Home(props) {
                     <h2 className="font-bold text-2xl lg:text-6xl text-primary-500 leading-tight ">
                       How to apply?
                     </h2>
-                    {/* <div>
+                    <div>
                       <a
                         id="apply-button-how-to-apply"
-                        href="https://apply.pupilfirst.org/apply/forms/6"
+                        href="https://apply.pupilfirst.org/apply/forms/9"
                         target="_blank"
                         className="inline-flex space-x-3 p-3 lg:px-6 lg:py-3.5 text-white bg-indigo-500 rounded-md text-base lg:text-lg text-center font-semibold shadow hover:bg-indigo-600 hover:text-indigo-100 hover:shadow-2xl focus:ring-2 focus:ring-indigo-400 focus:ring-offset-2 transition"
                       >
-                        Apply now for learning JavaScript (WD 101)
+                        Start by applying to WD101 now
                       </a>
-                    </div> */}
-                    <p className="text-xl italic text-gray-300">
-                      Application closed!
-                    </p>
+                    </div>
                   </div>
                 </div>
               </div>
@@ -874,15 +892,14 @@ export default function Home(props) {
               <div className="flex flex-col mt-4 pb-10 lg:pb-20 ml-2 md:ml-4 lg:ml-12 xl:ml-16 2xl:ml-36">
                 <div className="max-w-4xl text-white tracking-tight pt-1 lg:text-lg ">
                   <p>
-                    Your admission to WD201 as a part of the minor degree or as
-                    an open elective is based solely on a{" "}
+                    Your admission to Web Development (WD201) as a part of the
+                    minor degree or as an open elective is based solely on a{" "}
                     <span className="bg-yellow-300 font-medium text-gray-900">
-                      demonstration of learning interest and by completing the
-                      Web Development 101 course as an interest-based admission
-                      test (IBAT)
+                      successfully completing the Web Development 101 course as
+                      an interest-based admission test (IBAT)
                     </span>{" "}
                     and not required of submitting any prior knowledge proof or
-                    marksheets.
+                    mark sheets.
                   </p>
                 </div>
 
@@ -898,7 +915,7 @@ export default function Home(props) {
                     are eligible to apply.
                   </p>
                   <div className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 place-items-center text-center px-4 py-10 gap-12">
-                    {/* <figure className="flex h-full flex-col items-center justify-between">
+                    <figure className="flex h-full flex-col items-center justify-between">
                       <img
                         className="h-24 object-contain"
                         src="/logos/ACE_Engineering_College.jpg"
@@ -908,8 +925,8 @@ export default function Home(props) {
                       <figcaption className="text-center font-medium pt-2 text-xs text-gray-500">
                         ACE Engineering College
                       </figcaption>
-                    </figure> */}
-                    {/* <figure className="flex h-full flex-col items-center justify-between">
+                    </figure>
+                    <figure className="flex h-full flex-col items-center justify-between">
                       <img
                         className="h-16 flex-1 object-contain object-center justify-center"
                         src="/logos/Chaitanya_Bharathi_Institute_of_Technology_Hyderabad.png"
@@ -919,8 +936,8 @@ export default function Home(props) {
                       <figcaption className="text-center font-medium pt-2 text-xs text-gray-500">
                         Chaitanya Bharathi Institute of Technology, Hyderabad
                       </figcaption>
-                    </figure> */}
-                    <figure className="flex h-full flex-col items-center justify-between">
+                    </figure>
+                    {/* <figure className="flex h-full flex-col items-center justify-between">
                       <img
                         className="h-20 object-contain"
                         src="/logos/G_H_Raisoni_College_of_Engineering_Nagpur.png"
@@ -930,8 +947,8 @@ export default function Home(props) {
                       <figcaption className="text-center font-medium pt-2 text-xs text-gray-500">
                         G H Raisoni College of Engineering, Nagpur
                       </figcaption>
-                    </figure>
-                    <figure className="flex h-full flex-col items-center justify-between">
+                    </figure> */}
+                    {/* <figure className="flex h-full flex-col items-center justify-between">
                       <img
                         className="h-20 object-contain"
                         src="/logos/G_Narayanamma_Institute_of_Technology_and_Science_For_Women_JNTUH_Hyderabad.png"
@@ -942,8 +959,8 @@ export default function Home(props) {
                         G.Narayanamma Institute of Technology and Science For
                         Women, JNTUH, Hyderabad
                       </figcaption>
-                    </figure>
-                    <figure className="flex h-full flex-col items-center justify-between">
+                    </figure> */}
+                    {/* <figure className="flex h-full flex-col items-center justify-between">
                       <img
                         className="h-24 object-contain"
                         src="/logos/Hindusthan_College_of_Engineering_and_Technology_Coimbatore.jpg"
@@ -954,8 +971,8 @@ export default function Home(props) {
                         Hindusthan College of Engineering and Technology,
                         Coimbatore
                       </figcaption>
-                    </figure>
-                    {/* <figure className="flex h-full flex-col items-center justify-between">
+                    </figure> */}
+                    <figure className="flex h-full flex-col items-center justify-between">
                       <img
                         className="h-24 object-contain"
                         src="/logos/Institute_of_Aeronautical_Engineering_Hyderabad.png"
@@ -965,7 +982,7 @@ export default function Home(props) {
                       <figcaption className="text-center font-medium pt-2 text-xs text-gray-500">
                         Institute of Aeronautical Engineering, Hyderabad
                       </figcaption>
-                    </figure> */}
+                    </figure>
                     <figure className="flex h-full flex-col items-center justify-between">
                       <img
                         className="h-20 flex-1 object-contain"
@@ -977,7 +994,7 @@ export default function Home(props) {
                         KIT's College of Engineering
                       </figcaption>
                     </figure>
-                    <figure className="flex h-full flex-col items-center justify-between">
+                    {/* <figure className="flex h-full flex-col items-center justify-between">
                       <img
                         className="h-16 md:flex-1 object-contain"
                         src="/logos/Malla_Reddy_College_of_Engineering_and_Technology_Hyderabad.png"
@@ -988,7 +1005,7 @@ export default function Home(props) {
                         Malla Reddy College of Engineering and Technology,
                         Hyderabad
                       </figcaption>
-                    </figure>
+                    </figure> */}
                     <figure className="flex h-full flex-col items-center justify-between">
                       <img
                         className="h-24 object-contain"
@@ -1000,7 +1017,7 @@ export default function Home(props) {
                         Pimpri Chinchwad College of Engineering (PCCoE), Pune
                       </figcaption>
                     </figure>
-                    {/* <figure className="flex h-full flex-col items-center justify-between">
+                    <figure className="flex h-full flex-col items-center justify-between">
                       <img
                         className="h-28 object-contain"
                         src="/logos/Sreyas_Institute_of_Engineering_and_Technology.png"
@@ -1010,8 +1027,8 @@ export default function Home(props) {
                       <figcaption className="text-center font-medium pt-2 text-xs text-gray-500">
                         Sreyas Institute of Engineering and Technology
                       </figcaption>
-                    </figure> */}
-                    {/* <figure className="flex h-full flex-col items-center justify-between">
+                    </figure>
+                    <figure className="flex h-full flex-col items-center justify-between">
                       <img
                         className="h-16 object-contain"
                         src="/logos/Vardhaman_College_of_Engineering_Shamshabad.jpg"
@@ -1021,8 +1038,8 @@ export default function Home(props) {
                       <figcaption className="text-center font-medium pt-2 text-xs text-gray-500">
                         Vardhaman College of Engineering, Shamshabad
                       </figcaption>
-                    </figure> */}
-                    <figure className="flex h-full flex-col items-center justify-between">
+                    </figure>
+                    {/* <figure className="flex h-full flex-col items-center justify-between">
                       <img
                         className="h-20 object-contain"
                         src="/logos/Sankalchand_Patel_College_of_Engineering_Visnagar.png"
@@ -1032,7 +1049,7 @@ export default function Home(props) {
                       <figcaption className="text-center font-medium pt-2 text-xs text-gray-500">
                         Sankalchand Patel College of Engineering, Visnagar
                       </figcaption>
-                    </figure>
+                    </figure> */}
                     <figure className="flex h-full flex-col items-center justify-between">
                       <img
                         className="h-24 object-contain"
@@ -1044,7 +1061,7 @@ export default function Home(props) {
                         Tula's Institute, Dehradun
                       </figcaption>
                     </figure>
-                    <figure className="flex h-full flex-col items-center justify-between">
+                    {/* <figure className="flex h-full flex-col items-center justify-between">
                       <img
                         className="h-24 object-contain"
                         src="/logos/BATU_logo.png"
@@ -1053,8 +1070,8 @@ export default function Home(props) {
                       <figcaption className="text-center font-medium pt-2 text-xs text-gray-500">
                         Dr. Babasaheb Ambedkar Technological University
                       </figcaption>
-                    </figure>
-                    <figure className="flex h-full flex-col items-center justify-between">
+                    </figure> */}
+                    {/* <figure className="flex h-full flex-col items-center justify-between">
                       <img
                         className="h-16 object-contain"
                         src="/logos/University_of_Engineering_and_Management_Jaipur.png"
@@ -1064,8 +1081,8 @@ export default function Home(props) {
                       <figcaption className="text-center font-medium pt-2 text-xs text-gray-500">
                         University of Engineering and Management, Jaipur
                       </figcaption>
-                    </figure>
-                    <figure className="flex h-full flex-col items-center justify-between">
+                    </figure> */}
+                    {/* <figure className="flex h-full flex-col items-center justify-between">
                       <img
                         className="h-12 flex-1 object-contain"
                         src="/logos/Marwadi_University.png"
@@ -1075,8 +1092,8 @@ export default function Home(props) {
                       <figcaption className="text-center font-medium pt-2 text-xs text-gray-500">
                         Marwadi University
                       </figcaption>
-                    </figure>
-                    <figure className="flex h-full flex-col items-center justify-between">
+                    </figure> */}
+                    {/* <figure className="flex h-full flex-col items-center justify-between">
                       <img
                         className="h-24 object-contain"
                         src="/logos/JIS_School_Of_Polytechnic.jpg"
@@ -1085,8 +1102,8 @@ export default function Home(props) {
                       <figcaption className="text-center font-medium pt-2 text-xs text-gray-500">
                         JIS School Of Polytechnic
                       </figcaption>
-                    </figure>
-                    <figure className="flex h-full flex-col items-center justify-between">
+                    </figure> */}
+                    {/* <figure className="flex h-full flex-col items-center justify-between">
                       <img
                         className="h-24 object-contain"
                         src="/logos/Goa_College_of_Engineering_logo.png"
@@ -1096,7 +1113,7 @@ export default function Home(props) {
                       <figcaption className="text-center font-medium pt-2 text-xs text-gray-500">
                         Goa College of Engineering, Ponda, Goa
                       </figcaption>
-                    </figure>
+                    </figure> */}
                     {/* <figure className="flex h-full flex-col items-center justify-between">
                       <img
                         className="h-20 object-contain"
@@ -1155,23 +1172,20 @@ export default function Home(props) {
                 </li>
               </ul>
             </div>
-            {/* <div className="p-12 rounded-lg bg-indigo-500 flex flex-col items-center text-center gap-6 mt-12">
+            <div className="p-12 rounded-lg bg-indigo-500 flex flex-col items-center text-center gap-6 mt-12">
               <h4 className="text-white text-xl md:text-3xl font-semibold mt-8 w-full md:w-4/5">
                 Application Open for LITE Minor Degree and
                 <br /> Open Elective WD10Y23 Cohort.
               </h4>
               <a
                 id="apply-button-footer-cta"
-                href="https://apply.pupilfirst.org/apply/forms/6"
+                href="https://apply.pupilfirst.org/apply/forms/9"
                 target="_blank"
                 className="inline-flex space-x-3 p-3 lg:px-6 lg:py-3.5 bg-primary-500 text-indigo-600 rounded-md text-base lg:text-lg text-center font-semibold shadow-lg hover:bg-primary-400 hover:text-indigo-700 hover:shadow-2xl focus:ring-2 focus:ring-indigo-400 focus:ring-offset-2 transition"
               >
-                Apply now for learning JavaScript (WD 101)
+                Start by applying to WD101 now
               </a>
-            </div> */}
-            <p className="text-xl italic text-gray-300 mt-8 text-center bg-gray-900 py-5 rounded-lg">
-              Application closed!
-            </p>
+            </div>
 
             <div className="text-white mt-12">
               <h4>Code of Conduct</h4>

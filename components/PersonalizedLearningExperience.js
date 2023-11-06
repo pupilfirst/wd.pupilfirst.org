@@ -20,7 +20,7 @@ let facultyMember = (index, name, imgSrc, designation, institute) => {
 
 export default function PersonalizedLearningExperiece({ members }) {
   const [showFacultyLess, setShowFacultyLess] = useState(false);
-  const facultyMembers = showFacultyLess ? members : members.slice(0, 10);
+  const facultyMembers = showFacultyLess ? members : members.slice(0, 15);
 
   return (
     <SectionWithHeading heading="Get Personalised Guidance">
@@ -42,12 +42,12 @@ export default function PersonalizedLearningExperiece({ members }) {
           )
         )}
       </div>
-      <button
+      {/* <button
         className="block mx-auto my-4 text-sm font-semibold text-gray-400 px-3 py-2 bg-gray-700 rounded-md"
         onClick={() => setShowFacultyLess((prev) => !prev)}
       >
         {showFacultyLess ? "Show Less" : "Show more"}
-      </button>
+      </button> */}
     </SectionWithHeading>
   );
 }
