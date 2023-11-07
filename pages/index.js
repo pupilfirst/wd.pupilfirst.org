@@ -169,8 +169,8 @@ export default function Home(props) {
                   </a>
                 </p>
                 <p className="pr-2 mt-4 text-lg text-white leading-relaxed font-semibold">
-                  Admissions now open for the 10<sup>th</sup> cohort of LITE
-                  Advanced Web Development program (WD10Y23). 7637 scholarships
+                  Admissions now open for the 11<sup>th</sup> cohort of LITE
+                  Advanced Web Development program (WD11Y23). 7450 scholarships
                   are available for taking the course(s) as a{" "}
                   <span className="bg-yellow-300 text-gray-900">
                     Minor Degree or as Open Electives
@@ -859,12 +859,12 @@ export default function Home(props) {
         <ProvenPathwaySection />
         <SectionWithHeading heading="Key Timelines" darkBackground={true}>
           <Timeline />
-          <p className="text-lg font-medium text-gray-900">
+          {/* <p className="text-lg font-medium text-gray-900">
             <span className="bg-yellow-300 px-2 py-1">
               Note: Students who complete WD 101 will be onboarded to WD 201
               course within 24 hours of completion.
             </span>
-          </p>
+          </p> */}
         </SectionWithHeading>
         <section className="bg-gray-900 border-t border-b border-gray-700 relative">
           <div className="max-w-6xl 2xl:max-w-7xl mx-auto">
@@ -915,7 +915,7 @@ export default function Home(props) {
                     are eligible to apply.
                   </p>
                   <div className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 place-items-center text-center px-4 py-10 gap-12">
-                    <figure className="flex h-full flex-col items-center justify-between">
+                    {/* <figure className="flex h-full flex-col items-center justify-between">
                       <img
                         className="h-24 object-contain"
                         src="/logos/ACE_Engineering_College.jpg"
@@ -925,7 +925,7 @@ export default function Home(props) {
                       <figcaption className="text-center font-medium pt-2 text-xs text-gray-500">
                         ACE Engineering College
                       </figcaption>
-                    </figure>
+                    </figure> */}
                     <figure className="flex h-full flex-col items-center justify-between">
                       <img
                         className="h-16 flex-1 object-contain object-center justify-center"
@@ -1154,20 +1154,20 @@ export default function Home(props) {
               <ul className="list-disc ml-4">
                 <li className="mt-4">
                   Students can apply and get onboarded to the WD101 course
-                  between 20 July 2023 to 03 August 2023. We recommend that you
+                  between 07 November to 16 November 2023. We recommend that you
                   submit your application earlier in order to give yourself more
                   time to complete the WD101 course.
                 </li>
                 <li className="mt-4">
                   Upon completion of WD 101 successfully, students get onboarded
                   to WD 201. Students who are not keeping up with the WD 201
-                  course work within the set timelines shall be moved to the
-                  audit track and will lose their scholarship.
+                  course work within the set timelines will be offboarded from
+                  the course.
                 </li>
                 <li className="mt-4">
                   Students who already availed scholarship for WD 201 in any of
                   the previous LITE cohorts can take the course on a paid basis
-                  in the WD10Y23 cohort. Please follow the instruction shared
+                  in the WD11Y23 cohort. Please follow the instruction shared
                   with you from Pupilfirst over registered email ID.
                 </li>
               </ul>
@@ -1175,7 +1175,7 @@ export default function Home(props) {
             <div className="p-12 rounded-lg bg-indigo-500 flex flex-col items-center text-center gap-6 mt-12">
               <h4 className="text-white text-xl md:text-3xl font-semibold mt-8 w-full md:w-4/5">
                 Application Open for LITE Minor Degree and
-                <br /> Open Elective WD10Y23 Cohort.
+                <br /> Open Elective WD11Y23 Cohort.
               </h4>
               <a
                 id="apply-button-footer-cta"

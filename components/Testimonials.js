@@ -37,7 +37,7 @@ let testimonialList = [
   },
   {
     name: "Ankit Rawat",
-    batch: "B02Y22 Cohort",
+    batch: "WD06Y22 Cohort",
     university: "TulTula's Institute, Dehradun, Uttarakhand",
     testimony:
       "The course content is crisp and precise which makes it easy to follow along. Adding more video content to the course will definitely help students like me understand the topics easily. Also, I feel like the Typescript content is very few in the course, adding more resources for Typescript will surely help.",

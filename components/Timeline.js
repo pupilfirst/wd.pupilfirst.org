@@ -4,7 +4,7 @@ let timelineList = [
   {
     date: "07 November 2023",
     event:
-      "Application Open for LITE Minor Degree and Open Elective WD10Y23 cohort",
+      "Application Open for LITE Minor Degree and Open Elective WD11Y23 cohort",
   },
   {
     date: "07 November 2023 onwards",
