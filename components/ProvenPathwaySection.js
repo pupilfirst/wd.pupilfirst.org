@@ -321,7 +321,7 @@ export default function ProvenPathwaySection() {
             </Step>
           </div>
         </div>
-        <div className="p-4 md:p-10 grid md:grid-cols-2 gap-6 bg-gray-700 rounded-lg mt-12">
+        {/* <div className="p-4 md:p-10 grid md:grid-cols-2 gap-6 bg-gray-700 rounded-lg mt-12">
           <div className="col-span-1">
             <h3 className="text-primary-500 text-4xl">Interested?</h3>
             <p className="text-white ">
@@ -339,7 +339,7 @@ export default function ProvenPathwaySection() {
               Start by applying to WD101 now
             </a>
           </div>
-        </div>
+        </div> */}
       </SectionWithHeading>
     </div>
   );

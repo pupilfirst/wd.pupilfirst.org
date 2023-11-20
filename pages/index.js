@@ -185,7 +185,7 @@ export default function Home(props) {
                   </a>{" "}
                 </p>
 
-                <div className="flex gap-4 items-start w-full md:w-auto mt-6 md:mt-12">
+                {/* <div className="flex gap-4 items-start w-full md:w-auto mt-6 md:mt-12">
                   <a
                     href="https://apply.pupilfirst.org/apply/forms/9"
                     target="_blank"
@@ -220,7 +220,7 @@ export default function Home(props) {
                       </clipPath>
                     </defs>
                   </svg>
-                </div>
+                </div> */}
               </div>
               <div className="flex-1 py-12 lg:pt-0 pb-12 hidden md:block">
                 <img
@@ -395,7 +395,7 @@ export default function Home(props) {
               alt="Course pathway"
             />
           </div>
-          <div className="px-4 lg:px-0 py-1 max-w-6xl 2xl:max-w-7xl mx-auto text-center mt-6 md:mt-12">
+          {/* <div className="px-4 lg:px-0 py-1 max-w-6xl 2xl:max-w-7xl mx-auto text-center mt-6 md:mt-12">
             <a
               id="apply-button-below-video"
               href="https://apply.pupilfirst.org/apply/forms/9"
@@ -404,7 +404,7 @@ export default function Home(props) {
             >
               Start your journey of becoming a Full Stack developer
             </a>
-          </div>
+          </div> */}
         </SectionWithHeading>
 
         <SectionWithHeading heading="Gain the skills to become industry ready">
@@ -875,7 +875,7 @@ export default function Home(props) {
                     <h2 className="font-bold text-2xl lg:text-6xl text-primary-500 leading-tight ">
                       How to apply?
                     </h2>
-                    <div>
+                    {/* <div>
                       <a
                         id="apply-button-how-to-apply"
                         href="https://apply.pupilfirst.org/apply/forms/9"
@@ -884,7 +884,7 @@ export default function Home(props) {
                       >
                         Start by applying to WD101 now
                       </a>
-                    </div>
+                    </div> */}
                   </div>
                 </div>
               </div>
@@ -1172,7 +1172,7 @@ export default function Home(props) {
                 </li>
               </ul>
             </div>
-            <div className="p-12 rounded-lg bg-indigo-500 flex flex-col items-center text-center gap-6 mt-12">
+            {/* <div className="p-12 rounded-lg bg-indigo-500 flex flex-col items-center text-center gap-6 mt-12">
               <h4 className="text-white text-xl md:text-3xl font-semibold mt-8 w-full md:w-4/5">
                 Application Open for LITE Minor Degree and
                 <br /> Open Elective WD11Y23 Cohort.
@@ -1185,7 +1185,7 @@ export default function Home(props) {
               >
                 Start by applying to WD101 now
               </a>
-            </div>
+            </div> */}
 
             <div className="text-white mt-12">
               <h4>Code of Conduct</h4>
