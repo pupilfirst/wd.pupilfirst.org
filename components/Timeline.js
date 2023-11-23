@@ -24,7 +24,7 @@ let timelineList = [
     event: "Commencement of WD201 course for students who complete WD101",
   },
   {
-    date: "16 January 2024",
+    date: "07 February 2024",
     event: "Deadline for students to complete WD 201 course",
   },
 ];
